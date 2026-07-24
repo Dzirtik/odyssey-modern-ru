@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import sitemap from "@astrojs/sitemap";
 
 const repository =
   process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "odyssey-modern-ru";
@@ -9,4 +10,9 @@ export default defineConfig({
   base: isGitHubPages ? `/${repository}` : "/",
   output: "static",
   trailingSlash: "always",
+  integrations: [
+    sitemap({
+      filter: (page) => !page.endsWith("/404.html"),
+    }),
+  ],
 });

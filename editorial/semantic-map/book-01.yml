@@ -86,7 +86,7 @@ segments:
     first_reveals: [polyphemus_blinded, polyphemus_son_of_poseidon]
     reader_questions:
       [
-        "Кто такой киклоп?",
+        "Кто такой циклоп?",
         "Когда и почему Одиссей ослепил Полифема?",
         "Может ли один бог противостоять всем остальным?",
       ]

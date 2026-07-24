@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f4f0e7"/>
+  <circle cx="1030" cy="115" r="310" fill="none" stroke="#c9c2b5" stroke-width="2"/>
+  <circle cx="1030" cy="115" r="210" fill="none" stroke="#b95332" stroke-width="2"/>
+  <path d="M760-20 1200 420M825-30 1200 345" stroke="#c9c2b5" stroke-width="2"/>
+  <text x="74" y="90" fill="#ad4d2f" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="5">НЕЗАВИСИМЫЙ РЕДАКЦИОННЫЙ ПРОЕКТ</text>
+  <text x="70" y="236" fill="#1b2927" font-family="Georgia,serif" font-size="104">«Одиссея»</text>
+  <text x="76" y="326" fill="#1b2927" font-family="Georgia,serif" font-size="72">Гомера</text>
+  <text x="76" y="410" fill="#ad4d2f" font-family="Georgia,serif" font-size="58" font-style="italic">близко к тексту</text>
+  <line x1="76" y1="474" x2="655" y2="474" stroke="#c9c2b5" stroke-width="2"/>
+  <text x="76" y="522" fill="#64706d" font-family="Arial,sans-serif" font-size="24">24 песни · построчная сверка · комментарии</text>
+  <text x="1040" y="590" fill="#1b2927" font-family="Georgia,serif" font-size="156" text-anchor="middle" opacity=".16">αω</text>
+</svg>

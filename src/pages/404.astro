@@ -2,6 +2,15 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { withBase } from "../data/project";
 ---
-<BaseLayout title="Страница не найдена">
-  <section class="unpublished"><p class="eyebrow">404</p><h1>Такой страницы нет</h1><p>Возможно, этот раздел ещё не опубликован или адрес изменился.</p><a class="button primary" href={withBase("/")}>На главную</a></section>
+
+<BaseLayout
+  title="Страница не найдена"
+  description="Запрошенная страница проекта «Одиссея: близко к тексту» не найдена."
+  noindex
+>
+  <section class="unpublished">
+    <p class="eyebrow">404</p><h1>Такой страницы нет</h1><p>
+      Возможно, этот раздел ещё не опубликован или адрес изменился.
+    </p><a class="button primary" href={withBase("/")}>На главную</a>
+  </section>
 </BaseLayout>

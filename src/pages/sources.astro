@@ -17,7 +17,10 @@ const typeLabels: Record<string, string> = {
 };
 ---
 
-<BaseLayout title="Источники">
+<BaseLayout
+  title="Источники и библиография «Одиссеи»"
+  description={`Библиография проекта «Одиссея: близко к тексту»: ${sources.length} документированных первичных, научных и справочных источников с правовым статусом.`}
+>
   <section class="page-intro">
     <p class="eyebrow">Рабочая академическая библиография</p>
     <h1>{sources.length} документированных источников</h1>
@@ -34,29 +37,37 @@ const typeLabels: Record<string, string> = {
   </section>
 
   <div class="source-list">
-    {sources.map((source: any) => (
-      <article id={source.id}>
-        <p class="eyebrow">{typeLabels[source.source_type] ?? source.source_type}</p>
-        <h2>{source.author}. {source.title}</h2>
-        <p>
-          {source.institution_or_publisher}
-          {source.year ? `, ${source.year}` : ""}
-          {source.edition ? `. ${source.edition}` : ""}
-          {source.pages_or_lines ? `. ${source.pages_or_lines}` : ""}.
-        </p>
-        <p>
-          <a href={source.url}>Открыть источник</a>
-          {" · "}
-          дата обращения: {source.accessed_at}
-        </p>
-        <p class="source-meta">
-          Работа: {source.work_rights_status}; цифровой объект:{" "}
-          {source.digital_object_rights_status}; использование в проекте:{" "}
-          {source.allowed_use}.
-          {source.license_name ? ` Лицензия/условия: ${source.license_name}.` : ""}
-        </p>
-        <p>{source.notes}</p>
-      </article>
-    ))}
+    {
+      sources.map((source: any) => (
+        <article id={source.id}>
+          <p class="eyebrow">
+            {typeLabels[source.source_type] ?? source.source_type}
+          </p>
+          <h2>
+            {source.author}. {source.title}
+          </h2>
+          <p>
+            {source.institution_or_publisher}
+            {source.year ? `, ${source.year}` : ""}
+            {source.edition ? `. ${source.edition}` : ""}
+            {source.pages_or_lines ? `. ${source.pages_or_lines}` : ""}.
+          </p>
+          <p>
+            <a href={source.url}>Открыть источник</a>
+            {" · "}
+            дата обращения: {source.accessed_at}
+          </p>
+          <p class="source-meta">
+            Работа: {source.work_rights_status}; цифровой объект:{" "}
+            {source.digital_object_rights_status}; использование в проекте:{" "}
+            {source.allowed_use}.
+            {source.license_name
+              ? ` Лицензия/условия: ${source.license_name}.`
+              : ""}
+          </p>
+          <p>{source.notes}</p>
+        </article>
+      ))
+    }
   </div>
 </BaseLayout>

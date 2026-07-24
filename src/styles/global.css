@@ -29,7 +29,7 @@
     --paper-2: #e9e3d7;
     --ink: #1b2927;
     --muted: #64706d;
-    --accent: #b95332;
+    --accent: #ad4d2f;
     --line: #c9c2b5;
     --card: rgba(255, 255, 255, 0.35);
     --reader-scale: 1;
@@ -148,7 +148,7 @@
     letter-spacing: 0.15em;
     text-decoration: none;
   }
-  .brand span {
+  .brand-name {
     margin-left: 0.4rem;
     color: var(--muted);
     font-family: ui-sans-serif, system-ui, sans-serif;
@@ -446,10 +446,10 @@
     scroll-margin-top: 6rem;
     margin-bottom: 4rem;
   }
-  .passage > p:not(.line-range) {
+  .passage > p {
     margin-top: 1.1em;
   }
-  .passage > p:not(.line-range)::first-letter {
+  .passage > p::first-letter {
     padding-left: 1.2em;
   }
   .line-range {
@@ -468,6 +468,37 @@
       system-ui,
       sans-serif;
   }
+  .reader-questions {
+    margin: 1.75rem 0;
+    padding: 1.1rem 1.25rem 1.2rem;
+    border-left: 2px solid var(--accent);
+    background: color-mix(in srgb, var(--paper-2) 68%, transparent);
+    font:
+      0.86rem/1.55 ui-sans-serif,
+      system-ui,
+      sans-serif;
+  }
+  .reader-questions-label {
+    color: var(--accent);
+    font-size: 0.67rem;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+  }
+  .reader-questions ul {
+    display: grid;
+    gap: 0.45rem;
+    margin: 0.75rem 0 0;
+    padding-left: 1.2rem;
+  }
+  .reader-questions a {
+    color: var(--muted);
+    font-size: 0.74rem;
+    white-space: nowrap;
+  }
+  .reader-questions a::after {
+    content: " ↓";
+  }
   .note summary {
     cursor: pointer;
     padding: 1rem 0;
@@ -483,6 +514,11 @@
   .note > div {
     padding: 0 0 1.2rem 1.2rem;
     border-left: 2px solid var(--accent);
+  }
+  .note:target {
+    scroll-margin-top: 7rem;
+    outline: 2px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    outline-offset: 0.35rem;
   }
   .note > div p + p {
     margin-top: 0.8rem;
@@ -540,6 +576,37 @@
   .source-list p {
     margin-top: 1rem;
   }
+  .card-list .card-meta,
+  .card-list .card-aliases {
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+  .card-list .card-meta {
+    margin: 0 0 0.65rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .card-list .card-aliases {
+    margin-top: 0.45rem;
+  }
+  .reference-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1rem clamp(1.25rem, 5vw, 5rem);
+    border-bottom: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.78rem;
+  }
+  .reference-controls button {
+    flex: none;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid var(--line);
+    color: var(--ink);
+    background: var(--paper);
+    cursor: pointer;
+  }
   .glossary {
     max-width: 70rem;
     margin: 0 auto;
@@ -556,9 +623,26 @@
       1.4rem/1.2 Georgia,
       serif;
   }
+  .glossary dt span {
+    display: block;
+    margin-top: 0.35rem;
+    color: var(--muted);
+    font:
+      0.72rem/1.2 ui-sans-serif,
+      system-ui,
+      sans-serif;
+  }
   .glossary dd {
     margin: 0;
     color: var(--muted);
+  }
+  .glossary-category {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--accent);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
   .text-map {
     position: relative;

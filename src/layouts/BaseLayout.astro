@@ -5,13 +5,63 @@ import { project, withBase } from "../data/project";
 interface Props {
   title?: string;
   description?: string;
+  noindex?: boolean;
+  ogType?: "website" | "article";
+  dateModified?: string;
+  structuredData?: Record<string, unknown>[];
 }
 
 const {
   title = project.title,
-  description = "Независимое современное русское прозаическое переложение «Одиссеи»."
+  description = "Читайте современное русское прозаическое переложение «Одиссеи» Гомера с построчной сверкой, комментариями и открытой редакционной методологией.",
+  noindex = false,
+  ogType = "website",
+  dateModified,
+  structuredData = [],
 } = Astro.props;
-const pageTitle = title === project.title ? title : `${title} — ${project.title}`;
+const pageTitle =
+  title === project.title ? title : `${title} — ${project.title}`;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
+const siteURL = new URL(withBase("/"), Astro.site ?? Astro.url);
+const socialImageURL = new URL(
+  withBase("/social-card.png"),
+  Astro.site ?? Astro.url,
+);
+const sitemapURL = new URL(
+  withBase("/sitemap-index.xml"),
+  Astro.site ?? Astro.url,
+);
+const websiteId = `${siteURL.href}#website`;
+const webpageId = `${canonicalURL.href}#webpage`;
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": websiteId,
+      url: siteURL.href,
+      name: project.title,
+      description:
+        "Современное русское прозаическое переложение «Одиссеи» Гомера с построчной сверкой и комментариями.",
+      inLanguage: "ru-RU",
+    },
+    {
+      "@type": "WebPage",
+      "@id": webpageId,
+      url: canonicalURL.href,
+      name: pageTitle,
+      description,
+      inLanguage: "ru-RU",
+      isPartOf: { "@id": websiteId },
+      ...(dateModified ? { dateModified } : {}),
+      ...(structuredData.length > 0
+        ? { mainEntity: { "@id": structuredData[0]["@id"] } }
+        : {}),
+    },
+    ...structuredData,
+  ],
+};
+const serializedJsonLd = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
 ---
 
 <!doctype html>
@@ -20,8 +70,44 @@ const pageTitle = title === project.title ? title : `${title} — ${project.titl
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
+    <meta
+      name="robots"
+      content={noindex
+        ? "noindex, follow"
+        : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"}
+    />
     <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="sitemap" href={sitemapURL} />
+    <link rel="icon" href={withBase("/favicon.svg")} type="image/svg+xml" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content={project.title} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={socialImageURL} />
+    <meta
+      property="og:image:alt"
+      content="Одиссея: близко к тексту — русское прозаическое переложение"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageURL} />
+    <meta
+      name="twitter:image:alt"
+      content="Одиссея: близко к тексту — русское прозаическое переложение"
+    />
+    {
+      ogType === "article" && dateModified && (
+        <meta property="article:modified_time" content={dateModified} />
+      )
+    }
     <title>{pageTitle}</title>
+    <script type="application/ld+json" is:inline set:html={serializedJsonLd} />
     <script is:inline>
       const savedTheme = localStorage.getItem("odyssey-theme");
       if (savedTheme) document.documentElement.dataset.theme = savedTheme;
@@ -30,15 +116,23 @@ const pageTitle = title === project.title ? title : `${title} — ${project.titl
   <body>
     <a class="skip-link" href="#main">К содержанию</a>
     <header class="site-header">
-      <a class="brand" href={withBase("/")}>ΟΔΥΣΣΕΙΑ <span>Одиссея</span></a>
+      <a class="brand" href={withBase("/")}>
+        <span class="brand-greek" lang="grc">ΟΔΥΣΣΕΙΑ</span>
+        <span class="brand-name">Одиссея</span>
+      </a>
       <nav aria-label="Основная навигация">
         <a href={withBase("/read/")}>Читать</a>
         <a href={withBase("/people/")}>Персонажи</a>
         <a href={withBase("/glossary/")}>Словарь</a>
+        <a href={withBase("/map/")}>Карта</a>
         <a href={withBase("/sources/")}>Источники</a>
         <a href={withBase("/methodology/")}>Метод</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Переключить цветовую тему">
+      <button
+        class="theme-toggle"
+        type="button"
+        aria-label="Переключить цветовую тему"
+      >
         <span aria-hidden="true">◐</span>
       </button>
     </header>
@@ -52,26 +146,38 @@ const pageTitle = title === project.title ? title : `${title} — ${project.titl
         <a href={withBase("/ai-disclosure/")}>Об использовании AI</a>
         <a href={withBase("/changelog/")}>Изменения</a>
       </nav>
-      <p>© {project.publicationYear} {project.owner}. Все права на новое переложение и оригинальные пояснения защищены.</p>
+      <p>
+        © {project.publicationYear}{" "}
+        <a href={`https://github.com/${project.owner}`} rel="author">
+          {project.owner}
+        </a>. Права на новое переложение и оригинальные пояснения — в пределах
+        применимого законодательства.
+      </p>
     </footer>
     <script>
       const bookPage = document.querySelector<HTMLElement>(".book-page");
       if (bookPage?.dataset.book) {
         const current = Number(bookPage.dataset.book);
         const saved = Number(localStorage.getItem("odyssey-max-book") ?? 1);
-        if (current > saved) localStorage.setItem("odyssey-max-book", String(current));
+        if (current > saved)
+          localStorage.setItem("odyssey-max-book", String(current));
       }
       const maxBook = Number(localStorage.getItem("odyssey-max-book") ?? 1);
-      document.querySelectorAll<HTMLElement>("[data-reveal-book]").forEach((element) => {
-        element.hidden = Number(element.dataset.revealBook) > maxBook;
-      });
-      document.querySelectorAll<HTMLElement>("[data-progress-label]").forEach((element) => {
-        element.textContent = `Предел открытого знания: Песнь ${maxBook}`;
-      });
+      document
+        .querySelectorAll<HTMLElement>("[data-reveal-book]")
+        .forEach((element) => {
+          element.hidden = Number(element.dataset.revealBook) > maxBook;
+        });
+      document
+        .querySelectorAll<HTMLElement>("[data-progress-label]")
+        .forEach((element) => {
+          element.textContent = `Предел открытого знания: Песнь ${maxBook}`;
+        });
 
       const toggle = document.querySelector<HTMLButtonElement>(".theme-toggle");
       toggle?.addEventListener("click", () => {
-        const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        const next =
+          document.documentElement.dataset.theme === "dark" ? "light" : "dark";
         document.documentElement.dataset.theme = next;
         localStorage.setItem("odyssey-theme", next);
       });

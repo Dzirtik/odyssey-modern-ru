@@ -1,0 +1,185 @@
+import fs from "node:fs/promises";
+import path from "node:path";
+import { assert, success } from "./lib.mjs";
+
+const distRoot = "dist";
+const repository =
+  process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "odyssey-modern-ru";
+const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
+const basePath = isGitHubPages ? `/${repository}` : "";
+const canonicalPrefix = `https://dzirtik.github.io${basePath}/`;
+
+const walk = async (directory) => {
+  const entries = await fs.readdir(directory, { withFileTypes: true });
+  const nested = await Promise.all(
+    entries.map(async (entry) => {
+      const target = path.join(directory, entry.name);
+      return entry.isDirectory() ? walk(target) : [target];
+    }),
+  );
+  return nested.flat();
+};
+
+const files = await walk(distRoot);
+const htmlFiles = files.filter((file) => file.endsWith(".html"));
+const indexableCanonicals = new Set();
+const titles = new Set();
+const descriptions = new Set();
+
+const matchOne = (html, pattern, label, file) => {
+  const matches = [...html.matchAll(pattern)];
+  assert(matches.length === 1, `${file}: expected one ${label}`);
+  return matches[0][1];
+};
+
+for (const file of htmlFiles) {
+  const html = await fs.readFile(file, "utf8");
+  assert(
+    Buffer.byteLength(html) < 100_000,
+    `${file}: HTML exceeds the 100 KB SEO budget`,
+  );
+  const title = matchOne(html, /<title>([^<]+)<\/title>/g, "title", file);
+  const description = matchOne(
+    html,
+    /<meta name="description" content="([^"]+)">/g,
+    "meta description",
+    file,
+  );
+  const canonical = matchOne(
+    html,
+    /<link rel="canonical" href="([^"]+)">/g,
+    "canonical",
+    file,
+  );
+  const robots = matchOne(
+    html,
+    /<meta name="robots" content="([^"]+)">/g,
+    "robots policy",
+    file,
+  );
+  matchOne(
+    html,
+    /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,
+    "JSON-LD block",
+    file,
+  );
+  const jsonLd = JSON.parse(
+    html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1],
+  );
+  assert(Array.isArray(jsonLd["@graph"]), `${file}: invalid JSON-LD graph`);
+  const schemaTypes = jsonLd["@graph"].map((item) => item["@type"]);
+  assert(
+    !schemaTypes.some((type) =>
+      ["Review", "AggregateRating", "FAQPage"].includes(type),
+    ),
+    `${file}: unsupported promotional schema type`,
+  );
+  const bookMatch = file.match(/dist\/book\/(\d{2})\/index\.html$/);
+  if (bookMatch) {
+    const chapter = jsonLd["@graph"].find(
+      (item) => item["@type"] === "Chapter",
+    );
+    assert(chapter, `${file}: missing Chapter schema`);
+    assert(
+      chapter.position === Number(bookMatch[1]),
+      `${file}: Chapter position does not match its route`,
+    );
+  }
+  assert(
+    canonical.startsWith(canonicalPrefix),
+    `${file}: canonical is outside ${canonicalPrefix}`,
+  );
+  assert(!canonical.includes("localhost"), `${file}: localhost canonical`);
+  assert(!titles.has(title), `${file}: duplicate title`);
+  assert(!descriptions.has(description), `${file}: duplicate description`);
+  titles.add(title);
+  descriptions.add(description);
+  assert(
+    (html.match(/<h1(?:\s|>)/g) ?? []).length === 1,
+    `${file}: expected one h1`,
+  );
+  for (const [, href] of html.matchAll(/href="([^"]+)"/g)) {
+    if (!href.startsWith("/")) continue;
+    assert(
+      href.startsWith(`${basePath}/`),
+      `${file}: internal link loses the production base: ${href}`,
+    );
+    if (basePath) {
+      assert(
+        !href.includes(`${basePath}${basePath}/`),
+        `${file}: internal link duplicates the production base: ${href}`,
+      );
+    }
+  }
+
+  if (file.endsWith("/404.html") || file === "dist/404.html") {
+    assert(robots.startsWith("noindex"), `${file}: 404 must be noindex`);
+  } else {
+    assert(robots.startsWith("index"), `${file}: page must be indexable`);
+    indexableCanonicals.add(canonical);
+  }
+}
+
+for (const route of ["glossary", "people", "map"]) {
+  const html = await fs.readFile(`dist/${route}/index.html`, "utf8");
+  for (const [tag, reveal] of html.matchAll(
+    /<[^>]+data-reveal-book="(\d+)"[^>]*>/g,
+  )) {
+    if (Number(reveal) <= 1) continue;
+    assert(/\shidden(?:\s|>)/.test(tag), `${route}: future content is visible`);
+    assert(
+      tag.includes("data-nosnippet") || tag.includes("<article"),
+      `${route}: future content may leak into snippets`,
+    );
+  }
+  if (route === "people") {
+    const futurePeople =
+      html.match(
+        /<article[^>]+data-reveal-book="(?:[2-9]|1\d|2[0-4])"[^>]*hidden/g,
+      ) ?? [];
+    assert(
+      futurePeople.length > 0,
+      "people: future entries must be hidden in initial HTML",
+    );
+    assert(
+      futurePeople.every((tag) => tag.includes("data-nosnippet")),
+      "people: future entries need data-nosnippet attributes",
+    );
+  }
+}
+
+const sitemapFiles = files.filter((file) => /sitemap-\d+\.xml$/.test(file));
+assert(sitemapFiles.length > 0, "No sitemap content file generated");
+const sitemapURLs = new Set();
+for (const file of sitemapFiles) {
+  const xml = await fs.readFile(file, "utf8");
+  for (const [, url] of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) {
+    sitemapURLs.add(url);
+  }
+}
+
+assert(
+  sitemapURLs.size === 34,
+  `Expected 34 sitemap URLs, found ${sitemapURLs.size}`,
+);
+assert(
+  [...sitemapURLs].every((url) => url.startsWith(canonicalPrefix)),
+  "Sitemap contains a URL outside the canonical base",
+);
+assert(
+  [...indexableCanonicals].every((url) => sitemapURLs.has(url)),
+  "An indexable canonical is missing from the sitemap",
+);
+assert(
+  [...sitemapURLs].every((url) => indexableCanonicals.has(url)),
+  "Sitemap contains a non-canonical or non-indexable URL",
+);
+
+for (const file of files.filter((item) => item.endsWith(".css"))) {
+  const stat = await fs.stat(file);
+  assert(stat.size < 50_000, `${file}: CSS exceeds the 50 KB SEO budget`);
+}
+
+success(
+  `SEO validated: ${indexableCanonicals.size} indexable pages, unique metadata, canonical parity, valid JSON-LD, and sitemap coverage`,
+);

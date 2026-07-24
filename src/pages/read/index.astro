@@ -4,23 +4,60 @@ import { withBase } from "../../data/project";
 const books = Array.from({ length: 24 }, (_, index) => index + 1);
 ---
 
-<BaseLayout title="Читать">
+<BaseLayout
+  title="Читать «Одиссею» Гомера: все 24 песни"
+  description="Оглавление всех 24 песен «Одиссеи» Гомера в современном русском прозаическом переложении с построчной сверкой и комментариями."
+>
   <section class="page-intro">
     <p class="eyebrow">Оглавление без спойлеров</p>
-    <h1>24 песни, исходный порядок</h1>
-    <p>Описательные названия скрыты. Песни расположены в исходном порядке поэмы.</p>
+    <h1>Читать «Одиссею»: все 24 песни</h1>
+    <p>
+      Описательные названия скрыты. Песни расположены в исходном порядке поэмы.
+    </p>
   </section>
   <ol class="book-grid">
-    {books.map((book) => {
-      const number = String(book).padStart(2, "0");
-      return (
-        <li class="published">
-          <a href={withBase(`/book/${number}/`)}>
-            <span>{number}</span>
-            <h2>Песнь {["I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","XIX","XX","XXI","XXII","XXIII","XXIV"][book - 1]}</h2>
-          </a>
-        </li>
-      );
-    })}
+    {
+      books.map((book) => {
+        const number = String(book).padStart(2, "0");
+        return (
+          <li class="published">
+            <a href={withBase(`/book/${number}/`)}>
+              <span>{number}</span>
+              <h2>
+                Песнь{" "}
+                {
+                  [
+                    "I",
+                    "II",
+                    "III",
+                    "IV",
+                    "V",
+                    "VI",
+                    "VII",
+                    "VIII",
+                    "IX",
+                    "X",
+                    "XI",
+                    "XII",
+                    "XIII",
+                    "XIV",
+                    "XV",
+                    "XVI",
+                    "XVII",
+                    "XVIII",
+                    "XIX",
+                    "XX",
+                    "XXI",
+                    "XXII",
+                    "XXIII",
+                    "XXIV",
+                  ][book - 1]
+                }
+              </h2>
+            </a>
+          </li>
+        );
+      })
+    }
   </ol>
 </BaseLayout>
