@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 10,
+  "title": "Песнь X",
+  "sourceRange": "Hom. Od. 10.1–574",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-10.mp3",
+  "durationSeconds": 761.13,
+  "characterCount": 10222,
+  "paragraphCount": 40,
+  "requestCount": 5,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 18,
+  "title": "Песнь XVIII",
+  "sourceRange": "Hom. Od. 18.1–428",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-18.mp3",
+  "durationSeconds": 618.56,
+  "characterCount": 7820,
+  "paragraphCount": 33,
+  "requestCount": 4,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}

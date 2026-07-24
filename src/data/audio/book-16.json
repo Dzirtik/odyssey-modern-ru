@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 16,
+  "title": "Песнь XVI",
+  "sourceRange": "Hom. Od. 16.1–481",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-16.mp3",
+  "durationSeconds": 671.66,
+  "characterCount": 8450,
+  "paragraphCount": 37,
+  "requestCount": 4,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}

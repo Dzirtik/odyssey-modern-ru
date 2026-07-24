@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 12,
+  "title": "Песнь XII",
+  "sourceRange": "Hom. Od. 12.1–453",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-12.mp3",
+  "durationSeconds": 610.46,
+  "characterCount": 7826,
+  "paragraphCount": 31,
+  "requestCount": 4,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}

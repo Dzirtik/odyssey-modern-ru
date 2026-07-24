@@ -1,0 +1,21 @@
+{
+  "schema": 2,
+  "book": 3,
+  "title": "Песнь III",
+  "sourceRange": "Hom. Od. 3.1–497",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-03.mp3",
+  "durationSeconds": 1271.48,
+  "characterCount": 15711,
+  "paragraphCount": 46,
+  "requestCount": 20,
+  "roles": [
+    { "id": "narrator", "label": "Рассказчик", "voice": "cedar" },
+    { "id": "character-004", "label": "Афина", "voice": "marin" },
+    { "id": "character-030", "label": "Нестор", "voice": "alloy" },
+    { "id": "character-002", "label": "Телемах", "voice": "ash" }
+  ]
+}

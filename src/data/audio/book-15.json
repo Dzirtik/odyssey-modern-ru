@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 15,
+  "title": "Песнь XV",
+  "sourceRange": "Hom. Od. 15.1–557",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-15.mp3",
+  "durationSeconds": 795.66,
+  "characterCount": 9924,
+  "paragraphCount": 41,
+  "requestCount": 4,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}

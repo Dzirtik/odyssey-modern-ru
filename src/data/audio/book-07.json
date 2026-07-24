@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 7,
+  "title": "Песнь VII",
+  "sourceRange": "Hom. Od. 7.1–347",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-07.mp3",
+  "durationSeconds": 774.33,
+  "characterCount": 9688,
+  "paragraphCount": 28,
+  "requestCount": 5,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}

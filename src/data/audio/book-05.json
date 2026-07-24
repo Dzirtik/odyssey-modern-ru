@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 5,
+  "title": "Песнь V",
+  "sourceRange": "Hom. Od. 5.1–493",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-05.mp3",
+  "durationSeconds": 1059.1,
+  "characterCount": 13152,
+  "paragraphCount": 52,
+  "requestCount": 6,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}

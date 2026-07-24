@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 20,
+  "title": "Песнь XX",
+  "sourceRange": "Hom. Od. 20.1–394",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-20.mp3",
+  "durationSeconds": 518.29,
+  "characterCount": 7002,
+  "paragraphCount": 32,
+  "requestCount": 3,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}

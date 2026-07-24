@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 6,
+  "title": "Песнь VI",
+  "sourceRange": "Hom. Od. 6.1–331",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-06.mp3",
+  "durationSeconds": 708.51,
+  "characterCount": 9052,
+  "paragraphCount": 29,
+  "requestCount": 4,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}

@@ -3,7 +3,6 @@ import YAML from "yaml";
 import BookAudioPlayer from "./BookAudioPlayer.astro";
 import ReadingControls from "./ReadingControls.astro";
 import { project, withBase } from "../data/project";
-import bookOneAudio from "../data/audio/book-01.json";
 import sourcesText from "../data/sources.yml?raw";
 
 interface Props {
@@ -14,6 +13,32 @@ const { book } = Astro.props;
 const number = String(book.book).padStart(2, "0");
 const previous = book.book > 1 ? String(book.book - 1).padStart(2, "0") : "";
 const next = book.book < 24 ? String(book.book + 1).padStart(2, "0") : "";
+const romanNumbers = [
+  "I",
+  "II",
+  "III",
+  "IV",
+  "V",
+  "VI",
+  "VII",
+  "VIII",
+  "IX",
+  "X",
+  "XI",
+  "XII",
+  "XIII",
+  "XIV",
+  "XV",
+  "XVI",
+  "XVII",
+  "XVIII",
+  "XIX",
+  "XX",
+  "XXI",
+  "XXII",
+  "XXIII",
+  "XXIV",
+];
 const notes = book.notes ?? [];
 const sources = YAML.parse(sourcesText);
 const readerAnswerFiles = import.meta.glob(
@@ -28,6 +53,12 @@ const readerAnswerPath = `../data/reader-answers/book-${number}.yml`;
 const readerAnswers = readerAnswerFiles[readerAnswerPath]
   ? YAML.parse(readerAnswerFiles[readerAnswerPath])
   : [];
+const audioManifestFiles = import.meta.glob("../data/audio/book-*.json", {
+  eager: true,
+  import: "default",
+}) as Record<string, any>;
+const audioManifest =
+  audioManifestFiles[`../data/audio/book-${number}.json`] ?? null;
 const sourceLabels = new Map(
   sources.map((source: any) => [
     source.id,
@@ -71,15 +102,20 @@ const answerDetails = (value: string) =>
   </header>
 
   {
-    book.book === 1 && (
+    audioManifest && (
       <div class="book-audio-wrap">
         <BookAudioPlayer
-          bookNumber={bookOneAudio.book}
-          title={bookOneAudio.title}
-          source={`/audio/books/${bookOneAudio.file}`}
-          durationSeconds={bookOneAudio.durationSeconds}
-          voiceCount={Object.keys(bookOneAudio.voices).length}
-          disclosure={bookOneAudio.disclosure}
+          bookNumber={audioManifest.book}
+          title={audioManifest.title}
+          source={`/audio/books/${audioManifest.file}`}
+          durationSeconds={audioManifest.durationSeconds}
+          disclosure={audioManifest.disclosure}
+          nextHref={next ? `/book/${next}/` : "/read/"}
+          nextLabel={
+            next
+              ? `Следующая: Песнь ${romanNumbers[book.book]} →`
+              : "К оглавлению →"
+          }
         />
       </div>
     )

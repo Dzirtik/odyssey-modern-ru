@@ -1,0 +1,20 @@
+{
+  "schema": 2,
+  "book": 9,
+  "title": "Песнь IX",
+  "sourceRange": "Hom. Od. 9.1–566",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-09.mp3",
+  "durationSeconds": 809.89,
+  "characterCount": 10004,
+  "paragraphCount": 39,
+  "requestCount": 8,
+  "roles": [
+    { "id": "narrator", "label": "Рассказчик", "voice": "cedar" },
+    { "id": "character-001", "label": "Одиссей", "voice": "onyx" },
+    { "id": "character-012", "label": "Полифем", "voice": "fable" }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schema": 2,
+  "book": 4,
+  "title": "Песнь IV",
+  "sourceRange": "Hom. Od. 4.1–847",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-04.mp3",
+  "durationSeconds": 1804.5,
+  "characterCount": 22400,
+  "paragraphCount": 74,
+  "requestCount": 11,
+  "roles": [
+    { "id": "narrator", "label": "Рассказчик", "voice": "cedar" },
+    { "id": "character-036", "label": "Менелай", "voice": "ballad" }
+  ]
+}

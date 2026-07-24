@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 8,
+  "title": "Песнь VIII",
+  "sourceRange": "Hom. Od. 8.1–586",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-08.mp3",
+  "durationSeconds": 812.58,
+  "characterCount": 10376,
+  "paragraphCount": 31,
+  "requestCount": 5,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}

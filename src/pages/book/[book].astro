@@ -25,7 +25,6 @@ import { bookTwentyOne } from "../../data/book-twenty-one";
 import { bookTwentyTwo } from "../../data/book-twenty-two";
 import { bookTwentyThree } from "../../data/book-twenty-three";
 import { bookTwentyFour } from "../../data/book-twenty-four";
-import bookOneAudio from "../../data/audio/book-01.json";
 import { project, withBase } from "../../data/project";
 
 export function getStaticPaths() {
@@ -38,7 +37,7 @@ export function getStaticPaths() {
 interface Props {
   book: number;
 }
-const { book } = Astro.props;
+const { book }: Props = Astro.props;
 const roman = [
   "I",
   "II",
@@ -111,22 +110,34 @@ const content =
                                             : book === 22
                                               ? bookTwentyTwo
                                               : book === 23
-                                                ? bookTwentyThree
+                                              ? bookTwentyThree
                                                 : bookTwentyFour;
+const number = String(book).padStart(2, "0");
+const audioManifestFiles = import.meta.glob(
+  "../../data/audio/book-*.json",
+  {
+    eager: true,
+    import: "default",
+  },
+) as Record<string, any>;
+const audioManifest =
+  audioManifestFiles[`../../data/audio/book-${number}.json`] ?? null;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
 const siteURL = new URL(withBase("/"), Astro.site ?? Astro.url);
 const rightsURL = new URL(withBase("/rights/"), Astro.site ?? Astro.url);
 const audioURL = new URL(
-  withBase(`/audio/books/${bookOneAudio.file}`),
+  withBase(`/audio/books/${audioManifest?.file ?? ""}`),
   Astro.site ?? Astro.url,
 );
 const lineCount = content.passages.at(-1)?.lineEnd ?? 0;
 const description =
-  book === 1
+  audioManifest
     ? `«Одиссея» Гомера, Песнь ${roman}: современное русское переложение ${lineCount} строк с пояснениями и полной многоголосной аудиоверсией.`
     : `«Одиссея» Гомера, Песнь ${roman}: современное русское прозаическое переложение ${lineCount} строк с построчной сверкой и ${content.notes.length} пояснениями.`;
 const audioId = `${canonicalURL.href}#audio-edition`;
-const audioDuration = `PT${Math.floor(bookOneAudio.durationSeconds / 60)}M${Math.round(bookOneAudio.durationSeconds % 60)}S`;
+const audioDuration = audioManifest
+  ? `PT${Math.floor(audioManifest.durationSeconds / 60)}M${Math.round(audioManifest.durationSeconds % 60)}S`
+  : "";
 const structuredData = [
   {
     "@type": "Chapter",
@@ -145,9 +156,9 @@ const structuredData = [
     dateModified: content.lastFactCheck,
     license: rightsURL.href,
     isPartOf: { "@id": `${siteURL.href}#odyssey` },
-    ...(book === 1 ? { associatedMedia: { "@id": audioId } } : {}),
+    ...(audioManifest ? { associatedMedia: { "@id": audioId } } : {}),
   },
-  ...(book === 1
+  ...(audioManifest
     ? [
         {
           "@type": "AudioObject",

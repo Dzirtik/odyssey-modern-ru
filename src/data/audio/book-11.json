@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 11,
+  "title": "Песнь XI",
+  "sourceRange": "Hom. Od. 11.1–640",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-11.mp3",
+  "durationSeconds": 896.38,
+  "characterCount": 11029,
+  "paragraphCount": 44,
+  "requestCount": 5,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}

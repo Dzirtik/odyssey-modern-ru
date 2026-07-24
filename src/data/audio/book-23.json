@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 23,
+  "title": "Песнь XXIII",
+  "sourceRange": "Hom. Od. 23.1–372",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-23.mp3",
+  "durationSeconds": 500.14,
+  "characterCount": 6696,
+  "paragraphCount": 31,
+  "requestCount": 3,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}

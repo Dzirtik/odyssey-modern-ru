@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 14,
+  "title": "Песнь XIV",
+  "sourceRange": "Hom. Od. 14.1–533",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-14.mp3",
+  "durationSeconds": 732.41,
+  "characterCount": 9495,
+  "paragraphCount": 39,
+  "requestCount": 4,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}

@@ -1,0 +1,28 @@
+{
+  "schema": 2,
+  "book": 2,
+  "title": "Песнь II",
+  "sourceRange": "Hom. Od. 2.1–434",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-02.mp3",
+  "durationSeconds": 1448.53,
+  "characterCount": 16803,
+  "paragraphCount": 54,
+  "requestCount": 55,
+  "roles": [
+    { "id": "narrator", "label": "Рассказчик", "voice": "cedar" },
+    { "id": "character-108", "label": "Египтий", "voice": "echo" },
+    { "id": "character-002", "label": "Телемах", "voice": "ash" },
+    { "id": "character-019", "label": "Антиной", "voice": "echo" },
+    { "id": "character-003", "label": "Пенелопа", "voice": "coral" },
+    { "id": "character-025", "label": "Галиферс", "voice": "verse" },
+    { "id": "character-021", "label": "Евримах", "voice": "verse" },
+    { "id": "character-018", "label": "Ментор", "voice": "verse" },
+    { "id": "character-026", "label": "Леокрит", "voice": "fable" },
+    { "id": "character-004", "label": "Афина", "voice": "marin" },
+    { "id": "character-023", "label": "Евриклея", "voice": "nova" }
+  ]
+}

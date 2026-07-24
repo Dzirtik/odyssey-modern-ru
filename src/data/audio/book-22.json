@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "book": 22,
+  "title": "Песнь XXII",
+  "sourceRange": "Hom. Od. 22.1–501",
+  "provider": "OpenAI",
+  "model": "gpt-4o-mini-tts",
+  "aiGenerated": true,
+  "disclosure": "Озвучено синтетическими голосами ИИ. Это не записи актёров и не имитация конкретных людей.",
+  "file": "book-22.mp3",
+  "durationSeconds": 682.61,
+  "characterCount": 8856,
+  "paragraphCount": 41,
+  "requestCount": 4,
+  "roles": [{ "id": "narrator", "label": "Рассказчик", "voice": "cedar" }]
+}
