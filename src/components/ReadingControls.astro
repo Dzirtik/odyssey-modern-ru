@@ -1,13 +1,46 @@
-<section class="reading-controls" aria-label="Настройки чтения">
-  <div>
-    <span>Размер текста</span>
-    <button type="button" data-font="minus" aria-label="Уменьшить текст">А−</button>
-    <button type="button" data-font="plus" aria-label="Увеличить текст">А+</button>
-  </div>
-  <label>
-    <span>Ширина строки</span>
-    <input type="range" min="34" max="76" value="64" step="2" data-width />
+---
+interface Props {
+  passages: Array<{ id: string; lines: string }>;
+}
+
+const { passages } = Astro.props;
+---
+
+<section class="reading-controls" aria-label="Навигация и настройки чтения">
+  <label class="passage-picker">
+    <span>Фрагмент</span>
+    <select data-passage-select aria-label="Перейти к фрагменту">
+      {
+        passages.map((passage) => (
+          <option value={passage.id}>{passage.lines}</option>
+        ))
+      }
+    </select>
   </label>
+  <div class="font-control">
+    <span>Текст</span>
+    <button type="button" data-font="minus" aria-label="Уменьшить текст">
+      А−
+    </button>
+    <output data-font-status aria-label="Текущий размер текста">100%</output>
+    <button type="button" data-font="plus" aria-label="Увеличить текст">
+      А+
+    </button>
+  </div>
+  <label class="width-control">
+    <span>Строка</span>
+    <input
+      type="range"
+      min="34"
+      max="76"
+      value="64"
+      step="2"
+      data-width
+      aria-label="Ширина строки в знаках"
+    />
+    <output data-width-status>64 знака</output>
+  </label>
+  <output class="progress-status" data-progress-status>0% · начало песни</output>
 </section>
 
 <script>
@@ -15,16 +48,25 @@
   const savedScale = Number(localStorage.getItem("odyssey-font-scale") ?? 1);
   const savedWidth = Number(localStorage.getItem("odyssey-line-width") ?? 64);
   const width = document.querySelector<HTMLInputElement>("[data-width]");
+  const fontStatus =
+    document.querySelector<HTMLOutputElement>("[data-font-status]");
+  const widthStatus =
+    document.querySelector<HTMLOutputElement>("[data-width-status]");
+  const passageSelect = document.querySelector<HTMLSelectElement>(
+    "[data-passage-select]",
+  );
 
   const applyScale = (value: number) => {
     const safe = Math.min(1.35, Math.max(0.9, value));
     root.style.setProperty("--reader-scale", String(safe));
     localStorage.setItem("odyssey-font-scale", String(safe));
+    if (fontStatus) fontStatus.value = `${Math.round(safe * 100)}%`;
   };
   const applyWidth = (value: number) => {
     root.style.setProperty("--reader-width", `${value}ch`);
     localStorage.setItem("odyssey-line-width", String(value));
     if (width) width.value = String(value);
+    if (widthStatus) widthStatus.value = `${value} знака`;
   };
 
   applyScale(savedScale);
@@ -33,7 +75,10 @@
     applyScale(Number(localStorage.getItem("odyssey-font-scale") ?? 1) - 0.05);
   });
   document.querySelector("[data-font='plus']")?.addEventListener("click", () => {
-    applyScale(Number(localStorage.getItem("odyssey-font-scale") ?? 1) + 0.05);
-  });
+      applyScale(Number(localStorage.getItem("odyssey-font-scale") ?? 1) + 0.05);
+    });
   width?.addEventListener("input", () => applyWidth(Number(width.value)));
+  passageSelect?.addEventListener("change", () => {
+    location.hash = passageSelect.value;
+  });
 </script>

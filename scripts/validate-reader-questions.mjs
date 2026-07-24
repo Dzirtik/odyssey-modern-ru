@@ -176,5 +176,5 @@ if (errors.length > 0) {
 }
 
 console.log(
-  `${questionCount} reader questions have public answers: ${existingAnswerCount} extended notes and ${generatedAnswerCount} passage-bound explanations.`,
+  `${questionCount} reader questions have linked explanations: ${existingAnswerCount} extended notes and ${generatedAnswerCount} passage-bound automated answers. Structural validation does not claim semantic quality.`,
 );

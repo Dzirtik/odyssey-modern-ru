@@ -363,3 +363,63 @@ test("core accessibility affordances exist", async () => {
   assert.match(css, /prefers-reduced-motion/);
   assert.match(css, /@media print/);
 });
+
+test("reader journey offers explicit resume without silent restoration", async () => {
+  const [home, contents, reader] = await Promise.all([
+    fs.readFile("src/pages/index.astro", "utf8"),
+    fs.readFile("src/pages/read/index.astro", "utf8"),
+    fs.readFile("src/components/BookReader.astro", "utf8"),
+  ]);
+
+  assert.match(home, /data-resume-link/);
+  assert.match(home, /Можно начинать без подготовки/);
+  assert.match(contents, /data-resume-panel/);
+  assert.match(contents, /data-book-card/);
+  assert.match(reader, /odyssey-last-book/);
+  assert.doesNotMatch(reader, /saved\).*scrollIntoView/);
+});
+
+test("reader controls expose location and accessible progress", async () => {
+  const [controls, reader] = await Promise.all([
+    fs.readFile("src/components/ReadingControls.astro", "utf8"),
+    fs.readFile("src/components/BookReader.astro", "utf8"),
+  ]);
+
+  assert.match(controls, /data-passage-select/);
+  assert.match(controls, /Перейти к фрагменту/);
+  assert.match(controls, /data-progress-status/);
+  assert.match(reader, /role="progressbar"/);
+  assert.match(reader, /aria-valuenow/);
+});
+
+test("automated reader answers are optional, grouped and plainly labelled", async () => {
+  const reader = await fs.readFile("src/components/BookReader.astro", "utf8");
+
+  assert.match(reader, /class="reader-answers"/);
+  assert.match(reader, /Ответы на вопросы к этому фрагменту/);
+  assert.match(reader, /Мир поэмы/);
+  assert.match(reader, /надёжно подтверждено/);
+  assert.doesNotMatch(reader, /Только по уже прочитанным строкам/);
+});
+
+test("Book III sacrifice answers follow the current line range", async () => {
+  const answers = YAML.parse(
+    await fs.readFile("src/data/reader-answers/book-03.yml", "utf8"),
+  );
+  const byQuestion = new Map(
+    answers.map((answer) => [answer.question, answer]),
+  );
+
+  assert.match(
+    byQuestion.get("Кто убивает животное?").summary,
+    /Фрасимед.*Писистрат/u,
+  );
+  assert.match(
+    byQuestion.get("Что сжигают для богини?").summary,
+    /прядь.*огонь/u,
+  );
+  assert.doesNotMatch(
+    byQuestion.get("Что сжигают для богини?").details,
+    /части бёдер|б[её]дра/u,
+  );
+});

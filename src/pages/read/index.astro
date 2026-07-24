@@ -68,15 +68,42 @@ const breadcrumbs = [
       Описательные названия скрыты. Песни расположены в исходном порядке поэмы.
     </p>
   </section>
+  <section class="resume-panel" data-resume-panel hidden>
+    <div>
+      <p class="eyebrow">Ваше чтение</p>
+      <h2 data-resume-title>Продолжить чтение</h2>
+      <p>
+        Место хранится только в браузере на этом устройстве. Вы сами решаете,
+        продолжить или открыть песнь сначала.
+      </p>
+    </div>
+    <div class="resume-actions">
+      <a class="button primary" href={withBase("/book/01/")} data-resume-action>
+        Продолжить
+      </a>
+      <a
+        class="button secondary"
+        href={withBase("/book/01/")}
+        data-start-action
+      >
+        Начать песнь сначала
+      </a>
+    </div>
+  </section>
   <ol class="book-grid">
     {
       books.map((book) => {
         const number = String(book).padStart(2, "0");
         return (
-          <li class="published">
-            <a href={withBase(`/book/${number}/`)}>
+          <li
+            class="published"
+            data-book-card={number}
+            data-book-roman={romanBooks[book - 1]}
+          >
+            <a href={withBase(`/book/${number}/`)} data-book-link>
               <span>{number}</span>
               <h2>Песнь {romanBooks[book - 1]}</h2>
+              <small data-card-progress hidden>Продолжить отсюда</small>
             </a>
           </li>
         );
@@ -84,3 +111,52 @@ const breadcrumbs = [
     }
   </ol>
 </BaseLayout>
+
+<script>
+  const panel = document.querySelector<HTMLElement>("[data-resume-panel]");
+  const title = document.querySelector<HTMLElement>("[data-resume-title]");
+  const resumeAction =
+    document.querySelector<HTMLAnchorElement>("[data-resume-action]");
+  const startAction =
+    document.querySelector<HTMLAnchorElement>("[data-start-action]");
+  const lastBook = Number(
+    localStorage.getItem("odyssey-last-book") ??
+      localStorage.getItem("odyssey-max-book"),
+  );
+
+  if (
+    panel &&
+    title &&
+    resumeAction &&
+    startAction &&
+    lastBook >= 1 &&
+    lastBook <= 24
+  ) {
+    const number = String(lastBook).padStart(2, "0");
+    const passage = localStorage.getItem(`odyssey-progress-book-${number}`);
+    const range = passage?.match(/^lines-(\d+)-(\d+)$/);
+    const card = document.querySelector<HTMLElement>(
+      `[data-book-card="${number}"]`,
+    );
+    const cardLink =
+      card?.querySelector<HTMLAnchorElement>("[data-book-link]");
+    const marker = card?.querySelector<HTMLElement>("[data-card-progress]");
+    const roman = card?.dataset.bookRoman ?? String(lastBook);
+    const baseURL = cardLink?.href ?? startAction.href;
+    const resumeURL = `${baseURL}${passage ? `#${passage}` : ""}`;
+
+    title.textContent = range
+      ? `Продолжить Песнь ${roman}, строки ${range[1]}–${range[2]}`
+      : `Продолжить Песнь ${roman}`;
+    resumeAction.href = resumeURL;
+    startAction.href = baseURL;
+    startAction.addEventListener("click", () => {
+      localStorage.removeItem(`odyssey-progress-book-${number}`);
+    });
+    if (cardLink) cardLink.href = resumeURL;
+    card?.classList.add("is-current");
+    cardLink?.setAttribute("aria-current", "step");
+    if (marker) marker.hidden = false;
+    panel.hidden = false;
+  }
+</script>
