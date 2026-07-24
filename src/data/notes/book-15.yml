@@ -1,12 +1,63 @@
-- note_id: note-book-15
+- note_id: book-15-athena
   book: 15
-  line_start: 301
-  line_end: 379
+  line_start: 1
+  line_end: 30
   reveal_at_book: 15
-  reveal_at_line: 301
+  reveal_at_line: 1
   requires_progress_book: 15
-  requires_progress_line: 301
+  requires_progress_line: 1
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc15
+    - de_jong_2001_book_15
+- note_id: book-15-theoclymenus
+  book: 15
+  line_start: 151
+  line_end: 182
+  reveal_at_book: 15
+  reveal_at_line: 151
+  requires_progress_book: 15
+  requires_progress_line: 151
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc15
+- note_id: book-15-eumaeus
+  book: 15
+  line_start: 351
+  line_end: 382
+  reveal_at_book: 15
+  reveal_at_line: 351
+  requires_progress_book: 15
+  requires_progress_line: 351
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc15
+    - de_jong_2001_book_15
+- note_id: book-15-chains
+  book: 15
+  line_start: 422
+  line_end: 452
+  reveal_at_book: 15
+  reveal_at_line: 422
+  requires_progress_book: 15
+  requires_progress_line: 422
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc15
+- note_id: book-15-omens
+  book: 15
+  line_start: 493
+  line_end: 525
+  reveal_at_book: 15
+  reveal_at_line: 493
+  requires_progress_book: 15
+  requires_progress_line: 493
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc15
+    - de_jong_2001_book_15

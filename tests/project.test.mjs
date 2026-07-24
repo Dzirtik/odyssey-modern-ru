@@ -3,6 +3,28 @@ import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import YAML from "yaml";
 import { bookTwo } from "../src/data/book-two.ts";
+import { bookThree } from "../src/data/book-three.ts";
+import { bookFour } from "../src/data/book-four.ts";
+import { bookFive } from "../src/data/book-five.ts";
+import { bookSix } from "../src/data/book-six.ts";
+import { bookSeven } from "../src/data/book-seven.ts";
+import { bookEight } from "../src/data/book-eight.ts";
+import { bookNine } from "../src/data/book-nine.ts";
+import { bookTen } from "../src/data/book-ten.ts";
+import { bookEleven } from "../src/data/book-eleven.ts";
+import { bookTwelve } from "../src/data/book-twelve.ts";
+import { bookThirteen } from "../src/data/book-thirteen.ts";
+import { bookFourteen } from "../src/data/book-fourteen.ts";
+import { bookFifteen } from "../src/data/book-fifteen.ts";
+import { bookSixteen } from "../src/data/book-sixteen.ts";
+import { bookSeventeen } from "../src/data/book-seventeen.ts";
+import { bookEighteen } from "../src/data/book-eighteen.ts";
+import { bookNineteen } from "../src/data/book-nineteen.ts";
+import { bookTwenty } from "../src/data/book-twenty.ts";
+import { bookTwentyOne } from "../src/data/book-twenty-one.ts";
+import { bookTwentyTwo } from "../src/data/book-twenty-two.ts";
+import { bookTwentyThree } from "../src/data/book-twenty-three.ts";
+import { bookTwentyFour } from "../src/data/book-twenty-four.ts";
 import { previewBooks } from "../src/data/books-preview.mjs";
 
 test("Book I line map covers 1-444 exactly", async () => {
@@ -44,10 +66,240 @@ test("all 24 book routes use the reader", async () => {
   const page = await fs.readFile("src/pages/book/[book].astro", "utf8");
   assert.match(page, /length: 24/);
   assert.match(page, /BookReader/);
-  assert.equal(previewBooks.length, 22);
+  assert.equal(previewBooks.length, 0);
 });
 
-test("Books II-XXIV have continuous in-memory coverage", () => {
+test("Book III is a continuous, source-dense editorial preview", () => {
+  assert.equal(bookThree.status, "editorial_preview");
+  assert.equal(bookThree.passages[0].lineStart, 1);
+  assert.equal(bookThree.passages.at(-1).lineEnd, 497);
+  assert.ok(bookThree.passages.length >= 12);
+  assert.ok(bookThree.notes.length >= 4);
+
+  let expected = 1;
+  for (const passage of bookThree.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 498);
+
+  const text = bookThree.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Посейдон|Нестор|Орест|Фронтис|Поликаст/u);
+  assert.doesNotMatch(text, /Елена узнала|Протей|Фарос/u);
+});
+
+test("Book IV is a continuous preview with the two concurrent plots intact", () => {
+  assert.equal(bookFour.status, "editorial_preview");
+  let expected = 1;
+  for (const passage of bookFour.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 848);
+  const text = bookFour.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Протей|Эйдофе|Ифтим|Астерис/u);
+  assert.match(text, /двадцать.*человек|двадцать.*лучших/u);
+});
+
+test("Book V is a continuous preview from divine council to woodland sleep", () => {
+  assert.equal(bookFive.status, "editorial_preview");
+  let expected = 1;
+  for (const passage of bookFive.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 494);
+  const text = bookFive.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Стикс|двадцать деревьев|Левкоте|речн/u);
+});
+
+test("Book VI is a continuous preview from Nausicaa's dream to the grove", () => {
+  assert.equal(bookSix.status, "editorial_preview");
+  let expected = 1;
+  for (const passage of bookSix.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 332);
+  const text = bookSix.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Гипере|Димант|Арет|Делос|молв/u);
+});
+
+test("Book VII is a continuous preview from the city mist to palace sleep", () => {
+  assert.equal(bookSeven.status, "editorial_preview");
+  let expected = 1;
+  for (const passage of bookSeven.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 348);
+  const text = bookSeven.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Евримедус|Эхеней|Понтоной|Эвбе/u);
+});
+
+test("Book VIII is a continuous preview through all three songs of Demodocus", () => {
+  assert.equal(bookEight.status, "editorial_preview");
+  let expected = 1;
+  for (const passage of bookEight.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 587);
+  const text = bookEight.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Демодок|Филоктет|Эврита|Деифоб/u);
+});
+
+test("Book IX is a continuous self-narrated preview through the Cyclops episode", () => {
+  assert.equal(bookNine.status, "editorial_preview");
+  let expected = 1;
+  for (const passage of bookNine.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 567);
+  const text = bookNine.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Исмар|Марон|Никто|Телем|Посейдон/u);
+});
+
+test("Book X is a continuous preview from Aeolus to the Ocean voyage", () => {
+  assert.equal(bookTen.status, "editorial_preview");
+  let expected = 1;
+  for (const passage of bookTen.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 575);
+  const text = bookTen.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Эол|Антифат|моли|Еврилах|Элпенор/u);
+});
+
+test("Book XI is a continuous preview of the encounter with the dead", () => {
+  assert.equal(bookEleven.status, "editorial_preview");
+  let expected = 1;
+  for (const passage of bookEleven.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 641);
+  const text = bookEleven.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Тирес|Антикле|Эрифил|Аякс|Сисиф/u);
+});
+
+test("Book XII is a continuous preview from Elpenor's burial to Ogygia", () => {
+  assert.equal(bookTwelve.status, "editorial_preview");
+  let expected = 1;
+  for (const passage of bookTwelve.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 454);
+  const text = bookTwelve.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Сирен|Кратайид|Фринаки|Лампети|Харибд/u);
+});
+
+test("Book XIII is a continuous preview from Scheria to the swineherd plan", () => {
+  assert.equal(bookThirteen.status, "editorial_preview");
+  let expected = 1;
+  for (const passage of bookThirteen.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 441);
+  const text = bookThirteen.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Форкис|Орсилох|Неритон|Воронь/u);
+});
+
+test("Book XIV is a continuous preview of Eumaeus' hospitality", () => {
+  assert.equal(bookFourteen.status, "editorial_preview");
+  let expected = 1;
+  for (const passage of bookFourteen.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 534);
+  const text = bookFourteen.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Кастор|Фейдон|Додон|Тоас/u);
+  assert.doesNotMatch(text, /Ктесий|Ктимен/u);
+});
+
+test("Book XV is a continuous preview joining Telemachus and Eumaeus", () => {
+  assert.equal(bookFifteen.status, "editorial_preview");
+  let expected = 1;
+  for (const passage of bookFifteen.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 558);
+  const text = bookFifteen.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Феоклимен|Ктесий|Арибанд|Пирей/u);
+});
+
+test("Book XVI is a continuous preview of father-son recognition and planning", () => {
+  assert.equal(bookSixteen.status, "editorial_preview");
+  let expected = 1;
+  for (const passage of bookSixteen.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 482);
+  const text = bookSixteen.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.match(text, /Аркес|Амфином|Медонт|Евримах/u);
+});
+
+for (const [book, expectedEnd, markers] of [
+  [bookSeventeen, 606, /Феоклимен|Мелантий|Аргос|Антиной/u],
+  [bookEighteen, 428, /Ир|Амфином|Меланфо|Евримах/u],
+  [bookNineteen, 604, /Икмали|Автолик|Еврикле|Додон/u],
+  [bookTwenty, 394, /Пандаре|Филойтий|Ктесипп|Феоклимен/u],
+  [bookTwentyOne, 434, /Ифит|Леод|Филойтий|форминг/u],
+  [bookTwentyTwo, 501, /Агелай|Леод|Фемий|Медонт|Мелантий/u],
+  [bookTwentyThree, 372, /Акторид|Ламп|Фаэтон|весл/u],
+  [bookTwentyFour, 548, /Амфимедонт|Нерик|Евпейт|Галиферс/u],
+]) {
+  test(`Book ${book.book} is a continuous source-dense editorial preview`, () => {
+    assert.equal(book.status, "editorial_preview");
+    let expected = 1;
+    for (const passage of book.passages) {
+      assert.equal(passage.lineStart, expected);
+      expected = passage.lineEnd + 1;
+    }
+    assert.equal(expected, expectedEnd + 1);
+    const text = book.passages
+      .flatMap((passage) => passage.paragraphs)
+      .join(" ");
+    assert.match(text, markers);
+  });
+}
+
+test("all 24 expanded books cover the complete source continuously", () => {
   for (const book of previewBooks) {
     assert.equal(book.status, "draft");
     let expected = 1;
@@ -60,17 +312,35 @@ test("Books II-XXIV have continuous in-memory coverage", () => {
   assert.equal(
     444 +
       bookTwo.lineCount +
+      bookThree.lineCount +
+      bookFour.lineCount +
+      bookFive.lineCount +
+      bookSix.lineCount +
+      bookSeven.lineCount +
+      bookEight.lineCount +
+      bookNine.lineCount +
+      bookTen.lineCount +
+      bookEleven.lineCount +
+      bookTwelve.lineCount +
+      bookThirteen.lineCount +
+      bookFourteen.lineCount +
+      bookFifteen.lineCount +
+      bookSixteen.lineCount +
+      bookSeventeen.lineCount +
+      bookEighteen.lineCount +
+      bookNineteen.lineCount +
+      bookTwenty.lineCount +
+      bookTwentyOne.lineCount +
+      bookTwentyTwo.lineCount +
+      bookTwentyThree.lineCount +
+      bookTwentyFour.lineCount +
       previewBooks.reduce((sum, book) => sum + book.lineCount, 0),
     12110,
   );
 });
 
-test("compressed outlines are not labeled editorial previews", () => {
-  for (const book of previewBooks) {
-    const paragraphs = book.passages.flatMap((passage) => passage.paragraphs);
-    assert.equal(book.status, "draft");
-    assert.equal(paragraphs.length, 6);
-  }
+test("no compressed draft remains in the publication route", () => {
+  assert.deepEqual(previewBooks, []);
 });
 
 test("human review is not claimed", async () => {

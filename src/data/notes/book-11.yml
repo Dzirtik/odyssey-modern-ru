@@ -1,7 +1,32 @@
-- note_id: note-book-11
+- note_id: book-11-location
+  book: 11
+  line_start: 1
+  line_end: 25
+  reveal_at_book: 11
+  reveal_at_line: 1
+  requires_progress_book: 11
+  requires_progress_line: 1
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc11
+    - de_jong_2001_book_11
+- note_id: book-11-blood
+  book: 11
+  line_start: 26
+  line_end: 50
+  reveal_at_book: 11
+  reveal_at_line: 26
+  requires_progress_book: 11
+  requires_progress_line: 26
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc11
+- note_id: book-11-oar
   book: 11
   line_start: 90
-  line_end: 151
+  line_end: 119
   reveal_at_book: 11
   reveal_at_line: 90
   requires_progress_book: 11
@@ -9,4 +34,31 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc11
+    - de_jong_2001_book_11
+- note_id: book-11-catalogue
+  book: 11
+  line_start: 203
+  line_end: 224
+  reveal_at_book: 11
+  reveal_at_line: 203
+  requires_progress_book: 11
+  requires_progress_line: 203
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc11
+    - de_jong_2001_book_11
+- note_id: book-11-achilles
+  book: 11
+  line_start: 465
+  line_end: 502
+  reveal_at_book: 11
+  reveal_at_line: 465
+  requires_progress_book: 11
+  requires_progress_line: 465
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc11
+    - de_jong_2001_book_11

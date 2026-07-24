@@ -1,12 +1,97 @@
-- note_id: note-book-03
+- note_id: book-03-hecatomb
   book: 3
-  line_start: 329
-  line_end: 403
+  line_start: 1
+  line_end: 24
   reveal_at_book: 3
-  reveal_at_line: 329
+  reveal_at_line: 1
   requires_progress_book: 3
-  requires_progress_line: 329
+  requires_progress_line: 1
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc3
+    - rives_2024_nestor_sacrifices
+    - isaakidou_halstead_2002_pylos
+- note_id: book-03-strangers
+  book: 3
+  line_start: 63
+  line_end: 85
+  reveal_at_book: 3
+  reveal_at_line: 63
+  requires_progress_book: 3
+  requires_progress_line: 63
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc3
+    - merry_riddell_monro_1886
+    - de_jong_2001_book_3
+- note_id: book-03-nostos
+  book: 3
+  line_start: 120
+  line_end: 158
+  reveal_at_book: 3
+  reveal_at_line: 120
+  requires_progress_book: 3
+  requires_progress_line: 120
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc3
+    - de_jong_2001_book_3
+    - cambridge_guide_odyssey_overview_2020
+- note_id: book-03-orestes
+  book: 3
+  line_start: 188
+  line_end: 222
+  reveal_at_book: 3
+  reveal_at_line: 188
+  requires_progress_book: 3
+  requires_progress_line: 188
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc3
+    - petropoulos_2011_telemachus
+    - valle_salazar_2023_telemachus
+- note_id: book-03-athena-eagle
+  book: 3
+  line_start: 404
+  line_end: 417
+  reveal_at_book: 3
+  reveal_at_line: 404
+  requires_progress_book: 3
+  requires_progress_line: 404
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc3
+    - de_jong_2001_book_3
+- note_id: book-03-sacrifice
+  book: 3
+  line_start: 446
+  line_end: 472
+  reveal_at_book: 3
+  reveal_at_line: 446
+  requires_progress_book: 3
+  requires_progress_line: 446
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc3
+    - rives_2024_nestor_sacrifices
+    - isaakidou_halstead_2002_pylos
+    - cambridge_guide_homeric_religion_2020
+- note_id: book-03-bath
+  book: 3
+  line_start: 473
+  line_end: 497
+  reveal_at_book: 3
+  reveal_at_line: 473
+  requires_progress_book: 3
+  requires_progress_line: 473
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc3
+    - nagy_2017_bathtub_pylos

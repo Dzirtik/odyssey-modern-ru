@@ -2,6 +2,28 @@ import YAML from "yaml";
 import { assert, readText, readYaml, success } from "./lib.mjs";
 import { bookOne } from "../src/data/book-one.ts";
 import { bookTwo } from "../src/data/book-two.ts";
+import { bookThree } from "../src/data/book-three.ts";
+import { bookFour } from "../src/data/book-four.ts";
+import { bookFive } from "../src/data/book-five.ts";
+import { bookSix } from "../src/data/book-six.ts";
+import { bookSeven } from "../src/data/book-seven.ts";
+import { bookEight } from "../src/data/book-eight.ts";
+import { bookNine } from "../src/data/book-nine.ts";
+import { bookTen } from "../src/data/book-ten.ts";
+import { bookEleven } from "../src/data/book-eleven.ts";
+import { bookTwelve } from "../src/data/book-twelve.ts";
+import { bookThirteen } from "../src/data/book-thirteen.ts";
+import { bookFourteen } from "../src/data/book-fourteen.ts";
+import { bookFifteen } from "../src/data/book-fifteen.ts";
+import { bookSixteen } from "../src/data/book-sixteen.ts";
+import { bookSeventeen } from "../src/data/book-seventeen.ts";
+import { bookEighteen } from "../src/data/book-eighteen.ts";
+import { bookNineteen } from "../src/data/book-nineteen.ts";
+import { bookTwenty } from "../src/data/book-twenty.ts";
+import { bookTwentyOne } from "../src/data/book-twenty-one.ts";
+import { bookTwentyTwo } from "../src/data/book-twenty-two.ts";
+import { bookTwentyThree } from "../src/data/book-twenty-three.ts";
+import { bookTwentyFour } from "../src/data/book-twenty-four.ts";
 import { previewBooks } from "../src/data/books-preview.mjs";
 
 const roles = [
@@ -17,7 +39,33 @@ const roles = [
 ];
 const sources = await readYaml("src/data/sources.yml");
 const sourceIds = new Set(sources.map((source) => source.id));
-const books = [bookOne, bookTwo, ...previewBooks];
+const books = [
+  bookOne,
+  bookTwo,
+  bookThree,
+  bookFour,
+  bookFive,
+  bookSix,
+  bookSeven,
+  bookEight,
+  bookNine,
+  bookTen,
+  bookEleven,
+  bookTwelve,
+  bookThirteen,
+  bookFourteen,
+  bookFifteen,
+  bookSixteen,
+  bookSeventeen,
+  bookEighteen,
+  bookNineteen,
+  bookTwenty,
+  bookTwentyOne,
+  bookTwentyTwo,
+  bookTwentyThree,
+  bookTwentyFour,
+  ...previewBooks,
+];
 
 for (const book of books) {
   const number = String(book.book).padStart(2, "0");

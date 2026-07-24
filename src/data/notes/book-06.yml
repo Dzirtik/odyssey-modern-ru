@@ -1,12 +1,78 @@
-- note_id: note-book-06
+- note_id: book-06-phaeacians
   book: 6
-  line_start: 110
-  line_end: 197
+  line_start: 1
+  line_end: 24
   reveal_at_book: 6
-  reveal_at_line: 110
+  reveal_at_line: 1
   requires_progress_book: 6
-  requires_progress_line: 110
+  requires_progress_line: 1
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc6
+    - de_jong_2001_book_6
+- note_id: book-06-laundry
+  book: 6
+  line_start: 79
+  line_end: 109
+  reveal_at_book: 6
+  reveal_at_line: 79
+  requires_progress_book: 6
+  requires_progress_line: 79
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc6
+    - merry_riddell_monro_1886
+- note_id: book-06-knees
+  book: 6
+  line_start: 129
+  line_end: 148
+  reveal_at_book: 6
+  reveal_at_line: 129
+  requires_progress_book: 6
+  requires_progress_line: 129
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc6
+    - de_jong_2001_book_6
+- note_id: book-06-lion
+  book: 6
+  line_start: 129
+  line_end: 148
+  reveal_at_book: 6
+  reveal_at_line: 129
+  requires_progress_book: 6
+  requires_progress_line: 129
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc6
+    - de_jong_2001_book_6
+- note_id: book-06-gossip
+  book: 6
+  line_start: 251
+  line_end: 280
+  reveal_at_book: 6
+  reveal_at_line: 251
+  requires_progress_book: 6
+  requires_progress_line: 251
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc6
+    - de_jong_2001_book_6
+- note_id: book-06-arete
+  book: 6
+  line_start: 281
+  line_end: 315
+  reveal_at_book: 6
+  reveal_at_line: 281
+  requires_progress_book: 6
+  requires_progress_line: 281
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc6
+    - de_jong_2001_book_6

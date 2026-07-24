@@ -1,12 +1,64 @@
-- note_id: note-book-17
+- note_id: book-17-theoclymenus
   book: 17
-  line_start: 150
-  line_end: 246
+  line_start: 128
+  line_end: 165
   reveal_at_book: 17
-  reveal_at_line: 150
+  reveal_at_line: 128
   requires_progress_book: 17
-  requires_progress_line: 150
+  requires_progress_line: 128
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc17
+    - de_jong_2001_book_17
+- note_id: book-17-melanthius
+  book: 17
+  line_start: 204
+  line_end: 231
+  reveal_at_book: 17
+  reveal_at_line: 204
+  requires_progress_book: 17
+  requires_progress_line: 204
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc17
+    - de_jong_2001_book_17
+- note_id: book-17-argos
+  book: 17
+  line_start: 310
+  line_end: 347
+  reveal_at_book: 17
+  reveal_at_line: 310
+  requires_progress_book: 17
+  requires_progress_line: 310
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc17
+    - de_jong_2001_book_17
+- note_id: book-17-begging
+  book: 17
+  line_start: 387
+  line_end: 423
+  reveal_at_book: 17
+  reveal_at_line: 387
+  requires_progress_book: 17
+  requires_progress_line: 387
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc17
+    - de_jong_2001_book_17
+- note_id: book-17-furies
+  book: 17
+  line_start: 462
+  line_end: 482
+  reveal_at_book: 17
+  reveal_at_line: 462
+  requires_progress_book: 17
+  requires_progress_line: 462
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc17

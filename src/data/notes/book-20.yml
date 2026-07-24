@@ -1,12 +1,64 @@
-- note_id: note-book-20
+- note_id: book-20-heart
   book: 20
-  line_start: 56
-  line_end: 121
+  line_start: 1
+  line_end: 27
   reveal_at_book: 20
-  reveal_at_line: 56
+  reveal_at_line: 1
   requires_progress_book: 20
-  requires_progress_line: 56
+  requires_progress_line: 1
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc20
+    - de_jong_2001_book_20
+- note_id: book-20-omens
+  book: 20
+  line_start: 87
+  line_end: 119
+  reveal_at_book: 20
+  reveal_at_line: 87
+  requires_progress_book: 20
+  requires_progress_line: 87
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc20
+    - de_jong_2001_book_20
+- note_id: book-20-philoetius
+  book: 20
+  line_start: 172
+  line_end: 204
+  reveal_at_book: 20
+  reveal_at_line: 172
+  requires_progress_book: 20
+  requires_progress_line: 172
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc20
+    - de_jong_2001_book_20
+- note_id: book-20-ctesippus
+  book: 20
+  line_start: 240
+  line_end: 270
+  reveal_at_book: 20
+  reveal_at_line: 240
+  requires_progress_book: 20
+  requires_progress_line: 240
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc20
+- note_id: book-20-vision
+  book: 20
+  line_start: 321
+  line_end: 344
+  reveal_at_book: 20
+  reveal_at_line: 321
+  requires_progress_book: 20
+  requires_progress_line: 321
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc20
+    - de_jong_2001_book_20

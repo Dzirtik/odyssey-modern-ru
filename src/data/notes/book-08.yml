@@ -1,12 +1,64 @@
-- note_id: note-book-08
+- note_id: book-08-demodocus
   book: 8
-  line_start: 1
-  line_end: 45
+  line_start: 62
+  line_end: 82
   reveal_at_book: 8
-  reveal_at_line: 1
+  reveal_at_line: 62
   requires_progress_book: 8
-  requires_progress_line: 1
+  requires_progress_line: 62
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc8
+    - de_jong_2001_book_8
+- note_id: book-08-games
+  book: 8
+  line_start: 152
+  line_end: 175
+  reveal_at_book: 8
+  reveal_at_line: 152
+  requires_progress_book: 8
+  requires_progress_line: 152
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc8
+    - de_jong_2001_book_8
+- note_id: book-08-ares
+  book: 8
+  line_start: 256
+  line_end: 290
+  reveal_at_book: 8
+  reveal_at_line: 256
+  requires_progress_book: 8
+  requires_progress_line: 256
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc8
+    - de_jong_2001_book_8
+- note_id: book-08-simile
+  book: 8
+  line_start: 521
+  line_end: 550
+  reveal_at_book: 8
+  reveal_at_line: 521
+  requires_progress_book: 8
+  requires_progress_line: 521
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc8
+    - de_jong_2001_book_8
+- note_id: book-08-ships
+  book: 8
+  line_start: 551
+  line_end: 586
+  reveal_at_book: 8
+  reveal_at_line: 551
+  requires_progress_book: 8
+  requires_progress_line: 551
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc8

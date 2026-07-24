@@ -3,7 +3,28 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import BookReader from "../../components/BookReader.astro";
 import { bookOne } from "../../data/book-one";
 import { bookTwo } from "../../data/book-two";
-import { previewBookByNumber } from "../../data/books-preview.mjs";
+import { bookThree } from "../../data/book-three";
+import { bookFour } from "../../data/book-four";
+import { bookFive } from "../../data/book-five";
+import { bookSix } from "../../data/book-six";
+import { bookSeven } from "../../data/book-seven";
+import { bookEight } from "../../data/book-eight";
+import { bookNine } from "../../data/book-nine";
+import { bookTen } from "../../data/book-ten";
+import { bookEleven } from "../../data/book-eleven";
+import { bookTwelve } from "../../data/book-twelve";
+import { bookThirteen } from "../../data/book-thirteen";
+import { bookFourteen } from "../../data/book-fourteen";
+import { bookFifteen } from "../../data/book-fifteen";
+import { bookSixteen } from "../../data/book-sixteen";
+import { bookSeventeen } from "../../data/book-seventeen";
+import { bookEighteen } from "../../data/book-eighteen";
+import { bookNineteen } from "../../data/book-nineteen";
+import { bookTwenty } from "../../data/book-twenty";
+import { bookTwentyOne } from "../../data/book-twenty-one";
+import { bookTwentyTwo } from "../../data/book-twenty-two";
+import { bookTwentyThree } from "../../data/book-twenty-three";
+import { bookTwentyFour } from "../../data/book-twenty-four";
 
 export function getStaticPaths() {
   return Array.from({ length: 24 }, (_, index) => ({
@@ -16,7 +37,7 @@ interface Props { book: number }
 const { book } = Astro.props;
 const roman = ["I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","XIX","XX","XXI","XXII","XXIII","XXIV"][book - 1];
 const content =
-  book === 1 ? bookOne : book === 2 ? bookTwo : previewBookByNumber.get(book);
+  book === 1 ? bookOne : book === 2 ? bookTwo : book === 3 ? bookThree : book === 4 ? bookFour : book === 5 ? bookFive : book === 6 ? bookSix : book === 7 ? bookSeven : book === 8 ? bookEight : book === 9 ? bookNine : book === 10 ? bookTen : book === 11 ? bookEleven : book === 12 ? bookTwelve : book === 13 ? bookThirteen : book === 14 ? bookFourteen : book === 15 ? bookFifteen : book === 16 ? bookSixteen : book === 17 ? bookSeventeen : book === 18 ? bookEighteen : book === 19 ? bookNineteen : book === 20 ? bookTwenty : book === 21 ? bookTwentyOne : book === 22 ? bookTwentyTwo : book === 23 ? bookTwentyThree : bookTwentyFour;
 ---
 
 <BaseLayout title={`Песнь ${roman}`}>

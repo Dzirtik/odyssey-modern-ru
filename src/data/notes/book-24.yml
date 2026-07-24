@@ -1,12 +1,78 @@
-- note_id: note-book-24
+- note_id: book-24-underworld
   book: 24
-  line_start: 467
-  line_end: 548
+  line_start: 98
+  line_end: 127
   reveal_at_book: 24
-  reveal_at_line: 467
+  reveal_at_line: 98
   requires_progress_book: 24
-  requires_progress_line: 467
+  requires_progress_line: 98
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc24
+    - de_jong_2001_book_24
+- note_id: book-24-agamemnon
+  book: 24
+  line_start: 165
+  line_end: 204
+  reveal_at_book: 24
+  reveal_at_line: 165
+  requires_progress_book: 24
+  requires_progress_line: 165
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc24
+    - de_jong_2001_book_24
+- note_id: book-24-trees
+  book: 24
+  line_start: 302
+  line_end: 328
+  reveal_at_book: 24
+  reveal_at_line: 302
+  requires_progress_book: 24
+  requires_progress_line: 302
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc24
+    - de_jong_2001_book_24
+- note_id: book-24-assembly
+  book: 24
+  line_start: 438
+  line_end: 462
+  reveal_at_book: 24
+  reveal_at_line: 438
+  requires_progress_book: 24
+  requires_progress_line: 438
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc24
+    - de_jong_2001_book_24
+- note_id: book-24-forgetting
+  book: 24
+  line_start: 463
+  line_end: 481
+  reveal_at_book: 24
+  reveal_at_line: 463
+  requires_progress_book: 24
+  requires_progress_line: 463
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc24
+    - de_jong_2001_book_24
+- note_id: book-24-peace
+  book: 24
+  line_start: 524
+  line_end: 548
+  reveal_at_book: 24
+  reveal_at_line: 524
+  requires_progress_book: 24
+  requires_progress_line: 524
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc24
+    - de_jong_2001_book_24
