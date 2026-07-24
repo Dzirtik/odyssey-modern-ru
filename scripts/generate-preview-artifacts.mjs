@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import YAML from "yaml";
 import { bookOne } from "../src/data/book-one.ts";
+import { bookTwo } from "../src/data/book-two.ts";
 import { previewBooks } from "../src/data/books-preview.mjs";
 
 const roles = {
@@ -24,7 +25,7 @@ const roles = {
     "Древнее произведение и цифровой объект разделены; греческий файл и современные переводы не копируются; сторонние изображения отсутствуют. Это не юридическое заключение.",
 };
 
-for (const book of [bookOne, ...previewBooks]) {
+for (const book of [bookOne, bookTwo, ...previewBooks]) {
   const number = String(book.book).padStart(2, "0");
   const lineMap = book.passages.map((passage) => ({
     paragraph_id: passage.id,

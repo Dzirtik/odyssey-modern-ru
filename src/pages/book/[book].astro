@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import BookReader from "../../components/BookReader.astro";
 import { bookOne } from "../../data/book-one";
+import { bookTwo } from "../../data/book-two";
 import { previewBookByNumber } from "../../data/books-preview.mjs";
 
 export function getStaticPaths() {
@@ -14,7 +15,8 @@ export function getStaticPaths() {
 interface Props { book: number }
 const { book } = Astro.props;
 const roman = ["I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","XIX","XX","XXI","XXII","XXIII","XXIV"][book - 1];
-const content = book === 1 ? bookOne : previewBookByNumber.get(book);
+const content =
+  book === 1 ? bookOne : book === 2 ? bookTwo : previewBookByNumber.get(book);
 ---
 
 <BaseLayout title={`Песнь ${roman}`}>

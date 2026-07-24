@@ -1,8 +1,9 @@
 import { assert, success } from "./lib.mjs";
 import { bookOne } from "../src/data/book-one.ts";
+import { bookTwo } from "../src/data/book-two.ts";
 import { previewBooks } from "../src/data/books-preview.mjs";
 
-const books = [bookOne, ...previewBooks];
+const books = [bookOne, bookTwo, ...previewBooks];
 const allowedStatuses = new Set([
   "draft",
   "editorial_preview",

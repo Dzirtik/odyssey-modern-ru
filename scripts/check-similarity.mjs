@@ -2,6 +2,7 @@ import { assert, readText, success } from "./lib.mjs";
 
 const text = [
   await readText("src/data/book-one.ts"),
+  await readText("src/data/book-two.ts"),
   await readText("src/data/books-preview.mjs"),
 ].join("\n");
 const suspiciousMarkers = [

@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import YAML from "yaml";
+import { bookTwo } from "../src/data/book-two.ts";
 import { previewBooks } from "../src/data/books-preview.mjs";
 
 test("Book I line map covers 1-444 exactly", async () => {
@@ -20,11 +21,30 @@ test("Book I line map covers 1-444 exactly", async () => {
   );
 });
 
+test("Book II is a continuous preview and no longer contains Book IV events", () => {
+  assert.equal(bookTwo.status, "editorial_preview");
+  assert.equal(bookTwo.passages[0].lineStart, 1);
+  assert.equal(bookTwo.passages.at(-1).lineEnd, 434);
+
+  let expected = 1;
+  for (const passage of bookTwo.passages) {
+    assert.equal(passage.lineStart, expected);
+    expected = passage.lineEnd + 1;
+  }
+  assert.equal(expected, 435);
+
+  const text = bookTwo.passages
+    .flatMap((passage) => passage.paragraphs)
+    .join(" ");
+  assert.doesNotMatch(text, /Астерис|Ифтим|засад/u);
+  assert.match(text, /мачт|парус|возлияни/u);
+});
+
 test("all 24 book routes use the reader", async () => {
   const page = await fs.readFile("src/pages/book/[book].astro", "utf8");
   assert.match(page, /length: 24/);
   assert.match(page, /BookReader/);
-  assert.equal(previewBooks.length, 23);
+  assert.equal(previewBooks.length, 22);
 });
 
 test("Books II-XXIV have continuous in-memory coverage", () => {
@@ -38,7 +58,9 @@ test("Books II-XXIV have continuous in-memory coverage", () => {
     assert.equal(expected, book.lineCount + 1);
   }
   assert.equal(
-    444 + previewBooks.reduce((sum, book) => sum + book.lineCount, 0),
+    444 +
+      bookTwo.lineCount +
+      previewBooks.reduce((sum, book) => sum + book.lineCount, 0),
     12110,
   );
 });

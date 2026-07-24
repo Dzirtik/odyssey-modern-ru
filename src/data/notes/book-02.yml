@@ -1,7 +1,7 @@
-- note_id: note-book-02
+- note_id: book-02-assembly
   book: 2
   line_start: 1
-  line_end: 47
+  line_end: 14
   reveal_at_book: 2
   reveal_at_line: 1
   requires_progress_book: 2
@@ -9,4 +9,209 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
+    - barker_2025_odyssey_book_2
+    - de_jong_2001_book_2
+- note_id: book-02-egyptius
+  book: 2
+  line_start: 15
+  line_end: 38
+  reveal_at_book: 2
+  reveal_at_line: 15
+  requires_progress_book: 2
+  requires_progress_line: 15
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001_book_2
+- note_id: book-02-sceptre
+  book: 2
+  line_start: 15
+  line_end: 38
+  reveal_at_book: 2
+  reveal_at_line: 15
+  requires_progress_book: 2
+  requires_progress_line: 15
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - merry_riddell_monro_1886
+- note_id: book-02-themis
+  book: 2
+  line_start: 39
+  line_end: 59
+  reveal_at_book: 2
+  reveal_at_line: 39
+  requires_progress_book: 2
+  requires_progress_line: 39
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - cambridge_guide_homeric_religion_2020
+    - merry_riddell_monro_1886
+- note_id: book-02-oikos
+  book: 2
+  line_start: 39
+  line_end: 59
+  reveal_at_book: 2
+  reveal_at_line: 39
+  requires_progress_book: 2
+  requires_progress_line: 39
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - muellner_menis_social_order
+    - westbrook_penelope_dowry
+- note_id: book-02-web
+  book: 2
+  line_start: 80
+  line_end: 109
+  reveal_at_book: 2
+  reveal_at_line: 80
+  requires_progress_book: 2
+  requires_progress_line: 80
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - papadopoulou_2016_penelope_web
+    - de_jong_2001_book_2
+- note_id: book-02-marriage
+  book: 2
+  line_start: 110
+  line_end: 128
+  reveal_at_book: 2
+  reveal_at_line: 110
+  requires_progress_book: 2
+  requires_progress_line: 110
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - westbrook_penelope_dowry
+    - barker_2025_odyssey_book_2
+- note_id: book-02-erinyes
+  book: 2
+  line_start: 129
+  line_end: 145
+  reveal_at_book: 2
+  reveal_at_line: 129
+  requires_progress_book: 2
+  requires_progress_line: 129
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - cambridge_guide_homeric_religion_2020
+- note_id: book-02-eagles
+  book: 2
+  line_start: 146
+  line_end: 176
+  reveal_at_book: 2
+  reveal_at_line: 146
+  requires_progress_book: 2
+  requires_progress_line: 146
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001_book_2
+    - merry_riddell_monro_1886
+- note_id: book-02-rumour
+  book: 2
+  line_start: 208
+  line_end: 223
+  reveal_at_book: 2
+  reveal_at_line: 208
+  requires_progress_book: 2
+  requires_progress_line: 208
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - merry_riddell_monro_1886
+    - lsj_perseus
+- note_id: book-02-mentor
+  book: 2
+  line_start: 224
+  line_end: 259
+  reveal_at_book: 2
+  reveal_at_line: 224
+  requires_progress_book: 2
+  requires_progress_line: 224
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001_book_2
+- note_id: book-02-public-private
+  book: 2
+  line_start: 260
+  line_end: 297
+  reveal_at_book: 2
+  reveal_at_line: 260
+  requires_progress_book: 2
+  requires_progress_line: 260
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - barker_2025_odyssey_book_2
+    - de_jong_2001_book_2
+- note_id: book-02-poison
+  book: 2
+  line_start: 298
+  line_end: 336
+  reveal_at_book: 2
+  reveal_at_line: 298
+  requires_progress_book: 2
+  requires_progress_line: 298
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - barker_2025_odyssey_book_2
+- note_id: book-02-storeroom
+  book: 2
+  line_start: 337
+  line_end: 360
+  reveal_at_book: 2
+  reveal_at_line: 337
+  requires_progress_book: 2
+  requires_progress_line: 337
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - merry_riddell_monro_1886
+    - porter_2021_homeric_slavery
+- note_id: book-02-oath
+  book: 2
+  line_start: 361
+  line_end: 381
+  reveal_at_book: 2
+  reveal_at_line: 361
+  requires_progress_book: 2
+  requires_progress_line: 361
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - cambridge_guide_homeric_religion_2020
+- note_id: book-02-ship
+  book: 2
+  line_start: 405
+  line_end: 434
+  reveal_at_book: 2
+  reveal_at_line: 405
+  requires_progress_book: 2
+  requires_progress_line: 405
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - merry_riddell_monro_1886
+    - de_jong_2001_book_2

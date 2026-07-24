@@ -18,6 +18,26 @@
   jurisdictions_checked: [EU, NL, US]
   confidence: established
   notes: "Base collation point. The project cites CTS line ranges and does not reproduce the Greek digital text."
+- id: homer_odyssey_perseus_grc2
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Harvard University Press; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 2, lines 1-434"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:2.1-2.434/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; project uses line citations and link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 2. The EpiDoc source is used temporarily for line-level checking; the project publishes no local copy of the Greek corpus."
 - id: britannica_homer
   author: "The Editors of Encyclopaedia Britannica"
   title: Homer
@@ -258,6 +278,66 @@
   jurisdictions_checked: [EU, NL, US]
   confidence: probable
   notes: "Bibliographic and abstract-level orientation for narrative structure; protected chapter text is not copied."
+- id: de_jong_2001_book_2
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Two"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "Online chapter published 2010"
+  pages_or_lines: "pp. 44-67; Odyssey 2"
+  url: "https://www.cambridge.org/core/books/abs/narratological-commentary-on-the-odyssey/book-two/2C78CA7702D1440C29FC62C6FDD51350"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: probable
+  notes: "Line-focused narratological control for the assembly, preparation and departure. Only public metadata and extract-level information are used."
+- id: barker_2025_odyssey_book_2
+  author: "Elton T. E. Barker"
+  title: "Book 2"
+  editor_or_translator: "Edited by Joel P. Christensen"
+  institution_or_publisher: "The Oxford Critical Guide to Homer's Odyssey, Oxford University Press"
+  year: "2025"
+  edition: "Book chapter"
+  pages_or_lines: "pp. 41-56"
+  url: "https://doi.org/10.1093/9780191926846.003.0003"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: probable
+  notes: "Recent interpretation of the Ithacan assembly as agonistic speech and political fracture. The chapter's argument is attributed rather than treated as poem-world fact."
+- id: papadopoulou_2016_penelope_web
+  author: "Ioanna Papadopoulou"
+  title: "Penelope's great web: the violent interruption"
+  editor_or_translator: ""
+  institution_or_publisher: "Classical Inquiries; Center for Hellenic Studies"
+  year: "2016"
+  edition: "Online research essay"
+  pages_or_lines: "Odyssey 2.85-122; 19.137-158; 24.128-150"
+  url: "https://classical-inquiries.chs.harvard.edu/penelopes-great-web-the-violent-interruption/"
+  accessed_at: "2026-07-24"
+  source_type: article
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: probable
+  notes: "Used for the differing focalization and temporal function of the three web narratives; future repetitions are not disclosed in reader notes before their reveal."
 - id: cambridge_guide_odyssey_overview_2020
   author: "Corinne Ondine Pache; Casey Dué; Susan Lupack; Robert Lamberton, eds."
   title: "The Odyssey: An Overview"
