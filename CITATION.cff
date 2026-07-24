@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Если вы ссылаетесь на редакционный пилот, используйте эти данные."
+title: "Одиссея: близко к тексту"
+type: software
+authors:
+  - name: Dzirtik
+version: 0.1.0-preview.1
+date-released: 2026-07-24
+repository-code: "https://github.com/Dzirtik/odyssey-modern-ru"
+url: "https://dzirtik.github.io/odyssey-modern-ru/"
+license: proprietary
