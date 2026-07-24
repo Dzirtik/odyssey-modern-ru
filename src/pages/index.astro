@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import StatusBadge from "../components/StatusBadge.astro";
 import { withBase } from "../data/project";
 ---
 
@@ -21,23 +20,6 @@ import { withBase } from "../data/project";
     <div class="hero-mark" aria-hidden="true">
       <span>α</span><span>ω</span>
       <p>24 песни<br />12 110 строк</p>
-    </div>
-  </section>
-
-  <section class="project-status" aria-labelledby="status-title">
-    <div>
-      <p class="eyebrow">Состояние издания</p>
-      <h2 id="status-title">Полный редакционный preview без ложной сертификации</h2>
-    </div>
-    <div>
-      <StatusBadge status="editorial_preview" />
-      <p>
-        Все 24 песни развёрнуты по непрерывным диапазонам строк с локальными
-        пояснениями, источниками и девятью автоматизированными ролевыми
-        проверками. Статус <code>editorial_preview</code> означает редакционную
-        полноту для публичного чтения, но не человеческую филологическую
-        аттестацию и не академическое критическое издание.
-      </p>
     </div>
   </section>
 

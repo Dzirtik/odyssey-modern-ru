@@ -266,7 +266,6 @@
       sans-serif;
     letter-spacing: 0.2em;
   }
-  .project-status,
   .principles,
   .quote-band,
   .page-intro,
@@ -275,38 +274,6 @@
   .glossary,
   .source-list {
     padding: clamp(4rem, 8vw, 8rem) clamp(1.25rem, 7vw, 8rem);
-  }
-  .project-status {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6vw;
-    background: var(--paper-2);
-    border-bottom: 1px solid var(--line);
-  }
-  .project-status p:last-child {
-    max-width: 36rem;
-    margin-top: 1.2rem;
-    font-size: 1.15rem;
-  }
-  .status-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.35rem 0.65rem;
-    border: 1px solid currentColor;
-    border-radius: 999px;
-    color: var(--accent);
-    font-size: 0.68rem;
-    font-weight: 750;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-  .status-badge.not_published {
-    color: var(--muted);
-  }
-  .status-badge.draft {
-    color: var(--muted);
-    background: color-mix(in srgb, var(--surface) 90%, var(--accent));
   }
   .principles h2 {
     max-width: 14ch;
@@ -400,22 +367,6 @@
   }
   .book-header h1 {
     font-size: clamp(4rem, 10vw, 9rem);
-  }
-  .status-line {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-    color: var(--muted);
-    font-size: 0.8rem;
-  }
-  .editorial-warning {
-    max-width: 52rem;
-    margin-top: 2rem;
-    padding-left: 1rem;
-    border-left: 3px solid var(--accent);
-    color: var(--muted);
   }
   .reading-controls {
     position: sticky;
@@ -687,9 +638,6 @@
     .hero-mark {
       width: min(22rem, 75vw);
       justify-self: center;
-    }
-    .project-status {
-      grid-template-columns: 1fr;
     }
     .principle-grid,
     .book-grid {
