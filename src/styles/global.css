@@ -497,37 +497,6 @@
       system-ui,
       sans-serif;
   }
-  .reader-questions {
-    margin: 1.75rem 0;
-    padding: 1.1rem 1.25rem 1.2rem;
-    border-left: 2px solid var(--accent);
-    background: color-mix(in srgb, var(--paper-2) 68%, transparent);
-    font:
-      0.86rem/1.55 ui-sans-serif,
-      system-ui,
-      sans-serif;
-  }
-  .reader-questions-label {
-    color: var(--accent);
-    font-size: 0.67rem;
-    font-weight: 800;
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
-  }
-  .reader-questions ul {
-    display: grid;
-    gap: 0.45rem;
-    margin: 0.75rem 0 0;
-    padding-left: 1.2rem;
-  }
-  .reader-questions a {
-    color: var(--muted);
-    font-size: 0.74rem;
-    white-space: nowrap;
-  }
-  .reader-questions a::after {
-    content: " ↓";
-  }
   .note summary {
     cursor: pointer;
     padding: 1rem 0;
