@@ -1,0 +1,68 @@
+- asset_id: odyssey_ancient_work
+  path_or_url: "urn:cts:greekLit:tlg0012.tlg002"
+  creator: Homeric tradition
+  title: Odyssey
+  asset_type: text
+  source_id: homer_odyssey_perseus_grc1
+  rights_holder: ""
+  status: public_domain
+  license: ""
+  license_url: ""
+  attribution_required: false
+  attribution_text: "Homer, Odyssey"
+  modifications_allowed: true
+  commercial_use_allowed: true
+  proof_or_basis: "Ancient work; no rights claimed."
+  verified_at: "2026-07-24"
+  verified_by: rights-role
+- asset_id: perseus_grc1_digital_object
+  path_or_url: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0135"
+  creator: Perseus Digital Library
+  title: Odyssey digital Greek text
+  asset_type: edition
+  source_id: homer_odyssey_perseus_grc1
+  rights_holder: "Perseus Digital Library and identified edition stakeholders"
+  status: open_license
+  license: "Perseus redistribution terms; link-only use in this project"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright"
+  attribution_required: true
+  attribution_text: "Perseus Digital Library, Odyssey, Perseus:text:1999.01.0135"
+  modifications_allowed: false
+  commercial_use_allowed: false
+  proof_or_basis: "No local copy is published; only ranges, identifier and link are used."
+  verified_at: "2026-07-24"
+  verified_by: rights-role
+- asset_id: original_russian_preview
+  path_or_url: "src/data/book-one.ts"
+  creator: "Dzirtik with AI-assisted drafting"
+  title: "Independent Russian prose retelling, Book I preview"
+  asset_type: translation
+  source_id: homer_odyssey_perseus_grc1
+  rights_holder: Dzirtik
+  status: all_rights_reserved
+  license: ""
+  license_url: ""
+  attribution_required: true
+  attribution_text: "© 2026 Dzirtik. All rights reserved."
+  modifications_allowed: false
+  commercial_use_allowed: false
+  proof_or_basis: "New independent draft; AI use disclosed; no claim over ancient source."
+  verified_at: "2026-07-24"
+  verified_by: rights-role
+- asset_id: site_code
+  path_or_url: "src/"
+  creator: "Dzirtik with AI-assisted implementation"
+  title: "Odyssey reading site"
+  asset_type: code
+  source_id: ""
+  rights_holder: Dzirtik
+  status: all_rights_reserved
+  license: ""
+  license_url: ""
+  attribution_required: true
+  attribution_text: "© 2026 Dzirtik. All rights reserved."
+  modifications_allowed: false
+  commercial_use_allowed: false
+  proof_or_basis: "Original project code; third-party packages remain under their own licenses."
+  verified_at: "2026-07-24"
+  verified_by: rights-role

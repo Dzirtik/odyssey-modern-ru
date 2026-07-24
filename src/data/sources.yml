@@ -1,0 +1,80 @@
+- id: homer_odyssey_perseus_grc1
+  author: Homer
+  title: Odyssey
+  editor_or_translator: A. T. Murray
+  institution_or_publisher: Perseus Digital Library; Harvard University Press
+  year: "1919"
+  edition: "Perseus text 1999.01.0135"
+  pages_or_lines: "Book 1, lines 1-444"
+  url: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0135"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus redistribution terms; no local reproduction"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Base collation point. Greek digital text is not reproduced."
+- id: britannica_homer
+  author: "The Editors of Encyclopaedia Britannica"
+  title: Homer
+  editor_or_translator: ""
+  institution_or_publisher: Encyclopaedia Britannica
+  year: ""
+  edition: online
+  pages_or_lines: ""
+  url: "https://www.britannica.com/biography/Homer-Greek-poet"
+  accessed_at: "2026-07-24"
+  source_type: reference
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Used only for high-level reference; no copied wording."
+- id: britannica_xenia
+  author: "The Editors of Encyclopaedia Britannica"
+  title: Xenia
+  editor_or_translator: ""
+  institution_or_publisher: Encyclopaedia Britannica
+  year: ""
+  edition: online
+  pages_or_lines: ""
+  url: "https://www.britannica.com/topic/xenia-Greek-hospitality"
+  accessed_at: "2026-07-24"
+  source_type: reference
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Used for a short contextual paraphrase."
+- id: github_pages_docs
+  author: GitHub
+  title: Using custom workflows with GitHub Pages
+  editor_or_translator: ""
+  institution_or_publisher: GitHub Docs
+  year: "2026"
+  edition: online
+  pages_or_lines: ""
+  url: "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages"
+  accessed_at: "2026-07-24"
+  source_type: official
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Deployment workflow reference."

@@ -1,0 +1,20 @@
+- fact_id: odysseus_identity
+  entity_id: odysseus
+  reveal_at: { book: 1, line: 1 }
+  text_safe_until_next_reveal: "Одиссей — многоопытный герой, возвращающийся после Троянской войны."
+  sources: [homer_odyssey_perseus_grc1]
+- fact_id: helios_identity
+  entity_id: helios
+  reveal_at: { book: 1, line: 1 }
+  text_safe_until_next_reveal: "Гелиос — бог Солнца; принадлежащее богу неприкосновенно."
+  sources: [homer_odyssey_perseus_grc1]
+- fact_id: athena_visits_telemachus
+  entity_id: athena
+  reveal_at: { book: 1, line: 96 }
+  text_safe_until_next_reveal: "Афина приходит на Итаку в облике Мента."
+  sources: [homer_odyssey_perseus_grc1]
+- fact_id: future_content_locked
+  entity_id: future
+  reveal_at: { book: 2, line: 1 }
+  text_safe_until_next_reveal: ""
+  sources: [homer_odyssey_perseus_grc1]

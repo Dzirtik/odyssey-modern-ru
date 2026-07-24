@@ -1,0 +1,44 @@
+- note_id: note-invocation
+  book: 1
+  line_start: 1
+  line_end: 10
+  reveal_at_book: 1
+  reveal_at_line: 1
+  requires_progress_book: 1
+  requires_progress_line: 1
+  spoiler_level: safe
+  fact_ids: [odysseus_identity]
+  source_ids: [homer_odyssey_perseus_grc1, britannica_homer]
+- note_id: note-helios
+  book: 1
+  line_start: 1
+  line_end: 10
+  reveal_at_book: 1
+  reveal_at_line: 1
+  requires_progress_book: 1
+  requires_progress_line: 1
+  spoiler_level: deferred
+  fact_ids: [helios_identity]
+  source_ids: [homer_odyssey_perseus_grc1]
+- note_id: note-xenia
+  book: 1
+  line_start: 113
+  line_end: 143
+  reveal_at_book: 1
+  reveal_at_line: 113
+  requires_progress_book: 1
+  requires_progress_line: 113
+  spoiler_level: safe
+  fact_ids: [athena_visits_telemachus]
+  source_ids: [homer_odyssey_perseus_grc1, britannica_xenia]
+- note_id: note-basileus
+  book: 1
+  line_start: 386
+  line_end: 420
+  reveal_at_book: 1
+  reveal_at_line: 386
+  requires_progress_book: 1
+  requires_progress_line: 386
+  spoiler_level: safe
+  fact_ids: [athena_visits_telemachus]
+  source_ids: [homer_odyssey_perseus_grc1, britannica_homer]
