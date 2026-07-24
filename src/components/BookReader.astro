@@ -1,46 +1,55 @@
 ---
-import { bookOne } from "../data/book-one";
-import { project, withBase } from "../data/project";
 import ReadingControls from "./ReadingControls.astro";
 import StatusBadge from "./StatusBadge.astro";
+import { project, withBase } from "../data/project";
+
+interface Props {
+  book: any;
+}
+
+const { book } = Astro.props;
+const number = String(book.book).padStart(2, "0");
+const previous = book.book > 1 ? String(book.book - 1).padStart(2, "0") : "";
+const next = book.book < 24 ? String(book.book + 1).padStart(2, "0") : "";
+const notes = book.notes ?? [];
 ---
 
-<article class="book-page" data-book="1">
+<article class="book-page" data-book={number}>
   <header class="book-header">
-    <p class="eyebrow">Переложение · {bookOne.sourceRange}</p>
-    <h1>{bookOne.title}</h1>
+    <p class="eyebrow">Переложение · {book.sourceRange}</p>
+    <h1>{book.title}</h1>
     <div class="status-line">
       <StatusBadge status="editorial_preview" />
-      <span>Последняя автоматизированная проверка: {bookOne.lastFactCheck}</span>
+      <span>Последняя автоматизированная проверка: {book.lastFactCheck}</span>
     </div>
     <p class="editorial-warning">
-      Текст не проходил содержательную человеческую редактуру. Это полный рабочий пилот
-      диапазона 1.1–444, а не окончательное авторское издание.
+      Текст не проходил содержательную человеческую редактуру. Это рабочее
+      переложение с непрерывной картой строк, а не окончательное авторское или
+      академическое издание.
     </p>
   </header>
 
   <ReadingControls />
-
   <div class="reading-progress" aria-hidden="true"><span></span></div>
 
   <div class="reader-layout">
-    <aside class="passage-nav" aria-label="Навигация по Песни I">
-      <p>Песнь I</p>
+    <aside class="passage-nav" aria-label={`Навигация по ${book.title}`}>
+      <p>{book.title}</p>
       <ol>
-        {bookOne.passages.map((passage) => (
+        {book.passages.map((passage: any) => (
           <li><a href={`#${passage.id}`}>{passage.lines}</a></li>
         ))}
       </ol>
     </aside>
 
     <div class="reader-copy">
-      {bookOne.passages.map((passage) => (
+      {book.passages.map((passage: any) => (
         <section id={passage.id} class="passage" data-line-end={passage.lineEnd}>
           <p class="line-range">{passage.lines}</p>
-          {passage.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
-          {bookOne.notes
-            .filter((note) => note.anchor === passage.id)
-            .map((note) => (
+          {passage.paragraphs.map((paragraph: string) => <p>{paragraph}</p>)}
+          {notes
+            .filter((note: any) => note.anchor === passage.id)
+            .map((note: any) => (
               <details class="note">
                 <summary><span>Пояснение</span>{note.title}</summary>
                 <div>
@@ -48,7 +57,7 @@ import StatusBadge from "./StatusBadge.astro";
                   <p>{note.details}</p>
                   <p class="note-meta">
                     {note.layer} · {note.confidence} · источники:{" "}
-                    {note.sourceIds.map((source, index) => (
+                    {note.sourceIds.map((source: string, index: number) => (
                       <>
                         {index > 0 && ", "}
                         <a href={withBase(`/sources/#${source}`)}>{source}</a>
@@ -64,22 +73,34 @@ import StatusBadge from "./StatusBadge.astro";
   </div>
 
   <nav class="book-pagination" aria-label="Переход между песнями">
-    <a aria-disabled="true">← Предыдущая</a>
+    {previous ? (
+      <a href={withBase(`/book/${previous}/`)}>← Предыдущая</a>
+    ) : (
+      <a aria-disabled="true">← Предыдущая</a>
+    )}
     <a href={withBase("/read/")}>Оглавление</a>
-    <a href={withBase("/book/02/")}>Песнь II →</a>
+    {next ? (
+      <a href={withBase(`/book/${next}/`)}>Следующая →</a>
+    ) : (
+      <a aria-disabled="true">Следующая →</a>
+    )}
   </nav>
 
   <p class="report-link">
-    <a href={`https://github.com/${project.owner}/${project.repository}/issues/new?template=content-error.yml&book=01`}>
-      Сообщить об ошибке в Песни I
+    <a
+      href={`https://github.com/${project.owner}/${project.repository}/issues/new?template=content-error.yml&book=${number}`}
+    >
+      Сообщить об ошибке в {book.title}
     </a>
   </p>
 </article>
 
 <script>
+  const article = document.querySelector<HTMLElement>(".book-page");
+  const bookNumber = article?.dataset.book ?? "01";
   const progress = document.querySelector<HTMLElement>(".reading-progress span");
   const passages = [...document.querySelectorAll<HTMLElement>(".passage")];
-  const storageKey = "odyssey-progress-book-01";
+  const storageKey = `odyssey-progress-book-${bookNumber}`;
 
   const update = () => {
     const main = document.querySelector<HTMLElement>(".reader-copy");
@@ -88,12 +109,14 @@ import StatusBadge from "./StatusBadge.astro";
     const total = main.offsetHeight - innerHeight;
     const read = Math.min(1, Math.max(0, -rect.top / Math.max(total, 1)));
     progress.style.width = `${read * 100}%`;
-    const current = passages.findLast((passage) => passage.getBoundingClientRect().top < innerHeight * 0.4);
+    const current = passages.findLast(
+      (passage) => passage.getBoundingClientRect().top < innerHeight * 0.4
+    );
     if (current?.id) localStorage.setItem(storageKey, current.id);
   };
+
   addEventListener("scroll", update, { passive: true });
   update();
-
   const saved = localStorage.getItem(storageKey);
   if (!location.hash && saved) {
     document.getElementById(saved)?.scrollIntoView({ block: "start" });

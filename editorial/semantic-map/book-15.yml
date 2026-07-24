@@ -1,0 +1,46 @@
+book: 15
+source_range: 1-557
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-55
+    event:
+      "Афина пришла в Спарту и нашла Телемаха рядом с Писистратом. Она велела
+      немедленно возвращаться: родные Пенелопы склоняют её к браку с Евримахом,
+      и из дома могут вынести лучшие вещи"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 56-181
+    event:
+      "После жертвы и еды Менелай пожелал Телемаху найти дом невредимым. При
+      выезде орёл унёс домашнего гуся; Елена истолковала знак: как орёл пришёл с
+      гор и схватил птицу, так Одиссей ве"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 182-300
+    event:
+      "Тем временем в хижине Евмея Одиссей решил испытать слугу: объявил, что
+      пойдёт в город просить пищу и служить женихам, возможно — носить дрова и
+      разливать вино. Евмей ужаснулся: там"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 301-379
+    event:
+      Финикиянка была дочерью сидонца Арибанта. Тапхийские разбойники продали
+      её отцу Евмея; позднее финикийский купец узнал землячку и обещал вернуть
+      домой. Она тайно вынесла золото и р
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 380-484
+    event: Телемах всю ночь направлял судно. На рассвете они миновали Элиду и
+      приблизились к Итаке. Юноша попросил команду высадить его у первого
+      берега, а корабль вести в город. Феоклимен сп
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 485-557
+    event:
+      Корабль пристал к берегу. Телемах велел людям отнести оружие в город и
+      сообщить Пенелопе, что он жив, но тайно послать к Лаэрту другую весть. Сам
+      он направился к свинопасу. Афина т
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

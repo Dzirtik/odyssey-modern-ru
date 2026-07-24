@@ -1,0 +1,46 @@
+book: 23
+source_range: 1-372
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-68
+    event:
+      "Евриклея поднялась к Пенелопе и радостно объявила: Одиссей вернулся и
+      убил женихов. Царица решила, что старуха обезумела или что бессмертный
+      наказал преступников; поверить в возвра"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 69-151
+    event:
+      "Одиссей велел Фемию играть свадебную песнь, а всем в доме плясать, чтобы
+      прохожие решили, будто Пенелопа вышла замуж. Сам он омылся; Афина сделала
+      его выше и красивее. Вернувшись, "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 152-240
+    event:
+      "Пенелопа объяснила осторожность: боги часто вводят людей в заблуждение,
+      и даже Елена не пошла бы к чужеземцу, знай она последствия. Одиссей тоже
+      плакал, держа верную жену. Афина за"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 241-296
+    event:
+      "Пенелопа рассказала о женихах, своей тоске и хитрости с саваном. Одиссей
+      перечислил странствия: киконов, лотофагов, Полифема, Эола, лестригонов,
+      Кирку, Аид, Сирен, Скиллу и Харибду"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 297-343
+    event:
+      Одиссей вооружился вместе с Телемахом, Евмеем и Филойтием. Афина окружила
+      их тьмой, и они незамеченными вышли из города. Целью было поместье Лаэрта.
+      Там старый царь трудился в саду
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 344-372
+    event: "В доме Пенелопа и верные женщины приводили всё в порядок после ночи.
+      Свадебная музыка умолкла, и слухи начинали распространяться. Отец, сын и
+      два слуги шли по дороге к полям, пока "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

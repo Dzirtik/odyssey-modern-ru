@@ -1,0 +1,45 @@
+book: 17
+source_range: 1-606
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-60
+    event:
+      Утром Телемах велел Евмею привести чужеземца в город, а сам отправился к
+      матери. Евриклея первой увидела его и заплакала; Пенелопа обняла сына,
+      целовала лицо и глаза, радуясь возвр
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 61-149
+    event: Женихи метали копья и диски, скрывая заговор. Пенелопа слушала их из
+      дома. Евмей тем временем повёл нищего в город. По дороге они встретили
+      козопаса Мелантия, который гнал лучших к
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 150-246
+    event:
+      У ворот лежал пёс Аргос, которого Одиссей когда-то вырастил для охоты.
+      Теперь старый и забытый, он лежал на навозе, покрытый клещами. Услышав
+      хозяина, Аргос поднял уши, завилял хво
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 247-327
+    event:
+      Женихи давали еду и расспрашивали, кто этот человек. Мелантий объявил,
+      что его привёл Евмей. Антиной упрекнул свинопаса за лишнего нищего. Евмей
+      ответил, что люди зовут в дом певца
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 328-491
+    event: "Антиной пришёл в ярость и бросил в нищего скамейкой, попав в плечо.
+      Одиссей не пошатнулся, только покачал головой и призвал Эриний: если он
+      страдает без вины, пусть Антиной умрёт д"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 492-606
+    event:
+      Женихи продолжали пир. Телемах предупредил, что не позволит снова бросать
+      предметы в гостя. Антиной притворно согласился, но намекнул, что юноша
+      давно был бы мёртв, если бы Зевс не
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

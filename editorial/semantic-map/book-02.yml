@@ -1,0 +1,46 @@
+book: 2
+source_range: 1-434
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-47
+    event:
+      Когда появилась ранняя Заря, Телемах встал, оделся, повесил на плечо меч
+      и вышел из спальни уже не тем растерянным юношей, каким был накануне. Он
+      велел глашатаям созвать длинноволо
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 48-110
+    event:
+      "Телемах призвал собравшихся устыдиться соседей и побояться гнева богов.
+      Говоря, он в сердцах бросил скипетр и заплакал; народ притих. Антиной
+      ответил, что виновата Пенелопа. Почти "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 111-210
+    event: "После его слов в небе появились два орла. Они летели рядом, затем
+      сцепились когтями над площадью и умчались вправо. Прорицатель Галиферс,
+      знавший язык птиц, истолковал знак: Одиссе"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 211-295
+    event:
+      "Телемах ушёл к морю, омыл руки в солёной воде и помолился Афине. Богиня
+      явилась в облике Ментора и обещала помочь: если в нём действительно живут
+      ум и решимость отца, путь удастся."
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 296-376
+    event:
+      "Афина, всё ещё похожая на Телемаха, обошла город и собрала добровольцев.
+      Затем она попросила у Ноэмона лучший корабль и получила его без
+      расспросов. Богиня усыпила женихов сладкой "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 377-434
+    event:
+      "На рассвете женихи обнаружили исчезновение Телемаха лишь после того, как
+      Ноэмон спросил Антиноя, когда тот вернётся: ему самому был нужен корабль.
+      Женихи поразились, что юноша суме"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

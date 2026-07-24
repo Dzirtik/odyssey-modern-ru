@@ -1,0 +1,12 @@
+- note_id: note-book-03
+  book: 3
+  line_start: 329
+  line_end: 403
+  reveal_at_book: 3
+  reveal_at_line: 329
+  requires_progress_book: 3
+  requires_progress_line: 329
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1

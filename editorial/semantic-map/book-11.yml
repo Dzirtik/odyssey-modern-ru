@@ -1,0 +1,44 @@
+book: 11
+source_range: 1-640
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-50
+    event:
+      Корабль весь день шёл по Океану и достиг страны киммерийцев, где солнце
+      не поднимается над людьми и вечная ночь покрывает землю. Одиссей вытащил
+      судно, взял овец и пошёл к месту, у
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 51-89
+    event:
+      Первой появилась тень Элпенора, чьё тело осталось у Кирки. Он ещё не был
+      погребён и попросил сжечь его вместе с оружием, насыпать холм у моря и
+      поставить весло. Затем пришла мать О
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 90-151
+    event: "Тиресий сказал: возвращение возможно, если люди удержат желание и не
+      тронут стада Гелиоса на острове Фринакия. Если нарушат запрет, погибнут
+      корабль и товарищи; Одиссей придёт позд"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 152-224
+    event: Трижды Одиссей пытался обнять мать, но тень ускользала, как сон. Она
+      объяснила, что после сожжения тела душа отделяется от костей и плоти.
+      Персефона затем подвела к крови женщин зн
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 225-384
+    event:
+      К крови подошёл Агамемнон. Он рассказал, как Эгисф устроил пир и вместе с
+      Клитемнестрой убил его и товарищей; даже умирающему жена не закрыла глаза.
+      Агамемнон горько обобщил собств
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 385-640
+    event: Одиссей увидел Миноса, судящего мёртвых, огромного Ориона на охоте и
+      наказания Тития, Тантала и Сисифа. Тень Геракла говорила с ним, пока сам
+      герой пребывал среди богов. Геракл всп
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

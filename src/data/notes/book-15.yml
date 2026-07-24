@@ -1,0 +1,12 @@
+- note_id: note-book-15
+  book: 15
+  line_start: 301
+  line_end: 379
+  reveal_at_book: 15
+  reveal_at_line: 301
+  requires_progress_book: 15
+  requires_progress_line: 301
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1

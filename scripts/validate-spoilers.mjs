@@ -1,7 +1,11 @@
 import { assert, readYaml, success } from "./lib.mjs";
 
 const facts = await readYaml("src/data/knowledge-state.yml");
-const notes = await readYaml("src/data/notes/book-01.yml");
+const notes = [];
+for (let book = 1; book <= 24; book += 1) {
+  const number = String(book).padStart(2, "0");
+  notes.push(...(await readYaml(`src/data/notes/book-${number}.yml`)));
+}
 const factMap = new Map(facts.map((fact) => [fact.fact_id, fact]));
 const sourceIds = new Set(
   (await readYaml("src/data/sources.yml")).map((source) => source.id),
@@ -43,5 +47,5 @@ for (const note of notes) {
 }
 
 success(
-  `${notes.length} notes validated against knowledge-state reveal points`,
+  `${notes.length} notes across 24 books validated against knowledge-state reveal points`,
 );

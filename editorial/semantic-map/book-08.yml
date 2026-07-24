@@ -1,0 +1,44 @@
+book: 8
+source_range: 1-586
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-45
+    event:
+      На рассвете Алкиной и Одиссей пришли на площадь. Афина в облике царского
+      глашатая созвала народ посмотреть на чужеземца. Богиня сделала героя выше
+      и прекраснее, чтобы феаки отнесли
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 46-103
+    event: После еды Демодок запел о споре Одиссея и Ахилла на пиру вождей. Один
+      Агамемнон радовался раздору, потому что когда-то услышал о нём пророчество
+      в Дельфах. Одиссей закрыл голову пл
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 104-164
+    event: Одиссей отказался, говоря, что заботится лишь о возвращении. Евриал
+      насмешливо решил, будто чужеземец похож не на атлета, а на торговца,
+      думающего о прибыли. Оскорблённый Одиссей в
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 165-265
+    event:
+      Демодок запел о тайной любви Ареса и Афродиты. Гефест, узнав об измене,
+      выковал невидимую сеть и поймал их на собственном ложе, затем созвал
+      богов. Богини остались дома из стыда, а
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 266-369
+    event: Арета велела сложить дары в сундук и сама завязала его узлом, который
+      Одиссей когда-то научился делать у Кирки. Служанка омыла героя. Навсикая
+      встретила его у дверей и попросила по
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 370-586
+    event:
+      "Алкиной остановил песню и потребовал, чтобы гость наконец назвал себя,
+      родителей и родину: кораблям нужно знать цель. Он спросил также, почему
+      троянская песнь вызывает такой плач и"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

@@ -1,0 +1,47 @@
+book: 5
+source_range: 1-493
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-42
+    event:
+      "На рассвете боги снова собрались у Зевса. Афина напомнила, что мягкое и
+      справедливое царствование Одиссея забыто: его удерживает Калипсо, а
+      Телемаху грозит засада. Зевс ответил, чт"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 43-147
+    event:
+      "Калипсо приняла Гермеса амброзией и нектаром. Он передал решение Зевса:
+      самый несчастный из уцелевших под Троей должен уйти. Нимфа возмутилась
+      двойной мерой богов, которые сами схо"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 148-227
+    event:
+      Наутро Калипсо дала Одиссею топор и тесло, отвела к высоким деревьям. Он
+      срубил двадцать стволов, выровнял их, просверлил, соединил шипами и
+      построил широкий плот с настилом, мачто
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 228-281
+    event:
+      Одиссей испугался и подумал, что лучше было погибнуть под Троей, получив
+      погребение и славу. Огромная волна разбила плот; он выпустил руль и
+      оказался в воде. Тяжёлая одежда Калипсо
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 282-387
+    event:
+      "Афина усмирила все ветры, кроме северного, чтобы гнать Одиссея к феакам.
+      Два дня и две ночи он плыл, ожидая смерти. На третий день море
+      успокоилось, и герой увидел лесистый берег. "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 388-493
+    event:
+      Он снял покрывало Ино и бросил в реку; волна вернула его богине. Одиссей
+      поцеловал землю, но не знал, где пережить ночь. Если остаться у воды,
+      холод и роса погубят истощённое тело;
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

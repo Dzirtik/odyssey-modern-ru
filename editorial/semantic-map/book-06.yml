@@ -1,0 +1,43 @@
+book: 6
+source_range: 1-331
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-47
+    event: Пока Одиссей спал под листьями, Афина пришла во дворец феакского царя
+      Алкиноя. Она приняла облик дочери морехода Диманта и явилась во сне
+      Навсикае, дочери царя. Богиня упрекнула де
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 48-109
+    event: Арета сложила одежду и дала дочери пищу, вино и масло. Навсикая с
+      служанками приехала к реке, где вода круглый год была чистой. Девушки
+      выстирали ткань в ямах, разложили на камнях,
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 110-197
+    event: "Одиссей не стал касаться колен девушки, опасаясь напугать её, и
+      обратился издали. Он сравнил Навсикаю с юной пальмой, которую видел на
+      Делосе, рассказал, что двадцать дней боролся "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 198-250
+    event: "Одиссей смыл соль, натёрся маслом и надел одежду. Афина сделала его
+      выше, плечи шире, а волосы — словно цветы гиацинта. Навсикая удивилась
+      перемене и сказала служанкам, что хотела "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 251-315
+    event:
+      "Навсикая описала город: по обе стороны узкого входа стоят корабли, рядом
+      площадь и храм Посейдона. За городом находится роща Афины с источником и
+      лугом. Когда девушка доберётся дом"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 316-331
+    event:
+      "Афина услышала молитву, но не показалась открыто: она ещё остерегалась
+      брата Посейдона до тех пор, пока Одиссей не достигнет земли феаков.
+      Навсикая вернулась во дворец. Братья расп"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

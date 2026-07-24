@@ -3,15 +3,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout title="Карта">
   <section class="page-intro">
-    <p class="eyebrow">Карта названных мест · предел Песни I</p>
+    <p class="eyebrow" data-progress-label>Карта названных мест</p>
     <h1>Пространство, уже открытое текстом</h1>
-    <p>Схема намеренно не прокладывает будущий маршрут и не отождествляет спорные места с современными точками.</p>
+    <p>Схема открывает места по мере чтения, не прокладывает будущий маршрут и не отождествляет спорные локализации с современными точками.</p>
   </section>
-  <div class="text-map" role="img" aria-label="Условная схема уже названных в Песни I мест">
-    <span style="--x:14%;--y:36%">Огигия</span>
-    <span style="--x:47%;--y:48%">Итака</span>
-    <span style="--x:66%;--y:25%">Пилос</span>
-    <span style="--x:77%;--y:55%">Спарта</span>
-    <span style="--x:89%;--y:30%">Троя</span>
+  <div class="text-map" role="img" aria-label="Условная схема уже названных мест">
+    <span data-reveal-book="1" style="--x:14%;--y:36%">Огигия</span>
+    <span data-reveal-book="1" style="--x:47%;--y:48%">Итака</span>
+    <span data-reveal-book="1" style="--x:66%;--y:25%">Пилос</span>
+    <span data-reveal-book="1" style="--x:77%;--y:55%">Спарта</span>
+    <span data-reveal-book="1" style="--x:89%;--y:30%">Троя</span>
+    <span data-reveal-book="5" style="--x:24%;--y:60%">Земля феаков</span>
+    <span data-reveal-book="9" style="--x:38%;--y:24%">Земля киклопов</span>
+    <span data-reveal-book="10" style="--x:58%;--y:72%">Ээя</span>
+    <span data-reveal-book="12" style="--x:76%;--y:78%">Фринакия</span>
   </div>
 </BaseLayout>

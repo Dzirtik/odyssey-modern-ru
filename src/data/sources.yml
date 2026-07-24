@@ -5,7 +5,7 @@
   institution_or_publisher: Perseus Digital Library; Harvard University Press
   year: "1919"
   edition: "Perseus text 1999.01.0135"
-  pages_or_lines: "Book 1, lines 1-444"
+  pages_or_lines: "Books 1-24, lines 1-12110"
   url: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0135"
   accessed_at: "2026-07-24"
   source_type: primary
@@ -17,7 +17,7 @@
   allowed_use: link_only
   jurisdictions_checked: [EU, NL, US]
   confidence: established
-  notes: "Base collation point. Greek digital text is not reproduced."
+  notes: "Base collation point for all 24 books. Greek digital text is not reproduced."
 - id: britannica_homer
   author: "The Editors of Encyclopaedia Britannica"
   title: Homer

@@ -1,0 +1,45 @@
+book: 20
+source_range: 1-394
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-55
+    event: Одиссей лёг в преддверии на сырых шкурах. Неверные служанки вышли к
+      любовникам-женихам, смеясь. Герой едва не бросился на них, но удержал
+      сердце, сравнивая себя с собакой, защищающ
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 56-121
+    event:
+      "Одиссей попросил у Зевса двойной знак: человеческое слово в доме и гром
+      в ясном небе. Зевс прогремел. Женщина у жерновов, последняя из двенадцати
+      работавшая всю ночь, услышала гром"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 122-239
+    event:
+      Верные слуги встретили нищего по-разному. Козопас Мелантий снова оскорбил
+      его; пастух коров Филойтий приветствовал, дал руку и сказал, что старец
+      напоминает ему хозяина. Он жалел О
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 240-298
+    event: "Ктесипп, богатый и дерзкий жених с Самы, бросил в гостя бычью ногу,
+      называя это подарком. Одиссей уклонился. Телемах сказал, что счастье
+      Ктесиппа — промах: иначе копьё сына заменил"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 299-370
+    event:
+      Феоклимен увидел над залом тьму и призраки, уходящие к Эребу. Он объявил,
+      что стены и лица залиты кровью, солнце исчезло и близится беда. Женихи
+      смеялись и предлагали выбросить чуж
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 371-394
+    event:
+      "Пир внешне продолжался, но радость уже стала безумной и принудительной.
+      Афина не позволяла женихам одуматься, чтобы мера их насилия стала полной.
+      Одиссей и Телемах молча отмечали, "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

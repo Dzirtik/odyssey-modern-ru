@@ -33,9 +33,9 @@
   verified_at: "2026-07-24"
   verified_by: rights-role
 - asset_id: original_russian_preview
-  path_or_url: "src/data/book-one.ts"
+  path_or_url: "src/data/book-one.ts; src/data/books-preview.mjs"
   creator: "Dzirtik with AI-assisted drafting"
-  title: "Independent Russian prose retelling, Book I preview"
+  title: "Independent Russian prose retelling, Books I-XXIV preview"
   asset_type: translation
   source_id: homer_odyssey_perseus_grc1
   rights_holder: Dzirtik
