@@ -1,11 +1,13 @@
 export const project = {
   title: "«Одиссея» Гомера: близко к тексту",
+  shortTitle: "Одиссея",
   owner: "Dzirtik",
   repository: "odyssey-modern-ru",
   version: "0.3.0-preview.1",
   publishedBooks: 24,
   draftOutlineBooks: 0,
   publicationYear: 2026,
+  firstPublished: "2026-07-24",
   lastChecked: "2026-07-24",
 } as const;
 

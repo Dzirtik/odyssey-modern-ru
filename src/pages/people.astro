@@ -3,7 +3,7 @@ import YAML from "yaml";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ReferenceControls from "../components/ReferenceControls.astro";
 import peopleText from "../data/people.yml?raw";
-import { withBase } from "../data/project";
+import { project, withBase } from "../data/project";
 
 interface Person {
   name: string;
@@ -14,11 +14,18 @@ interface Person {
 }
 
 const people = YAML.parse(peopleText) as Person[];
+const breadcrumbs = [
+  { name: "Главная", href: withBase("/") },
+  { name: "Персонажи" },
+];
 ---
 
 <BaseLayout
   title="Персонажи «Одиссеи» Гомера"
   description="Безспойлерный справочник персонажей «Одиссеи» Гомера: Одиссей, Телемах, Пенелопа, Афина и другие герои по мере их появления."
+  pageType="CollectionPage"
+  dateModified={project.lastChecked}
+  {breadcrumbs}
 >
   <section class="page-intro">
     <p class="eyebrow" data-progress-label>Прогрессивный справочник</p>

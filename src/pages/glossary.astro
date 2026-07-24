@@ -3,7 +3,7 @@ import YAML from "yaml";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ReferenceControls from "../components/ReferenceControls.astro";
 import glossaryText from "../data/glossary.yml?raw";
-import { withBase } from "../data/project";
+import { project, withBase } from "../data/project";
 
 interface GlossaryEntry {
   term: string;
@@ -14,11 +14,18 @@ interface GlossaryEntry {
 }
 
 const glossary = YAML.parse(glossaryText) as GlossaryEntry[];
+const breadcrumbs = [
+  { name: "Главная", href: withBase("/") },
+  { name: "Словарь" },
+];
 ---
 
 <BaseLayout
   title="Словарь «Одиссеи» Гомера"
   description="Безспойлерный словарь терминов и понятий мира «Одиссеи» Гомера: ахейцы, ксения, агора, басилевс и другие слова по мере чтения."
+  pageType="CollectionPage"
+  dateModified={project.lastChecked}
+  {breadcrumbs}
 >
   <section class="page-intro">
     <p class="eyebrow" data-progress-label>Прогрессивный словарь</p>

@@ -1,10 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { project, withBase } from "../data/project";
+
+const breadcrumbs = [
+  { name: "Главная", href: withBase("/") },
+  { name: "Изменения" },
+];
 ---
 
 <BaseLayout
   title="Журнал изменений проекта"
   description="История версий проекта «Одиссея: близко к тексту»: изменения корпуса, источников, редакционных статусов и автоматических проверок."
+  pageType="CollectionPage"
+  dateModified={project.lastChecked}
+  {breadcrumbs}
 >
   <section class="page-intro prose-page">
     <p class="eyebrow">Журнал версий</p>
@@ -26,6 +35,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </li><li>
         в основном тексте используется привычная форма «циклопы», а «киклопы»
         указаны как нормативный вариант;
+      </li><li>
+        поисковый слой дополнен короткими уникальными заголовками, видимыми
+        хлебными крошками, схемами <code>Book</code>, <code>Chapter</code>, <code
+          >ItemList</code
+        > и <code>BreadcrumbList</code>, лицензионными связями и датированным
+        sitemap;
       </li><li>
         первичный текст Scaife/Perseus и комментарий de Jong оформлены как две
         единые библиографические записи для всех 24 песен, а точные диапазоны
