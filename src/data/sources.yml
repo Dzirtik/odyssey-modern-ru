@@ -12,12 +12,12 @@
   language: grc
   work_rights_status: public_domain
   digital_object_rights_status: licensed
-  license_name: "Perseus redistribution terms; no local reproduction"
-  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright"
+  license_name: "CC BY-SA 3.0 US as stated on the text page; project uses link-only mode"
+  license_url: "https://creativecommons.org/licenses/by-sa/3.0/us/"
   allowed_use: link_only
   jurisdictions_checked: [EU, NL, US]
   confidence: established
-  notes: "Base collation point for all 24 books. Greek digital text is not reproduced."
+  notes: "Base collation point. The project cites CTS line ranges and does not reproduce the Greek digital text."
 - id: britannica_homer
   author: "The Editors of Encyclopaedia Britannica"
   title: Homer
@@ -37,7 +37,7 @@
   allowed_use: paraphrase
   jurisdictions_checked: [EU, NL, US]
   confidence: established
-  notes: "Used only for high-level reference; no copied wording."
+  notes: "Navigation-only reference retained for general readers; not a foundation for philological claims."
 - id: britannica_xenia
   author: "The Editors of Encyclopaedia Britannica"
   title: Xenia
@@ -57,7 +57,7 @@
   allowed_use: paraphrase
   jurisdictions_checked: [EU, NL, US]
   confidence: established
-  notes: "Used for a short contextual paraphrase."
+  notes: "Navigation-only reference. Academic discussion of hospitality is grounded in specialist sources below."
 - id: github_pages_docs
   author: GitHub
   title: Using custom workflows with GitHub Pages
@@ -78,3 +78,323 @@
   jurisdictions_checked: [EU, NL, US]
   confidence: established
   notes: "Deployment workflow reference."
+- id: perseus_copyright_policy
+  author: "Perseus Digital Library"
+  title: "Perseus Copyrights & Warranty"
+  editor_or_translator: ""
+  institution_or_publisher: "Tufts University"
+  year: ""
+  edition: online
+  pages_or_lines: ""
+  url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  accessed_at: "2026-07-24"
+  source_type: official
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Rights policy used to keep the project in link-only mode unless an individual object states a clear reusable license."
+- id: merry_riddell_monro_1886
+  author: "W. Walter Merry; James Riddell; D. B. Monro"
+  title: "Homer's Odyssey, edited with English notes and appendices"
+  editor_or_translator: "W. Walter Merry; James Riddell; D. B. Monro"
+  institution_or_publisher: "Oxford: Clarendon Press; Perseus Digital Library transcription"
+  year: "1886-1901"
+  edition: "2nd revised edition for Books I-XII; first edition for Books XIII-XXIV"
+  pages_or_lines: "Commentary by book and line"
+  url: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0055%3Abook%3D1%3Acommline%3D1"
+  accessed_at: "2026-07-24"
+  source_type: critical_edition
+  language: en
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "CC BY-SA 3.0 US as stated on the Perseus object page"
+  license_url: "https://creativecommons.org/licenses/by-sa/3.0/us/"
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Historical commentary used cautiously; its age is always considered and newer scholarship takes precedence where available."
+- id: lsj_perseus
+  author: "Henry George Liddell; Robert Scott; Henry Stuart Jones; Roderick McKenzie"
+  title: "A Greek-English Lexicon"
+  editor_or_translator: "Revised and augmented by Henry Stuart Jones with Roderick McKenzie"
+  institution_or_publisher: "Oxford: Clarendon Press; Perseus Digital Library"
+  year: "1940"
+  edition: "9th edition"
+  pages_or_lines: "Lemma-level consultation"
+  url: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0057"
+  accessed_at: "2026-07-24"
+  source_type: lexicon
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: licensed
+  license_name: "Perseus object-specific terms; link-only use"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Used for lexical orientation; entries are not copied to the site."
+- id: cunliffe_1924
+  author: "Richard John Cunliffe"
+  title: "A Lexicon of the Homeric Dialect"
+  editor_or_translator: ""
+  institution_or_publisher: "London: Blackie and Son; Google Books digital object"
+  year: "1924"
+  edition: "First edition"
+  pages_or_lines: "Lemma-level consultation"
+  url: "https://play.google.com/store/books/details/Richard_John_Cunliffe_A_Lexicon_of_the_Homeric_Dia?id=pXYuAAAAMAAJ"
+  accessed_at: "2026-07-24"
+  source_type: lexicon
+  language: en
+  work_rights_status: public_domain
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Homer-specific lexical control. The Google digital object is linked but not redistributed."
+- id: logeion_portal
+  author: "Helma Dik and the Logeion team"
+  title: "Logeion: Greek and Latin dictionary portal"
+  editor_or_translator: ""
+  institution_or_publisher: "University of Chicago"
+  year: ""
+  edition: online
+  pages_or_lines: "Lemma-level lookup across identified dictionaries"
+  url: "https://logeion.uchicago.edu/about"
+  accessed_at: "2026-07-24"
+  source_type: lexicon
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: "Rights vary by embedded dictionary"
+  license_url: ""
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Discovery and cross-check portal only. Every dictionary has its own rights; no entries are reproduced."
+- id: parry_1930_homeric_style
+  author: "Milman Parry"
+  title: "Studies in the Epic Technique of Oral Verse-Making I: Homer and Homeric Style"
+  editor_or_translator: ""
+  institution_or_publisher: "Harvard Studies in Classical Philology 41; Center for Hellenic Studies"
+  year: "1930"
+  edition: "Online republication"
+  pages_or_lines: "pp. 73-148"
+  url: "https://chs.harvard.edu/curated-article/milman-parry-studies-in-the-epic-technique-of-oral-verse-making-i-homer-and-homeric-style/"
+  accessed_at: "2026-07-24"
+  source_type: article
+  language: en
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Creative Commons 3.0 as stated by CHS"
+  license_url: "https://creativecommons.org/licenses/by-nc-nd/3.0/"
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Foundation for treating formulas and epithets as structural features rather than decorative repetitions."
+- id: nagy_odyssey_rhapsody_1
+  author: "Gregory Nagy"
+  title: "A sampling of comments on Odyssey Rhapsody 1"
+  editor_or_translator: ""
+  institution_or_publisher: "Classical Inquiries; Center for Hellenic Studies"
+  year: "2017"
+  edition: online
+  pages_or_lines: "Odyssey 1, comments by line"
+  url: "https://classical-inquiries.chs.harvard.edu/a-sampling-of-comments-on-odyssey-rhapsody-1/"
+  accessed_at: "2026-07-24"
+  source_type: article
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: debated
+  notes: "Line-focused interpretive resource, especially for polutropos and the singular Muse. Nagy's interpretations are attributed and not treated as consensus."
+- id: petropoulos_2011_telemachus
+  author: "J. C. B. Petropoulos"
+  title: "Kleos in a Minor Key: The Homeric Education of a Little Prince"
+  editor_or_translator: ""
+  institution_or_publisher: "Center for Hellenic Studies, Hellenic Studies Series 45"
+  year: "2011"
+  edition: online monograph
+  pages_or_lines: "Telemachy and Telemachus"
+  url: "https://chs.harvard.edu/book/petropoulos-j-c-b-kleos-in-a-minor-key-the-homeric-education-of-a-little-prince/"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: licensed
+  license_name: "Creative Commons 3.0 as stated by CHS"
+  license_url: "https://creativecommons.org/licenses/by-nc-nd/3.0/"
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: probable
+  notes: "Used for Telemachus' social maturation and kleos; interpretation is presented as scholarly argument, not poem-world fact."
+- id: de_jong_2001_book_1
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book One"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "Online chapter published 2010"
+  pages_or_lines: "pp. 3-43; Odyssey 1"
+  url: "https://www.cambridge.org/core/books/abs/narratological-commentary-on-the-odyssey/book-one/1F28BBCD9751190A7AECAC347FCC5E8A"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: probable
+  notes: "Bibliographic and abstract-level orientation for narrative structure; protected chapter text is not copied."
+- id: cambridge_guide_odyssey_overview_2020
+  author: "Corinne Ondine Pache; Casey Dué; Susan Lupack; Robert Lamberton, eds."
+  title: "The Odyssey: An Overview"
+  editor_or_translator: ""
+  institution_or_publisher: "The Cambridge Guide to Homer, Cambridge University Press"
+  year: "2020"
+  edition: online chapter
+  pages_or_lines: "pp. 183-186"
+  url: "https://www.cambridge.org/core/books/abs/cambridge-guide-to-homer/odyssey-an-overview/87B5831A2781A4BC4F3C65737EAD93F9"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Current scholarly orientation for metis, nostos, oikos, kleos and hospitality; only public metadata and summary are used."
+- id: cambridge_guide_homeric_religion_2020
+  author: "Corinne Ondine Pache; Casey Dué; Susan Lupack; Robert Lamberton, eds."
+  title: "Homeric Religion"
+  editor_or_translator: ""
+  institution_or_publisher: "The Cambridge Guide to Homer, Cambridge University Press"
+  year: "2020"
+  edition: online chapter
+  pages_or_lines: "pp. 245-256"
+  url: "https://www.cambridge.org/core/books/abs/cambridge-guide-to-homer/homeric-religion/4CD80B00694C09AECA9C34C2D3378A3D"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Current orientation for ritual acts and divine intervention; protected chapter text is not copied."
+- id: muellner_menis_social_order
+  author: "Leonard Muellner"
+  title: "Mênis and the Social Order"
+  editor_or_translator: ""
+  institution_or_publisher: "The Anger of Achilles; Center for Hellenic Studies"
+  year: "1996"
+  edition: online chapter
+  pages_or_lines: "Chapter 2; exchange and guest-protection in the Odyssey"
+  url: "https://www-current.chs.harvard.edu/2-menis-and-the-social-order/"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: licensed
+  license_name: "CHS online publication terms"
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: probable
+  notes: "Used for the relation between xenia, themis and divine sanction. Interpretive claims retain attribution."
+- id: westbrook_penelope_dowry
+  author: "Raymond Westbrook"
+  title: "Penelope's Dowry and Odysseus' Kingship"
+  editor_or_translator: ""
+  institution_or_publisher: "Classics@; Center for Hellenic Studies"
+  year: "2004"
+  edition: online article
+  pages_or_lines: "pp. 1-18; especially Odyssey 1.386-402"
+  url: "https://classics-at.chs.harvard.edu/wp-content/uploads/2021/05/ca1.2-westbrook.pdf"
+  accessed_at: "2026-07-24"
+  source_type: article
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: debated
+  notes: "Comparative legal interpretation of dowry and kingship. The article explicitly warns against reconstructing a complete legal system from isolated epic references."
+- id: valle_salazar_2023_telemachus
+  author: "Luca Valle Salazar"
+  title: "Why Can't Telemachus Be King? The Growth of a Young Basileus"
+  editor_or_translator: ""
+  institution_or_publisher: "Greece & Rome 70.2, Cambridge University Press"
+  year: "2023"
+  edition: research article
+  pages_or_lines: "pp. 289-308; Odyssey 1-4"
+  url: "https://doi.org/10.1017/S0017383523000086"
+  accessed_at: "2026-07-24"
+  source_type: article
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: debated
+  notes: "Recent contribution to the debated interpretation of Telemachus' growth and basileus-status."
+- id: met_symposium_2002
+  author: "Department of Greek and Roman Art"
+  title: "The Symposium in Ancient Greece"
+  editor_or_translator: ""
+  institution_or_publisher: "The Metropolitan Museum of Art, Heilbrunn Timeline of Art History"
+  year: "2002"
+  edition: online essay
+  pages_or_lines: ""
+  url: "https://www.metmuseum.org/toah/hd/symp/hd_symp.htm"
+  accessed_at: "2026-07-24"
+  source_type: museum
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Later Greek symposium evidence used only with an ARCHAIC_CONTEXT label; it is not projected uncritically onto the mixed world of Homeric epic."
+- id: porter_2021_homeric_slavery
+  author: "Jason Douglas Porter"
+  title: "The Archaic Roots of Paternalism: Continuity in Attitudes towards Slaves and Slavery in the Odyssey, Xenophon's Oeconomicus, and Beyond"
+  editor_or_translator: ""
+  institution_or_publisher: "Greece & Rome 68.2, Cambridge University Press"
+  year: "2021"
+  edition: "Open-access research article"
+  pages_or_lines: "pp. 255-277; Eurycleia and the household labour system"
+  url: "https://doi.org/10.1017/S0017383521000061"
+  accessed_at: "2026-07-24"
+  source_type: article
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: licensed
+  license_name: "CC BY 4.0"
+  license_url: "https://creativecommons.org/licenses/by/4.0/"
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Used to avoid romanticizing trusted enslaved household members: affection and authority existed within a coercive slave-owning system."

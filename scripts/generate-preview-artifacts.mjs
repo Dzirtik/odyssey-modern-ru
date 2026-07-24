@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import YAML from "yaml";
+import { bookOne } from "../src/data/book-one.ts";
 import { previewBooks } from "../src/data/books-preview.mjs";
 
 const roles = {
@@ -23,7 +24,7 @@ const roles = {
     "Древнее произведение и цифровой объект разделены; греческий файл и современные переводы не копируются; сторонние изображения отсутствуют. Это не юридическое заключение.",
 };
 
-for (const book of previewBooks) {
+for (const book of [bookOne, ...previewBooks]) {
   const number = String(book.book).padStart(2, "0");
   const lineMap = book.passages.map((passage) => ({
     paragraph_id: passage.id,
@@ -59,7 +60,10 @@ for (const book of previewBooks) {
     YAML.stringify(notes),
     "utf8",
   );
+}
 
+for (const book of previewBooks) {
+  const number = String(book.book).padStart(2, "0");
   await fs.mkdir("editorial/semantic-map", { recursive: true });
   await fs.writeFile(
     `editorial/semantic-map/book-${number}.yml`,
@@ -67,7 +71,7 @@ for (const book of previewBooks) {
       book: book.book,
       source_range: `1-${book.lineCount}`,
       base_source_id: book.baseSourceId,
-      status: "editorial_preview",
+      status: "draft",
       segments: book.passages.map((passage) => ({
         lines: `${passage.lineStart}-${passage.lineEnd}`,
         event: passage.paragraphs[0].slice(0, 180),
@@ -82,7 +86,7 @@ for (const book of previewBooks) {
   await fs.mkdir("editorial/coverage", { recursive: true });
   await fs.writeFile(
     `editorial/coverage/book-${number}.md`,
-    `# Покрытие Песни ${book.title.replace("Песнь ", "")}\n\nАвтоматическая карта покрывает строки 1–${book.lineCount} непрерывными диапазонами без разрывов и наложений.\n\nЭто структурная проверка, а не доказательство смысловой полноты. Ручная построчная сверка человеком не проведена.\n`,
+    `# Покрытие Песни ${book.title.replace("Песнь ", "")}\n\nЧерновой конспект размечен диапазонами строк 1–${book.lineCount} без числовых разрывов и наложений.\n\n**Это не полное смысловое покрытие песни.** Крупные диапазоны только указывают, к какой части оригинала относится сжатый пересказ. Речи, формулы, повторы, ритуалы и детали внутри диапазона могли быть сокращены. До построчной сверки материал имеет статус \`draft\`.\n`,
     "utf8",
   );
 
@@ -90,7 +94,7 @@ for (const book of previewBooks) {
   for (const [role, body] of Object.entries(roles)) {
     await fs.writeFile(
       `editorial/reviews/book-${number}/${role}.md`,
-      `# ${role}: Песнь ${book.title.replace("Песнь ", "")}\n\nАвтоматизированная ролевая проверка.\n\n${body}\n\nСтатус выше \`editorial_preview\` запрещён до закрытия блокеров.\n`,
+      `# ${role}: Песнь ${book.title.replace("Песнь ", "")}\n\n**Статус: предварительный автоматизированный чек-лист. Роль ещё не выполнена.**\n\n${body}\n\nМатериал остаётся сжатым черновым конспектом. Статус \`editorial_preview\` запрещён до независимого содержательного отчёта с конкретными строками, источниками, замечаниями и решениями.\n`,
       "utf8",
     );
   }
@@ -98,7 +102,7 @@ for (const book of previewBooks) {
   await fs.mkdir("editorial/decisions", { recursive: true });
   await fs.writeFile(
     `editorial/decisions/book-${number}.md`,
-    `# Решения по ${book.title}\n\n## Статус\n\n\`editorial_preview\`, \`human_reviewed: false\`.\n\n## Принятые решения\n\n- Сохранить порядок поэмы и вложенные рассказы.\n- Показать непрерывную карту диапазонов 1–${book.lineCount}.\n- Не воспроизводить греческий цифровой файл или современный перевод.\n- Не присваивать статус человеческой редакции.\n\n## Открытые блокеры\n\n- независимая человеческая построчная сверка;\n- филологическая и литературная редактура;\n- расширение локальных пояснений и библиографии;\n- внешний контроль сходства по законно доступному корпусу.\n`,
+    `# Решения по ${book.title}\n\n## Статус\n\n\`draft\`, \`human_reviewed: false\`. Опубликованный материал — сжатый конспект, а не полное переложение.\n\n## Принятые решения\n\n- Сохранить порядок поэмы и вложенные рассказы как навигационный каркас.\n- Не считать непрерывную нумерацию диапазонов доказательством смысловой полноты.\n- Не воспроизводить греческий цифровой файл или современный перевод.\n- Не считать автоматически созданные чек-листы выполненными независимыми ролевыми проверками.\n- Не присваивать статус человеческой редакции.\n\n## Открытые блокеры\n\n- новый полный черновик с сохранением речей, формул, повторов, ритуалов и предметных деталей;\n- независимая построчная филологическая сверка;\n- историческая, религиоведческая и литературная редактура;\n- расширение локальных пояснений и библиографии;\n- содержательный спойлер-аудит;\n- внешний контроль сходства по законно доступному корпусу.\n`,
     "utf8",
   );
 }

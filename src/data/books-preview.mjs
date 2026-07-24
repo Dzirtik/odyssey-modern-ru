@@ -194,7 +194,7 @@ const makeBook = (book, lineCount, sections) => {
     sourceRange: `Hom. Od. ${book}.1–${lineCount}`,
     lineCount,
     baseSourceId: "homer_odyssey_perseus_grc1",
-    status: "editorial_preview",
+    status: "draft",
     humanReviewed: false,
     reviewedAt: "",
     lastFactCheck: "2026-07-24",

@@ -29,6 +29,7 @@ test("all 24 book routes use the reader", async () => {
 
 test("Books II-XXIV have continuous in-memory coverage", () => {
   for (const book of previewBooks) {
+    assert.equal(book.status, "draft");
     let expected = 1;
     for (const passage of book.passages) {
       assert.equal(passage.lineStart, expected);
@@ -40,6 +41,14 @@ test("Books II-XXIV have continuous in-memory coverage", () => {
     444 + previewBooks.reduce((sum, book) => sum + book.lineCount, 0),
     12110,
   );
+});
+
+test("compressed outlines are not labeled editorial previews", () => {
+  for (const book of previewBooks) {
+    const paragraphs = book.passages.flatMap((passage) => passage.paragraphs);
+    assert.equal(book.status, "draft");
+    assert.equal(paragraphs.length, 6);
+  }
 });
 
 test("human review is not claimed", async () => {

@@ -1,10 +1,16 @@
 ---
 interface Props {
-  status: "editorial_preview" | "not_published";
+  status: "draft" | "editorial_preview" | "not_published";
 }
 const { status } = Astro.props;
+
+const labels = {
+  draft: "Сжатый черновой конспект",
+  editorial_preview: "Редакционная превью-версия",
+  not_published: "Не опубликовано",
+};
 ---
 
 <span class:list={["status-badge", status]}>
-  {status === "editorial_preview" ? "Редакционная превью-версия" : "Не опубликовано"}
+  {labels[status]}
 </span>

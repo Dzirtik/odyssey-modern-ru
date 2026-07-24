@@ -304,6 +304,10 @@
   .status-badge.not_published {
     color: var(--muted);
   }
+  .status-badge.draft {
+    color: var(--muted);
+    background: color-mix(in srgb, var(--surface) 90%, var(--accent));
+  }
   .principles h2 {
     max-width: 14ch;
   }

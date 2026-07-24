@@ -25,4 +25,6 @@ for (const book of books) {
 }
 
 assert(total === 12110, `Expected 12,110 source lines, got ${total}`);
-success("All 24 books cover 12,110 lines without structural gaps or overlaps");
+success(
+  "All 24 books have line-range continuity across 12,110 source lines; this structural check does not claim semantic completeness",
+);
