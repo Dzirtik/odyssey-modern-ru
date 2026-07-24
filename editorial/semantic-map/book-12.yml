@@ -1,7 +1,7 @@
 book: 12
 source_range: 1-453
 base_source_id: homer_odyssey_perseus_grc1
-status: editorial_preview
+status: draft
 segments:
   - lines: 1-35
     event:

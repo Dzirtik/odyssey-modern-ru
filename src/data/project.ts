@@ -2,8 +2,9 @@ export const project = {
   title: "Одиссея: близко к тексту",
   owner: "Dzirtik",
   repository: "odyssey-modern-ru",
-  version: "0.2.0-preview.1",
-  publishedBooks: 24,
+  version: "0.2.1-preview.1",
+  publishedBooks: 1,
+  draftOutlineBooks: 23,
   publicationYear: 2026,
   lastChecked: "2026-07-24",
 } as const;

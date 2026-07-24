@@ -1,6 +1,6 @@
 {
   "name": "odyssey-modern-ru",
-  "version": "0.2.0-preview.1",
+  "version": "0.2.1-preview.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,11 +12,13 @@
     "validate:sources": "node scripts/validate-sources.mjs",
     "validate:rights": "node scripts/validate-rights.mjs",
     "validate:coverage": "node scripts/validate-coverage.mjs",
+    "validate:depth": "node scripts/validate-depth.mjs",
+    "validate:editorial": "node scripts/validate-editorial.mjs",
     "validate:spoilers": "node scripts/validate-spoilers.mjs",
     "check:links": "node scripts/check-links.mjs",
     "check:similarity": "node scripts/check-similarity.mjs",
     "generate:editorial": "node scripts/generate-preview-artifacts.mjs",
-    "validate": "npm run validate:sources && npm run validate:rights && npm run validate:coverage && npm run validate:spoilers && npm run check:links && npm run check:similarity",
+    "validate": "npm run validate:sources && npm run validate:rights && npm run validate:coverage && npm run validate:depth && npm run validate:editorial && npm run validate:spoilers && npm run check:links && npm run check:similarity",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
     "check": "npm run lint && npm run typecheck && npm run test && npm run validate && npm run build"
   },

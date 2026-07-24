@@ -7,8 +7,39 @@
   requires_progress_book: 1
   requires_progress_line: 1
   spoiler_level: safe
-  fact_ids: [odysseus_identity]
-  source_ids: [homer_odyssey_perseus_grc1, britannica_homer]
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - parry_1930_homeric_style
+    - nagy_odyssey_rhapsody_1
+- note_id: note-polytropos
+  book: 1
+  line_start: 1
+  line_end: 10
+  reveal_at_book: 1
+  reveal_at_line: 1
+  requires_progress_book: 1
+  requires_progress_line: 1
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - merry_riddell_monro_1886
+    - cunliffe_1924
+    - nagy_odyssey_rhapsody_1
+- note_id: note-troy
+  book: 1
+  line_start: 1
+  line_end: 10
+  reveal_at_book: 1
+  reveal_at_line: 1
+  requires_progress_book: 1
+  requires_progress_line: 1
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - cambridge_guide_odyssey_overview_2020
 - note_id: note-helios
   book: 1
   line_start: 1
@@ -17,9 +48,76 @@
   reveal_at_line: 1
   requires_progress_book: 1
   requires_progress_line: 1
-  spoiler_level: deferred
-  fact_ids: [helios_identity]
-  source_ids: [homer_odyssey_perseus_grc1]
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+- note_id: note-calypso
+  book: 1
+  line_start: 11
+  line_end: 21
+  reveal_at_book: 1
+  reveal_at_line: 11
+  requires_progress_book: 1
+  requires_progress_line: 11
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+- note_id: note-divine-geography
+  book: 1
+  line_start: 22
+  line_end: 43
+  reveal_at_book: 1
+  reveal_at_line: 22
+  requires_progress_book: 1
+  requires_progress_line: 22
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - merry_riddell_monro_1886
+- note_id: note-aegisthus
+  book: 1
+  line_start: 22
+  line_end: 43
+  reveal_at_book: 1
+  reveal_at_line: 22
+  requires_progress_book: 1
+  requires_progress_line: 22
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - de_jong_2001_book_1
+    - petropoulos_2011_telemachus
+- note_id: note-epithets
+  book: 1
+  line_start: 44
+  line_end: 62
+  reveal_at_book: 1
+  reveal_at_line: 44
+  requires_progress_book: 1
+  requires_progress_line: 44
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - parry_1930_homeric_style
+- note_id: note-suitors
+  book: 1
+  line_start: 80
+  line_end: 95
+  reveal_at_book: 1
+  reveal_at_line: 80
+  requires_progress_book: 1
+  requires_progress_line: 80
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - westbrook_penelope_dowry
+    - valle_salazar_2023_telemachus
 - note_id: note-xenia
   book: 1
   line_start: 113
@@ -29,8 +127,106 @@
   requires_progress_book: 1
   requires_progress_line: 113
   spoiler_level: safe
-  fact_ids: [athena_visits_telemachus]
-  source_ids: [homer_odyssey_perseus_grc1, britannica_xenia]
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - muellner_menis_social_order
+    - cambridge_guide_odyssey_overview_2020
+- note_id: note-household
+  book: 1
+  line_start: 113
+  line_end: 143
+  reveal_at_book: 1
+  reveal_at_line: 113
+  requires_progress_book: 1
+  requires_progress_line: 113
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - porter_2021_homeric_slavery
+- note_id: note-libation
+  book: 1
+  line_start: 144
+  line_end: 177
+  reveal_at_book: 1
+  reveal_at_line: 144
+  requires_progress_book: 1
+  requires_progress_line: 144
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - cambridge_guide_homeric_religion_2020
+    - met_symposium_2002
+- note_id: note-mentes
+  book: 1
+  line_start: 178
+  line_end: 212
+  reveal_at_book: 1
+  reveal_at_line: 178
+  requires_progress_book: 1
+  requires_progress_line: 178
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - de_jong_2001_book_1
+- note_id: note-kleos
+  book: 1
+  line_start: 274
+  line_end: 305
+  reveal_at_book: 1
+  reveal_at_line: 274
+  requires_progress_book: 1
+  requires_progress_line: 274
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - petropoulos_2011_telemachus
+    - cambridge_guide_odyssey_overview_2020
+- note_id: note-burial
+  book: 1
+  line_start: 274
+  line_end: 305
+  reveal_at_book: 1
+  reveal_at_line: 274
+  requires_progress_book: 1
+  requires_progress_line: 274
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - cambridge_guide_homeric_religion_2020
+- note_id: note-bard
+  book: 1
+  line_start: 325
+  line_end: 344
+  reveal_at_book: 1
+  reveal_at_line: 325
+  requires_progress_book: 1
+  requires_progress_line: 325
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - parry_1930_homeric_style
+    - de_jong_2001_book_1
+- note_id: note-penelope-speech
+  book: 1
+  line_start: 345
+  line_end: 364
+  reveal_at_book: 1
+  reveal_at_line: 345
+  requires_progress_book: 1
+  requires_progress_line: 345
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - de_jong_2001_book_1
+    - petropoulos_2011_telemachus
 - note_id: note-basileus
   book: 1
   line_start: 386
@@ -40,5 +236,21 @@
   requires_progress_book: 1
   requires_progress_line: 386
   spoiler_level: safe
-  fact_ids: [athena_visits_telemachus]
-  source_ids: [homer_odyssey_perseus_grc1, britannica_homer]
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - westbrook_penelope_dowry
+    - valle_salazar_2023_telemachus
+- note_id: note-eurycleia
+  book: 1
+  line_start: 421
+  line_end: 444
+  reveal_at_book: 1
+  reveal_at_line: 421
+  requires_progress_book: 1
+  requires_progress_line: 421
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc1
+    - porter_2021_homeric_slavery
