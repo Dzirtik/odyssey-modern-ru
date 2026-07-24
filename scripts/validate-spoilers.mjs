@@ -2,9 +2,13 @@ import { assert, readYaml, success } from "./lib.mjs";
 
 const facts = await readYaml("src/data/knowledge-state.yml");
 const notes = [];
+const readerAnswers = [];
 for (let book = 1; book <= 24; book += 1) {
   const number = String(book).padStart(2, "0");
   notes.push(...(await readYaml(`src/data/notes/book-${number}.yml`)));
+  readerAnswers.push(
+    ...(await readYaml(`src/data/reader-answers/book-${number}.yml`)),
+  );
 }
 const factMap = new Map(facts.map((fact) => [fact.fact_id, fact]));
 const sourceIds = new Set(
@@ -46,6 +50,31 @@ for (const note of notes) {
   }
 }
 
+for (const answer of readerAnswers) {
+  assert(answer.answer_id, "Reader answer lacks answer_id");
+  assert(
+    answer.book >= 1 &&
+      answer.book <= 24 &&
+      answer.line_start >= 1 &&
+      answer.line_end >= answer.line_start,
+    `Reader answer ${answer.answer_id} has an invalid reveal range`,
+  );
+  assert(
+    answer.reveal_at_book === answer.book &&
+      answer.reveal_at_line === answer.line_end &&
+      answer.requires_progress_book === answer.book &&
+      answer.requires_progress_line === answer.line_end &&
+      answer.spoiler_level === "safe",
+    `Reader answer ${answer.answer_id} has an invalid spoiler boundary`,
+  );
+  for (const sourceId of answer.source_ids ?? []) {
+    assert(
+      sourceIds.has(sourceId),
+      `Reader answer ${answer.answer_id} cites unknown source ${sourceId}`,
+    );
+  }
+}
+
 success(
-  `${notes.length} notes across 24 books validated against knowledge-state reveal points`,
+  `${notes.length} notes and ${readerAnswers.length} reader answers across 24 books validated against knowledge-state reveal points`,
 );

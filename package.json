@@ -15,6 +15,7 @@
     "validate:depth": "node scripts/validate-depth.mjs",
     "validate:editorial": "node scripts/validate-editorial.mjs",
     "validate:reader-questions": "node scripts/validate-reader-questions.mjs",
+    "generate:reader-answers": "node scripts/generate-reader-answers.mjs",
     "validate:reference-data": "node scripts/validate-reference-data.mjs",
     "validate:spoilers": "node scripts/validate-spoilers.mjs",
     "check:links": "node scripts/check-links.mjs",

@@ -26,6 +26,18 @@ const semanticMapPath = `../../editorial/semantic-map/book-${number}.yml`;
 const semanticMap = semanticMapFiles[semanticMapPath]
   ? YAML.parse(semanticMapFiles[semanticMapPath])
   : { segments: [] };
+const readerAnswerFiles = import.meta.glob(
+  "../data/reader-answers/book-*.yml",
+  {
+    eager: true,
+    import: "default",
+    query: "?raw",
+  },
+) as Record<string, string>;
+const readerAnswerPath = `../data/reader-answers/book-${number}.yml`;
+const readerAnswers = readerAnswerFiles[readerAnswerPath]
+  ? YAML.parse(readerAnswerFiles[readerAnswerPath])
+  : [];
 const normalizeQuestion = (value: string) =>
   value
     .trim()
@@ -44,13 +56,19 @@ const questionsByRange = new Map<string, ReaderQuestion[]>(
       const matchingNote = notes.find(
         (note: any) =>
           note.anchor &&
+          note.anchor === `lines-${String(segment.lines)}` &&
           normalizeQuestion(note.title) === normalizeQuestion(question),
+      );
+      const matchingAnswer = readerAnswers.find(
+        (answer: any) =>
+          answer.anchor === `lines-${String(segment.lines)}` &&
+          normalizeQuestion(answer.question) === normalizeQuestion(question),
       );
       return {
         text: question,
-        noteId: matchingNote?.id ?? "",
+        noteId: matchingNote?.id ?? matchingAnswer?.answer_id ?? "",
       };
-    }),
+    }).filter((question: ReaderQuestion) => Boolean(question.noteId)),
   ]),
 );
 const sourceLabels = new Map(
@@ -151,6 +169,33 @@ const sourceLabels = new Map(
                           </a>
                         </>
                       ))}
+                    </p>
+                  </div>
+                </details>
+              ))}
+            {readerAnswers
+              .filter((answer: any) => answer.anchor === passage.id)
+              .map((answer: any) => (
+                <details class="note reader-answer" id={answer.answer_id}>
+                  <summary>
+                    <span>Ответ читателю</span>
+                    {answer.question}
+                  </summary>
+                  <div>
+                    <p>{answer.summary}</p>
+                    <p>{answer.details}</p>
+                    <p class="note-meta">
+                      {answer.layer} · {answer.confidence} · источники:{" "}
+                      {answer.source_ids.map(
+                        (source: string, index: number) => (
+                          <>
+                            {index > 0 && ", "}
+                            <a href={withBase(`/sources/#${source}`)}>
+                              {sourceLabels.get(source) ?? source}
+                            </a>
+                          </>
+                        ),
+                      )}
                     </p>
                   </div>
                 </details>
