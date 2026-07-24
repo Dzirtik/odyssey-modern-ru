@@ -25,7 +25,7 @@ import { bookTwentyOne } from "../../data/book-twenty-one";
 import { bookTwentyTwo } from "../../data/book-twenty-two";
 import { bookTwentyThree } from "../../data/book-twenty-three";
 import { bookTwentyFour } from "../../data/book-twenty-four";
-import { withBase } from "../../data/project";
+import { project, withBase } from "../../data/project";
 
 export function getStaticPaths() {
   return Array.from({ length: 24 }, (_, index) => ({
@@ -114,7 +114,7 @@ const content =
                                                 : bookTwentyFour;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
 const siteURL = new URL(withBase("/"), Astro.site ?? Astro.url);
-const readURL = new URL(withBase("/read/"), Astro.site ?? Astro.url);
+const rightsURL = new URL(withBase("/rights/"), Astro.site ?? Astro.url);
 const lineCount = content.passages.at(-1)?.lineEnd ?? 0;
 const description = `«Одиссея» Гомера, Песнь ${roman}: современное русское прозаическое переложение ${lineCount} строк с построчной сверкой и ${content.notes.length} пояснениями.`;
 const structuredData = [
@@ -125,41 +125,32 @@ const structuredData = [
     name: `«Одиссея» Гомера, Песнь ${roman}`,
     position: book,
     inLanguage: "ru-RU",
+    author: {
+      "@type": "Person",
+      name: "Гомер",
+    },
+    contributor: { "@id": `${siteURL.href}#publisher` },
+    isAccessibleForFree: true,
+    datePublished: project.firstPublished,
     dateModified: content.lastFactCheck,
-    isPartOf: { "@id": `${siteURL.href}#website` },
+    license: rightsURL.href,
+    isPartOf: { "@id": `${siteURL.href}#odyssey` },
   },
-  {
-    "@type": "BreadcrumbList",
-    "@id": `${canonicalURL.href}#breadcrumb`,
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Одиссея",
-        item: siteURL.href,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Оглавление",
-        item: readURL.href,
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: `Песнь ${roman}`,
-      },
-    ],
-  },
+];
+const breadcrumbs = [
+  { name: "Главная", href: withBase("/") },
+  { name: "Читать", href: withBase("/read/") },
+  { name: `Песнь ${roman}` },
 ];
 ---
 
 <BaseLayout
-  title={`«Одиссея» Гомера, Песнь ${roman}: читать переложение`}
+  title={`Песнь ${roman} «Одиссеи» Гомера — читать`}
   {description}
   ogType="article"
   dateModified={content.lastFactCheck}
   {structuredData}
+  {breadcrumbs}
 >
   {content && <BookReader book={content} />}
 </BaseLayout>

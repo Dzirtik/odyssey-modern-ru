@@ -1,10 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { project, withBase } from "../data/project";
+
+const breadcrumbs = [
+  { name: "Главная", href: withBase("/") },
+  { name: "Карта" },
+];
 ---
 
 <BaseLayout
   title="Карта мира «Одиссеи» Гомера"
   description="Безспойлерная карта названных мест «Одиссеи» Гомера: Итака, Пилос, Спарта, Троя и другие пространства по мере чтения."
+  pageType="CollectionPage"
+  dateModified={project.lastChecked}
+  {breadcrumbs}
 >
   <section class="page-intro">
     <p class="eyebrow" data-progress-label>Карта названных мест</p>

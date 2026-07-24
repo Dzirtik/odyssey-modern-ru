@@ -1,12 +1,65 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { withBase } from "../../data/project";
+import { project, withBase } from "../../data/project";
 const books = Array.from({ length: 24 }, (_, index) => index + 1);
+const romanBooks = [
+  "I",
+  "II",
+  "III",
+  "IV",
+  "V",
+  "VI",
+  "VII",
+  "VIII",
+  "IX",
+  "X",
+  "XI",
+  "XII",
+  "XIII",
+  "XIV",
+  "XV",
+  "XVI",
+  "XVII",
+  "XVIII",
+  "XIX",
+  "XX",
+  "XXI",
+  "XXII",
+  "XXIII",
+  "XXIV",
+];
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
+const structuredData = [
+  {
+    "@type": "ItemList",
+    "@id": `${canonicalURL.href}#books`,
+    name: "Все 24 песни «Одиссеи» Гомера",
+    numberOfItems: books.length,
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    itemListElement: books.map((book, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: new URL(
+        withBase(`/book/${String(book).padStart(2, "0")}/`),
+        Astro.site ?? Astro.url,
+      ).href,
+      name: `Песнь ${romanBooks[index]}`,
+    })),
+  },
+];
+const breadcrumbs = [
+  { name: "Главная", href: withBase("/") },
+  { name: "Читать" },
+];
 ---
 
 <BaseLayout
   title="Читать «Одиссею» Гомера: все 24 песни"
   description="Оглавление всех 24 песен «Одиссеи» Гомера в современном русском прозаическом переложении с построчной сверкой и комментариями."
+  pageType="CollectionPage"
+  dateModified={project.lastChecked}
+  {structuredData}
+  {breadcrumbs}
 >
   <section class="page-intro">
     <p class="eyebrow">Оглавление без спойлеров</p>
@@ -23,37 +76,7 @@ const books = Array.from({ length: 24 }, (_, index) => index + 1);
           <li class="published">
             <a href={withBase(`/book/${number}/`)}>
               <span>{number}</span>
-              <h2>
-                Песнь{" "}
-                {
-                  [
-                    "I",
-                    "II",
-                    "III",
-                    "IV",
-                    "V",
-                    "VI",
-                    "VII",
-                    "VIII",
-                    "IX",
-                    "X",
-                    "XI",
-                    "XII",
-                    "XIII",
-                    "XIV",
-                    "XV",
-                    "XVI",
-                    "XVII",
-                    "XVIII",
-                    "XIX",
-                    "XX",
-                    "XXI",
-                    "XXII",
-                    "XXIII",
-                    "XXIV",
-                  ][book - 1]
-                }
-              </h2>
+              <h2>Песнь {romanBooks[book - 1]}</h2>
             </a>
           </li>
         );

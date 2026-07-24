@@ -25,6 +25,7 @@ const htmlFiles = files.filter((file) => file.endsWith(".html"));
 const indexableCanonicals = new Set();
 const titles = new Set();
 const descriptions = new Set();
+const expectedLastModified = "2026-07-24";
 
 const matchOne = (html, pattern, label, file) => {
   const matches = [...html.matchAll(pattern)];
@@ -57,6 +58,31 @@ for (const file of htmlFiles) {
     "robots policy",
     file,
   );
+  const viewport = matchOne(
+    html,
+    /<meta name="viewport" content="([^"]+)">/g,
+    "viewport policy",
+    file,
+  );
+  assert(
+    viewport.includes("width=device-width") &&
+      viewport.includes("initial-scale=1"),
+    `${file}: viewport must be mobile-friendly`,
+  );
+  assert(
+    /<meta name="author" content="Dzirtik">/.test(html),
+    `${file}: missing author metadata`,
+  );
+  assert(
+    /<link rel="license" href="[^"]+\/rights\/">/.test(html),
+    `${file}: missing license relationship`,
+  );
+  assert(
+    /<meta property="og:image:type" content="image\/png">/.test(html) &&
+      /<meta property="og:image:width" content="1200">/.test(html) &&
+      /<meta property="og:image:height" content="630">/.test(html),
+    `${file}: incomplete social image metadata`,
+  );
   matchOne(
     html,
     /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,
@@ -68,6 +94,18 @@ for (const file of htmlFiles) {
   );
   assert(Array.isArray(jsonLd["@graph"]), `${file}: invalid JSON-LD graph`);
   const schemaTypes = jsonLd["@graph"].map((item) => item["@type"]);
+  for (const requiredType of ["WebSite", "Person", "ImageObject", "Book"]) {
+    assert(
+      schemaTypes.includes(requiredType),
+      `${file}: missing ${requiredType} schema`,
+    );
+  }
+  assert(
+    schemaTypes.some((type) =>
+      ["WebPage", "CollectionPage", "AboutPage"].includes(type),
+    ),
+    `${file}: missing page-level schema`,
+  );
   assert(
     !schemaTypes.some((type) =>
       ["Review", "AggregateRating", "FAQPage"].includes(type),
@@ -84,6 +122,19 @@ for (const file of htmlFiles) {
       chapter.position === Number(bookMatch[1]),
       `${file}: Chapter position does not match its route`,
     );
+    assert(
+      chapter.isPartOf?.["@id"]?.endsWith("#odyssey"),
+      `${file}: Chapter must belong to the Odyssey work`,
+    );
+  }
+  if (file.endsWith("/read/index.html")) {
+    const itemList = jsonLd["@graph"].find(
+      (item) => item["@type"] === "ItemList",
+    );
+    assert(
+      itemList?.numberOfItems === 24 && itemList.itemListElement?.length === 24,
+      `${file}: incomplete book ItemList`,
+    );
   }
   assert(
     canonical.startsWith(canonicalPrefix),
@@ -92,6 +143,14 @@ for (const file of htmlFiles) {
   assert(!canonical.includes("localhost"), `${file}: localhost canonical`);
   assert(!titles.has(title), `${file}: duplicate title`);
   assert(!descriptions.has(description), `${file}: duplicate description`);
+  assert(
+    title.length >= 20 && title.length <= 70,
+    `${file}: title length ${title.length} is outside 20–70 characters`,
+  );
+  assert(
+    description.length >= 60 && description.length <= 180,
+    `${file}: description length ${description.length} is outside 60–180 characters`,
+  );
   titles.add(title);
   descriptions.add(description);
   assert(
@@ -117,6 +176,20 @@ for (const file of htmlFiles) {
   } else {
     assert(robots.startsWith("index"), `${file}: page must be indexable`);
     indexableCanonicals.add(canonical);
+    if (canonical !== canonicalPrefix) {
+      const breadcrumb = jsonLd["@graph"].find(
+        (item) => item["@type"] === "BreadcrumbList",
+      );
+      const visibleBreadcrumbs =
+        html.match(/<nav class="breadcrumbs"[^>]*>[\s\S]*?<\/nav>/)?.[0] ?? "";
+      const visibleItems = visibleBreadcrumbs.match(/<li>/g) ?? [];
+      assert(breadcrumb, `${file}: missing BreadcrumbList schema`);
+      assert(
+        visibleItems.length >= 2 &&
+          visibleItems.length === breadcrumb.itemListElement?.length,
+        `${file}: visible and structured breadcrumbs differ`,
+      );
+    }
   }
 }
 
@@ -151,10 +224,18 @@ for (const route of ["glossary", "people", "map"]) {
 const sitemapFiles = files.filter((file) => /sitemap-\d+\.xml$/.test(file));
 assert(sitemapFiles.length > 0, "No sitemap content file generated");
 const sitemapURLs = new Set();
+let sitemapLastModifiedCount = 0;
 for (const file of sitemapFiles) {
   const xml = await fs.readFile(file, "utf8");
   for (const [, url] of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) {
     sitemapURLs.add(url);
+  }
+  for (const [, lastmod] of xml.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)) {
+    assert(
+      lastmod.startsWith(expectedLastModified),
+      `${file}: unreliable sitemap lastmod ${lastmod}`,
+    );
+    sitemapLastModifiedCount += 1;
   }
 }
 
@@ -174,6 +255,10 @@ assert(
   [...sitemapURLs].every((url) => indexableCanonicals.has(url)),
   "Sitemap contains a non-canonical or non-indexable URL",
 );
+assert(
+  sitemapLastModifiedCount === sitemapURLs.size,
+  "Every sitemap URL needs a reliable lastmod",
+);
 
 for (const file of files.filter((item) => item.endsWith(".css"))) {
   const stat = await fs.stat(file);
@@ -181,5 +266,5 @@ for (const file of files.filter((item) => item.endsWith(".css"))) {
 }
 
 success(
-  `SEO validated: ${indexableCanonicals.size} indexable pages, unique metadata, canonical parity, valid JSON-LD, and sitemap coverage`,
+  `SEO validated: ${indexableCanonicals.size} indexable pages, concise unique metadata, visible breadcrumbs, enriched JSON-LD, and dated sitemap coverage`,
 );

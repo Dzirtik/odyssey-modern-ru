@@ -1,10 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { project, withBase } from "../data/project";
+
+const breadcrumbs = [
+  { name: "Главная", href: withBase("/") },
+  { name: "Использование AI" },
+];
 ---
 
 <BaseLayout
   title="Как AI использовался в проекте"
   description="Прозрачное описание роли AI в создании русского переложения «Одиссеи», карт строк, пояснений и автоматизированных редакционных проверок."
+  pageType="AboutPage"
+  dateModified={project.lastChecked}
+  {breadcrumbs}
 >
   <section class="page-intro prose-page">
     <p class="eyebrow">Прозрачность</p>

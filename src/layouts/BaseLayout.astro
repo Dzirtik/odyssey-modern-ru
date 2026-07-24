@@ -2,13 +2,20 @@
 import "../styles/global.css";
 import { project, withBase } from "../data/project";
 
+interface Breadcrumb {
+  name: string;
+  href?: string;
+}
+
 interface Props {
   title?: string;
   description?: string;
   noindex?: boolean;
   ogType?: "website" | "article";
+  pageType?: "WebPage" | "CollectionPage" | "AboutPage";
   dateModified?: string;
   structuredData?: Record<string, unknown>[];
+  breadcrumbs?: Breadcrumb[];
 }
 
 const {
@@ -16,13 +23,17 @@ const {
   description = "Читайте современное русское прозаическое переложение «Одиссеи» Гомера с построчной сверкой, комментариями и открытой редакционной методологией.",
   noindex = false,
   ogType = "website",
+  pageType = "WebPage",
   dateModified,
   structuredData = [],
+  breadcrumbs = [],
 } = Astro.props;
 const pageTitle =
-  title === project.title ? title : `${title} — ${project.title}`;
+  title === project.title ? title : `${title} | ${project.shortTitle}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
 const siteURL = new URL(withBase("/"), Astro.site ?? Astro.url);
+const readURL = new URL(withBase("/read/"), Astro.site ?? Astro.url);
+const rightsURL = new URL(withBase("/rights/"), Astro.site ?? Astro.url);
 const socialImageURL = new URL(
   withBase("/social-card.png"),
   Astro.site ?? Astro.url,
@@ -33,6 +44,31 @@ const sitemapURL = new URL(
 );
 const websiteId = `${siteURL.href}#website`;
 const webpageId = `${canonicalURL.href}#webpage`;
+const workId = `${siteURL.href}#odyssey`;
+const publisherId = `${siteURL.href}#publisher`;
+const imageId = `${siteURL.href}#social-image`;
+const breadcrumbData =
+  breadcrumbs.length > 0
+    ? {
+        "@type": "BreadcrumbList",
+        "@id": `${canonicalURL.href}#breadcrumb`,
+        itemListElement: breadcrumbs.map((breadcrumb, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: breadcrumb.name,
+          item:
+            index === breadcrumbs.length - 1
+              ? canonicalURL.href
+              : new URL(
+                  breadcrumb.href ?? withBase("/"),
+                  Astro.site ?? Astro.url,
+                ).href,
+        })),
+      }
+    : undefined;
+const mainEntityId =
+  structuredData[0]?.["@id"] ??
+  (canonicalURL.pathname === siteURL.pathname ? workId : undefined);
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -41,23 +77,59 @@ const jsonLd = {
       "@id": websiteId,
       url: siteURL.href,
       name: project.title,
+      alternateName: project.shortTitle,
       description:
         "Современное русское прозаическое переложение «Одиссеи» Гомера с построчной сверкой и комментариями.",
       inLanguage: "ru-RU",
+      publisher: { "@id": publisherId },
     },
     {
-      "@type": "WebPage",
+      "@type": "Person",
+      "@id": publisherId,
+      name: project.owner,
+      url: `https://github.com/${project.owner}`,
+    },
+    {
+      "@type": "ImageObject",
+      "@id": imageId,
+      contentUrl: socialImageURL.href,
+      width: 1200,
+      height: 630,
+      caption: "Одиссея: близко к тексту — русское прозаическое переложение",
+    },
+    {
+      "@type": "Book",
+      "@id": workId,
+      url: readURL.href,
+      name: "«Одиссея» Гомера — современное русское прозаическое переложение",
+      author: {
+        "@type": "Person",
+        name: "Гомер",
+      },
+      contributor: { "@id": publisherId },
+      inLanguage: "ru-RU",
+      isAccessibleForFree: true,
+      datePublished: project.firstPublished,
+      dateModified: project.lastChecked,
+      license: rightsURL.href,
+      image: { "@id": imageId },
+    },
+    {
+      "@type": pageType,
       "@id": webpageId,
       url: canonicalURL.href,
       name: pageTitle,
       description,
       inLanguage: "ru-RU",
       isPartOf: { "@id": websiteId },
-      ...(dateModified ? { dateModified } : {}),
-      ...(structuredData.length > 0
-        ? { mainEntity: { "@id": structuredData[0]["@id"] } }
+      primaryImageOfPage: { "@id": imageId },
+      ...(breadcrumbData
+        ? { breadcrumb: { "@id": breadcrumbData["@id"] } }
         : {}),
+      ...(dateModified ? { dateModified } : {}),
+      ...(mainEntityId ? { mainEntity: { "@id": mainEntityId } } : {}),
     },
+    ...(breadcrumbData ? [breadcrumbData] : []),
     ...structuredData,
   ],
 };
@@ -68,8 +140,9 @@ const serializedJsonLd = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <meta name="author" content={project.owner} />
     <meta
       name="robots"
       content={noindex
@@ -79,7 +152,13 @@ const serializedJsonLd = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
     <meta name="color-scheme" content="light dark" />
     <link rel="canonical" href={canonicalURL} />
     <link rel="sitemap" href={sitemapURL} />
-    <link rel="icon" href={withBase("/favicon.svg")} type="image/svg+xml" />
+    <link
+      rel="icon"
+      href={withBase("/favicon.svg")}
+      type="image/svg+xml"
+      sizes="any"
+    />
+    <link rel="license" href={rightsURL} />
     <meta property="og:type" content={ogType} />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:site_name" content={project.title} />
@@ -87,6 +166,8 @@ const serializedJsonLd = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={socialImageURL} />
+    <meta property="og:image:secure_url" content={socialImageURL} />
+    <meta property="og:image:type" content="image/png" />
     <meta
       property="og:image:alt"
       content="Одиссея: близко к тексту — русское прозаическое переложение"
@@ -137,6 +218,28 @@ const serializedJsonLd = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
       </button>
     </header>
     <main id="main">
+      {
+        breadcrumbs.length > 0 && (
+          <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol>
+              {breadcrumbs.map((breadcrumb, index) => {
+                const isCurrent = index === breadcrumbs.length - 1;
+                return (
+                  <li>
+                    {isCurrent ? (
+                      <span aria-current="page">{breadcrumb.name}</span>
+                    ) : (
+                      <a href={breadcrumb.href ?? withBase("/")}>
+                        {breadcrumb.name}
+                      </a>
+                    )}
+                  </li>
+                );
+              })}
+            </ol>
+          </nav>
+        )
+      }
       <slot />
     </main>
     <footer class="site-footer">

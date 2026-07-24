@@ -4,6 +4,7 @@ import sitemap from "@astrojs/sitemap";
 const repository =
   process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "odyssey-modern-ru";
 const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
+const releaseDate = new Date("2026-07-24T00:00:00Z");
 
 export default defineConfig({
   site: "https://dzirtik.github.io",
@@ -13,6 +14,10 @@ export default defineConfig({
   integrations: [
     sitemap({
       filter: (page) => !page.endsWith("/404.html"),
+      serialize: (item) => ({
+        ...item,
+        lastmod: releaseDate,
+      }),
     }),
   ],
 });

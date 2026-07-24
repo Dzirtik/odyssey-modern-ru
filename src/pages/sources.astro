@@ -2,8 +2,13 @@
 import YAML from "yaml";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import sourcesText from "../data/sources.yml?raw";
+import { project, withBase } from "../data/project";
 
 const sources = YAML.parse(sourcesText);
+const breadcrumbs = [
+  { name: "Главная", href: withBase("/") },
+  { name: "Источники" },
+];
 
 const typeLabels: Record<string, string> = {
   primary: "Первичный текст",
@@ -20,6 +25,9 @@ const typeLabels: Record<string, string> = {
 <BaseLayout
   title="Источники и библиография «Одиссеи»"
   description={`Библиография проекта «Одиссея: близко к тексту»: ${sources.length} документированных первичных, научных и справочных источников с правовым статусом.`}
+  pageType="CollectionPage"
+  dateModified={project.lastChecked}
+  {breadcrumbs}
 >
   <section class="page-intro">
     <p class="eyebrow">Рабочая академическая библиография</p>

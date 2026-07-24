@@ -1,10 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { project, withBase } from "../data/project";
+
+const breadcrumbs = [
+  { name: "Главная", href: withBase("/") },
+  { name: "Права" },
+];
 ---
 
 <BaseLayout
   title="Права и происхождение материалов"
   description="Правовой статус древнегреческой «Одиссеи», нового русского переложения, комментариев, кода и сторонних цифровых объектов."
+  pageType="AboutPage"
+  dateModified={project.lastChecked}
+  {breadcrumbs}
 >
   <section class="page-intro prose-page">
     <p class="eyebrow">Права и происхождение</p>
