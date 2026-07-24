@@ -11,7 +11,7 @@
   source_ids:
     - homer_odyssey_perseus_grc2
     - barker_2025_odyssey_book_2
-    - de_jong_2001_book_2
+    - de_jong_2001
 - note_id: book-02-egyptius
   book: 2
   line_start: 15
@@ -24,7 +24,7 @@
   fact_ids: []
   source_ids:
     - homer_odyssey_perseus_grc2
-    - de_jong_2001_book_2
+    - de_jong_2001
 - note_id: book-02-sceptre
   book: 2
   line_start: 15
@@ -79,7 +79,7 @@
   source_ids:
     - homer_odyssey_perseus_grc2
     - papadopoulou_2016_penelope_web
-    - de_jong_2001_book_2
+    - de_jong_2001
 - note_id: book-02-marriage
   book: 2
   line_start: 110
@@ -119,7 +119,7 @@
   fact_ids: []
   source_ids:
     - homer_odyssey_perseus_grc2
-    - de_jong_2001_book_2
+    - de_jong_2001
     - merry_riddell_monro_1886
 - note_id: book-02-rumour
   book: 2
@@ -147,7 +147,7 @@
   fact_ids: []
   source_ids:
     - homer_odyssey_perseus_grc2
-    - de_jong_2001_book_2
+    - de_jong_2001
 - note_id: book-02-public-private
   book: 2
   line_start: 260
@@ -160,7 +160,7 @@
   fact_ids: []
   source_ids:
     - barker_2025_odyssey_book_2
-    - de_jong_2001_book_2
+    - de_jong_2001
 - note_id: book-02-poison
   book: 2
   line_start: 298
@@ -214,4 +214,4 @@
   source_ids:
     - homer_odyssey_perseus_grc2
     - merry_riddell_monro_1886
-    - de_jong_2001_book_2
+    - de_jong_2001

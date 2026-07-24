@@ -4,7 +4,7 @@ export const bookTwentyThree = {
   book: 23,
   title: "Песнь XXIII",
   sourceRange: "Hom. Od. 23.1–372",
-  baseSourceId: "homer_odyssey_perseus_grc23",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -160,7 +160,7 @@ export const bookTwentyThree = {
         "Сомнение не означает отсутствия любви; оно защищает царицу от обмана и готовит независимую проверку.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc23", "de_jong_2001_book_23"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-23-music",
@@ -173,7 +173,7 @@ export const bookTwentyThree = {
         "Обман даёт победителям время до реакции родичей и одновременно мрачно повторяет свадебный праздник после расправы.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc23", "de_jong_2001_book_23"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-23-bed",
@@ -186,7 +186,7 @@ export const bookTwentyThree = {
         "Испытание защищает Пенелопу от обмана и делает узнавание взаимным; ложное распоряжение рассчитано на реакцию мастера.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc23", "de_jong_2001_book_23"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-23-death",
@@ -199,7 +199,7 @@ export const bookTwentyThree = {
         "Пересказ не выбирает одну спорную интерпретацию как установленный факт; бесспорны мягкость смерти и благополучная старость.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "contested",
-      sourceIds: ["homer_odyssey_perseus_grc23", "de_jong_2001_book_23"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-23-retelling",
@@ -212,7 +212,7 @@ export const bookTwentyThree = {
         "Повтор меняет адресата и восстанавливает информационную взаимность супругов, поэтому не является простым резюме для аудитории.",
       layer: "MODERN_INTERPRETATION",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc23", "de_jong_2001_book_23"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

@@ -27,7 +27,7 @@ export const bookOne = {
   book: 1,
   title: "Песнь I",
   sourceRange: "Hom. Od. 1.1–444",
-  baseSourceId: "homer_odyssey_perseus_grc1",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -270,7 +270,7 @@ export const bookOne = {
       layer: "ARCHAIC_CONTEXT",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc1",
+        "homer_odyssey_perseus_grc2",
         "parry_1930_homeric_style",
         "nagy_odyssey_rhapsody_1",
       ],
@@ -287,7 +287,7 @@ export const bookOne = {
       layer: "POEM_WORLD",
       confidence: "debated",
       sourceIds: [
-        "homer_odyssey_perseus_grc1",
+        "homer_odyssey_perseus_grc2",
         "merry_riddell_monro_1886",
         "cunliffe_1924",
         "nagy_odyssey_rhapsody_1",
@@ -305,7 +305,7 @@ export const bookOne = {
       layer: "POEM_WORLD",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc1",
+        "homer_odyssey_perseus_grc2",
         "cambridge_guide_odyssey_overview_2020",
       ],
     },
@@ -320,7 +320,7 @@ export const bookOne = {
         "Вступление само сообщает лишь то, что спутники Одиссея посягнули на его скот и лишились возвращения. Обстоятельства не объясняются здесь: подробное объяснение появится тогда, когда к этому вернётся сама поэма.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc1"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "note-calypso",
@@ -333,7 +333,7 @@ export const bookOne = {
         "Слово «нимфа» здесь не означает безобидную сказочную фею. Это божественное существо, несоизмеримо более могущественное, чем смертный человек. Где находится остров и как герой покинет его, Песнь I пока не объясняет.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc1"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "note-divine-geography",
@@ -346,7 +346,7 @@ export const bookOne = {
         "Название не следует автоматически отождествлять с границами современного государства. Поэтическая география соединяет реальные названия, традиционные представления и чудесное пространство; уверенная локализация здесь была бы лишней.",
       layer: "POEM_WORLD",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc1", "merry_riddell_monro_1886"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "merry_riddell_monro_1886"],
     },
     {
       id: "note-aegisthus",
@@ -360,8 +360,8 @@ export const bookOne = {
       layer: "POEM_WORLD",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc1",
-        "de_jong_2001_book_1",
+        "homer_odyssey_perseus_grc2",
+        "de_jong_2001",
         "petropoulos_2011_telemachus",
       ],
     },
@@ -376,7 +376,7 @@ export const bookOne = {
         "Они помогают строить гекзаметр и удерживают узнаваемый образ персонажа. Это не всегда новая характеристика именно текущего действия. В прозе формулы можно варьировать, но нельзя систематически стирать их роль.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc1", "parry_1930_homeric_style"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "parry_1930_homeric_style"],
     },
     {
       id: "note-suitors",
@@ -390,7 +390,7 @@ export const bookOne = {
       layer: "POEM_WORLD",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc1",
+        "homer_odyssey_perseus_grc2",
         "westbrook_penelope_dowry",
         "valle_salazar_2023_telemachus",
       ],
@@ -407,7 +407,7 @@ export const bookOne = {
       layer: "ARCHAIC_CONTEXT",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc1",
+        "homer_odyssey_perseus_grc2",
         "muellner_menis_social_order",
         "cambridge_guide_odyssey_overview_2020",
       ],
@@ -423,7 +423,7 @@ export const bookOne = {
         "Поэма распределяет действия по статусу и полу, но близость к семье не делает рабство добровольной службой. В дальнейшем проект будет называть принуждение прямо и не романтизировать образ «верного слуги».",
       layer: "ARCHAIC_CONTEXT",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc1", "porter_2021_homeric_slavery"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "porter_2021_homeric_slavery"],
     },
     {
       id: "note-libation",
@@ -437,7 +437,7 @@ export const bookOne = {
       layer: "ARCHAIC_CONTEXT",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc1",
+        "homer_odyssey_perseus_grc2",
         "cambridge_guide_homeric_religion_2020",
         "met_symposium_2002",
       ],
@@ -453,7 +453,7 @@ export const bookOne = {
         "Для читателя личность Афины открыта, а Телемах только постепенно распознаёт божественное присутствие. Такая разница знания между читателем и персонажем важна для повествования.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc1", "de_jong_2001_book_1"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "note-kleos",
@@ -467,7 +467,7 @@ export const bookOne = {
       layer: "ARCHAIC_CONTEXT",
       confidence: "probable",
       sourceIds: [
-        "homer_odyssey_perseus_grc1",
+        "homer_odyssey_perseus_grc2",
         "petropoulos_2011_telemachus",
         "cambridge_guide_odyssey_overview_2020",
       ],
@@ -484,7 +484,7 @@ export const bookOne = {
       layer: "POEM_WORLD",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc1",
+        "homer_odyssey_perseus_grc2",
         "cambridge_guide_homeric_religion_2020",
       ],
     },
@@ -500,9 +500,9 @@ export const bookOne = {
       layer: "POEM_WORLD",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc1",
+        "homer_odyssey_perseus_grc2",
         "parry_1930_homeric_style",
-        "de_jong_2001_book_1",
+        "de_jong_2001",
       ],
     },
     {
@@ -517,8 +517,8 @@ export const bookOne = {
       layer: "POEM_WORLD",
       confidence: "probable",
       sourceIds: [
-        "homer_odyssey_perseus_grc1",
-        "de_jong_2001_book_1",
+        "homer_odyssey_perseus_grc2",
+        "de_jong_2001",
         "petropoulos_2011_telemachus",
       ],
     },
@@ -534,7 +534,7 @@ export const bookOne = {
       layer: "MODERN_HYPOTHESIS",
       confidence: "debated",
       sourceIds: [
-        "homer_odyssey_perseus_grc1",
+        "homer_odyssey_perseus_grc2",
         "westbrook_penelope_dowry",
         "valle_salazar_2023_telemachus",
       ],
@@ -550,7 +550,7 @@ export const bookOne = {
         "Цена в двадцать быков подчёркивает имущественный статус Евриклеи. Доверие, привязанность и высокий авторитет внутри хозяйства не отменяют насильственной основы рабства; оба уровня нужно удерживать одновременно.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc1", "porter_2021_homeric_slavery"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "porter_2021_homeric_slavery"],
     },
   ] satisfies Note[],
 } as const;

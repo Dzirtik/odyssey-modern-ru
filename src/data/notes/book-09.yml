@@ -9,8 +9,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc9
-    - de_jong_2001_book_9
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-09-cicones
   book: 9
   line_start: 32
@@ -22,7 +22,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc9
+    - homer_odyssey_perseus_grc2
 - note_id: book-09-lotus
   book: 9
   line_start: 83
@@ -34,7 +34,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc9
+    - homer_odyssey_perseus_grc2
     - merry_riddell_monro_1886
 - note_id: book-09-xenia
   book: 9
@@ -47,8 +47,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc9
-    - de_jong_2001_book_9
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-09-nobody
   book: 9
   line_start: 307
@@ -60,5 +60,5 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc9
-    - de_jong_2001_book_9
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001

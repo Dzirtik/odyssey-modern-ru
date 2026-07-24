@@ -9,8 +9,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc12
-    - de_jong_2001_book_12
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-12-choice
   book: 12
   line_start: 71
@@ -22,8 +22,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc12
-    - de_jong_2001_book_12
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-12-secrecy
   book: 12
   line_start: 201
@@ -35,7 +35,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc12
+    - homer_odyssey_perseus_grc2
 - note_id: book-12-cattle
   book: 12
   line_start: 320
@@ -47,8 +47,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc12
-    - de_jong_2001_book_12
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-12-source
   book: 12
   line_start: 374
@@ -60,5 +60,5 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc12
-    - de_jong_2001_book_12
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001

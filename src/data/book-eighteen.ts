@@ -4,7 +4,7 @@ export const bookEighteen = {
   book: 18,
   title: "Песнь XVIII",
   sourceRange: "Hom. Od. 18.1–428",
-  baseSourceId: "homer_odyssey_perseus_grc18",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -185,7 +185,7 @@ export const bookEighteen = {
         "Сцена характеризует власть в захваченном доме; она не представлена как честное спортивное состязание.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc18", "de_jong_2001_book_18"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-18-amphinomus",
@@ -197,7 +197,7 @@ export const bookEighteen = {
         "Повествование различает его восприимчивость и его действие: сочувствие не равно отказу от участия.",
       layer: "MODERN_INTERPRETATION",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc18", "de_jong_2001_book_18"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-18-athena",
@@ -210,7 +210,7 @@ export const bookEighteen = {
         "Поэма совмещает божественную причинность с человеческим расчётом; одно не следует рационализировать как другое.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc18"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-18-gifts",
@@ -223,7 +223,7 @@ export const bookEighteen = {
         "Описание относится к норме внутри поэмы и не должно автоматически переноситься на все исторические греческие брачные практики.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc18", "de_jong_2001_book_18"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-18-melantho",
@@ -236,7 +236,7 @@ export const bookEighteen = {
         "Неверность показана не как свойство всех рабынь: рядом действуют и сохраняющие доверие женщины.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc18", "de_jong_2001_book_18"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

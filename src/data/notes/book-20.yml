@@ -9,8 +9,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc20
-    - de_jong_2001_book_20
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-20-omens
   book: 20
   line_start: 87
@@ -22,8 +22,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc20
-    - de_jong_2001_book_20
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-20-philoetius
   book: 20
   line_start: 172
@@ -35,8 +35,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc20
-    - de_jong_2001_book_20
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-20-ctesippus
   book: 20
   line_start: 240
@@ -48,7 +48,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc20
+    - homer_odyssey_perseus_grc2
 - note_id: book-20-vision
   book: 20
   line_start: 321
@@ -60,5 +60,5 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc20
-    - de_jong_2001_book_20
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001

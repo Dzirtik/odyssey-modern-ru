@@ -2,89 +2,89 @@
   entity_id: odysseus
   reveal_at: { book: 1, line: 1 }
   text_safe_until_next_reveal: "Одиссей — многоопытный герой, возвращающийся после Троянской войны."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: helios_identity
   entity_id: helios
   reveal_at: { book: 1, line: 1 }
   text_safe_until_next_reveal: "Гелиос — бог Солнца; принадлежащее богу неприкосновенно."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: athena_visits_telemachus
   entity_id: athena
   reveal_at: { book: 1, line: 96 }
   text_safe_until_next_reveal: "Афина приходит на Итаку в облике Мента."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: future_content_locked
   entity_id: future
   reveal_at: { book: 2, line: 1 }
   text_safe_until_next_reveal: ""
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: telemachus_leaves_ithaca
   entity_id: telemachus
   reveal_at: { book: 2, line: 382 }
   text_safe_until_next_reveal: "Телемах тайно отправляется за вестями об отце."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: odysseus_leaves_calypso
   entity_id: odysseus
   reveal_at: { book: 5, line: 228 }
   text_safe_until_next_reveal: "Одиссей покидает Огигию на построенном им плоту."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: nausicaa_meets_odysseus
   entity_id: nausicaa
   reveal_at: { book: 6, line: 127 }
   text_safe_until_next_reveal: "Навсикая встречает потерпевшего крушение чужеземца."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: odysseus_names_himself
   entity_id: odysseus
   reveal_at: { book: 9, line: 19 }
   text_safe_until_next_reveal: "Гость феаков называет себя Одиссеем."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: polyphemus_blinded
   entity_id: polyphemus
   reveal_at: { book: 9, line: 382 }
   text_safe_until_next_reveal: "Одиссей и товарищи лишают Полифема глаза и бегут."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: circe_aids_odysseus
   entity_id: circe
   reveal_at: { book: 10, line: 388 }
   text_safe_until_next_reveal: "Кирка помогает Одиссею и указывает дальнейший путь."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: tiresias_prophecy
   entity_id: tiresias
   reveal_at: { book: 11, line: 90 }
   text_safe_until_next_reveal: "Тиресий сообщает условия возвращения и последующего примирения с Посейдоном."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: crew_lost
   entity_id: odysseus_crew
   reveal_at: { book: 12, line: 420 }
   text_safe_until_next_reveal: "После удара Зевса Одиссей остаётся единственным уцелевшим."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: odysseus_reaches_ithaca
   entity_id: odysseus
   reveal_at: { book: 13, line: 119 }
   text_safe_until_next_reveal: "Феаки доставляют спящего Одиссея на Итаку."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: telemachus_recognizes_father
   entity_id: telemachus
   reveal_at: { book: 16, line: 187 }
   text_safe_until_next_reveal: "Одиссей открывается Телемаху."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: bow_test_completed
   entity_id: odysseus_bow
   reveal_at: { book: 21, line: 423 }
   text_safe_until_next_reveal: "Одиссей проводит стрелу через топоры."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: suitors_defeated
   entity_id: suitors
   reveal_at: { book: 22, line: 389 }
   text_safe_until_next_reveal: "Женихи погибают в запертом зале."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: penelope_recognizes_odysseus
   entity_id: penelope
   reveal_at: { book: 23, line: 205 }
   text_safe_until_next_reveal: "Тайна супружеского ложа подтверждает личность Одиссея."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]
 - fact_id: peace_on_ithaca
   entity_id: ithaca
   reveal_at: { book: 24, line: 531 }
   text_safe_until_next_reveal: "Афина и Зевс прекращают распрю на Итаке."
-  sources: [homer_odyssey_perseus_grc1]
+  sources: [homer_odyssey_perseus_grc2]

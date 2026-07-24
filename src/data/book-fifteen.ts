@@ -4,7 +4,7 @@ export const bookFifteen = {
   book: 15,
   title: "Песнь XV",
   sourceRange: "Hom. Od. 15.1–557",
-  baseSourceId: "homer_odyssey_perseus_grc15",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -202,7 +202,7 @@ export const bookFifteen = {
         "Речь богини убеждает и частично обобщает о женщинах; её нельзя принимать за прямое сообщение о решении Пенелопы.",
       layer: "MODERN_INTERPRETATION",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc15", "de_jong_2001_book_15"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-15-theoclymenus",
@@ -215,7 +215,7 @@ export const bookFifteen = {
         "Он убил родственника и ищет защиты от мести; гостевой приём не стирает обстоятельства бегства.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc15"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-15-eumaeus",
@@ -227,7 +227,7 @@ export const bookFifteen = {
         "Ребёнка похитила служанка с финикийскими торговцами; позднее Лаэрт его купил. Благородное рождение не отменяет рабского положения.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc15", "de_jong_2001_book_15"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-15-chains",
@@ -240,7 +240,7 @@ export const bookFifteen = {
         "Эмоциональная близость и правовая зависимость сосуществуют. Пересказ сохраняет обе стороны, не называя рабство усыновлением.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc15"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-15-omens",
@@ -253,7 +253,7 @@ export const bookFifteen = {
         "Значение формулирует авторитетный толкователь в конкретной ситуации; птица не является универсальным кодом вне контекста.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc15", "de_jong_2001_book_15"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

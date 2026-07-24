@@ -4,7 +4,7 @@ export const bookTen = {
   book: 10,
   title: "Песнь X",
   sourceRange: "Hom. Od. 10.1–574",
-  baseSourceId: "homer_odyssey_perseus_grc10",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -225,7 +225,7 @@ export const bookTen = {
         "Его не следует без оговорок отождествлять со всеми позднейшими персонажами этого имени.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc10", "de_jong_2001_book_10"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-10-harbour",
@@ -237,7 +237,7 @@ export const bookTen = {
         "Судно Одиссея остаётся снаружи и может уйти после перерубания каната; это различие определяет выживание.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc10"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-10-moly",
@@ -249,7 +249,7 @@ export const bookTen = {
         "Чёрный корень и белый цветок не позволяют надёжно выбрать реальный ботанический вид; предложенные идентификации остаются гипотезами.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc10", "merry_riddell_monro_1886"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "merry_riddell_monro_1886"],
     },
     {
       id: "book-10-eurylochus",
@@ -262,7 +262,7 @@ export const bookTen = {
         "Рассказчик резко оценивает сопротивление, но сохранённые доводы Еврилаха опираются на гибель людей у Полифема и исчезновение разведчиков.",
       layer: "MODERN_INTERPRETATION",
       confidence: "debated",
-      sourceIds: ["homer_odyssey_perseus_grc10", "de_jong_2001_book_10"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-10-underworld",
@@ -274,7 +274,7 @@ export const bookTen = {
         "Традиционное название эпизода не должно стирать конкретную сценографию поэмы: живой герой остаётся у ритуального места встречи.",
       layer: "POEM_WORLD",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc10", "de_jong_2001_book_10"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

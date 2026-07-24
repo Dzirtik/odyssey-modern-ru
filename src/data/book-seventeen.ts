@@ -4,7 +4,7 @@ export const bookSeventeen = {
   book: 17,
   title: "Песнь XVII",
   sourceRange: "Hom. Od. 17.1–606",
-  baseSourceId: "homer_odyssey_perseus_grc17",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -217,7 +217,7 @@ export const bookSeventeen = {
         "Песня ставит рядом свидетельство о прошлом и прорицание о настоящем; читателю не следует сливать их в один источник знания.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc17", "de_jong_2001_book_17"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-17-melanthius",
@@ -230,7 +230,7 @@ export const bookSeventeen = {
         "Его поведение показывает раскол среди зависимых работников дома; верность нельзя выводить из одного социального положения.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc17", "de_jong_2001_book_17"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-17-argos",
@@ -242,7 +242,7 @@ export const bookSeventeen = {
         "Мгновенное узнавание противопоставлено долгим проверкам людей и материально показывает запустение дома.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc17", "de_jong_2001_book_17"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-17-begging",
@@ -255,7 +255,7 @@ export const bookSeventeen = {
         "Проверка раскрывает характеры, но текст прямо предупреждает: отдельный щедрый кусок не отменит общего участия в захвате дома.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc17", "de_jong_2001_book_17"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-17-furies",
@@ -268,7 +268,7 @@ export const bookSeventeen = {
         "Молитва остаётся речью персонажа внутри мира поэмы; она не равна современному судебному решению.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc17"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
   ] satisfies Note[],
 };

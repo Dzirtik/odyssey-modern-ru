@@ -9,8 +9,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc10
-    - de_jong_2001_book_10
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-10-harbour
   book: 10
   line_start: 79
@@ -22,7 +22,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc10
+    - homer_odyssey_perseus_grc2
 - note_id: book-10-moly
   book: 10
   line_start: 224
@@ -34,7 +34,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc10
+    - homer_odyssey_perseus_grc2
     - merry_riddell_monro_1886
 - note_id: book-10-eurylochus
   book: 10
@@ -47,8 +47,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc10
-    - de_jong_2001_book_10
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-10-underworld
   book: 10
   line_start: 429
@@ -60,5 +60,5 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc10
-    - de_jong_2001_book_10
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001

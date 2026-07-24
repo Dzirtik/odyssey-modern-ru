@@ -4,7 +4,7 @@ export const bookFourteen = {
   book: 14,
   title: "Песнь XIV",
   sourceRange: "Hom. Od. 14.1–533",
-  baseSourceId: "homer_odyssey_perseus_grc14",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -199,7 +199,7 @@ export const bookFourteen = {
         "Малый дар зависимого пастуха нравственно противопоставлен богатому пиру женихов из чужого имущества.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc14", "de_jong_2001_book_14"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-14-status",
@@ -211,7 +211,7 @@ export const bookFourteen = {
         "Поэма высоко оценивает его, но не отменяет рабский статус и ожидание награды от хозяина: земли, дома и брака.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc14"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-14-cretan",
@@ -224,7 +224,7 @@ export const bookFourteen = {
         "Её нельзя использовать как фактическую биографию Одиссея. Детали подобраны для доверия именно Евмея.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc14", "de_jong_2001_book_14"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-14-wager",
@@ -237,7 +237,7 @@ export const bookFourteen = {
         "Свинопас не доверчив, но отделяет проверку рассказа от обязанности не причинять вред уязвимому гостю.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc14"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-14-cloak",
@@ -250,7 +250,7 @@ export const bookFourteen = {
         "История одновременно получает одежду и проверяет внимательность хозяина, не раскрывая личность гостя.",
       layer: "MODERN_INTERPRETATION",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc14", "de_jong_2001_book_14"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

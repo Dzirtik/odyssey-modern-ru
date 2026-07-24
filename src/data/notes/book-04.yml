@@ -9,8 +9,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc4
-    - de_jong_2001_book_4
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-04-electrum
   book: 4
   line_start: 30
@@ -22,7 +22,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc4
+    - homer_odyssey_perseus_grc2
     - merry_riddell_monro_1886
     - cunliffe_1924
 - note_id: book-04-helen-drug
@@ -36,8 +36,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc4
-    - de_jong_2001_book_4
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
     - merry_riddell_monro_1886
 - note_id: book-04-two-helen-stories
   book: 4
@@ -50,8 +50,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc4
-    - de_jong_2001_book_4
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-04-proteus
   book: 4
   line_start: 398
@@ -63,8 +63,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc4
-    - de_jong_2001_book_4
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
     - cambridge_guide_homeric_religion_2020
 - note_id: book-04-ajax
   book: 4
@@ -77,7 +77,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc4
+    - homer_odyssey_perseus_grc2
     - merry_riddell_monro_1886
 - note_id: book-04-elysium
   book: 4
@@ -90,8 +90,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc4
-    - de_jong_2001_book_4
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-04-ithacan-horses
   book: 4
   line_start: 593
@@ -103,8 +103,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc4
-    - de_jong_2001_book_4
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-04-dream
   book: 4
   line_start: 795
@@ -116,5 +116,5 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc4
-    - de_jong_2001_book_4
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001

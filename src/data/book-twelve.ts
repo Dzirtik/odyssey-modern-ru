@@ -4,7 +4,7 @@ export const bookTwelve = {
   book: 12,
   title: "Песнь XII",
   sourceRange: "Hom. Od. 12.1–453",
-  baseSourceId: "homer_odyssey_perseus_grc12",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -176,7 +176,7 @@ export const bookTwelve = {
         "Одиссей слышит безопасно лишь потому, что заранее лишает будущего себя власти отменить план.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc12", "de_jong_2001_book_12"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-12-choice",
@@ -189,7 +189,7 @@ export const bookTwelve = {
         "Это трагический выбор без безопасного варианта. Он не делает смерть выбранных людей добровольной или нравственно простой.",
       layer: "MODERN_INTERPRETATION",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc12", "de_jong_2001_book_12"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-12-secrecy",
@@ -202,7 +202,7 @@ export const bookTwelve = {
         "Практический расчёт сохранён вместе с этической ценой: шесть человек не получили знания о непосредственной угрозе.",
       layer: "MODERN_INTERPRETATION",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc12"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-12-cattle",
@@ -215,7 +215,7 @@ export const bookTwelve = {
         "Речь не оправдывает нарушение, но возвращает людям мотивацию и показывает провал коллективного управления в месячной блокаде.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc12", "de_jong_2001_book_12"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-12-source",
@@ -227,7 +227,7 @@ export const bookTwelve = {
         "Редкая ссылка на цепочку источников отделяет пережитое героем от сообщения о сцене, которую он не мог наблюдать.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc12", "de_jong_2001_book_12"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

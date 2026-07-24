@@ -226,7 +226,7 @@ export const bookTwo = {
       sourceIds: [
         "homer_odyssey_perseus_grc2",
         "barker_2025_odyssey_book_2",
-        "de_jong_2001_book_2",
+        "de_jong_2001",
       ],
     },
     {
@@ -240,7 +240,7 @@ export const bookTwo = {
         "Антиф ушёл с Одиссеем и не вернулся, Евримах присоединился к женихам, двое сыновей ведут хозяйство. Слушатель уже знает судьбу Антифа, но сам отец её не знает: так поэма показывает разрыв между знанием повествователя, героя и общины.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001_book_2"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-02-sceptre",
@@ -302,7 +302,7 @@ export const bookTwo = {
       sourceIds: [
         "homer_odyssey_perseus_grc2",
         "papadopoulou_2016_penelope_web",
-        "de_jong_2001_book_2",
+        "de_jong_2001",
       ],
     },
     {
@@ -351,7 +351,7 @@ export const bookTwo = {
       confidence: "debated",
       sourceIds: [
         "homer_odyssey_perseus_grc2",
-        "de_jong_2001_book_2",
+        "de_jong_2001",
         "merry_riddell_monro_1886",
       ],
     },
@@ -383,7 +383,7 @@ export const bookTwo = {
         "В собрании говорит человеческий Ментор, которому Одиссей поручил дом. Позже у моря появляется Афина, похожая на него. Русский текст каждый раз уточняет, где действует человек, а где богиня, чтобы новичок не сливал их в одного персонажа.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001_book_2"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-02-public-private",
@@ -396,7 +396,7 @@ export const bookTwo = {
         "Исследователи видят в этом важную конструкцию Песни II: речи дают сторонам голос, но не останавливают женихов. После распада собрания молитва, подготовка припасов, добровольцы и корабль последовательно превращают намерение в действие.",
       layer: "MODERN_HYPOTHESIS",
       confidence: "probable",
-      sourceIds: ["barker_2025_odyssey_book_2", "de_jong_2001_book_2"],
+      sourceIds: ["barker_2025_odyssey_book_2", "de_jong_2001"],
     },
     {
       id: "book-02-poison",
@@ -458,7 +458,7 @@ export const bookTwo = {
       sourceIds: [
         "homer_odyssey_perseus_grc2",
         "merry_riddell_monro_1886",
-        "de_jong_2001_book_2",
+        "de_jong_2001",
       ],
     },
   ] satisfies Note[],

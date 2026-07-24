@@ -1,6 +1,6 @@
 book: 5
 source_range: "5.1-493"
-base_source_id: homer_odyssey_perseus_grc5
+base_source_id: homer_odyssey_perseus_grc2
 status: editorial_preview
 segments:
   - lines: "1-21"

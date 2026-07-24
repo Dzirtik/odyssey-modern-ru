@@ -4,7 +4,7 @@ export const bookSix = {
   book: 6,
   title: "Песнь VI",
   sourceRange: "Hom. Od. 6.1–331",
-  baseSourceId: "homer_odyssey_perseus_grc6",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -158,7 +158,7 @@ export const bookSix = {
         "Песня сообщает, что Навсифой переселил их от сильных соседей-киклопов и устроил Схерию. Их необычная близость к богам и корабельное мастерство принадлежат миру поэмы; это не описание надёжно локализованного исторического народа.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc6", "de_jong_2001_book_6"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-06-laundry",
@@ -171,7 +171,7 @@ export const bookSix = {
         "Сцена соединяет тяжёлую домашнюю работу, купание, еду и игру. Царская дочь управляет поездкой и сама участвует; наличие служанок не превращает её в пассивную наблюдательницу.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc6", "merry_riddell_monro_1886"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "merry_riddell_monro_1886"],
     },
     {
       id: "book-06-knees",
@@ -184,7 +184,7 @@ export const bookSix = {
         "Он не отказывается от статуса просителя: речь всё равно строится как обращение человека, ищущего защиты. Изменение формы ритуального поведения показывает способность учитывать положение адресата.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc6", "de_jong_2001_book_6"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-06-lion",
@@ -197,7 +197,7 @@ export const bookSix = {
         "Одиссей не превращается в животное и не намерен напасть. Для слушателя необходимость делает его храбрым; для девушек приближается незнакомый покрытый солью мужчина. Навсикая остаётся благодаря мужеству, данному Афиной.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc6", "de_jong_2001_book_6"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-06-gossip",
@@ -210,7 +210,7 @@ export const bookSix = {
         "Это не отказ в гостеприимстве: Навсикая даёт точный путь и способ получить помощь. Её рассуждение показывает ограничение репутацией, которое сильнее действует на незамужнюю девушку, чем на взрослого мужчину.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc6", "de_jong_2001_book_6"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-06-arete",
@@ -223,7 +223,7 @@ export const bookSix = {
         "Одиссей должен пройти мимо трона Алкиноя и обратиться к коленям царицы. Это не означает автоматически формального матриархата: сцена показывает особый авторитет Ареты именно в этом доме и в решении о просителе.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc6", "de_jong_2001_book_6"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

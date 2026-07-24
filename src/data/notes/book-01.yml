@@ -9,7 +9,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - parry_1930_homeric_style
     - nagy_odyssey_rhapsody_1
 - note_id: note-polytropos
@@ -23,7 +23,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - merry_riddell_monro_1886
     - cunliffe_1924
     - nagy_odyssey_rhapsody_1
@@ -38,7 +38,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - cambridge_guide_odyssey_overview_2020
 - note_id: note-helios
   book: 1
@@ -51,7 +51,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
 - note_id: note-calypso
   book: 1
   line_start: 11
@@ -63,7 +63,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
 - note_id: note-divine-geography
   book: 1
   line_start: 22
@@ -75,7 +75,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - merry_riddell_monro_1886
 - note_id: note-aegisthus
   book: 1
@@ -88,8 +88,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
-    - de_jong_2001_book_1
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
     - petropoulos_2011_telemachus
 - note_id: note-epithets
   book: 1
@@ -102,7 +102,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - parry_1930_homeric_style
 - note_id: note-suitors
   book: 1
@@ -115,7 +115,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - westbrook_penelope_dowry
     - valle_salazar_2023_telemachus
 - note_id: note-xenia
@@ -129,7 +129,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - muellner_menis_social_order
     - cambridge_guide_odyssey_overview_2020
 - note_id: note-household
@@ -143,7 +143,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - porter_2021_homeric_slavery
 - note_id: note-libation
   book: 1
@@ -156,7 +156,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - cambridge_guide_homeric_religion_2020
     - met_symposium_2002
 - note_id: note-mentes
@@ -170,8 +170,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
-    - de_jong_2001_book_1
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: note-kleos
   book: 1
   line_start: 274
@@ -183,7 +183,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - petropoulos_2011_telemachus
     - cambridge_guide_odyssey_overview_2020
 - note_id: note-burial
@@ -197,7 +197,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - cambridge_guide_homeric_religion_2020
 - note_id: note-bard
   book: 1
@@ -210,9 +210,9 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - parry_1930_homeric_style
-    - de_jong_2001_book_1
+    - de_jong_2001
 - note_id: note-penelope-speech
   book: 1
   line_start: 345
@@ -224,8 +224,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
-    - de_jong_2001_book_1
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
     - petropoulos_2011_telemachus
 - note_id: note-basileus
   book: 1
@@ -238,7 +238,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - westbrook_penelope_dowry
     - valle_salazar_2023_telemachus
 - note_id: note-eurycleia
@@ -252,5 +252,5 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc2
     - porter_2021_homeric_slavery

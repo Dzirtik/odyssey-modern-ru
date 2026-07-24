@@ -4,11 +4,11 @@
 
 ## Проверенные опоры
 
-- греческий текст: `homer_odyssey_perseus_grc1`, `Hom. Od. 1.1–444`;
+- греческий текст: `homer_odyssey_perseus_grc2`, `Hom. Od. 1.1–444`;
 - строковый комментарий: `merry_riddell_monro_1886`;
 - лексическая сверка: `lsj_perseus`, `cunliffe_1924`, `logeion_portal`;
 - формульный язык: `parry_1930_homeric_style`;
-- интерпретация отдельных мест: `nagy_odyssey_rhapsody_1`, `de_jong_2001_book_1`.
+- интерпретация отдельных мест: `nagy_odyssey_rhapsody_1`, `de_jong_2001`.
 
 ## Замечания по диапазонам
 

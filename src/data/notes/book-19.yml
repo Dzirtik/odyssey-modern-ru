@@ -9,8 +9,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc19
-    - de_jong_2001_book_19
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-19-penelope-test
   book: 19
   line_start: 191
@@ -22,8 +22,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc19
-    - de_jong_2001_book_19
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-19-scar
   book: 19
   line_start: 335
@@ -35,8 +35,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc19
-    - de_jong_2001_book_19
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-19-autolycus
   book: 19
   line_start: 361
@@ -48,7 +48,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc19
+    - homer_odyssey_perseus_grc2
 - note_id: book-19-dream-gates
   book: 19
   line_start: 508
@@ -60,5 +60,5 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc19
-    - de_jong_2001_book_19
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001

@@ -4,7 +4,7 @@ export const bookSixteen = {
   book: 16,
   title: "Песнь XVI",
   sourceRange: "Hom. Od. 16.1–481",
-  baseSourceId: "homer_odyssey_perseus_grc16",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -205,7 +205,7 @@ export const bookSixteen = {
         "Его осторожность основана на реальном неравенстве сил, а не на отсутствии мужества.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc16", "de_jong_2001_book_16"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-16-recognition",
@@ -217,7 +217,7 @@ export const bookSixteen = {
         "Сомнение разумно: сын видит быстрый переход от старого нищего к крепкому мужчине и предполагает присутствие бога.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc16"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-16-weapons",
@@ -230,7 +230,7 @@ export const bookSixteen = {
         "Ложное объяснение дымом и пьяными ссорами маскирует подготовку; для отца и сына оставляют отдельные комплекты.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc16", "de_jong_2001_book_16"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-16-penelope",
@@ -243,7 +243,7 @@ export const bookSixteen = {
         "Она располагает сведениями Медонта и действует сама; сцена не сводит её к ожидающей спасения женщине.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc16", "de_jong_2001_book_16"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-16-secret",
@@ -256,7 +256,7 @@ export const bookSixteen = {
         "Это мера оперативной безопасности, а не обвинение Евмея; его верность уже подробно показана.",
       layer: "MODERN_INTERPRETATION",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc16"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
   ] satisfies Note[],
 };

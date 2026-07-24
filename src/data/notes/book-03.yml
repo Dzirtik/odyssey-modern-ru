@@ -9,7 +9,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc3
+    - homer_odyssey_perseus_grc2
     - rives_2024_nestor_sacrifices
     - isaakidou_halstead_2002_pylos
 - note_id: book-03-strangers
@@ -23,9 +23,9 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc3
+    - homer_odyssey_perseus_grc2
     - merry_riddell_monro_1886
-    - de_jong_2001_book_3
+    - de_jong_2001
 - note_id: book-03-nostos
   book: 3
   line_start: 120
@@ -37,8 +37,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc3
-    - de_jong_2001_book_3
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
     - cambridge_guide_odyssey_overview_2020
 - note_id: book-03-orestes
   book: 3
@@ -51,7 +51,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc3
+    - homer_odyssey_perseus_grc2
     - petropoulos_2011_telemachus
     - valle_salazar_2023_telemachus
 - note_id: book-03-athena-eagle
@@ -65,8 +65,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc3
-    - de_jong_2001_book_3
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-03-sacrifice
   book: 3
   line_start: 446
@@ -78,7 +78,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc3
+    - homer_odyssey_perseus_grc2
     - rives_2024_nestor_sacrifices
     - isaakidou_halstead_2002_pylos
     - cambridge_guide_homeric_religion_2020
@@ -93,5 +93,5 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc3
+    - homer_odyssey_perseus_grc2
     - nagy_2017_bathtub_pylos

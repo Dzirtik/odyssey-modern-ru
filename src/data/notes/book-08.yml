@@ -9,8 +9,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc8
-    - de_jong_2001_book_8
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-08-games
   book: 8
   line_start: 152
@@ -22,8 +22,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc8
-    - de_jong_2001_book_8
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-08-ares
   book: 8
   line_start: 256
@@ -35,8 +35,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc8
-    - de_jong_2001_book_8
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-08-simile
   book: 8
   line_start: 521
@@ -48,8 +48,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc8
-    - de_jong_2001_book_8
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-08-ships
   book: 8
   line_start: 551
@@ -61,4 +61,4 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc8
+    - homer_odyssey_perseus_grc2

@@ -4,7 +4,7 @@ export const bookTwentyTwo = {
   book: 22,
   title: "Песнь XXII",
   sourceRange: "Hom. Od. 22.1–501",
-  baseSourceId: "homer_odyssey_perseus_grc22",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -218,7 +218,7 @@ export const bookTwentyTwo = {
         "Поэма представляет расправу как божественно поддержанное возмездие; это описание мира поэмы, не современная правовая оценка.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc22", "de_jong_2001_book_22"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-22-melanthius",
@@ -231,7 +231,7 @@ export const bookTwentyTwo = {
         "Эпизод сохраняет реальный риск и показывает, что знание пространства дома доступно не только верным слугам.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc22", "de_jong_2001_book_22"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-22-athena",
@@ -244,7 +244,7 @@ export const bookTwentyTwo = {
         "Она не заменяет всех человеческих действий; союзники продолжают целиться, вооружаться и получают ранения.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc22", "de_jong_2001_book_22"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-22-pardon",
@@ -257,7 +257,7 @@ export const bookTwentyTwo = {
         "Леод тоже просит о пощаде, но его собственное заявление Одиссей не принимает; граница проводится победителями в момент расправы.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc22", "de_jong_2001_book_22"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-22-women",
@@ -270,7 +270,7 @@ export const bookTwentyTwo = {
         "Поэма не даёт индивидуальных показаний и не уточняет свободу каждой связи с женихами. Современная этическая тревога уместна и не должна скрываться.",
       layer: "MODERN_INTERPRETATION",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc22", "de_jong_2001_book_22"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-22-melanthius-punishment",
@@ -283,7 +283,7 @@ export const bookTwentyTwo = {
         "Нейтральный пересказ не смягчает факты и не предлагает жестокость как норму для современного читателя.",
       layer: "MODERN_INTERPRETATION",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc22"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
   ] satisfies Note[],
 };

@@ -4,7 +4,7 @@ export const bookSeven = {
   book: 7,
   title: "Песнь VII",
   sourceRange: "Hom. Od. 7.1–347",
-  baseSourceId: "homer_odyssey_perseus_grc7",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -156,7 +156,7 @@ export const bookSeven = {
         "Поэма подчёркивает её разум и способность прекращать споры. Это характеристика конкретного дома, а не достаточное свидетельство матриархального устройства всех феаков.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc7", "de_jong_2001_book_7"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-07-palace",
@@ -168,7 +168,7 @@ export const bookSeven = {
         "Описание стирает границу между художественным предметом и чудесным слугой. Его лучше читать как свойство близкого богам мира, не как сообщение о механической технологии.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc7", "de_jong_2001_book_7"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-07-labour",
@@ -180,7 +180,7 @@ export const bookSeven = {
         "Евримедуса названа военной добычей, другие служанки мелют и ткут. Современный пересказ не должен превращать роскошь Алкиноя в картину труда без работников.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc7"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-07-ashes",
@@ -193,7 +193,7 @@ export const bookSeven = {
         "Эхеней называет такое место неподобающим после признания просителя и требует пересадить его. Ритуал действует через ответ сообщества, а не как автоматическое заклинание.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc7", "merry_riddell_monro_1886"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "merry_riddell_monro_1886"],
     },
     {
       id: "book-07-identity",
@@ -206,7 +206,7 @@ export const bookSeven = {
         "Рассказ правдив, но выборочен: герой описывает Огигию, бурю и Навсикаю, не сообщая обо всех богах-помощниках. Полное самообъявление отложено.",
       layer: "MODERN_INTERPRETATION",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc7", "de_jong_2001_book_7"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-07-choice",
@@ -219,7 +219,7 @@ export const bookSeven = {
         "Сходство вариантов делает различие в согласии заметным. Одиссей может остаться, но возвращение назначено независимо от ответа на брачное предложение.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc7", "de_jong_2001_book_7"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

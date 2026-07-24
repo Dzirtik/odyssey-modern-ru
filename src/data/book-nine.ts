@@ -4,7 +4,7 @@ export const bookNine = {
   book: 9,
   title: "Песнь IX",
   sourceRange: "Hom. Od. 9.1–566",
-  baseSourceId: "homer_odyssey_perseus_grc9",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -231,7 +231,7 @@ export const bookNine = {
         "Его рассказ входит внутрь поэмы. Последовательность событий сохраняется, но оценки решений принадлежат участнику, который объясняет себя публике.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc9", "de_jong_2001_book_9"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-09-cicones",
@@ -243,7 +243,7 @@ export const bookNine = {
         "Непослушание спутников объясняет задержку, но не делает начальное насилие обороной. Ответ киконов — организованное сопротивление соседей.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc9"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-09-lotus",
@@ -256,7 +256,7 @@ export const bookNine = {
         "Поэма не даёт ботанического описания, достаточного для надёжного определения реального растения. Географическая и фармакологическая локализация остаётся гипотезой.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc9", "merry_riddell_monro_1886"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "merry_riddell_monro_1886"],
     },
     {
       id: "book-09-xenia",
@@ -269,7 +269,7 @@ export const bookNine = {
         "Чудовищное убийство Полифема остаётся нарушением, однако сцена намеренно осложняет роли хозяина и гостя: ахейцы обсуждали кражу имущества, а киклоп подозревает морских разбойников.",
       layer: "MODERN_INTERPRETATION",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc9", "de_jong_2001_book_9"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-09-nobody",
@@ -282,7 +282,7 @@ export const bookNine = {
         "Словесный план действует вместе с вином, колом и побегом под баранами. Последующее настоящее имя возвращает герою славу, но лишает защитной безымянности.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc9", "de_jong_2001_book_9"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

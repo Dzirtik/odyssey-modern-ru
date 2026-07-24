@@ -9,8 +9,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc21
-    - de_jong_2001_book_21
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-21-axes
   book: 21
   line_start: 80
@@ -22,8 +22,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc21
-    - de_jong_2001_book_21
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-21-servants
   book: 21
   line_start: 216
@@ -35,8 +35,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc21
-    - de_jong_2001_book_21
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-21-penelope
   book: 21
   line_start: 311
@@ -48,7 +48,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc21
+    - homer_odyssey_perseus_grc2
 - note_id: book-21-lyre
   book: 21
   line_start: 384
@@ -60,5 +60,5 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc21
-    - de_jong_2001_book_21
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001

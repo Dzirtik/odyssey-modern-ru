@@ -3,7 +3,7 @@
   creator: Homeric tradition
   title: Odyssey
   asset_type: text
-  source_id: homer_odyssey_perseus_grc1
+  source_id: homer_odyssey_perseus_grc2
   rights_holder: ""
   status: public_domain
   license: ""
@@ -20,7 +20,7 @@
   creator: Perseus Digital Library
   title: Odyssey digital Greek text
   asset_type: edition
-  source_id: homer_odyssey_perseus_grc1
+  source_id: homer_odyssey_perseus_grc2
   rights_holder: "Perseus Digital Library and identified edition stakeholders"
   status: open_license
   license: "Perseus redistribution terms; link-only use in this project"
@@ -37,7 +37,7 @@
   creator: "Dzirtik with AI-assisted drafting"
   title: "Independent Russian prose retelling: Books I-XXIV editorial previews"
   asset_type: translation
-  source_id: homer_odyssey_perseus_grc1
+  source_id: homer_odyssey_perseus_grc2
   rights_holder: Dzirtik
   status: all_rights_reserved
   license: ""
