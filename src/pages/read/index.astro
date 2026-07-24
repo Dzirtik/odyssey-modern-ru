@@ -1,6 +1,5 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import StatusBadge from "../../components/StatusBadge.astro";
 import { withBase } from "../../data/project";
 const books = Array.from({ length: 24 }, (_, index) => index + 1);
 ---
@@ -9,7 +8,7 @@ const books = Array.from({ length: 24 }, (_, index) => index + 1);
   <section class="page-intro">
     <p class="eyebrow">Оглавление без спойлеров</p>
     <h1>24 песни, исходный порядок</h1>
-    <p>Описательные названия скрыты. Все 24 песни доступны как развёрнутые редакционные preview с непрерывной строковой картой. Человеческая академическая проверка не заявлена.</p>
+    <p>Описательные названия скрыты. Песни расположены в исходном порядке поэмы.</p>
   </section>
   <ol class="book-grid">
     {books.map((book) => {
@@ -19,7 +18,6 @@ const books = Array.from({ length: 24 }, (_, index) => index + 1);
           <a href={withBase(`/book/${number}/`)}>
             <span>{number}</span>
             <h2>Песнь {["I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","XIX","XX","XXI","XXII","XXIII","XXIV"][book - 1]}</h2>
-            <StatusBadge status="editorial_preview" />
           </a>
         </li>
       );

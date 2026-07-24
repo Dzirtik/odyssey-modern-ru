@@ -1,6 +1,5 @@
 ---
 import ReadingControls from "./ReadingControls.astro";
-import StatusBadge from "./StatusBadge.astro";
 import { project, withBase } from "../data/project";
 
 interface Props {
@@ -12,22 +11,12 @@ const number = String(book.book).padStart(2, "0");
 const previous = book.book > 1 ? String(book.book - 1).padStart(2, "0") : "";
 const next = book.book < 24 ? String(book.book + 1).padStart(2, "0") : "";
 const notes = book.notes ?? [];
-const isDraft = book.status === "draft";
 ---
 
 <article class="book-page" data-book={number}>
   <header class="book-header">
     <p class="eyebrow">Переложение · {book.sourceRange}</p>
     <h1>{book.title}</h1>
-    <div class="status-line">
-      <StatusBadge status={book.status} />
-      <span>Последняя автоматизированная проверка: {book.lastFactCheck}</span>
-    </div>
-    <p class="editorial-warning">
-      {isDraft
-        ? "Это сжатый черновой конспект сюжета, а не полное переложение песни. Непрерывная нумерация диапазонов не доказывает смысловой полноты. Текст ещё предстоит заново сверить с древнегреческим оригиналом, расширить и провести через все редакционные роли."
-        : "Текст не проходил содержательную человеческую редактуру. Это рабочее переложение с непрерывной картой строк, а не окончательное авторское или академическое издание."}
-    </p>
   </header>
 
   <ReadingControls />
