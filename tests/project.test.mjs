@@ -26,6 +26,15 @@ import { bookTwentyTwo } from "../src/data/book-twenty-two.ts";
 import { bookTwentyThree } from "../src/data/book-twenty-three.ts";
 import { bookTwentyFour } from "../src/data/book-twenty-four.ts";
 import { previewBooks } from "../src/data/books-preview.mjs";
+import {
+  completeBook,
+  parseReaderState,
+  readNumberPreference,
+  readReaderState,
+  READER_STATE_KEY,
+  resetReaderState,
+  saveReaderPosition,
+} from "../src/scripts/reader-state.ts";
 
 test("Book I line map covers 1-444 exactly", async () => {
   const map = YAML.parse(
@@ -372,31 +381,51 @@ test("reader journey offers explicit resume without silent restoration", async (
   ]);
 
   assert.match(home, /data-resume-link/);
+  assert.match(home, /readReaderState/);
   assert.match(home, /Можно начинать без подготовки/);
   assert.match(contents, /data-resume-panel/);
   assert.match(contents, /data-book-card/);
-  assert.match(reader, /odyssey-last-book/);
+  assert.match(contents, /data-reset-progress/);
+  assert.match(reader, /saveReaderPosition/);
+  assert.match(reader, /data-reading-complete/);
+  assert.match(reader, /completeBook/);
+  assert.doesNotMatch(reader, /localStorage\.setItem/);
+  assert.doesNotMatch(reader, /current === lastPassage/);
   assert.doesNotMatch(reader, /saved\).*scrollIntoView/);
 });
 
 test("reader controls expose location and accessible progress", async () => {
-  const [controls, reader] = await Promise.all([
+  const [controls, reader, css] = await Promise.all([
     fs.readFile("src/components/ReadingControls.astro", "utf8"),
     fs.readFile("src/components/BookReader.astro", "utf8"),
+    fs.readFile("src/styles/global.css", "utf8"),
   ]);
 
   assert.match(controls, /data-passage-select/);
   assert.match(controls, /Перейти к фрагменту/);
   assert.match(controls, /data-progress-status/);
+  assert.match(controls, /aria-live="off"/);
+  assert.match(controls, /ResizeObserver/);
+  assert.match(css, /--reader-toolbar-height/);
+  assert.match(
+    css,
+    /scroll-margin-top:\s*calc\(var\(--reader-toolbar-height\) \+ 1rem\)/,
+  );
+  assert.match(css, /--reader-toolbar-height:\s*8rem/);
   assert.match(reader, /role="progressbar"/);
   assert.match(reader, /aria-valuenow/);
+  assert.match(reader, /aria-current", "location"/);
+  assert.match(reader, /getElementById/);
+  assert.doesNotMatch(reader, /querySelector[^(]*\(location\.hash\)/);
 });
 
 test("automated reader answers are optional, grouped and plainly labelled", async () => {
   const reader = await fs.readFile("src/components/BookReader.astro", "utf8");
 
   assert.match(reader, /class="reader-answers"/);
-  assert.match(reader, /Ответы на вопросы к этому фрагменту/);
+  assert.match(reader, /Автоматизированные ответы к фрагменту/);
+  assert.match(reader, /не проходили существенную проверку человеком/);
+  assert.doesNotMatch(reader, /Редакционная preview-версия/);
   assert.match(reader, /Мир поэмы/);
   assert.match(reader, /надёжно подтверждено/);
   assert.doesNotMatch(reader, /Только по уже прочитанным строкам/);
@@ -422,4 +451,126 @@ test("Book III sacrifice answers follow the current line range", async () => {
     byQuestion.get("Что сжигают для богини?").details,
     /части бёдер|б[её]дра/u,
   );
+});
+
+test("reviewed reference descriptions stop at their reveal point", async () => {
+  const people = YAML.parse(await fs.readFile("src/data/people.yml", "utf8"));
+  const byName = new Map(people.map((person) => [person.name, person]));
+
+  assert.equal(byName.get("Ментор").first_book, 2);
+  assert.doesNotMatch(byName.get("Ментор").description, /позднее/u);
+  assert.doesNotMatch(
+    byName.get("Амфимедон").description,
+    /мир[ае] мёртвых|рассказ/u,
+  );
+});
+
+const memoryStorage = (initial = {}) => {
+  const values = new Map(Object.entries(initial));
+  return {
+    values,
+    getItem(key) {
+      return values.has(key) ? values.get(key) : null;
+    },
+    setItem(key, value) {
+      values.set(key, String(value));
+    },
+    removeItem(key) {
+      values.delete(key);
+    },
+  };
+};
+
+test("reader state is fail-closed for invalid and unavailable storage", () => {
+  assert.equal(parseReaderState("{broken"), null);
+  assert.equal(
+    parseReaderState(
+      JSON.stringify({
+        version: 2,
+        lastBook: 1,
+        lastPassage: "lines-1-10",
+        maxCompletedBook: "garbage",
+      }),
+    ),
+    null,
+  );
+  assert.equal(
+    parseReaderState(
+      JSON.stringify({
+        version: 2,
+        lastBook: null,
+        lastPassage: null,
+        maxCompletedBook: "1",
+      }),
+    ),
+    null,
+  );
+
+  const throwingStorage = {
+    getItem() {
+      throw new Error("blocked");
+    },
+    setItem() {
+      throw new Error("blocked");
+    },
+    removeItem() {
+      throw new Error("blocked");
+    },
+  };
+  assert.deepEqual(readReaderState(throwingStorage), {
+    version: 2,
+    lastBook: null,
+    lastPassage: null,
+    maxCompletedBook: 0,
+  });
+  assert.equal(readNumberPreference("width", 64, 34, 76, throwingStorage), 64);
+});
+
+test("legacy progress trusts neither a resume point nor completion", () => {
+  const storage = memoryStorage({
+    "odyssey-last-book": "4",
+    "odyssey-max-book": "24",
+    "odyssey-progress-book-04": "lines-1-20",
+  });
+  assert.deepEqual(readReaderState(storage), {
+    version: 2,
+    lastBook: null,
+    lastPassage: null,
+    maxCompletedBook: 0,
+  });
+  assert.equal(
+    JSON.parse(storage.values.get(READER_STATE_KEY)).maxCompletedBook,
+    0,
+  );
+});
+
+test("reader position and completion are separate sequential facts", () => {
+  const storage = memoryStorage();
+  saveReaderPosition(4, "lines-100-120", storage);
+  assert.deepEqual(readReaderState(storage), {
+    version: 2,
+    lastBook: 4,
+    lastPassage: "lines-100-120",
+    maxCompletedBook: 0,
+  });
+
+  completeBook(4, storage);
+  assert.equal(readReaderState(storage).maxCompletedBook, 0);
+  completeBook(1, storage);
+  assert.equal(readReaderState(storage).maxCompletedBook, 1);
+  completeBook(24, storage);
+  assert.equal(readReaderState(storage).maxCompletedBook, 1);
+  completeBook(2, storage);
+  assert.equal(readReaderState(storage).maxCompletedBook, 2);
+});
+
+test("reset removes current and legacy reader progress", () => {
+  const storage = memoryStorage({
+    [READER_STATE_KEY]: "{}",
+    "odyssey-last-book": "7",
+    "odyssey-max-book": "7",
+    "odyssey-progress-book-07": "lines-1-10",
+  });
+  resetReaderState(storage);
+  assert.equal(storage.values.size, 0);
 });

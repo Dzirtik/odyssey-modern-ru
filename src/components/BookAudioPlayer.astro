@@ -1,0 +1,458 @@
+---
+import { withBase } from "../data/project";
+
+interface Props {
+  bookNumber: number;
+  title: string;
+  source: string;
+  durationSeconds: number;
+  voiceCount: number;
+  disclosure: string;
+}
+
+const { bookNumber, title, source, durationSeconds, voiceCount, disclosure } =
+  Astro.props;
+const number = String(bookNumber).padStart(2, "0");
+const durationMinutes = Math.round(durationSeconds / 60);
+---
+
+<section
+  id="audio"
+  class="book-audio-player"
+  aria-labelledby="audio-heading"
+  data-audio-player
+  data-book={number}
+  data-title={title}
+  data-album="«Одиссея» Гомера"
+  data-storage-key={`odyssey-audio-position-${number}`}
+>
+  <div class="audio-heading">
+    <div>
+      <p class="audio-eyebrow">
+        Полная аудиоверсия · {durationMinutes} мин · {voiceCount} голосов
+      </p>
+      <h2 id="audio-heading">Слушать {title}</h2>
+    </div>
+    <p class="audio-disclosure">{disclosure}</p>
+  </div>
+
+  <audio
+    controls
+    playsinline
+    preload="metadata"
+    src={withBase(source)}
+    data-audio-element
+    aria-label={`Аудиоверсия: ${title}`}
+  >
+    Ваш браузер не поддерживает воспроизведение аудио.
+  </audio>
+
+  <div class="audio-controls" data-audio-controls hidden>
+    <button type="button" class="play-button" data-audio-toggle>
+      <span aria-hidden="true" data-play-icon>▶</span>
+      <span data-play-label>Слушать</span>
+    </button>
+
+    <button
+      type="button"
+      class="seek-button"
+      data-seek="-15"
+      aria-label="Назад на 15 секунд"
+    >
+      −15
+    </button>
+
+    <div class="audio-timeline">
+      <input
+        type="range"
+        min="0"
+        max={durationSeconds}
+        value="0"
+        step="0.1"
+        data-audio-progress
+        aria-label="Позиция воспроизведения"
+      />
+      <output data-audio-time aria-live="off">0:00 / 0:00</output>
+    </div>
+
+    <button
+      type="button"
+      class="seek-button"
+      data-seek="15"
+      aria-label="Вперёд на 15 секунд"
+    >
+      +15
+    </button>
+
+    <label class="speed-control">
+      <span>Скорость</span>
+      <select data-playback-rate>
+        <option value="0.75">0,75×</option>
+        <option value="1" selected>1×</option>
+        <option value="1.25">1,25×</option>
+        <option value="1.5">1,5×</option>
+        <option value="1.75">1,75×</option>
+        <option value="2">2×</option>
+      </select>
+    </label>
+  </div>
+
+  <p class="audio-status" data-audio-status aria-live="polite">
+    После запуска воспроизведение можно контролировать с экрана блокировки.
+  </p>
+</section>
+
+<script>
+  const formatTime = (value: number) => {
+    if (!Number.isFinite(value) || value < 0) return "0:00";
+    const hours = Math.floor(value / 3600);
+    const minutes = Math.floor((value % 3600) / 60);
+    const seconds = Math.floor(value % 60);
+    return hours > 0
+      ? `${hours}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`
+      : `${minutes}:${String(seconds).padStart(2, "0")}`;
+  };
+
+  document
+    .querySelectorAll<HTMLElement>("[data-audio-player]")
+    .forEach((player) => {
+      const audio = player.querySelector<HTMLAudioElement>(
+        "[data-audio-element]",
+      );
+      const controls = player.querySelector<HTMLElement>(
+        "[data-audio-controls]",
+      );
+      const toggle = player.querySelector<HTMLButtonElement>(
+        "[data-audio-toggle]",
+      );
+      const playIcon = player.querySelector<HTMLElement>("[data-play-icon]");
+      const playLabel = player.querySelector<HTMLElement>("[data-play-label]");
+      const progress = player.querySelector<HTMLInputElement>(
+        "[data-audio-progress]",
+      );
+      const time = player.querySelector<HTMLOutputElement>("[data-audio-time]");
+      const rate = player.querySelector<HTMLSelectElement>(
+        "[data-playback-rate]",
+      );
+      const status = player.querySelector<HTMLElement>("[data-audio-status]");
+      if (
+        !audio ||
+        !controls ||
+        !toggle ||
+        !playIcon ||
+        !playLabel ||
+        !progress ||
+        !time ||
+        !rate ||
+        !status
+      ) {
+        return;
+      }
+
+      const storageKey =
+        player.dataset.storageKey ?? `odyssey-audio-position-unknown`;
+      const rateStorageKey = "odyssey-audio-rate";
+      let lastStoredSecond = -1;
+
+      const readStorage = (key: string) => {
+        try {
+          return localStorage.getItem(key);
+        } catch {
+          return null;
+        }
+      };
+      const writeStorage = (key: string, value: string) => {
+        try {
+          localStorage.setItem(key, value);
+        } catch {
+          // Playback remains available when storage is unavailable.
+        }
+      };
+
+      const updateMediaPosition = () => {
+        if (
+          !("mediaSession" in navigator) ||
+          !Number.isFinite(audio.duration) ||
+          audio.duration <= 0 ||
+          audio.currentTime < 0 ||
+          audio.currentTime > audio.duration
+        ) {
+          return;
+        }
+        try {
+          navigator.mediaSession.setPositionState({
+            duration: audio.duration,
+            playbackRate: audio.playbackRate,
+            position: Math.min(audio.currentTime, audio.duration),
+          });
+        } catch {
+          // Older Media Session implementations may not expose position state.
+        }
+      };
+
+      const update = () => {
+        const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
+        progress.max = String(duration);
+        progress.value = String(Math.min(audio.currentTime, duration));
+        time.value = `${formatTime(audio.currentTime)} / ${formatTime(duration)}`;
+        const isPlaying = !audio.paused && !audio.ended;
+        playIcon.textContent = isPlaying ? "Ⅱ" : "▶";
+        playLabel.textContent = isPlaying ? "Пауза" : "Слушать";
+        toggle.setAttribute(
+          "aria-label",
+          isPlaying ? "Поставить на паузу" : "Продолжить воспроизведение",
+        );
+        if ("mediaSession" in navigator) {
+          navigator.mediaSession.playbackState = isPlaying
+            ? "playing"
+            : "paused";
+        }
+      };
+
+      const savePosition = () => {
+        const second = Math.floor(audio.currentTime);
+        if (second === lastStoredSecond) return;
+        lastStoredSecond = second;
+        writeStorage(storageKey, String(audio.currentTime));
+      };
+
+      const seekBy = (seconds: number) => {
+        const duration = Number.isFinite(audio.duration)
+          ? audio.duration
+          : Infinity;
+        audio.currentTime = Math.max(
+          0,
+          Math.min(duration, audio.currentTime + seconds),
+        );
+        update();
+        updateMediaPosition();
+        savePosition();
+      };
+
+      const configureMediaSession = () => {
+        if (!("mediaSession" in navigator)) return;
+        navigator.mediaSession.metadata = new MediaMetadata({
+          title: player.dataset.title ?? "Аудиоверсия",
+          artist: "Гомер · русское прозаическое переложение",
+          album: player.dataset.album ?? "Одиссея",
+        });
+        const handlers: Partial<
+          Record<MediaSessionAction, MediaSessionActionHandler>
+        > = {
+          play: () => void audio.play(),
+          pause: () => audio.pause(),
+          stop: () => {
+            audio.pause();
+            audio.currentTime = 0;
+          },
+          seekbackward: (details) => seekBy(-(details.seekOffset ?? 15)),
+          seekforward: (details) => seekBy(details.seekOffset ?? 15),
+          seekto: (details) => {
+            if (details.seekTime == null) return;
+            audio.currentTime = details.seekTime;
+            update();
+            updateMediaPosition();
+          },
+        };
+        for (const [action, handler] of Object.entries(handlers)) {
+          try {
+            navigator.mediaSession.setActionHandler(
+              action as MediaSessionAction,
+              handler ?? null,
+            );
+          } catch {
+            // Unsupported actions are ignored without disabling playback.
+          }
+        }
+      };
+
+      audio.controls = false;
+      controls.hidden = false;
+      const savedRate = Number(readStorage(rateStorageKey) ?? 1);
+      if ([0.75, 1, 1.25, 1.5, 1.75, 2].includes(savedRate)) {
+        audio.playbackRate = savedRate;
+        rate.value = String(savedRate);
+      }
+
+      audio.addEventListener("loadedmetadata", () => {
+        const savedPosition = Number(readStorage(storageKey));
+        if (
+          Number.isFinite(savedPosition) &&
+          savedPosition > 0 &&
+          savedPosition < audio.duration - 2
+        ) {
+          audio.currentTime = savedPosition;
+          status.textContent = `Продолжим с ${formatTime(savedPosition)}.`;
+        }
+        update();
+        updateMediaPosition();
+      });
+      audio.addEventListener("timeupdate", () => {
+        update();
+        updateMediaPosition();
+        savePosition();
+      });
+      audio.addEventListener("play", () => {
+        configureMediaSession();
+        status.textContent =
+          "Воспроизведение продолжится при блокировке экрана, если это разрешено системой.";
+        update();
+      });
+      audio.addEventListener("pause", update);
+      audio.addEventListener("ended", () => {
+        writeStorage(storageKey, "0");
+        update();
+      });
+      addEventListener("pagehide", savePosition);
+
+      toggle.addEventListener("click", async () => {
+        if (audio.paused) {
+          try {
+            await audio.play();
+          } catch {
+            status.textContent =
+              "Браузер не разрешил запуск. Нажмите кнопку ещё раз.";
+          }
+        } else {
+          audio.pause();
+        }
+      });
+      player
+        .querySelectorAll<HTMLButtonElement>("[data-seek]")
+        .forEach((button) => {
+          button.addEventListener("click", () => {
+            seekBy(Number(button.dataset.seek ?? 0));
+          });
+        });
+      progress.addEventListener("input", () => {
+        audio.currentTime = Number(progress.value);
+        update();
+        updateMediaPosition();
+      });
+      rate.addEventListener("change", () => {
+        audio.playbackRate = Number(rate.value);
+        writeStorage(rateStorageKey, rate.value);
+        updateMediaPosition();
+      });
+      update();
+    });
+</script>
+
+<style>
+  .book-audio-player {
+    padding: clamp(1.25rem, 3vw, 2rem);
+    border: 1px solid var(--line);
+    background: var(--card);
+  }
+  .audio-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.55fr);
+    gap: 1.5rem;
+    align-items: start;
+  }
+  .audio-eyebrow {
+    color: var(--accent);
+    font-size: 0.76rem;
+    font-weight: 750;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+  h2 {
+    margin-top: 0.45rem;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+  }
+  .audio-disclosure,
+  .audio-status {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  audio {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .audio-controls {
+    display: grid;
+    grid-template-columns: auto auto minmax(10rem, 1fr) auto auto;
+    gap: 0.75rem;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+  .audio-controls button,
+  .speed-control select {
+    min-height: 2.75rem;
+    border: 1px solid var(--line);
+    color: var(--ink);
+    background: var(--paper);
+  }
+  .audio-controls button {
+    padding: 0.55rem 0.85rem;
+    cursor: pointer;
+  }
+  .play-button {
+    display: inline-flex;
+    gap: 0.55rem;
+    align-items: center;
+    min-width: 7rem;
+    justify-content: center;
+    color: var(--paper) !important;
+    background: var(--ink) !important;
+  }
+  .seek-button {
+    min-width: 3.25rem;
+  }
+  .audio-timeline {
+    display: grid;
+    grid-template-columns: minmax(6rem, 1fr) auto;
+    gap: 0.65rem;
+    align-items: center;
+  }
+  .audio-timeline input {
+    width: 100%;
+    accent-color: var(--accent);
+  }
+  .audio-timeline output {
+    min-width: 6.5rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+  .speed-control {
+    display: grid;
+    gap: 0.2rem;
+    color: var(--muted);
+    font-size: 0.72rem;
+  }
+  .speed-control select {
+    padding: 0 0.55rem;
+  }
+  .audio-status {
+    min-height: 1.45em;
+    margin-top: 0.85rem;
+  }
+  @media (max-width: 50rem) {
+    .audio-heading {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+    .audio-controls {
+      grid-template-columns: 1fr auto auto;
+    }
+    .play-button {
+      justify-self: stretch;
+    }
+    .audio-timeline {
+      grid-column: 1 / -1;
+      grid-row: 2;
+    }
+    .speed-control {
+      grid-column: 1 / -1;
+      grid-row: 3;
+      justify-self: start;
+    }
+  }
+  @media print {
+    .book-audio-player {
+      display: none;
+    }
+  }
+</style>

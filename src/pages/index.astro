@@ -20,8 +20,7 @@ import { project, withBase } from "../data/project";
           class="button primary"
           href={withBase("/book/01/")}
           data-resume-link
-          data-book-base={withBase("/book/")}
-          >Начать Песнь I</a
+          data-book-base={withBase("/book/")}>Начать Песнь I</a
         >
         <a class="button secondary" href="#before-reading">Что важно знать</a>
       </div>
@@ -130,16 +129,14 @@ import { project, withBase } from "../data/project";
 </BaseLayout>
 
 <script>
+  import { readReaderState } from "../scripts/reader-state";
+
   const resumeLink =
     document.querySelector<HTMLAnchorElement>("[data-resume-link]");
-  const lastBook = Number(
-    localStorage.getItem("odyssey-last-book") ??
-      localStorage.getItem("odyssey-max-book"),
-  );
-  if (resumeLink && lastBook >= 1 && lastBook <= 24) {
+  const { lastBook, lastPassage } = readReaderState();
+  if (resumeLink && lastBook) {
     const number = String(lastBook).padStart(2, "0");
-    const passage = localStorage.getItem(`odyssey-progress-book-${number}`);
-    const range = passage?.match(/^lines-(\d+)-(\d+)$/);
+    const range = lastPassage?.match(/^lines-(\d+)-(\d+)$/);
     const roman = [
       "I",
       "II",
@@ -166,7 +163,7 @@ import { project, withBase } from "../data/project";
       "XXIII",
       "XXIV",
     ][lastBook - 1];
-    resumeLink.href = `${resumeLink.dataset.bookBase}${number}/${passage ? `#${passage}` : ""}`;
+    resumeLink.href = `${resumeLink.dataset.bookBase}${number}/${lastPassage ? `#${lastPassage}` : ""}`;
     resumeLink.textContent = range
       ? `Продолжить: Песнь ${roman}, строки ${range[1]}–${range[2]}`
       : `Продолжить: Песнь ${roman}`;

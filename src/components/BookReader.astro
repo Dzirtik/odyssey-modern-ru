@@ -1,7 +1,9 @@
 ---
 import YAML from "yaml";
+import BookAudioPlayer from "./BookAudioPlayer.astro";
 import ReadingControls from "./ReadingControls.astro";
 import { project, withBase } from "../data/project";
+import bookOneAudio from "../data/audio/book-01.json";
 import sourcesText from "../data/sources.yml?raw";
 
 interface Props {
@@ -50,8 +52,7 @@ const labelLayer = (value: string) =>
     .split("+")
     .map((part) => layerLabels[part.trim()] ?? part.trim())
     .join(" · ");
-const labelConfidence = (value: string) =>
-  confidenceLabels[value] ?? value;
+const labelConfidence = (value: string) => confidenceLabels[value] ?? value;
 const answerDetails = (value: string) =>
   String(value).replace(
     /\s*Ответ ограничен сведениями, открытыми в строках [^;]+;\s*дальнейшие эпизоды здесь не привлекаются\.$/u,
@@ -68,6 +69,21 @@ const answerDetails = (value: string) =>
     </p>
     <h1>«Одиссея», {book.title}</h1>
   </header>
+
+  {
+    book.book === 1 && (
+      <div class="book-audio-wrap">
+        <BookAudioPlayer
+          bookNumber={bookOneAudio.book}
+          title={bookOneAudio.title}
+          source={`/audio/books/${bookOneAudio.file}`}
+          durationSeconds={bookOneAudio.durationSeconds}
+          voiceCount={Object.keys(bookOneAudio.voices).length}
+          disclosure={bookOneAudio.disclosure}
+        />
+      </div>
+    )
+  }
 
   <div class="reader-toolbar">
     <ReadingControls passages={book.passages} />
@@ -90,7 +106,9 @@ const answerDetails = (value: string) =>
         {
           book.passages.map((passage: any) => (
             <li>
-              <a href={`#${passage.id}`}>{passage.lines}</a>
+              <a href={`#${passage.id}`} data-passage-link={passage.id}>
+                {passage.lines}
+              </a>
             </li>
           ))
         }
@@ -146,14 +164,14 @@ const answerDetails = (value: string) =>
               {passageAnswers.length > 0 && (
                 <details class="reader-answers">
                   <summary>
-                    <span>Ответы на вопросы к этому фрагменту</span>
+                    <span>Автоматизированные ответы к фрагменту</span>
                     <strong>{passageAnswers.length}</strong>
                   </summary>
+                  <p class="reader-answers-disclosure">
+                    Эти ответы не проходили существенную проверку человеком.
+                  </p>
                   {passageAnswers.map((answer: any) => (
-                    <details
-                      class="note reader-answer"
-                      id={answer.answer_id}
-                    >
+                    <details class="note reader-answer" id={answer.answer_id}>
                       <summary>
                         <span>Ответ читателю</span>
                         {answer.question}
@@ -190,12 +208,19 @@ const answerDetails = (value: string) =>
     </div>
   </div>
 
+  <div
+    class="reading-complete-sentinel"
+    data-reading-complete
+    aria-hidden="true"
+  >
+  </div>
+
   <nav class="book-pagination" aria-label="Переход между песнями">
     {
       previous ? (
         <a href={withBase(`/book/${previous}/`)}>← Предыдущая</a>
       ) : (
-        <a aria-disabled="true">← Предыдущая</a>
+        <span class="disabled">← Предыдущая</span>
       )
     }
     <a href={withBase("/read/")}>Оглавление</a>
@@ -203,7 +228,7 @@ const answerDetails = (value: string) =>
       next ? (
         <a href={withBase(`/book/${next}/`)}>Следующая →</a>
       ) : (
-        <a aria-disabled="true">Следующая →</a>
+        <span class="disabled">Следующая →</span>
       )
     }
   </nav>
@@ -218,23 +243,60 @@ const answerDetails = (value: string) =>
 </article>
 
 <script>
+  import { completeBook, saveReaderPosition } from "../scripts/reader-state";
+
   const article = document.querySelector<HTMLElement>(".book-page");
-  const bookNumber = article?.dataset.book ?? "01";
+  const bookNumber = Number(article?.dataset.book);
   const progressBar = document.querySelector<HTMLElement>(".reading-progress");
   const progress = document.querySelector<HTMLElement>(
     ".reading-progress span",
   );
-  const progressStatus = document.querySelector<HTMLOutputElement>(
+  const progressStatus = document.querySelector<HTMLElement>(
     "[data-progress-status]",
   );
   const passageSelect = document.querySelector<HTMLSelectElement>(
     "[data-passage-select]",
   );
   const passages = [...document.querySelectorAll<HTMLElement>(".passage")];
-  const storageKey = `odyssey-progress-book-${bookNumber}`;
-  localStorage.setItem("odyssey-last-book", String(Number(bookNumber)));
+  const passageLinks = [
+    ...document.querySelectorAll<HTMLAnchorElement>("[data-passage-link]"),
+  ];
+  const completionSentinel = document.querySelector<HTMLElement>(
+    "[data-reading-complete]",
+  );
+  let animationFrame = 0;
+  let pendingPersist = false;
+  let lastPassageId = "";
+  let hasReadingIntent = Boolean(location.hash);
 
-  const update = () => {
+  const markReadingIntent = () => {
+    hasReadingIntent = true;
+  };
+  addEventListener("wheel", markReadingIntent, { passive: true });
+  addEventListener("touchmove", markReadingIntent, { passive: true });
+  addEventListener("pointerdown", markReadingIntent, { passive: true });
+  addEventListener("keydown", (event) => {
+    if (
+      [
+        "ArrowDown",
+        "ArrowUp",
+        "PageDown",
+        "PageUp",
+        "End",
+        "Home",
+        " ",
+      ].includes(event.key)
+    ) {
+      markReadingIntent();
+    }
+  });
+
+  const recordCompletion = () => {
+    if (!Number.isInteger(bookNumber)) return;
+    completeBook(bookNumber);
+  };
+
+  const update = (persist = false) => {
     const main = document.querySelector<HTMLElement>(".reader-copy");
     if (!main || !progress) return;
     const rect = main.getBoundingClientRect();
@@ -248,40 +310,105 @@ const answerDetails = (value: string) =>
         (passage) => passage.getBoundingClientRect().top < innerHeight * 0.4,
       ) ?? passages[0];
     if (!current?.id) return;
-    localStorage.setItem(storageKey, current.id);
+    if (persist && Number.isInteger(bookNumber)) {
+      saveReaderPosition(bookNumber, current.id);
+    }
     if (passageSelect) passageSelect.value = current.id;
     if (progressStatus) {
-      progressStatus.value = `${percentage}% · строки ${current.dataset.lines}`;
+      progressStatus.textContent = `${percentage}% · строки ${current.dataset.lines}`;
     }
-
-    const lastPassage = passages.at(-1);
-    if (current === lastPassage) {
-      const currentBook = Number(bookNumber);
-      const revealedBook = Number(
-        localStorage.getItem("odyssey-max-book") ?? 1,
-      );
-      if (currentBook === revealedBook + 1) {
-        localStorage.setItem("odyssey-max-book", String(currentBook));
-      }
+    if (lastPassageId !== current.id) {
+      lastPassageId = current.id;
+      passageLinks.forEach((link) => {
+        if (link.dataset.passageLink === current.id) {
+          link.setAttribute("aria-current", "location");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+    }
+    if (
+      completionSentinel &&
+      completionSentinel.getBoundingClientRect().top <= innerHeight
+    ) {
+      recordCompletion();
     }
   };
 
-  addEventListener("scroll", update, { passive: true });
-  update();
+  const scheduleUpdate = (persist = false) => {
+    pendingPersist ||= persist;
+    if (animationFrame) return;
+    animationFrame = requestAnimationFrame(() => {
+      animationFrame = 0;
+      const shouldPersist = pendingPersist;
+      pendingPersist = false;
+      update(shouldPersist);
+    });
+  };
+  addEventListener("scroll", () => scheduleUpdate(hasReadingIntent), {
+    passive: true,
+  });
+  document.addEventListener("toggle", () => scheduleUpdate(false), true);
+  update(false);
+
+  const hashTarget = () => {
+    if (!location.hash) return null;
+    try {
+      return document.getElementById(
+        decodeURIComponent(location.hash.slice(1)),
+      );
+    } catch {
+      return null;
+    }
+  };
 
   const openTargetNote = () => {
-    if (!location.hash) return;
-    const target = document.querySelector<HTMLDetailsElement>(location.hash);
+    const target = hashTarget();
     if (!target?.classList.contains("note")) return;
-    target.open = true;
+    const note = target as HTMLDetailsElement;
+    note.open = true;
     const answerGroup = target.closest<HTMLDetailsElement>(".reader-answers");
     if (answerGroup) answerGroup.open = true;
   };
 
+  const focusTargetPassage = () => {
+    const target = hashTarget();
+    if (!target?.classList.contains("passage")) return;
+    const heading = target.querySelector<HTMLElement>("h2");
+    if (!heading) return;
+    heading.tabIndex = -1;
+    heading.focus({ preventScroll: true });
+  };
+
   addEventListener("hashchange", () => {
+    markReadingIntent();
     openTargetNote();
-    requestAnimationFrame(update);
+    focusTargetPassage();
+    scheduleUpdate(true);
   });
+  addEventListener("odyssey:passage-selected", markReadingIntent);
   openTargetNote();
-  requestAnimationFrame(update);
+  requestAnimationFrame(() => {
+    focusTargetPassage();
+    update(Boolean(location.hash));
+  });
+
+  if (completionSentinel && "IntersectionObserver" in window) {
+    new IntersectionObserver(
+      (entries, observer) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        recordCompletion();
+        observer.disconnect();
+      },
+      { threshold: 1 },
+    ).observe(completionSentinel);
+  }
 </script>
+
+<style>
+  .book-audio-wrap {
+    width: min(90rem, calc(100% - 2.5rem));
+    margin: 0 auto;
+    padding-bottom: clamp(2.5rem, 5vw, 4.5rem);
+  }
+</style>

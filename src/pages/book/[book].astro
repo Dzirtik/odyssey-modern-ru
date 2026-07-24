@@ -25,6 +25,7 @@ import { bookTwentyOne } from "../../data/book-twenty-one";
 import { bookTwentyTwo } from "../../data/book-twenty-two";
 import { bookTwentyThree } from "../../data/book-twenty-three";
 import { bookTwentyFour } from "../../data/book-twenty-four";
+import bookOneAudio from "../../data/audio/book-01.json";
 import { project, withBase } from "../../data/project";
 
 export function getStaticPaths() {
@@ -115,8 +116,17 @@ const content =
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
 const siteURL = new URL(withBase("/"), Astro.site ?? Astro.url);
 const rightsURL = new URL(withBase("/rights/"), Astro.site ?? Astro.url);
+const audioURL = new URL(
+  withBase(`/audio/books/${bookOneAudio.file}`),
+  Astro.site ?? Astro.url,
+);
 const lineCount = content.passages.at(-1)?.lineEnd ?? 0;
-const description = `«Одиссея» Гомера, Песнь ${roman}: современное русское прозаическое переложение ${lineCount} строк с построчной сверкой и ${content.notes.length} пояснениями.`;
+const description =
+  book === 1
+    ? `«Одиссея» Гомера, Песнь ${roman}: современное русское переложение ${lineCount} строк с пояснениями и полной многоголосной аудиоверсией.`
+    : `«Одиссея» Гомера, Песнь ${roman}: современное русское прозаическое переложение ${lineCount} строк с построчной сверкой и ${content.notes.length} пояснениями.`;
+const audioId = `${canonicalURL.href}#audio-edition`;
+const audioDuration = `PT${Math.floor(bookOneAudio.durationSeconds / 60)}M${Math.round(bookOneAudio.durationSeconds % 60)}S`;
 const structuredData = [
   {
     "@type": "Chapter",
@@ -135,7 +145,24 @@ const structuredData = [
     dateModified: content.lastFactCheck,
     license: rightsURL.href,
     isPartOf: { "@id": `${siteURL.href}#odyssey` },
+    ...(book === 1 ? { associatedMedia: { "@id": audioId } } : {}),
   },
+  ...(book === 1
+    ? [
+        {
+          "@type": "AudioObject",
+          "@id": audioId,
+          name: `Многоголосная аудиоверсия Песни ${roman}`,
+          contentUrl: audioURL.href,
+          encodingFormat: "audio/mpeg",
+          duration: audioDuration,
+          inLanguage: "ru-RU",
+          isAccessibleForFree: true,
+          license: rightsURL.href,
+          isPartOf: { "@id": `${canonicalURL.href}#chapter` },
+        },
+      ]
+    : []),
 ];
 const breadcrumbs = [
   { name: "Главная", href: withBase("/") },

@@ -37,7 +37,7 @@ const matchOne = (html, pattern, label, file) => {
 for (const file of htmlFiles) {
   const html = await fs.readFile(file, "utf8");
   const isLongFormBook = /dist\/book\/\d{2}\/index\.html$/.test(file);
-  const htmlBudget = isLongFormBook ? 180_000 : 100_000;
+  const htmlBudget = isLongFormBook ? 200_000 : 100_000;
   assert(
     Buffer.byteLength(html) < htmlBudget,
     `${file}: HTML exceeds the ${htmlBudget / 1_000} KB SEO budget`,
@@ -181,8 +181,9 @@ for (const file of htmlFiles) {
     }
   }
 
-  if (file.endsWith("/404.html") || file === "dist/404.html") {
-    assert(robots.startsWith("noindex"), `${file}: 404 must be noindex`);
+  const isNoindexRoute = file.endsWith("/404.html") || file === "dist/404.html";
+  if (isNoindexRoute) {
+    assert(robots.startsWith("noindex"), `${file}: page must be noindex`);
   } else {
     assert(robots.startsWith("index"), `${file}: page must be indexable`);
     indexableCanonicals.add(canonical);

@@ -43,11 +43,7 @@ const breadcrumbs = [
   <dl class="glossary">
     {
       glossary.map((entry) => (
-        <div
-          data-reveal-book={entry.first_book}
-          data-nosnippet={entry.first_book > 1 ? true : undefined}
-          hidden={entry.first_book > 1}
-        >
+        <div data-reveal-book={entry.first_book} data-nosnippet hidden>
           <dt>
             {entry.term}
             {entry.greek && <span lang="grc">{entry.greek}</span>}

@@ -1,9 +1,9 @@
 <div class="reference-controls">
-  <p>
+  <p data-reference-status role="status" aria-live="polite">
     По умолчанию показаны только сведения, доступные к вашему пределу чтения.
   </p>
-  <button type="button" data-show-all-references>
-    Показать весь справочник
+  <button type="button" data-show-all-references aria-expanded="false">
+    Показать всё — возможны спойлеры
   </button>
 </div>
 
@@ -11,15 +11,42 @@
   const button = document.querySelector<HTMLButtonElement>(
     "[data-show-all-references]",
   );
+  const status = document.querySelector<HTMLElement>("[data-reference-status]");
+  const initialHiddenState = new Map<HTMLElement, boolean>();
+  let isShowingAll = false;
+
   button?.addEventListener("click", () => {
-    document
-      .querySelectorAll<HTMLElement>("main [data-reveal-book]")
-      .forEach((element) => {
+    const references = document.querySelectorAll<HTMLElement>(
+      "main [data-reveal-book]",
+    );
+
+    if (!isShowingAll) {
+      references.forEach((element) => {
+        if (!initialHiddenState.has(element)) {
+          initialHiddenState.set(element, element.hasAttribute("hidden"));
+        }
         element.hidden = false;
       });
-    const label = document.querySelector<HTMLElement>("[data-progress-label]");
-    if (label)
-      label.textContent = "Показан полный справочник · возможны спойлеры";
-    button.hidden = true;
+
+      isShowingAll = true;
+      button.textContent = "Скрыть будущие сведения";
+      button.setAttribute("aria-expanded", "true");
+      if (status) {
+        status.textContent = "Показан полный справочник · возможны спойлеры.";
+      }
+      return;
+    }
+
+    references.forEach((element) => {
+      element.hidden = initialHiddenState.get(element) ?? true;
+    });
+
+    isShowingAll = false;
+    button.textContent = "Показать всё — возможны спойлеры";
+    button.setAttribute("aria-expanded", "false");
+    if (status) {
+      status.textContent =
+        "Снова показаны только сведения, доступные к вашему пределу чтения.";
+    }
   });
 </script>

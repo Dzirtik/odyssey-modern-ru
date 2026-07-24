@@ -1,0 +1,95 @@
+schema: 1
+book: 1
+model: gpt-4o-mini-tts
+title: "Песнь I"
+voices:
+  narrator:
+    voice: cedar
+    label: Рассказчик
+    instructions: >-
+      Говори только по-русски. Спокойный, ясный, литературный рассказчик
+      большой эпической аудиокниги. Естественная русская просодия, сдержанное
+      достоинство, средний темп, точные ударения, без театрального пафоса.
+  zeus:
+    voice: onyx
+    label: Зевс
+    instructions: >-
+      Говори только по-русски. Голос Зевса: низкий, зрелый, властный, но не
+      карикатурный. Размеренный темп, ясная дикция и спокойная сила.
+  athena:
+    voice: marin
+    label: Афина
+    instructions: >-
+      Говори только по-русски. Голос Афины: взрослый, ясный, умный и уверенный.
+      Передавай сдержанное сочувствие и решимость без мелодрамы.
+  telemachus:
+    voice: ash
+    label: Телемах
+    instructions: >-
+      Говори только по-русски. Голос Телемаха: молодой взрослый мужчина,
+      вдумчивый и благородный. В начале слышна неуверенность, затем растущая
+      решимость; без подростковой карикатуры.
+  penelope:
+    voice: coral
+    label: Пенелопа
+    instructions: >-
+      Говори только по-русски. Голос Пенелопы: зрелый, мягкий и достойный.
+      Сдержанное горе без рыданий и мелодраматического нажима.
+  antinous:
+    voice: echo
+    label: Антиной
+    instructions: >-
+      Говори только по-русски. Голос Антиноя: взрослый, самоуверенный и
+      насмешливый, с холодной угрозой под внешней учтивостью.
+  eurymachus:
+    voice: verse
+    label: Евримах
+    instructions: >-
+      Говори только по-русски. Голос Евримаха: взрослый, гладкий и
+      дипломатичный, но неискренний; ясная дикция и умеренный темп.
+dialogue:
+  - {
+      anchor: lines-22-43,
+      paragraph: 2,
+      speaker: zeus,
+      inline_attribution: "— сказал Зевс, —",
+    }
+  - { anchor: lines-44-62, paragraph: 0, speaker: athena }
+  - { anchor: lines-44-62, paragraph: 1, speaker: athena }
+  - { anchor: lines-63-79, paragraph: 0, speaker: zeus }
+  - { anchor: lines-63-79, paragraph: 1, speaker: zeus }
+  - { anchor: lines-63-79, paragraph: 2, speaker: zeus }
+  - { anchor: lines-80-95, paragraph: 0, speaker: athena }
+  - { anchor: lines-80-95, paragraph: 1, speaker: athena }
+  - { anchor: lines-113-143, paragraph: 1, speaker: telemachus }
+  - { anchor: lines-144-177, paragraph: 3, speaker: telemachus }
+  - { anchor: lines-178-212, paragraph: 0, speaker: telemachus }
+  - { anchor: lines-178-212, paragraph: 1, speaker: telemachus }
+  - { anchor: lines-178-212, paragraph: 2, speaker: athena }
+  - { anchor: lines-178-212, paragraph: 3, speaker: athena }
+  - { anchor: lines-178-212, paragraph: 4, speaker: athena }
+  - { anchor: lines-213-229, paragraph: 0, speaker: athena }
+  - { anchor: lines-213-229, paragraph: 1, speaker: telemachus }
+  - { anchor: lines-230-251, paragraph: 0, speaker: athena }
+  - { anchor: lines-230-251, paragraph: 1, speaker: telemachus }
+  - { anchor: lines-252-273, paragraph: 0, speaker: telemachus }
+  - { anchor: lines-252-273, paragraph: 1, speaker: athena }
+  - { anchor: lines-252-273, paragraph: 2, speaker: athena }
+  - { anchor: lines-274-305, paragraph: 0, speaker: athena }
+  - { anchor: lines-274-305, paragraph: 1, speaker: athena }
+  - { anchor: lines-274-305, paragraph: 2, speaker: athena }
+  - { anchor: lines-274-305, paragraph: 3, speaker: athena }
+  - { anchor: lines-306-324, paragraph: 0, speaker: athena }
+  - { anchor: lines-306-324, paragraph: 1, speaker: telemachus }
+  - { anchor: lines-306-324, paragraph: 2, speaker: athena }
+  - { anchor: lines-325-344, paragraph: 2, speaker: penelope }
+  - { anchor: lines-345-364, paragraph: 0, speaker: telemachus }
+  - { anchor: lines-345-364, paragraph: 1, speaker: telemachus }
+  - { anchor: lines-345-364, paragraph: 2, speaker: telemachus }
+  - { anchor: lines-365-385, paragraph: 1, speaker: telemachus }
+  - { anchor: lines-365-385, paragraph: 2, speaker: telemachus }
+  - { anchor: lines-386-420, paragraph: 0, speaker: antinous }
+  - { anchor: lines-386-420, paragraph: 1, speaker: telemachus }
+  - { anchor: lines-386-420, paragraph: 2, speaker: eurymachus }
+  - { anchor: lines-386-420, paragraph: 3, speaker: eurymachus }
+  - { anchor: lines-386-420, paragraph: 4, speaker: telemachus }

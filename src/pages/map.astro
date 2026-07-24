@@ -26,13 +26,23 @@ const breadcrumbs = [
   <div
     class="text-map"
     role="img"
-    aria-label="Условная схема уже названных мест"
+    aria-label="Условная визуальная схема уже названных мест. Те же места перечислены далее текстом."
   >
-    <span data-reveal-book="1" style="--x:14%;--y:36%">Огигия</span>
-    <span data-reveal-book="1" style="--x:47%;--y:48%">Итака</span>
-    <span data-reveal-book="1" style="--x:66%;--y:25%">Пилос</span>
-    <span data-reveal-book="1" style="--x:77%;--y:55%">Спарта</span>
-    <span data-reveal-book="1" style="--x:89%;--y:30%">Троя</span>
+    <span data-reveal-book="1" style="--x:14%;--y:36%" data-nosnippet hidden
+      >Огигия</span
+    >
+    <span data-reveal-book="1" style="--x:47%;--y:48%" data-nosnippet hidden
+      >Итака</span
+    >
+    <span data-reveal-book="1" style="--x:66%;--y:25%" data-nosnippet hidden
+      >Пилос</span
+    >
+    <span data-reveal-book="1" style="--x:77%;--y:55%" data-nosnippet hidden
+      >Спарта</span
+    >
+    <span data-reveal-book="1" style="--x:89%;--y:30%" data-nosnippet hidden
+      >Троя</span
+    >
     <span data-reveal-book="5" data-nosnippet hidden style="--x:24%;--y:60%"
       >Земля феаков</span
     >
@@ -46,4 +56,21 @@ const breadcrumbs = [
       >Фринакия</span
     >
   </div>
+  <section class="prose-page" aria-labelledby="revealed-places-title">
+    <h2 id="revealed-places-title">Открытые места</h2>
+    <p>
+      Текстовая версия карты. Список расширяется только по мере открытия песен.
+    </p>
+    <ul>
+      <li data-reveal-book="1" data-nosnippet hidden>Огигия</li>
+      <li data-reveal-book="1" data-nosnippet hidden>Итака</li>
+      <li data-reveal-book="1" data-nosnippet hidden>Пилос</li>
+      <li data-reveal-book="1" data-nosnippet hidden>Спарта</li>
+      <li data-reveal-book="1" data-nosnippet hidden>Троя</li>
+      <li data-reveal-book="5" data-nosnippet hidden>Земля феаков</li>
+      <li data-reveal-book="9" data-nosnippet hidden>Земля циклопов</li>
+      <li data-reveal-book="10" data-nosnippet hidden>Ээя</li>
+      <li data-reveal-book="12" data-nosnippet hidden>Фринакия</li>
+    </ul>
+  </section>
 </BaseLayout>

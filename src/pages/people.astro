@@ -43,11 +43,7 @@ const breadcrumbs = [
   <div class="card-list">
     {
       people.map((person) => (
-        <article
-          data-reveal-book={person.first_book}
-          data-nosnippet={person.first_book > 1 ? true : undefined}
-          hidden={person.first_book > 1}
-        >
+        <article data-reveal-book={person.first_book} data-nosnippet hidden>
           <p class="card-meta">
             {person.type} · впервые в Песни {person.first_book}
           </p>

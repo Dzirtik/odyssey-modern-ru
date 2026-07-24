@@ -88,6 +88,9 @@ const breadcrumbs = [
       >
         Начать песнь сначала
       </a>
+      <button class="button secondary" type="button" data-reset-progress>
+        Сбросить прогресс
+      </button>
     </div>
   </section>
   <ol class="book-grid">
@@ -103,7 +106,9 @@ const breadcrumbs = [
             <a href={withBase(`/book/${number}/`)} data-book-link>
               <span>{number}</span>
               <h2>Песнь {romanBooks[book - 1]}</h2>
-              <small data-card-progress hidden>Продолжить отсюда</small>
+              <small data-card-progress hidden>
+                Продолжить отсюда
+              </small>
             </a>
           </li>
         );
@@ -113,50 +118,57 @@ const breadcrumbs = [
 </BaseLayout>
 
 <script>
+  import {
+    readReaderState,
+    resetReaderState,
+  } from "../../scripts/reader-state";
+
   const panel = document.querySelector<HTMLElement>("[data-resume-panel]");
   const title = document.querySelector<HTMLElement>("[data-resume-title]");
-  const resumeAction =
-    document.querySelector<HTMLAnchorElement>("[data-resume-action]");
-  const startAction =
-    document.querySelector<HTMLAnchorElement>("[data-start-action]");
-  const lastBook = Number(
-    localStorage.getItem("odyssey-last-book") ??
-      localStorage.getItem("odyssey-max-book"),
+  const resumeAction = document.querySelector<HTMLAnchorElement>(
+    "[data-resume-action]",
   );
+  const startAction = document.querySelector<HTMLAnchorElement>(
+    "[data-start-action]",
+  );
+  const resetAction = document.querySelector<HTMLButtonElement>(
+    "[data-reset-progress]",
+  );
+  const { lastBook, lastPassage } = readReaderState();
 
-  if (
-    panel &&
-    title &&
-    resumeAction &&
-    startAction &&
-    lastBook >= 1 &&
-    lastBook <= 24
-  ) {
+  if (panel && title && resumeAction && startAction && lastBook) {
     const number = String(lastBook).padStart(2, "0");
-    const passage = localStorage.getItem(`odyssey-progress-book-${number}`);
-    const range = passage?.match(/^lines-(\d+)-(\d+)$/);
+    const range = lastPassage?.match(/^lines-(\d+)-(\d+)$/);
     const card = document.querySelector<HTMLElement>(
       `[data-book-card="${number}"]`,
     );
-    const cardLink =
-      card?.querySelector<HTMLAnchorElement>("[data-book-link]");
+    const cardLink = card?.querySelector<HTMLAnchorElement>("[data-book-link]");
     const marker = card?.querySelector<HTMLElement>("[data-card-progress]");
     const roman = card?.dataset.bookRoman ?? String(lastBook);
     const baseURL = cardLink?.href ?? startAction.href;
-    const resumeURL = `${baseURL}${passage ? `#${passage}` : ""}`;
+    const resumeURL = `${baseURL}${lastPassage ? `#${lastPassage}` : ""}`;
 
     title.textContent = range
       ? `Продолжить Песнь ${roman}, строки ${range[1]}–${range[2]}`
       : `Продолжить Песнь ${roman}`;
     resumeAction.href = resumeURL;
     startAction.href = baseURL;
-    startAction.addEventListener("click", () => {
-      localStorage.removeItem(`odyssey-progress-book-${number}`);
-    });
     if (cardLink) cardLink.href = resumeURL;
     card?.classList.add("is-current");
     cardLink?.setAttribute("aria-current", "step");
     if (marker) marker.hidden = false;
     panel.hidden = false;
   }
+
+  resetAction?.addEventListener("click", () => {
+    if (
+      !confirm(
+        "Сбросить сохранённое место чтения и предел открытого справочника на этом устройстве?",
+      )
+    ) {
+      return;
+    }
+    resetReaderState();
+    location.reload();
+  });
 </script>

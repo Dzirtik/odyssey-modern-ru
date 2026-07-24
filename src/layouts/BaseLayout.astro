@@ -47,6 +47,40 @@ const webpageId = `${canonicalURL.href}#webpage`;
 const workId = `${siteURL.href}#odyssey`;
 const publisherId = `${siteURL.href}#publisher`;
 const imageId = `${siteURL.href}#social-image`;
+const navigation = [
+  {
+    label: "Читать",
+    href: withBase("/read/"),
+    current:
+      Astro.url.pathname.startsWith(withBase("/read/")) ||
+      Astro.url.pathname.startsWith(withBase("/book/")),
+  },
+  {
+    label: "Персонажи",
+    href: withBase("/people/"),
+    current: Astro.url.pathname.startsWith(withBase("/people/")),
+  },
+  {
+    label: "Словарь",
+    href: withBase("/glossary/"),
+    current: Astro.url.pathname.startsWith(withBase("/glossary/")),
+  },
+  {
+    label: "Карта",
+    href: withBase("/map/"),
+    current: Astro.url.pathname.startsWith(withBase("/map/")),
+  },
+  {
+    label: "Источники",
+    href: withBase("/sources/"),
+    current: Astro.url.pathname.startsWith(withBase("/sources/")),
+  },
+  {
+    label: "Метод",
+    href: withBase("/methodology/"),
+    current: Astro.url.pathname.startsWith(withBase("/methodology/")),
+  },
+];
 const breadcrumbData =
   breadcrumbs.length > 0
     ? {
@@ -190,8 +224,14 @@ const serializedJsonLd = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
     <title>{pageTitle}</title>
     <script type="application/ld+json" is:inline set:html={serializedJsonLd} />
     <script is:inline>
-      const savedTheme = localStorage.getItem("odyssey-theme");
-      if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+      try {
+        const savedTheme = localStorage.getItem("odyssey-theme");
+        if (savedTheme === "light" || savedTheme === "dark") {
+          document.documentElement.dataset.theme = savedTheme;
+        }
+      } catch {
+        // The default light theme remains usable when storage is unavailable.
+      }
     </script>
   </head>
   <body>
@@ -202,17 +242,21 @@ const serializedJsonLd = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
         <span class="brand-name">Одиссея</span>
       </a>
       <nav aria-label="Основная навигация">
-        <a href={withBase("/read/")}>Читать</a>
-        <a href={withBase("/people/")}>Персонажи</a>
-        <a href={withBase("/glossary/")}>Словарь</a>
-        <a href={withBase("/map/")}>Карта</a>
-        <a href={withBase("/sources/")}>Источники</a>
-        <a href={withBase("/methodology/")}>Метод</a>
+        {
+          navigation.map((item) => (
+            <a
+              href={item.href}
+              aria-current={item.current ? "page" : undefined}
+            >
+              {item.label}
+            </a>
+          ))
+        }
       </nav>
       <button
         class="theme-toggle"
         type="button"
-        aria-label="Переключить цветовую тему"
+        aria-label="Тёмная тема"
         aria-pressed="false"
       >
         <span aria-hidden="true">◐</span>
@@ -259,16 +303,26 @@ const serializedJsonLd = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
       </p>
     </footer>
     <script>
-      const maxBook = Number(localStorage.getItem("odyssey-max-book") ?? 1);
+      import {
+        readReaderState,
+        writePreference,
+      } from "../scripts/reader-state";
+
+      const { maxCompletedBook } = readReaderState();
       document
         .querySelectorAll<HTMLElement>("[data-reveal-book]")
         .forEach((element) => {
-          element.hidden = Number(element.dataset.revealBook) > maxBook;
+          const revealBook = Number(element.dataset.revealBook);
+          element.hidden =
+            !Number.isInteger(revealBook) || revealBook > maxCompletedBook;
         });
       document
         .querySelectorAll<HTMLElement>("[data-progress-label]")
         .forEach((element) => {
-          element.textContent = `Предел открытого знания: Песнь ${maxBook}`;
+          element.textContent =
+            maxCompletedBook === 0
+              ? "Предел открытого знания: чтение ещё не начато"
+              : `Предел открытого знания: завершена Песнь ${maxCompletedBook}`;
         });
 
       const toggle = document.querySelector<HTMLButtonElement>(".theme-toggle");
@@ -276,17 +330,13 @@ const serializedJsonLd = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
         if (!toggle) return;
         const isDark = document.documentElement.dataset.theme === "dark";
         toggle.setAttribute("aria-pressed", String(isDark));
-        toggle.setAttribute(
-          "aria-label",
-          isDark ? "Включить светлую тему" : "Включить тёмную тему",
-        );
       };
       updateThemeState();
       toggle?.addEventListener("click", () => {
         const next =
           document.documentElement.dataset.theme === "dark" ? "light" : "dark";
         document.documentElement.dataset.theme = next;
-        localStorage.setItem("odyssey-theme", next);
+        writePreference("odyssey-theme", next);
         updateThemeState();
       });
     </script>

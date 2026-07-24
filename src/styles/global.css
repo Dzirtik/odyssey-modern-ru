@@ -34,6 +34,7 @@
     --card: rgba(255, 255, 255, 0.35);
     --reader-scale: 1;
     --reader-width: 64ch;
+    --reader-toolbar-height: 6rem;
     font-family:
       Inter,
       ui-sans-serif,
@@ -166,6 +167,11 @@
   .site-footer a {
     text-decoration: none;
   }
+  .site-header nav a[aria-current="page"] {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 0.12em;
+  }
   .theme-toggle {
     width: 2.5rem;
     height: 2.5rem;
@@ -205,16 +211,17 @@
     color: var(--ink);
   }
   .hero {
-    min-height: 78vh;
+    min-height: 70vh;
     display: grid;
     grid-template-columns: minmax(0, 1.4fr) minmax(16rem, 0.6fr);
     align-items: center;
     gap: 5vw;
-    padding: clamp(4rem, 9vw, 9rem) clamp(1.25rem, 7vw, 8rem);
+    padding: clamp(2rem, 4vw, 4rem) clamp(1.25rem, 7vw, 8rem);
     border-bottom: 1px solid var(--line);
   }
   .hero h1 {
     max-width: 10ch;
+    font-size: clamp(3rem, 5.5vw, 5rem);
   }
   .hero h1 em {
     color: var(--accent);
@@ -230,15 +237,16 @@
   }
   .lead {
     max-width: 44rem;
-    margin-top: 2rem;
+    margin-top: 1.25rem;
     color: var(--muted);
-    font-size: clamp(1.15rem, 2vw, 1.55rem);
+    font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+    line-height: 1.5;
   }
   .hero-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
-    margin-top: 2.4rem;
+    margin-top: 1.5rem;
   }
   .button {
     display: inline-flex;
@@ -246,6 +254,9 @@
     min-height: 3rem;
     padding: 0.6rem 1.15rem;
     border: 1px solid var(--ink);
+    color: var(--ink);
+    background: transparent;
+    cursor: pointer;
     text-decoration: none;
   }
   .button.primary {
@@ -464,7 +475,7 @@
     padding: clamp(4rem, 8vw, 8rem) clamp(1.25rem, 5vw, 5rem) 3rem;
   }
   .book-header h1 {
-    font-size: clamp(4rem, 10vw, 9rem);
+    font-size: clamp(3.6rem, 8vw, 7rem);
   }
   .reader-toolbar {
     position: sticky;
@@ -481,7 +492,7 @@
     justify-content: center;
     gap: 0.6rem 1.5rem;
     padding: 0.55rem 1rem;
-    font-size: 0.76rem;
+    font-size: 0.8rem;
   }
   .reading-controls div,
   .reading-controls label {
@@ -539,7 +550,7 @@
     align-self: start;
     max-height: calc(100vh - 8rem);
     overflow: auto;
-    font-size: 0.73rem;
+    font-size: 0.78rem;
   }
   .passage-nav p {
     margin-bottom: 1rem;
@@ -555,6 +566,10 @@
     color: var(--muted);
     text-decoration: none;
   }
+  .passage-nav a[aria-current="location"] {
+    color: var(--accent);
+    font-weight: 750;
+  }
   .reader-copy {
     width: min(100%, var(--reader-width));
     font:
@@ -563,7 +578,7 @@
       serif;
   }
   .passage {
-    scroll-margin-top: 6rem;
+    scroll-margin-top: calc(var(--reader-toolbar-height) + 1rem);
     margin-bottom: 4rem;
   }
   .passage > p {
@@ -576,7 +591,7 @@
     margin-bottom: 1.2rem;
     color: var(--accent);
     font:
-      700 0.68rem/1 ui-monospace,
+      700 0.74rem/1 ui-monospace,
       monospace;
     letter-spacing: 0.08em;
   }
@@ -596,7 +611,7 @@
   .note summary span {
     margin-right: 0.7rem;
     color: var(--accent);
-    font-size: 0.65rem;
+    font-size: 0.72rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
@@ -605,7 +620,7 @@
     border-left: 2px solid var(--accent);
   }
   .note:target {
-    scroll-margin-top: 7rem;
+    scroll-margin-top: calc(var(--reader-toolbar-height) + 1rem);
     outline: 2px solid color-mix(in srgb, var(--accent) 35%, transparent);
     outline-offset: 0.35rem;
   }
@@ -643,6 +658,11 @@
   .reader-answers > .reader-answer {
     margin: 0 1rem;
   }
+  .reader-answers-disclosure {
+    margin: 0 1rem 0.5rem;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
   .answer-sources {
     margin-top: 1rem;
     color: var(--muted);
@@ -658,7 +678,12 @@
   .note-meta,
   .source-meta {
     color: var(--muted);
-    font-size: 0.74rem;
+    font-size: 0.8rem;
+  }
+  .reading-complete-sentinel {
+    width: 1px;
+    height: 1px;
+    margin: 0 auto;
   }
   .book-pagination {
     display: flex;
@@ -667,9 +692,8 @@
     padding: 2rem clamp(1.25rem, 7vw, 8rem);
     border-block: 1px solid var(--line);
   }
-  .book-pagination a[aria-disabled="true"] {
+  .book-pagination .disabled {
     color: var(--muted);
-    pointer-events: none;
   }
   .report-link {
     padding: 2rem clamp(1.25rem, 7vw, 8rem);
@@ -801,6 +825,9 @@
     background: var(--paper);
     font-size: 0.78rem;
   }
+  .text-map + .prose-page {
+    padding: 0 1.25rem 4rem;
+  }
   .prose-page {
     max-width: 70rem;
     margin: 0 auto;
@@ -826,7 +853,7 @@
     padding: 2rem clamp(1.25rem, 4vw, 4rem);
     border-top: 1px solid var(--line);
     color: var(--muted);
-    font-size: 0.72rem;
+    font-size: 0.78rem;
   }
   .site-footer nav {
     display: flex;
@@ -846,7 +873,8 @@
       grid-column: 1 / -1;
       grid-row: 2;
       justify-content: flex-start;
-      overflow-x: auto;
+      flex-wrap: wrap;
+      overflow: visible;
     }
     .hero {
       grid-template-columns: 1fr;
@@ -873,6 +901,16 @@
     }
   }
   @media (max-width: 600px) {
+    :root {
+      --reader-toolbar-height: 8rem;
+    }
+    .site-header {
+      gap: 1rem;
+    }
+    .site-header nav {
+      gap: 0.55rem 1rem;
+      font-size: 0.8rem;
+    }
     .hero {
       min-height: auto;
     }
@@ -893,16 +931,15 @@
       padding-inline: 0.75rem;
     }
     .passage-picker,
-    .width-control {
+    .passage-picker {
       grid-column: 1 / -1;
     }
     .passage-picker select {
       flex: 1;
       max-width: none;
     }
-    .width-control input[type="range"] {
-      flex: 1;
-      width: auto;
+    .width-control {
+      display: none !important;
     }
     .progress-status {
       min-width: 0;
@@ -924,6 +961,21 @@
     }
     .resume-actions {
       justify-content: flex-start;
+    }
+    .book-grid > li > a {
+      min-height: 6.25rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 0.35rem 1rem;
+      padding: 1.1rem 1.25rem;
+    }
+    .book-grid > li > a h2 {
+      margin: 0;
+      font-size: 1.45rem;
+    }
+    .book-grid small {
+      grid-column: 2;
     }
     .glossary div {
       grid-template-columns: 1fr;
