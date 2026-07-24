@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import YAML from "yaml";
+import { previewBooks } from "../src/data/books-preview.mjs";
 
 test("Book I line map covers 1-444 exactly", async () => {
   const map = YAML.parse(
@@ -19,10 +20,26 @@ test("Book I line map covers 1-444 exactly", async () => {
   );
 });
 
-test("all 24 neutral book routes are generated", async () => {
+test("all 24 book routes use the reader", async () => {
   const page = await fs.readFile("src/pages/book/[book].astro", "utf8");
   assert.match(page, /length: 24/);
-  assert.match(page, /Текст ещё не опубликован/);
+  assert.match(page, /BookReader/);
+  assert.equal(previewBooks.length, 23);
+});
+
+test("Books II-XXIV have continuous in-memory coverage", () => {
+  for (const book of previewBooks) {
+    let expected = 1;
+    for (const passage of book.passages) {
+      assert.equal(passage.lineStart, expected);
+      expected = passage.lineEnd + 1;
+    }
+    assert.equal(expected, book.lineCount + 1);
+  }
+  assert.equal(
+    444 + previewBooks.reduce((sum, book) => sum + book.lineCount, 0),
+    12110,
+  );
 });
 
 test("human review is not claimed", async () => {

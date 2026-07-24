@@ -1,0 +1,46 @@
+book: 13
+source_range: 1-440
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-92
+    event:
+      Феаки молчали после рассказа. Алкиной подтвердил, что странник вернётся,
+      и предложил каждому вождю добавить к дарам большой треножник и котёл, а
+      расходы потом возместить народным с
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 93-187
+    event:
+      "Феаки вошли в гавань Форкиса, вынесли спящего Одиссея вместе с постелью
+      и сложили дары у маслины, вдали от дороги. Когда корабль возвращался,
+      Посейдон пожаловался Зевсу: смертные п"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 188-249
+    event: "Одиссей проснулся на родной земле, но не узнал её: Афина окутала
+      местность туманом, чтобы объяснить план и скрыть героя. Он испугался, что
+      феаки обманули и высадили в чужой стране,"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 250-330
+    event:
+      "Афина приняла свой настоящий облик и похвалила Одиссея: даже на родине
+      он не расстаётся с хитростью. Он упрекнул богиню за долгое отсутствие и
+      попросил доказать, что перед ним Итак"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 331-371
+    event:
+      "Одиссей признал: без Афины он, вероятно, погиб бы дома, как Агамемнон.
+      Он попросил составить план и дать силы. Богиня обещала быть рядом, когда
+      придёт время, и сказала, что кровь и"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 372-440
+    event:
+      "Сама Афина отправится в Спарту за Телемахом. Одиссей спросил, почему она
+      позволила сыну скитаться и рисковать жизнью. Богиня ответила, что
+      сопровождала его ради доброй славы и что "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

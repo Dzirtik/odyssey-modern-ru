@@ -1,0 +1,43 @@
+book: 4
+source_range: 1-847
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-58
+    event:
+      Во дворце Менелая гости увидели свадебный пир. Служанки омыли их, надели
+      плащи, и они сели рядом с царём. Менелай предложил им еду, не спрашивая
+      имён. Он говорил о богатствах, собр
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 59-182
+    event: Писистрат напомнил, что бесконечный плач не подобает пиру, и Менелай
+      похвалил его рассудительность. Елена добавила в вино снадобье, смягчающее
+      горе, полученное ею в Египте. Она рас
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 183-295
+    event: "Менелай возмутился: слабые люди хотят занять ложе сильного героя. Он
+      сравнил их с оленихой, спрятавшей детёнышей в логове льва. Затем
+      рассказал, как получил в Египте известие об Од"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 296-331
+    event: Менелай с тремя спутниками лёг среди тюленей, терпя тяжёлый запах,
+      который Эйдофея смягчила амброзией. Когда Протей пересчитал стадо и уснул,
+      люди схватили его. Старец становился л
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 332-619
+    event:
+      "Выслушав точную весть об отце, Телемах захотел вернуться. Менелай просил
+      его задержаться и предложил богатые дары: коней и колесницу. Телемах
+      объяснил, что на скалистой Итаке нет п"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 620-847
+    event: "Пенелопа омылась, поднялась с женщинами в верхнюю комнату, насыпала
+      ячмень в корзину и попросила Афину сохранить сына. Женихи во дворе шумели
+      и говорили о браке, скрывая настоящий "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

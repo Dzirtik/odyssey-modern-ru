@@ -1,0 +1,45 @@
+book: 14
+source_range: 1-533
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-71
+    event:
+      Одиссей поднялся по лесной тропе к двору свинопаса. Евмей сам построил
+      крепкую ограду, двенадцать закутов и будки для четырёх собак. Псы
+      бросились на незнакомца; тот сел и выпустил
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 72-147
+    event:
+      "За едой Одиссей сказал, что хозяин Евмея вернётся в этом году. Свинопас
+      не поверил: странники часто лгут Пенелопе ради плаща и хитона. Недавно
+      этолиец уверял, будто Одиссей чинит к"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 148-190
+    event: Одиссей придумал, что родился на Крите, незаконным сыном богатого
+      Кастора. После смерти отца законные братья дали ему малую долю. Он
+      прославился в войне и морских набегах, участвов
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 191-359
+    event:
+      У Крита Зевс разбил финикийское судно; рассказчик девять дней держался за
+      мачту и был спасён феспротами. Их царь Фейдон якобы показал богатства
+      Одиссея и сказал, что герой отправил
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 360-456
+    event: С наступлением темноты свинопасы вернулись со стадами. Евмей зарезал
+      пятилетнего кабана, разделил мясо на семь частей, одну посвятил нимфам и
+      Гермесу, одну дал гостю, а лучшую — Од
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 457-533
+    event:
+      "Утром разговор продолжился. Евмей рассказал о семье Одиссея: Лаэрт живёт
+      в поле и почти не ест от горя; Антиклея умерла; Пенелопа остаётся в доме,
+      но жизнь её полна печали. Сам Евм"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

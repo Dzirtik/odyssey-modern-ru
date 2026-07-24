@@ -1,0 +1,43 @@
+book: 9
+source_range: 1-566
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-38
+    event: "Одиссей похвалил пение и пир, где гости слушают певца за полными
+      столами: для него это прекраснейшее зрелище. Затем назвал себя — Одиссей,
+      сын Лаэрта, известный хитростями, — и опи"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 39-61
+    event:
+      "Ветер принёс корабли к земле киконов, в Исмар. Ахейцы взяли город, убили
+      мужчин, разделили женщин и добычу поровну. Одиссей велел немедленно
+      отплывать, но товарищи не послушались: "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 62-115
+    event: "У мыса Малея северный ветер унёс флот мимо Киферы. На десятый день
+      корабли достигли страны лотофагов. Одиссей послал трёх людей узнать, кто
+      там живёт. Лотофаги не нападали, а дали "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 116-215
+    event: Напротив страны киклопов лежал необитаемый остров с козами и удобной
+      гаванью. Ахейцы высадились в густой ночи, утром охотились и пировали. На
+      следующий день Одиссей взял один кораб
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 216-460
+    event: Полифем спросил, где корабль. Одиссей солгал, будто судно разбил
+      Посейдон. Киклоп схватил двух людей, разбил о землю, съел и запил молоком.
+      Одиссей хотел ударить его мечом, но поня
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 461-566
+    event:
+      У корабля люди забрали стадо и отплыли. С безопасного расстояния Одиссей
+      стал насмехаться над киклопом. Полифем отломил вершину горы и бросил;
+      волна едва не прибила корабль обратно
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

@@ -1,0 +1,44 @@
+book: 7
+source_range: 1-347
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-45
+    event: Навсикая вошла в свои покои, где служанка Евримедуса разожгла огонь и
+      подала ужин. Одиссей направился к городу. Афина окружила его густым
+      туманом и встретила в облике девочки с кув
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 46-77
+    event: "Под покровом тумана Одиссей прошёл мимо гавани, кораблей, площади и
+      стен. Перед дворцом Афина велела ему смело войти и исчезла. Герой
+      остановился в изумлении: стены сияли медью, дв"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 78-132
+    event:
+      За двором находился сад, где груши, гранаты, яблоки, смоквы, маслины и
+      виноград давали плоды круглый год; два источника питали сад и дом.
+      Насмотревшись, Одиссей вошёл. Знатные феак
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 133-239
+    event:
+      Алкиной поднял Одиссея, усадил на место любимого сына Лаодаманта и велел
+      глашатаю смешать вино. После еды он предложил утром собрать совет,
+      принести жертвы и решить возвращение гос
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 240-307
+    event:
+      Алкиной сказал, что охотно сделал бы такого человека зятем, если бы тот
+      пожелал остаться; однако удерживать гостя силой нельзя. Возвращение
+      назначили на следующий день. Царь хвалил
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 308-347
+    event: "Арета велела служанкам приготовить постель под портиком. Они вынесли
+      пурпурные покрывала, тёплые плащи и факелы. После долгого пути Одиссей лёг
+      на резное ложе. Алкиной спал внутри "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

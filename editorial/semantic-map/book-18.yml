@@ -1,0 +1,45 @@
+book: 18
+source_range: 1-428
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-50
+    event:
+      К дворцу пришёл постоянный городской нищий Арней по прозвищу Ир. Он был
+      огромен телом, но слаб и прожорлив. Увидев соперника, Ир потребовал уйти и
+      стал угрожать дракой. Одиссей пре
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 51-110
+    event:
+      Под лохмотьями Одиссей обнажил крепкие бёдра и плечи; женихи испугались
+      за Ира. Антиной пригрозил отправить проигравшего к царю Эхету, который
+      калечит людей. Ир уже хотел бежать, н
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 111-157
+    event: Афина внушила Пенелопе показаться женихам, чтобы сильнее разжечь их
+      желания и повысить её честь в глазах мужа и сына. Царица рассмеялась
+      необычному порыву и попросила Евриклею позв
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 158-242
+    event:
+      "Пенелопа упрекнула Телемаха: он позволил оскорбить гостя. Сын признал,
+      что ещё учится и не всегда может сдержать множество людей, но в драке
+      нищий победил. Евримах восхищался красо"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 243-364
+    event: "Антиной признал обычай и пообещал дары. Каждый жених послал слугу за
+      украшением: Пенелопа получила покрывало с двенадцатью золотыми застёжками,
+      ожерелья, серьги и другие вещи. Она "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 365-428
+    event:
+      Одиссей ответил, что состязался бы с Евримахом и в жатве, и в бою, будь у
+      обоих косы, плуги или оружие. Жених бросил в него скамейку, но герой
+      уклонился; удар пришёлся по виночерпи
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

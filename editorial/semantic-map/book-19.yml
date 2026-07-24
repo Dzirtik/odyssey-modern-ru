@@ -1,0 +1,45 @@
+book: 19
+source_range: 1-604
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-53
+    event:
+      Телемах и Одиссей начали переносить оружие из зала. Афина шла впереди с
+      золотым светом. Сын удивился сиянию стен, но отец велел молчать и
+      запомнить увиденное. Телемах сказал Еврикл
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 54-161
+    event:
+      "Царица велела поставить гостю скамью и спросила его род. Одиссей сначала
+      уклонялся, чтобы не усиливать её горе, но Пенелопа рассказала собственную
+      историю: женихи осаждают дом, а х"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 162-248
+    event:
+      "Пенелопа испытала рассказчика: попросила описать одежду мужа и спутника.
+      Одиссей точно назвал пурпурный плащ с золотой застёжкой, на которой собака
+      держала оленёнка, и блестящий хи"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 249-360
+    event: Царица приказала служанкам омыть гостю ноги, постелить ложе и утром
+      натереть маслом. Одиссей отказался от роскоши и согласился только на
+      омовение старой женщиной, пережившей стольк
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 361-507
+    event:
+      "Евриклея узнала хозяина, выпустила ногу, и таз опрокинулся. Она хотела
+      показать Пенелопе знак, но Афина отвлекла царицу. Одиссей схватил старуху
+      за горло и потребовал молчать: даже"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 508-604
+    event: "Пенелопа объявила испытание. Она вынесет лук Одиссея и поставит
+      двенадцать топоров в ряд. Тот, кто натянет лук и пустит стрелу через все
+      проушины, станет её мужем. Одиссей одобрил "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

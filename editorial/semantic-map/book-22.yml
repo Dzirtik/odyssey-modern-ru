@@ -1,0 +1,45 @@
+book: 22
+source_range: 1-501
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-67
+    event: Одиссей сбросил лохмотья, вскочил на порог с луком и высыпал стрелы у
+      ног. Он объявил, что первое состязание окончено, а теперь выберет другую
+      цель. Стрела пронзила Антиноя в горло
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 68-143
+    event: Евримах призвал товарищей выхватить мечи, прикрыться столами и всем
+      вместе броситься к порогу. Одиссей поразил его стрелой в печень; Амфином
+      кинулся на героя, но Телемах ударил его
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 144-238
+    event:
+      Мелантий нашёл путь в оружейную по боковой лестнице и принёс женихам щиты
+      и копья. Одиссей встревожился, думая, что Телемах не закрыл дверь. Евмей и
+      Филойтий выследили козопаса, сх
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 239-329
+    event:
+      Агелай организовал залп шестерых. Афина сделала так, что копья ударили в
+      стену и дверь. Одиссей и союзники ответили, каждый поразив врага. Вторая
+      атака дала Телемаху лёгкую рану на
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 330-413
+    event:
+      "Певец Фемий выбрался из-за кресла с формингой и молил о пощаде: он пел
+      по принуждению и был самоучкой, а бог вложил в него песни. Телемах
+      подтвердил и попросил спасти также глашата"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 414-501
+    event:
+      Евриклея назвала двенадцать неверных служанок из пятидесяти. Они вынесли
+      тела, вымыли столы и пол губками. Затем Телемах по распоряжению отца вывел
+      их во двор. Одиссей предлагал ме
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

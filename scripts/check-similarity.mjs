@@ -1,6 +1,9 @@
 import { assert, readText, success } from "./lib.mjs";
 
-const text = await readText("src/data/book-one.ts");
+const text = [
+  await readText("src/data/book-one.ts"),
+  await readText("src/data/books-preview.mjs"),
+].join("\n");
 const suspiciousMarkers = [
   "перевод викентия вересаева",
   "перевод в. а. жуковского",
@@ -15,6 +18,11 @@ for (const marker of suspiciousMarkers) {
   );
 }
 
+assert(
+  !/[А-Яа-яЁё][A-Za-z]|[A-Za-z][А-Яа-яЁё]/u.test(text),
+  "Mixed Cyrillic/Latin token detected in the published text",
+);
+
 success(
-  "No embedded modern-translation markers found; external corpus comparison remains a manual blocker",
+  "No embedded translation markers or mixed-script tokens found; external corpus comparison remains manual",
 );

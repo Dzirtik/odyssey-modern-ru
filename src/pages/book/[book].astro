@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import BookOneReader from "../../components/BookOneReader.astro";
-import StatusBadge from "../../components/StatusBadge.astro";
-import { withBase } from "../../data/project";
+import BookReader from "../../components/BookReader.astro";
+import { bookOne } from "../../data/book-one";
+import { previewBookByNumber } from "../../data/books-preview.mjs";
 
 export function getStaticPaths() {
   return Array.from({ length: 24 }, (_, index) => ({
@@ -14,21 +14,9 @@ export function getStaticPaths() {
 interface Props { book: number }
 const { book } = Astro.props;
 const roman = ["I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","XIX","XX","XXI","XXII","XXIII","XXIV"][book - 1];
+const content = book === 1 ? bookOne : previewBookByNumber.get(book);
 ---
 
 <BaseLayout title={`Песнь ${roman}`}>
-  {book === 1 ? (
-    <BookOneReader />
-  ) : (
-    <section class="unpublished">
-      <p class="eyebrow">Песнь {roman}</p>
-      <h1>Текст ещё не опубликован</h1>
-      <StatusBadge status="not_published" />
-      <p>
-        Эта страница намеренно не содержит аннотации или будущих сюжетных сведений.
-        Песня появится только после подготовки карты строк, пояснений и редакционных отчётов.
-      </p>
-      <a class="button secondary" href={withBase("/read/")}>Вернуться к оглавлению</a>
-    </section>
-  )}
+  {content && <BookReader book={content} />}
 </BaseLayout>

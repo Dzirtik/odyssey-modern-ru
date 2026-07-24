@@ -1,0 +1,46 @@
+book: 12
+source_range: 1-453
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-35
+    event:
+      Вернувшись на Ээю, люди вытащили корабль и уснули у моря. На рассвете они
+      нашли тело Элпенора, сожгли его с оружием, насыпали холм и поставили
+      сверху весло. Кирка узнала о возвраще
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 36-110
+    event:
+      Дальше Кирка описала два пути. Один ведёт мимо блуждающих скал, где даже
+      птицы не пролетают невредимыми; только «Арго» однажды прошёл благодаря
+      Гере. Другой — между Скиллой и Хариб
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 111-141
+    event: На рассвете Кирка ушла, и Одиссей открыл товарищам только часть
+      предупреждений. Он размял воск, залепил им уши гребцов, а себя велел
+      привязать к мачте. Когда корабль оказался у ост
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 142-259
+    event:
+      "Впереди поднялись дым, прибой и грохот Харибды. Товарищи выпустили вёсла
+      от страха. Одиссей обошёл скамьи и вернул им мужество, но не сказал о
+      Скилле, чтобы они не бросили грести. "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 260-373
+    event:
+      "Корабль достиг Фринакии. Одиссей хотел пройти мимо, но Еврилах обвинил
+      его в бесчувствии: люди изнурены и нуждаются в ночлеге. Он предложил утром
+      отплыть, не трогая скота. Одиссей "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 374-453
+    event:
+      "Шесть дней люди ели мясо, а на седьмой ветер сменился. Они вышли в море.
+      Зевс поднял бурю и ударил молнией: корабль развалился, товарищи упали в
+      воду и лишились возвращения. Одиссе"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

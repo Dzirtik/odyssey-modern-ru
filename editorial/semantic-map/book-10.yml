@@ -1,0 +1,42 @@
+book: 10
+source_range: 1-574
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-55
+    event:
+      Корабли достигли плавучего острова Эолии, окружённого медной стеной. Эол,
+      любимец богов, жил там с шестью сыновьями и шестью дочерьми, которых
+      сочетал друг с другом. Месяц он рассп
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 56-132
+    event: Шесть дней люди гребли и на седьмой достигли Телепила, города
+      лестригонов. Гавань была тесной, окружённой утёсами; все корабли, кроме
+      судна Одиссея, вошли внутрь. Разведчики встрет
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 133-197
+    event: Два дня люди лежали у корабля. На третий Одиссей поднялся на холм и
+      увидел дым среди леса. По пути назад он убил огромного оленя и принёс его
+      товарищам. Наутро разделил людей на дв
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 198-301
+    event: Одиссей взял меч и пошёл к дому Кирки, не позволив Еврилаху вести. По
+      дороге Гермес в облике юноши дал ему растение моли — чёрный корень с белым
+      цветком, которое смертному трудно в
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 302-465
+    event: Одиссей привёл остальных с корабля. Еврилах пытался удержать их и
+      напомнил о пещере киклопа, но товарищи последовали за вождём. Кирка
+      предложила вытащить корабль и спрятать имущест
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 466-574
+    event: "Одиссей сообщил товарищам о новой дороге, и они плакали, но сборы
+      начались. Один человек не услышал: юный Элпенор, пьяный, спал на крыше.
+      Проснувшись от шума, он забыл о лестнице, "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

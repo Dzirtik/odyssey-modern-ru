@@ -1,0 +1,45 @@
+book: 3
+source_range: 1-497
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-62
+    event: "Солнце поднялось из моря, когда корабль Телемаха достиг Пилоса. На
+      берегу жители приносили Посейдону в жертву чёрных быков: девять больших
+      групп сидели за пиром, и в каждой закалыв"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 63-101
+    event:
+      "Телемах назвался и объяснил, что ищет сведения об Одиссее. Он просил не
+      смягчать правду из жалости. Нестор вспомнил девять тяжёлых лет под Троей:
+      никто не мог сравниться с Одиссеем"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 102-200
+    event:
+      "Нестор перечислил возвращения: мирмидонян привёл сын Ахилла, Филоктет
+      вернулся, Идоменей спас своих критян. Об Агамемноне Телемах уже слышал:
+      его дома убил Эгисф, пока Менелай был "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 201-328
+    event:
+      Разговор перешёл к Менелаю. Нестор рассказал, как тот с частью спутников
+      оказался на Крите, затем был унесён к Египту, тогда как Эгисф соблазнял
+      Клитемнестру. Сначала при царице ос
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 329-403
+    event: Ночью Телемах спал рядом с Писистратом в портике дворца. Утром Нестор
+      собрал сыновей и устроил жертву. Кузнец покрыл рога тёлки золотом; женщины
+      подняли священный крик, животное за
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 404-497
+    event:
+      Кони быстро понесли колесницу по равнине. К вечеру путники достигли Фер и
+      остановились в доме Диокла, сына Орсилоха. На следующий день они снова
+      ехали до заката и увидели плодородн
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

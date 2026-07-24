@@ -1,0 +1,47 @@
+book: 24
+source_range: 1-548
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-62
+    event:
+      Гермес созвал души убитых женихов золотым жезлом. Они пищали, как летучие
+      мыши в пещере, и следовали за богом по влажным путям к асфоделевому лугу.
+      Там тени Ахилла, Патрокла, Антил
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 63-119
+    event:
+      Одиссей пришёл в сад Лаэрта. Долий и его сыновья работали далеко. Герой
+      велел Телемаху, Евмею и Филойтию приготовить свинью и вошёл к отцу один.
+      Лаэрт был в грязном хитоне, кожаных
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 120-202
+    event:
+      "Одиссей не выдержал, обнял отца и назвал себя, сообщив о гибели женихов.
+      Лаэрт потребовал знак. Сын показал шрам и перечислил деревья, подаренные
+      ему мальчиком: тринадцать груш, де"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 203-360
+    event:
+      Долий узнал Одиссея, схватил за руку и поздравил с днём, которого уже не
+      ждал. Тем временем в городе узнали о расправе. Родственники вынесли тела и
+      отправили погибших с других остр
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 361-466
+    event:
+      "На Олимпе Афина спросила Зевса, что будет дальше: война или мир. Зевс
+      предоставил решение ей, но предложил после законной мести утвердить
+      Одиссея царём, заставить людей забыть убий"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 467-548
+    event:
+      Одиссей и Телемах бросились вперёд. Афина подняла голос и приказала обеим
+      сторонам прекратить гибельную войну. Противники побежали; Одиссей хотел
+      преследовать, но Зевс бросил молни
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

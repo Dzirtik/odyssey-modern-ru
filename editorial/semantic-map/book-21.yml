@@ -1,0 +1,42 @@
+book: 21
+source_range: 1-434
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-79
+    event: Афина вложила Пенелопе мысль вынести лук и топоры. Царица поднялась в
+      кладовую, открыла дверь бронзовым ключом и сняла оружие Одиссея. Лук
+      когда-то подарил ему Ифит; они встретилис
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 80-135
+    event: "Телемах первым поставил топоры, выкопав для них прямую канаву, хотя
+      прежде не видел испытания. Он трижды пытался натянуть лук; на четвёртый
+      почти добился успеха, но Одиссей знаком "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 136-244
+    event: Одиссей вывел Евмея и Филойтия за двор. Он спросил, поддержали бы они
+      хозяина, если бы тот внезапно вернулся. Оба поклялись сражаться за него.
+      Тогда нищий открыл имя и показал шрам
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 245-310
+    event: Одиссей попросил разрешения испытать лук, не претендуя на Пенелопу.
+      Женихи возмутились. Антиной заявил, что вино лишило нищего рассудка, и
+      напомнил о пьяном кентавре Евритионе. Пен
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 311-375
+    event:
+      Евмей понёс лук, несмотря на крики женихов. Телемах пригрозил натравить
+      на него собак — притворно, чтобы не раскрыть союз. Свинопас передал оружие
+      Одиссею и сообщил Евриклее, что д
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 376-434
+    event: Не вставая со скамьи, Одиссей пустил стрелу. Она прошла через все
+      двенадцать топоров и вышла с другой стороны. Он сказал Телемаху, что не
+      опозорил гостеприимство и теперь пора приг
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.

@@ -1,0 +1,24 @@
+- paragraph_id: lines-1-60
+  source_range:
+    start: 1
+    end: 60
+- paragraph_id: lines-61-149
+  source_range:
+    start: 61
+    end: 149
+- paragraph_id: lines-150-246
+  source_range:
+    start: 150
+    end: 246
+- paragraph_id: lines-247-327
+  source_range:
+    start: 247
+    end: 327
+- paragraph_id: lines-328-491
+  source_range:
+    start: 328
+    end: 491
+- paragraph_id: lines-492-606
+  source_range:
+    start: 492
+    end: 606

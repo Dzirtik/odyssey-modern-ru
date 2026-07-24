@@ -1,0 +1,44 @@
+book: 16
+source_range: 1-481
+base_source_id: homer_odyssey_perseus_grc1
+status: editorial_preview
+segments:
+  - lines: 1-50
+    event:
+      "На рассвете Одиссей и Евмей разожгли огонь и готовили завтрак. Собаки не
+      залаяли, а заскулили и завиляли хвостами. Одиссей заметил знак, и в дверях
+      появился Телемах. Евмей выронил "
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 51-134
+    event:
+      Телемах спросил о Пенелопе и засаде. Евмей рассказал, что мать сохраняет
+      верность, а дни и ночи проводит в слезах. Юноша отправил свинопаса тайно
+      известить её о возвращении и запре
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 135-219
+    event: Телемах не сразу поверил, считая перемену невозможной для смертного.
+      Одиссей объяснил действие Афины и снова стал стариком после её ухода. Отец
+      рассказал, что феаки доставили его с
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 220-320
+    event: Телемах должен утром идти в город и сидеть среди женихов. Евмей позже
+      приведёт нищего Одиссея. Если гостя станут оскорблять, сын обязан терпеть,
+      даже когда его будут бить; можно то
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 321-406
+    event:
+      "Женихи собрались на площади. Антиной предложил немедленно убить Телемаха
+      в поле, пока народ не узнал. Амфином возразил: нельзя убивать царского
+      сына без знака богов; если Зевс одоб"
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
+  - lines: 407-481
+    event: Евмей вернулся к хижине. Перед его появлением Афина снова превратила
+      Одиссея в старика, чтобы слуга не узнал хозяина раньше времени. Телемах
+      спросил, кто сообщил матери и видели ли
+    speaker: narrator and embedded speakers as applicable
+    ambiguity: Automated semantic segmentation; requires human line-by-line review.
