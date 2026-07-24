@@ -1,0 +1,40 @@
+book: 1
+source_range: "1.1-444"
+base_source_id: homer_odyssey_perseus_grc1
+segments:
+  - lines: "1-10"
+    event: "Invocation and compressed premise"
+    speaker: narrator
+    addressee: Muse
+    first_reveals: [odysseus_identity, helios_identity]
+    ambiguity: "The opening epithet permits several emphases: versatile, resourceful, much-turned."
+  - lines: "11-95"
+    event: "Council of the gods and Athena's plan"
+    speaker: narrator, Zeus, Athena
+    addressee: divine assembly
+    first_reveals: []
+    ambiguity: "Atlas and the Ethiopians belong to poem-world geography; no modern localization asserted."
+  - lines: "96-212"
+    event: "Athena arrives as Mentes; Telemachus welcomes the guest"
+    speaker: narrator, Telemachus, Athena-as-Mentes
+    addressee: guest and host
+    first_reveals: [athena_visits_telemachus]
+    ambiguity: "Hospitality is shown in action before it is interpreted."
+  - lines: "213-324"
+    event: "Athena strengthens Telemachus and proposes a journey"
+    speaker: Athena-as-Mentes, Telemachus
+    addressee: each other
+    first_reveals: []
+    ambiguity: "Prophetic assurance and practical advice remain distinct."
+  - lines: "325-385"
+    event: "Phemius' song, Penelope's request, Telemachus' public turn"
+    speaker: narrator, Penelope, Telemachus
+    addressee: singer, household, suitors
+    first_reveals: []
+    ambiguity: "Telemachus' assertion is presented, not endorsed as a modern norm."
+  - lines: "386-444"
+    event: "Suitors respond; Telemachus retires with a plan"
+    speaker: narrator, Antinous, Eurymachus, Telemachus
+    addressee: household
+    first_reveals: []
+    ambiguity: "Multiple basileis caution against a simple modern monarchy model."
