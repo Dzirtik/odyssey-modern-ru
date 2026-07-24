@@ -1,0 +1,32 @@
+{
+  "name": "odyssey-modern-ru",
+  "version": "0.1.0-preview.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "typecheck": "ASTRO_TELEMETRY_DISABLED=1 astro check",
+    "test": "node --test tests/*.test.mjs",
+    "validate:sources": "node scripts/validate-sources.mjs",
+    "validate:rights": "node scripts/validate-rights.mjs",
+    "validate:coverage": "node scripts/validate-coverage.mjs",
+    "validate:spoilers": "node scripts/validate-spoilers.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "check:similarity": "node scripts/check-similarity.mjs",
+    "validate": "npm run validate:sources && npm run validate:rights && npm run validate:coverage && npm run validate:spoilers && npm run check:links && npm run check:similarity",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "check": "npm run lint && npm run typecheck && npm run test && npm run validate && npm run build"
+  },
+  "dependencies": {
+    "astro": "7.1.3",
+    "yaml": "2.9.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.9",
+    "prettier": "3.9.6",
+    "prettier-plugin-astro": "0.14.1",
+    "typescript": "6.0.3"
+  }
+}

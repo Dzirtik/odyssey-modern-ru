@@ -1,0 +1,10 @@
+---
+interface Props {
+  status: "editorial_preview" | "not_published";
+}
+const { status } = Astro.props;
+---
+
+<span class:list={["status-badge", status]}>
+  {status === "editorial_preview" ? "Редакционная превью-версия" : "Не опубликовано"}
+</span>

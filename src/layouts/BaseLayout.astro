@@ -1,0 +1,66 @@
+---
+import "../styles/global.css";
+import { project, withBase } from "../data/project";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = project.title,
+  description = "Независимое современное русское прозаическое переложение «Одиссеи»."
+} = Astro.props;
+const pageTitle = title === project.title ? title : `${title} — ${project.title}`;
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="color-scheme" content="light dark" />
+    <title>{pageTitle}</title>
+    <script is:inline>
+      const savedTheme = localStorage.getItem("odyssey-theme");
+      if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К содержанию</a>
+    <header class="site-header">
+      <a class="brand" href={withBase("/")}>ΟΔΥΣΣΕΙΑ <span>Одиссея</span></a>
+      <nav aria-label="Основная навигация">
+        <a href={withBase("/read/")}>Читать</a>
+        <a href={withBase("/people/")}>Персонажи</a>
+        <a href={withBase("/glossary/")}>Словарь</a>
+        <a href={withBase("/sources/")}>Источники</a>
+        <a href={withBase("/methodology/")}>Метод</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Переключить цветовую тему">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>Редакционная превью-версия {project.version}. Человеческая проверка не заявлена.</p>
+      <nav aria-label="Служебная навигация">
+        <a href={withBase("/rights/")}>Права</a>
+        <a href={withBase("/ai-disclosure/")}>Об использовании AI</a>
+        <a href={withBase("/changelog/")}>Изменения</a>
+      </nav>
+      <p>© {project.publicationYear} {project.owner}. Все права на новое переложение и оригинальные пояснения защищены.</p>
+    </footer>
+    <script>
+      const toggle = document.querySelector<HTMLButtonElement>(".theme-toggle");
+      toggle?.addEventListener("click", () => {
+        const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = next;
+        localStorage.setItem("odyssey-theme", next);
+      });
+    </script>
+  </body>
+</html>

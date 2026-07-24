@@ -1,0 +1,101 @@
+---
+import { bookOne } from "../data/book-one";
+import { project, withBase } from "../data/project";
+import ReadingControls from "./ReadingControls.astro";
+import StatusBadge from "./StatusBadge.astro";
+---
+
+<article class="book-page" data-book="1">
+  <header class="book-header">
+    <p class="eyebrow">Переложение · {bookOne.sourceRange}</p>
+    <h1>{bookOne.title}</h1>
+    <div class="status-line">
+      <StatusBadge status="editorial_preview" />
+      <span>Последняя автоматизированная проверка: {bookOne.lastFactCheck}</span>
+    </div>
+    <p class="editorial-warning">
+      Текст не проходил содержательную человеческую редактуру. Это полный рабочий пилот
+      диапазона 1.1–444, а не окончательное авторское издание.
+    </p>
+  </header>
+
+  <ReadingControls />
+
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+
+  <div class="reader-layout">
+    <aside class="passage-nav" aria-label="Навигация по Песни I">
+      <p>Песнь I</p>
+      <ol>
+        {bookOne.passages.map((passage) => (
+          <li><a href={`#${passage.id}`}>{passage.lines}</a></li>
+        ))}
+      </ol>
+    </aside>
+
+    <div class="reader-copy">
+      {bookOne.passages.map((passage) => (
+        <section id={passage.id} class="passage" data-line-end={passage.lineEnd}>
+          <p class="line-range">{passage.lines}</p>
+          {passage.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+          {bookOne.notes
+            .filter((note) => note.anchor === passage.id)
+            .map((note) => (
+              <details class="note">
+                <summary><span>Пояснение</span>{note.title}</summary>
+                <div>
+                  <p>{note.summary}</p>
+                  <p>{note.details}</p>
+                  <p class="note-meta">
+                    {note.layer} · {note.confidence} · источники:{" "}
+                    {note.sourceIds.map((source, index) => (
+                      <>
+                        {index > 0 && ", "}
+                        <a href={withBase(`/sources/#${source}`)}>{source}</a>
+                      </>
+                    ))}
+                  </p>
+                </div>
+              </details>
+            ))}
+        </section>
+      ))}
+    </div>
+  </div>
+
+  <nav class="book-pagination" aria-label="Переход между песнями">
+    <a aria-disabled="true">← Предыдущая</a>
+    <a href={withBase("/read/")}>Оглавление</a>
+    <a href={withBase("/book/02/")}>Песнь II →</a>
+  </nav>
+
+  <p class="report-link">
+    <a href={`https://github.com/${project.owner}/${project.repository}/issues/new?template=content-error.yml&book=01`}>
+      Сообщить об ошибке в Песни I
+    </a>
+  </p>
+</article>
+
+<script>
+  const progress = document.querySelector<HTMLElement>(".reading-progress span");
+  const passages = [...document.querySelectorAll<HTMLElement>(".passage")];
+  const storageKey = "odyssey-progress-book-01";
+
+  const update = () => {
+    const main = document.querySelector<HTMLElement>(".reader-copy");
+    if (!main || !progress) return;
+    const rect = main.getBoundingClientRect();
+    const total = main.offsetHeight - innerHeight;
+    const read = Math.min(1, Math.max(0, -rect.top / Math.max(total, 1)));
+    progress.style.width = `${read * 100}%`;
+    const current = passages.findLast((passage) => passage.getBoundingClientRect().top < innerHeight * 0.4);
+    if (current?.id) localStorage.setItem(storageKey, current.id);
+  };
+  addEventListener("scroll", update, { passive: true });
+  update();
+
+  const saved = localStorage.getItem(storageKey);
+  if (!location.hash && saved) {
+    document.getElementById(saved)?.scrollIntoView({ block: "start" });
+  }
+</script>

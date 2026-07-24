@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import StatusBadge from "../components/StatusBadge.astro";
+import { withBase } from "../data/project";
+---
+
+<BaseLayout>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Независимый редакционный проект</p>
+      <h1>Знакомая история.<br /><em>Текст — заново.</em></h1>
+      <p class="lead">
+        Современное русское прозаическое переложение «Одиссеи» с построчной сверкой
+        и историко-культурными комментариями.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href={withBase("/book/01/")}>Начать Песнь I</a>
+        <a class="button secondary" href={withBase("/methodology/")}>Как устроена работа</a>
+      </div>
+    </div>
+    <div class="hero-mark" aria-hidden="true">
+      <span>α</span><span>ω</span>
+      <p>1 / 24</p>
+    </div>
+  </section>
+
+  <section class="project-status" aria-labelledby="status-title">
+    <div>
+      <p class="eyebrow">Состояние издания</p>
+      <h2 id="status-title">Пилот, который не притворяется финалом</h2>
+    </div>
+    <div>
+      <StatusBadge status="editorial_preview" />
+      <p>
+        Опубликована одна песнь из 24. Человеческая филологическая редактура пока не
+        проводилась; тексты будущих песен не раскрываются.
+      </p>
+    </div>
+  </section>
+
+  <section class="principles" aria-labelledby="principles-title">
+    <p class="eyebrow">Редакционные принципы</p>
+    <h2 id="principles-title">Близко к поэме — бережно к читателю</h2>
+    <div class="principle-grid">
+      <article><span>01</span><h3>Без опережения</h3><p>Пояснения знают только то, что уже знает читатель в текущей строке.</p></article>
+      <article><span>02</span><h3>Без чужого перевода</h3><p>Новая русская проза создаётся независимо; современные переводы не служат шаблоном.</p></article>
+      <article><span>03</span><h3>С видимой неопределённостью</h3><p>Мир поэмы, исторический контекст и современные гипотезы не смешиваются.</p></article>
+      <article><span>04</span><h3>С проверяемым следом</h3><p>Диапазоны строк, источники, права и редакционные решения доступны рядом с текстом.</p></article>
+    </div>
+  </section>
+
+  <section class="quote-band">
+    <p>«Это не воспроизведение какого-либо современного перевода и не академическое критическое издание».</p>
+    <a href={withBase("/rights/")}>Подробнее о происхождении и правах →</a>
+  </section>
+</BaseLayout>
