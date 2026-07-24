@@ -1,0 +1,25 @@
+<div class="reference-controls">
+  <p>
+    По умолчанию показаны только сведения, доступные к вашему пределу чтения.
+  </p>
+  <button type="button" data-show-all-references>
+    Показать весь справочник
+  </button>
+</div>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>(
+    "[data-show-all-references]",
+  );
+  button?.addEventListener("click", () => {
+    document
+      .querySelectorAll<HTMLElement>("main [data-reveal-book]")
+      .forEach((element) => {
+        element.hidden = false;
+      });
+    const label = document.querySelector<HTMLElement>("[data-progress-label]");
+    if (label)
+      label.textContent = "Показан полный справочник · возможны спойлеры";
+    button.hidden = true;
+  });
+</script>

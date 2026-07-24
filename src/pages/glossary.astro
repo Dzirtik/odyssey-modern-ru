@@ -1,21 +1,58 @@
 ---
+import YAML from "yaml";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import ReferenceControls from "../components/ReferenceControls.astro";
+import glossaryText from "../data/glossary.yml?raw";
+import { withBase } from "../data/project";
+
+interface GlossaryEntry {
+  term: string;
+  first_book: number;
+  greek: string;
+  category: string;
+  definition: string;
+}
+
+const glossary = YAML.parse(glossaryText) as GlossaryEntry[];
 ---
-<BaseLayout title="Словарь">
+
+<BaseLayout
+  title="Словарь «Одиссеи» Гомера"
+  description="Безспойлерный словарь терминов и понятий мира «Одиссеи» Гомера: ахейцы, ксения, агора, басилевс и другие слова по мере чтения."
+>
   <section class="page-intro">
     <p class="eyebrow" data-progress-label>Прогрессивный словарь</p>
-    <h1>Слова мира поэмы</h1>
+    <h1>{glossary.length} слов мира поэмы</h1>
+    <p>
+      Социальные, ритуальные, повествовательные и предметные понятия объясняются
+      в значении, важном для конкретных сцен «Одиссеи». Формы проверяются по <a
+        href={withBase("/sources/#homer_odyssey_perseus_grc2")}
+        >греческому тексту</a
+      >, <a href={withBase("/sources/#de_jong_2001")}>комментарию</a> и профильным
+      источникам реестра.
+    </p>
   </section>
+  <ReferenceControls />
   <dl class="glossary">
-    <div data-reveal-book="1"><dt>Ахейцы</dt><dd>Одно из собирательных названий греков в гомеровском эпосе.</dd></div>
-    <div data-reveal-book="1"><dt>Басилевс</dt><dd>Властитель или знатный предводитель; контекст не всегда предполагает единственного царя.</dd></div>
-    <div data-reveal-book="1"><dt>Ксения</dt><dd>Связь взаимного гостеприимства между домами, предполагающая приём, защиту и обмен дарами.</dd></div>
-    <div data-reveal-book="1"><dt>Форминга</dt><dd>Струнный инструмент, которым певец сопровождает эпическую песнь.</dd></div>
-    <div data-reveal-book="2"><dt>Агора</dt><dd>Место общего собрания и само собрание свободных мужчин общины.</dd></div>
-    <div data-reveal-book="5"><dt>Амброзия и нектар</dt><dd>Пища и питьё бессмертных в мире поэмы.</dd></div>
-    <div data-reveal-book="9"><dt>Киклопы</dt><dd>Одноглазые великаны, живущие отдельными домами без общих собраний и законов.</dd></div>
-    <div data-reveal-book="11"><dt>Психе</dt><dd>Тень или душа умершего, отделённая от тела и пребывающая в царстве Аида.</dd></div>
-    <div data-reveal-book="12"><dt>Табу</dt><dd>Современное пояснительное слово для безусловного запрета; в поэме нарушение божественной собственности ведёт к каре.</dd></div>
-    <div data-reveal-book="19"><dt>Узнавательный знак</dt><dd>Вещь, шрам или общее тайное знание, позволяющее подтвердить личность без доверия одним словам.</dd></div>
+    {
+      glossary.map((entry) => (
+        <div
+          data-reveal-book={entry.first_book}
+          data-nosnippet={entry.first_book > 1 ? true : undefined}
+          hidden={entry.first_book > 1}
+        >
+          <dt>
+            {entry.term}
+            {entry.greek && <span lang="grc">{entry.greek}</span>}
+          </dt>
+          <dd>
+            <span class="glossary-category">
+              {entry.category} · впервые в Песни {entry.first_book}
+            </span>
+            {entry.definition}
+          </dd>
+        </div>
+      ))
+    }
   </dl>
 </BaseLayout>

@@ -25,21 +25,141 @@ import { bookTwentyOne } from "../../data/book-twenty-one";
 import { bookTwentyTwo } from "../../data/book-twenty-two";
 import { bookTwentyThree } from "../../data/book-twenty-three";
 import { bookTwentyFour } from "../../data/book-twenty-four";
+import { withBase } from "../../data/project";
 
 export function getStaticPaths() {
   return Array.from({ length: 24 }, (_, index) => ({
     params: { book: String(index + 1).padStart(2, "0") },
-    props: { book: index + 1 }
+    props: { book: index + 1 },
   }));
 }
 
-interface Props { book: number }
+interface Props {
+  book: number;
+}
 const { book } = Astro.props;
-const roman = ["I","II","III","IV","V","VI","VII","VIII","IX","X","XI","XII","XIII","XIV","XV","XVI","XVII","XVIII","XIX","XX","XXI","XXII","XXIII","XXIV"][book - 1];
+const roman = [
+  "I",
+  "II",
+  "III",
+  "IV",
+  "V",
+  "VI",
+  "VII",
+  "VIII",
+  "IX",
+  "X",
+  "XI",
+  "XII",
+  "XIII",
+  "XIV",
+  "XV",
+  "XVI",
+  "XVII",
+  "XVIII",
+  "XIX",
+  "XX",
+  "XXI",
+  "XXII",
+  "XXIII",
+  "XXIV",
+][book - 1];
 const content =
-  book === 1 ? bookOne : book === 2 ? bookTwo : book === 3 ? bookThree : book === 4 ? bookFour : book === 5 ? bookFive : book === 6 ? bookSix : book === 7 ? bookSeven : book === 8 ? bookEight : book === 9 ? bookNine : book === 10 ? bookTen : book === 11 ? bookEleven : book === 12 ? bookTwelve : book === 13 ? bookThirteen : book === 14 ? bookFourteen : book === 15 ? bookFifteen : book === 16 ? bookSixteen : book === 17 ? bookSeventeen : book === 18 ? bookEighteen : book === 19 ? bookNineteen : book === 20 ? bookTwenty : book === 21 ? bookTwentyOne : book === 22 ? bookTwentyTwo : book === 23 ? bookTwentyThree : bookTwentyFour;
+  book === 1
+    ? bookOne
+    : book === 2
+      ? bookTwo
+      : book === 3
+        ? bookThree
+        : book === 4
+          ? bookFour
+          : book === 5
+            ? bookFive
+            : book === 6
+              ? bookSix
+              : book === 7
+                ? bookSeven
+                : book === 8
+                  ? bookEight
+                  : book === 9
+                    ? bookNine
+                    : book === 10
+                      ? bookTen
+                      : book === 11
+                        ? bookEleven
+                        : book === 12
+                          ? bookTwelve
+                          : book === 13
+                            ? bookThirteen
+                            : book === 14
+                              ? bookFourteen
+                              : book === 15
+                                ? bookFifteen
+                                : book === 16
+                                  ? bookSixteen
+                                  : book === 17
+                                    ? bookSeventeen
+                                    : book === 18
+                                      ? bookEighteen
+                                      : book === 19
+                                        ? bookNineteen
+                                        : book === 20
+                                          ? bookTwenty
+                                          : book === 21
+                                            ? bookTwentyOne
+                                            : book === 22
+                                              ? bookTwentyTwo
+                                              : book === 23
+                                                ? bookTwentyThree
+                                                : bookTwentyFour;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? Astro.url);
+const siteURL = new URL(withBase("/"), Astro.site ?? Astro.url);
+const readURL = new URL(withBase("/read/"), Astro.site ?? Astro.url);
+const lineCount = content.passages.at(-1)?.lineEnd ?? 0;
+const description = `«Одиссея» Гомера, Песнь ${roman}: современное русское прозаическое переложение ${lineCount} строк с построчной сверкой и ${content.notes.length} пояснениями.`;
+const structuredData = [
+  {
+    "@type": "Chapter",
+    "@id": `${canonicalURL.href}#chapter`,
+    url: canonicalURL.href,
+    name: `«Одиссея» Гомера, Песнь ${roman}`,
+    position: book,
+    inLanguage: "ru-RU",
+    dateModified: content.lastFactCheck,
+    isPartOf: { "@id": `${siteURL.href}#website` },
+  },
+  {
+    "@type": "BreadcrumbList",
+    "@id": `${canonicalURL.href}#breadcrumb`,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Одиссея",
+        item: siteURL.href,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Оглавление",
+        item: readURL.href,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: `Песнь ${roman}`,
+      },
+    ],
+  },
+];
 ---
 
-<BaseLayout title={`Песнь ${roman}`}>
+<BaseLayout
+  title={`«Одиссея» Гомера, Песнь ${roman}: читать переложение`}
+  {description}
+  ogType="article"
+  dateModified={content.lastFactCheck}
+  {structuredData}
+>
   {content && <BookReader book={content} />}
 </BaseLayout>

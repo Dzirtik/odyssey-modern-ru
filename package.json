@@ -14,15 +14,19 @@
     "validate:coverage": "node scripts/validate-coverage.mjs",
     "validate:depth": "node scripts/validate-depth.mjs",
     "validate:editorial": "node scripts/validate-editorial.mjs",
+    "validate:reader-questions": "node scripts/validate-reader-questions.mjs",
+    "validate:reference-data": "node scripts/validate-reference-data.mjs",
     "validate:spoilers": "node scripts/validate-spoilers.mjs",
     "check:links": "node scripts/check-links.mjs",
     "check:similarity": "node scripts/check-similarity.mjs",
+    "validate:seo": "node scripts/validate-seo.mjs",
     "generate:editorial": "node scripts/generate-preview-artifacts.mjs",
-    "validate": "npm run validate:sources && npm run validate:rights && npm run validate:coverage && npm run validate:depth && npm run validate:editorial && npm run validate:spoilers && npm run check:links && npm run check:similarity",
+    "validate": "npm run validate:sources && npm run validate:rights && npm run validate:coverage && npm run validate:depth && npm run validate:editorial && npm run validate:reader-questions && npm run validate:reference-data && npm run validate:spoilers && npm run check:links && npm run check:similarity",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
-    "check": "npm run lint && npm run typecheck && npm run test && npm run validate && npm run build"
+    "check": "npm run lint && npm run typecheck && npm run test && npm run validate && npm run build && npm run validate:seo"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
     "astro": "7.1.3",
     "yaml": "2.9.0"
   },

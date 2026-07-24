@@ -1,5 +1,5 @@
 export const project = {
-  title: "Одиссея: близко к тексту",
+  title: "«Одиссея» Гомера: близко к тексту",
   owner: "Dzirtik",
   repository: "odyssey-modern-ru",
   version: "0.3.0-preview.1",

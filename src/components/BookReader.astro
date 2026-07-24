@@ -1,6 +1,8 @@
 ---
+import YAML from "yaml";
 import ReadingControls from "./ReadingControls.astro";
 import { project, withBase } from "../data/project";
+import sourcesText from "../data/sources.yml?raw";
 
 interface Props {
   book: any;
@@ -11,12 +13,62 @@ const number = String(book.book).padStart(2, "0");
 const previous = book.book > 1 ? String(book.book - 1).padStart(2, "0") : "";
 const next = book.book < 24 ? String(book.book + 1).padStart(2, "0") : "";
 const notes = book.notes ?? [];
+const sources = YAML.parse(sourcesText);
+const semanticMapFiles = import.meta.glob(
+  "../../editorial/semantic-map/book-*.yml",
+  {
+    eager: true,
+    import: "default",
+    query: "?raw",
+  },
+) as Record<string, string>;
+const semanticMapPath = `../../editorial/semantic-map/book-${number}.yml`;
+const semanticMap = semanticMapFiles[semanticMapPath]
+  ? YAML.parse(semanticMapFiles[semanticMapPath])
+  : { segments: [] };
+const normalizeQuestion = (value: string) =>
+  value
+    .trim()
+    .toLocaleLowerCase("ru-RU")
+    .replace(/[«»“”„"'`]/g, "")
+    .replace(/[?.!,:;—–-]+$/g, "")
+    .replace(/\s+/g, " ");
+interface ReaderQuestion {
+  text: string;
+  noteId: string;
+}
+const questionsByRange = new Map<string, ReaderQuestion[]>(
+  (semanticMap.segments ?? []).map((segment: any) => [
+    segment.lines,
+    (segment.reader_questions ?? []).map((question: string) => {
+      const matchingNote = notes.find(
+        (note: any) =>
+          note.anchor &&
+          normalizeQuestion(note.title) === normalizeQuestion(question),
+      );
+      return {
+        text: question,
+        noteId: matchingNote?.id ?? "",
+      };
+    }),
+  ]),
+);
+const sourceLabels = new Map(
+  sources.map((source: any) => [
+    source.id,
+    `${source.author}. ${source.title}`,
+  ]),
+);
 ---
 
 <article class="book-page" data-book={number}>
   <header class="book-header">
-    <p class="eyebrow">Переложение · {book.sourceRange}</p>
-    <h1>{book.title}</h1>
+    <p class="eyebrow">
+      Переложение · <a href={withBase("/sources/#homer_odyssey_perseus_grc2")}
+        >{book.sourceRange}</a
+      >
+    </p>
+    <h1>«Одиссея», {book.title}</h1>
   </header>
 
   <ReadingControls />
@@ -26,54 +78,105 @@ const notes = book.notes ?? [];
     <aside class="passage-nav" aria-label={`Навигация по ${book.title}`}>
       <p>{book.title}</p>
       <ol>
-        {book.passages.map((passage: any) => (
-          <li><a href={`#${passage.id}`}>{passage.lines}</a></li>
-        ))}
+        {
+          book.passages.map((passage: any) => (
+            <li>
+              <a href={`#${passage.id}`}>{passage.lines}</a>
+            </li>
+          ))
+        }
       </ol>
     </aside>
 
     <div class="reader-copy">
-      {book.passages.map((passage: any) => (
-        <section id={passage.id} class="passage" data-line-end={passage.lineEnd}>
-          <p class="line-range">{passage.lines}</p>
-          {passage.paragraphs.map((paragraph: string) => <p>{paragraph}</p>)}
-          {notes
-            .filter((note: any) => note.anchor === passage.id)
-            .map((note: any) => (
-              <details class="note">
-                <summary><span>{note.kind ?? "Пояснение"}</span>{note.title}</summary>
-                <div>
-                  <p>{note.summary}</p>
-                  <p>{note.details}</p>
-                  <p class="note-meta">
-                    {note.layer} · {note.confidence} · источники:{" "}
-                    {note.sourceIds.map((source: string, index: number) => (
-                      <>
-                        {index > 0 && ", "}
-                        <a href={withBase(`/sources/#${source}`)}>{source}</a>
-                      </>
-                    ))}
-                  </p>
-                </div>
-              </details>
+      {
+        book.passages.map((passage: any) => (
+          <section
+            id={passage.id}
+            class="passage"
+            data-line-end={passage.lineEnd}
+          >
+            <h2 class="line-range">
+              {book.title}, строки {passage.lines}
+            </h2>
+            {passage.paragraphs.map((paragraph: string) => (
+              <p>{paragraph}</p>
             ))}
-        </section>
-      ))}
+            {(
+              questionsByRange.get(`${passage.lineStart}-${passage.lineEnd}`) ??
+              []
+            ).length > 0 && (
+              <aside
+                class="reader-questions"
+                aria-label={`Вопросы читателя к строкам ${passage.lines}`}
+              >
+                <p class="reader-questions-label">Вопросы читателя</p>
+                <ul>
+                  {(
+                    questionsByRange.get(
+                      `${passage.lineStart}-${passage.lineEnd}`,
+                    ) ?? []
+                  ).map((question: ReaderQuestion) => (
+                    <li>
+                      {question.text}
+                      {question.noteId && (
+                        <>
+                          {" "}
+                          <a href={`#${question.noteId}`}>открыть пояснение</a>
+                        </>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </aside>
+            )}
+            {notes
+              .filter((note: any) => note.anchor === passage.id)
+              .map((note: any) => (
+                <details class="note" id={note.id}>
+                  <summary>
+                    <span>{note.kind ?? "Пояснение"}</span>
+                    {note.title}
+                  </summary>
+                  <div>
+                    <p>{note.summary}</p>
+                    <p>{note.details}</p>
+                    <p class="note-meta">
+                      {note.layer} · {note.confidence} · источники:{" "}
+                      {note.sourceIds.map((source: string, index: number) => (
+                        <>
+                          {index > 0 && ", "}
+                          <a href={withBase(`/sources/#${source}`)}>
+                            {sourceLabels.get(source) ?? source}
+                          </a>
+                        </>
+                      ))}
+                    </p>
+                  </div>
+                </details>
+              ))}
+          </section>
+        ))
+      }
     </div>
   </div>
 
   <nav class="book-pagination" aria-label="Переход между песнями">
-    {previous ? (
-      <a href={withBase(`/book/${previous}/`)}>← Предыдущая</a>
-    ) : (
-      <a aria-disabled="true">← Предыдущая</a>
-    )}
+    {
+      previous ? (
+        <a href={withBase(`/book/${previous}/`)}>← Предыдущая</a>
+      ) : (
+        <a aria-disabled="true">← Предыдущая</a>
+      )
+    }
     <a href={withBase("/read/")}>Оглавление</a>
-    {next ? (
-      <a href={withBase(`/book/${next}/`)}>Следующая →</a>
-    ) : (
-      <a aria-disabled="true">Следующая →</a>
-    )}
+    {
+      next ? (
+        <a href={withBase(`/book/${next}/`)}>Следующая →</a>
+      ) : (
+        <a aria-disabled="true">Следующая →</a>
+      )
+    }
   </nav>
 
   <p class="report-link">
@@ -88,7 +191,9 @@ const notes = book.notes ?? [];
 <script>
   const article = document.querySelector<HTMLElement>(".book-page");
   const bookNumber = article?.dataset.book ?? "01";
-  const progress = document.querySelector<HTMLElement>(".reading-progress span");
+  const progress = document.querySelector<HTMLElement>(
+    ".reading-progress span",
+  );
   const passages = [...document.querySelectorAll<HTMLElement>(".passage")];
   const storageKey = `odyssey-progress-book-${bookNumber}`;
 
@@ -100,7 +205,7 @@ const notes = book.notes ?? [];
     const read = Math.min(1, Math.max(0, -rect.top / Math.max(total, 1)));
     progress.style.width = `${read * 100}%`;
     const current = passages.findLast(
-      (passage) => passage.getBoundingClientRect().top < innerHeight * 0.4
+      (passage) => passage.getBoundingClientRect().top < innerHeight * 0.4,
     );
     if (current?.id) localStorage.setItem(storageKey, current.id);
   };
@@ -111,4 +216,13 @@ const notes = book.notes ?? [];
   if (!location.hash && saved) {
     document.getElementById(saved)?.scrollIntoView({ block: "start" });
   }
+
+  const openTargetNote = () => {
+    if (!location.hash) return;
+    const target = document.querySelector<HTMLDetailsElement>(location.hash);
+    if (target?.classList.contains("note")) target.open = true;
+  };
+
+  addEventListener("hashchange", openTargetNote);
+  openTargetNote();
 </script>
