@@ -1,0 +1,22 @@
+name: Ошибка в тексте
+description: Сообщить о возможной смысловой, языковой или строковой ошибке
+title: "[Текст] "
+labels: ["content"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Песня, строки и якорь
+      placeholder: "Песнь I, 1.113–143, #lines-113-143"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Что кажется неверным
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Источники или предлагаемая проверка

@@ -1,0 +1,17 @@
+name: Спойлер
+description: Сообщить о сведении, раскрытом раньше поэмы
+title: "[Спойлер] "
+labels: ["spoiler", "priority"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Страница и строка
+    validations:
+      required: true
+  - type: textarea
+    id: disclosure
+    attributes:
+      label: Какое будущее сведение раскрыто
+    validations:
+      required: true

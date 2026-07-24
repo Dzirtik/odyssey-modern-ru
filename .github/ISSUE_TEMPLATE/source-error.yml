@@ -1,0 +1,17 @@
+name: Ошибка источника
+description: Сообщить о битой ссылке, неверной карточке или проблеме прав
+title: "[Источник] "
+labels: ["sources"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Идентификатор источника
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Проблема
+    validations:
+      required: true
