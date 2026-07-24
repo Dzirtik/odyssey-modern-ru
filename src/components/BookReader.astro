@@ -14,18 +14,6 @@ const previous = book.book > 1 ? String(book.book - 1).padStart(2, "0") : "";
 const next = book.book < 24 ? String(book.book + 1).padStart(2, "0") : "";
 const notes = book.notes ?? [];
 const sources = YAML.parse(sourcesText);
-const semanticMapFiles = import.meta.glob(
-  "../../editorial/semantic-map/book-*.yml",
-  {
-    eager: true,
-    import: "default",
-    query: "?raw",
-  },
-) as Record<string, string>;
-const semanticMapPath = `../../editorial/semantic-map/book-${number}.yml`;
-const semanticMap = semanticMapFiles[semanticMapPath]
-  ? YAML.parse(semanticMapFiles[semanticMapPath])
-  : { segments: [] };
 const readerAnswerFiles = import.meta.glob(
   "../data/reader-answers/book-*.yml",
   {
@@ -38,39 +26,6 @@ const readerAnswerPath = `../data/reader-answers/book-${number}.yml`;
 const readerAnswers = readerAnswerFiles[readerAnswerPath]
   ? YAML.parse(readerAnswerFiles[readerAnswerPath])
   : [];
-const normalizeQuestion = (value: string) =>
-  value
-    .trim()
-    .toLocaleLowerCase("ru-RU")
-    .replace(/[«»“”„"'`]/g, "")
-    .replace(/[?.!,:;—–-]+$/g, "")
-    .replace(/\s+/g, " ");
-interface ReaderQuestion {
-  text: string;
-  noteId: string;
-}
-const questionsByRange = new Map<string, ReaderQuestion[]>(
-  (semanticMap.segments ?? []).map((segment: any) => [
-    segment.lines,
-    (segment.reader_questions ?? []).map((question: string) => {
-      const matchingNote = notes.find(
-        (note: any) =>
-          note.anchor &&
-          note.anchor === `lines-${String(segment.lines)}` &&
-          normalizeQuestion(note.title) === normalizeQuestion(question),
-      );
-      const matchingAnswer = readerAnswers.find(
-        (answer: any) =>
-          answer.anchor === `lines-${String(segment.lines)}` &&
-          normalizeQuestion(answer.question) === normalizeQuestion(question),
-      );
-      return {
-        text: question,
-        noteId: matchingNote?.id ?? matchingAnswer?.answer_id ?? "",
-      };
-    }).filter((question: ReaderQuestion) => Boolean(question.noteId)),
-  ]),
-);
 const sourceLabels = new Map(
   sources.map((source: any) => [
     source.id,
@@ -120,34 +75,6 @@ const sourceLabels = new Map(
             {passage.paragraphs.map((paragraph: string) => (
               <p>{paragraph}</p>
             ))}
-            {(
-              questionsByRange.get(`${passage.lineStart}-${passage.lineEnd}`) ??
-              []
-            ).length > 0 && (
-              <aside
-                class="reader-questions"
-                aria-label={`Вопросы читателя к строкам ${passage.lines}`}
-              >
-                <p class="reader-questions-label">Вопросы читателя</p>
-                <ul>
-                  {(
-                    questionsByRange.get(
-                      `${passage.lineStart}-${passage.lineEnd}`,
-                    ) ?? []
-                  ).map((question: ReaderQuestion) => (
-                    <li>
-                      {question.text}
-                      {question.noteId && (
-                        <>
-                          {" "}
-                          <a href={`#${question.noteId}`}>открыть пояснение</a>
-                        </>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </aside>
-            )}
             {notes
               .filter((note: any) => note.anchor === passage.id)
               .map((note: any) => (
