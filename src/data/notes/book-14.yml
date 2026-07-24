@@ -1,7 +1,20 @@
-- note_id: note-book-14
+- note_id: book-14-xenia
+  book: 14
+  line_start: 72
+  line_end: 108
+  reveal_at_book: 14
+  reveal_at_line: 72
+  requires_progress_book: 14
+  requires_progress_line: 72
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc14
+    - de_jong_2001_book_14
+- note_id: book-14-status
   book: 14
   line_start: 1
-  line_end: 71
+  line_end: 35
   reveal_at_book: 14
   reveal_at_line: 1
   requires_progress_book: 14
@@ -9,4 +22,42 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc14
+- note_id: book-14-cretan
+  book: 14
+  line_start: 165
+  line_end: 199
+  reveal_at_book: 14
+  reveal_at_line: 165
+  requires_progress_book: 14
+  requires_progress_line: 165
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc14
+    - de_jong_2001_book_14
+- note_id: book-14-wager
+  book: 14
+  line_start: 334
+  line_end: 359
+  reveal_at_book: 14
+  reveal_at_line: 334
+  requires_progress_book: 14
+  requires_progress_line: 334
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc14
+- note_id: book-14-cloak
+  book: 14
+  line_start: 409
+  line_end: 445
+  reveal_at_book: 14
+  reveal_at_line: 409
+  requires_progress_book: 14
+  requires_progress_line: 409
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc14
+    - de_jong_2001_book_14

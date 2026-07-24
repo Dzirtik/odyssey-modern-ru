@@ -1,7 +1,46 @@
-- note_id: note-book-21
+- note_id: book-21-iphitus
+  book: 21
+  line_start: 1
+  line_end: 40
+  reveal_at_book: 21
+  reveal_at_line: 1
+  requires_progress_book: 21
+  requires_progress_line: 1
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc21
+    - de_jong_2001_book_21
+- note_id: book-21-axes
+  book: 21
+  line_start: 80
+  line_end: 110
+  reveal_at_book: 21
+  reveal_at_line: 80
+  requires_progress_book: 21
+  requires_progress_line: 80
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc21
+    - de_jong_2001_book_21
+- note_id: book-21-servants
+  book: 21
+  line_start: 216
+  line_end: 244
+  reveal_at_book: 21
+  reveal_at_line: 216
+  requires_progress_book: 21
+  requires_progress_line: 216
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc21
+    - de_jong_2001_book_21
+- note_id: book-21-penelope
   book: 21
   line_start: 311
-  line_end: 375
+  line_end: 335
   reveal_at_book: 21
   reveal_at_line: 311
   requires_progress_book: 21
@@ -9,4 +48,17 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc21
+- note_id: book-21-lyre
+  book: 21
+  line_start: 384
+  line_end: 403
+  reveal_at_book: 21
+  reveal_at_line: 384
+  requires_progress_book: 21
+  requires_progress_line: 384
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc21
+    - de_jong_2001_book_21

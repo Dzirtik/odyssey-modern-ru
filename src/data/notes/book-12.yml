@@ -1,7 +1,7 @@
-- note_id: note-book-12
+- note_id: book-12-sirens
   book: 12
   line_start: 36
-  line_end: 110
+  line_end: 70
   reveal_at_book: 12
   reveal_at_line: 36
   requires_progress_book: 12
@@ -9,4 +9,56 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc12
+    - de_jong_2001_book_12
+- note_id: book-12-choice
+  book: 12
+  line_start: 71
+  line_end: 110
+  reveal_at_book: 12
+  reveal_at_line: 71
+  requires_progress_book: 12
+  requires_progress_line: 71
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc12
+    - de_jong_2001_book_12
+- note_id: book-12-secrecy
+  book: 12
+  line_start: 201
+  line_end: 229
+  reveal_at_book: 12
+  reveal_at_line: 201
+  requires_progress_book: 12
+  requires_progress_line: 201
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc12
+- note_id: book-12-cattle
+  book: 12
+  line_start: 320
+  line_end: 345
+  reveal_at_book: 12
+  reveal_at_line: 320
+  requires_progress_book: 12
+  requires_progress_line: 320
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc12
+    - de_jong_2001_book_12
+- note_id: book-12-source
+  book: 12
+  line_start: 374
+  line_end: 400
+  reveal_at_book: 12
+  reveal_at_line: 374
+  requires_progress_book: 12
+  requires_progress_line: 374
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc12
+    - de_jong_2001_book_12

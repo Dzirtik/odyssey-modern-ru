@@ -1,12 +1,64 @@
-- note_id: note-book-18
+- note_id: book-18-irus
   book: 18
-  line_start: 1
-  line_end: 50
+  line_start: 26
+  line_end: 49
   reveal_at_book: 18
-  reveal_at_line: 1
+  reveal_at_line: 26
   requires_progress_book: 18
-  requires_progress_line: 1
+  requires_progress_line: 26
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc18
+    - de_jong_2001_book_18
+- note_id: book-18-amphinomus
+  book: 18
+  line_start: 138
+  line_end: 157
+  reveal_at_book: 18
+  reveal_at_line: 138
+  requires_progress_book: 18
+  requires_progress_line: 138
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc18
+    - de_jong_2001_book_18
+- note_id: book-18-athena
+  book: 18
+  line_start: 182
+  line_end: 205
+  reveal_at_book: 18
+  reveal_at_line: 182
+  requires_progress_book: 18
+  requires_progress_line: 182
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc18
+- note_id: book-18-gifts
+  book: 18
+  line_start: 243
+  line_end: 263
+  reveal_at_book: 18
+  reveal_at_line: 243
+  requires_progress_book: 18
+  requires_progress_line: 243
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc18
+    - de_jong_2001_book_18
+- note_id: book-18-melantho
+  book: 18
+  line_start: 312
+  line_end: 339
+  reveal_at_book: 18
+  reveal_at_line: 312
+  requires_progress_book: 18
+  requires_progress_line: 312
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc18
+    - de_jong_2001_book_18

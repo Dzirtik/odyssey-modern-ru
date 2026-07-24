@@ -1,12 +1,63 @@
-- note_id: note-book-16
+- note_id: book-16-count
   book: 16
-  line_start: 51
-  line_end: 134
+  line_start: 213
+  line_end: 239
   reveal_at_book: 16
-  reveal_at_line: 51
+  reveal_at_line: 213
   requires_progress_book: 16
-  requires_progress_line: 51
+  requires_progress_line: 213
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc16
+    - de_jong_2001_book_16
+- note_id: book-16-recognition
+  book: 16
+  line_start: 154
+  line_end: 184
+  reveal_at_book: 16
+  reveal_at_line: 154
+  requires_progress_book: 16
+  requires_progress_line: 154
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc16
+- note_id: book-16-weapons
+  book: 16
+  line_start: 271
+  line_end: 300
+  reveal_at_book: 16
+  reveal_at_line: 271
+  requires_progress_book: 16
+  requires_progress_line: 271
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc16
+    - de_jong_2001_book_16
+- note_id: book-16-penelope
+  book: 16
+  line_start: 372
+  line_end: 392
+  reveal_at_book: 16
+  reveal_at_line: 372
+  requires_progress_book: 16
+  requires_progress_line: 372
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc16
+    - de_jong_2001_book_16
+- note_id: book-16-secret
+  book: 16
+  line_start: 452
+  line_end: 481
+  reveal_at_book: 16
+  reveal_at_line: 452
+  requires_progress_book: 16
+  requires_progress_line: 452
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc16

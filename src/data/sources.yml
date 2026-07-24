@@ -478,3 +478,1083 @@
   jurisdictions_checked: [EU, NL, US]
   confidence: established
   notes: "Used to avoid romanticizing trusted enslaved household members: affection and authority existed within a coercive slave-owning system."
+- id: homer_odyssey_perseus_grc3
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Harvard University Press; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 3, lines 1-497"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:3.1-3.497/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; project uses line citations and link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 3. The project publishes no local copy of the Greek corpus."
+- id: de_jong_2001_book_3
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Three"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 68-88; Odyssey 3"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for the Pylos episode, embedded returns, speeches, and hospitality type-scenes; no text is reproduced."
+- id: rives_2024_nestor_sacrifices
+  author: "J. B. Rives"
+  title: "Prologue: The Sacrifices of Nestor (Odyssey 3.5-66 and 418-72)"
+  editor_or_translator: ""
+  institution_or_publisher: "Oxford University Press"
+  year: "2024"
+  edition: "Animal Sacrifice in the Roman Empire (31 BCE-395 CE)"
+  pages_or_lines: "pp. 21-25; Hom. Od. 3.5-66, 3.418-472"
+  url: "https://academic.oup.com/book/56138/chapter-abstract/442811181"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Modern treatment focused specifically on the two sacrifices framing Book 3; used through bibliographic data and the publisher's lawful abstract."
+- id: isaakidou_halstead_2002_pylos
+  author: "Valasia Isaakidou; Paul Halstead; Jack Davis; Sharon Stocker"
+  title: "Burnt animal sacrifice at the Mycenaean 'Palace of Nestor', Pylos"
+  editor_or_translator: ""
+  institution_or_publisher: "Antiquity 76.291; Cambridge University Press"
+  year: "2002"
+  edition: "Journal article"
+  pages_or_lines: "pp. 86-92"
+  url: "https://doi.org/10.1017/S0003598X00089833"
+  accessed_at: "2026-07-24"
+  source_type: article
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Archaeozoological evidence for burnt defleshed bones and feasting at Late Bronze Age Pylos. It is contextual evidence, not proof that the poem records one historical event."
+- id: nagy_2017_bathtub_pylos
+  author: "Gregory Nagy"
+  title: "A bathtub in Pylos"
+  editor_or_translator: ""
+  institution_or_publisher: "Classical Inquiries; Center for Hellenic Studies"
+  year: "2017"
+  edition: "Online article"
+  pages_or_lines: "Odyssey 3.464-469"
+  url: "https://classical-inquiries.chs.harvard.edu/a-bathtub-in-pylos/"
+  accessed_at: "2026-07-24"
+  source_type: article
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: debated
+  notes: "Used for the asaminthos and the cautious comparison with the terracotta tub found at the palace site; the proposed ritual meaning remains an interpretation."
+- id: gutenberg_butler_odyssey_1900
+  author: "Homer; Samuel Butler"
+  title: "The Odyssey"
+  editor_or_translator: "Translated into English prose by Samuel Butler"
+  institution_or_publisher: "Project Gutenberg"
+  year: "1900"
+  edition: "Project Gutenberg eBook 1727"
+  pages_or_lines: "Book III"
+  url: "https://www.gutenberg.org/ebooks/1727"
+  accessed_at: "2026-07-24"
+  source_type: reference
+  language: en
+  work_rights_status: public_domain
+  digital_object_rights_status: copyrighted
+  license_name: "Project Gutenberg terms apply to the digital object"
+  license_url: "https://www.gutenberg.org/policy/terms_of_use.html"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Public-domain English translation consulted only as an independent event-order check after Greek-text collation; no wording is reproduced or used as a sentence-level template."
+- id: homer_odyssey_perseus_grc4
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Harvard University Press; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 4, lines 1-847"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:4.1-4.847/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; project uses line citations and link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 4. The project publishes no local copy of the Greek corpus."
+- id: de_jong_2001_book_4
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Four"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 89-122; Odyssey 4"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for the Spartan hospitality scene, competing memories, Proteus narrative, and Ithacan plot shift."
+- id: doyle_2010_helen_odyssey_4
+  author: "A. Doyle"
+  title: "'Unhappily Ever After?' The Problem of Helen in Odyssey 4"
+  editor_or_translator: ""
+  institution_or_publisher: "Akroterion 55"
+  year: "2010"
+  edition: "Research article"
+  pages_or_lines: "Odyssey 4.235-289"
+  url: "https://doi.org/10.7445/55-0-13"
+  accessed_at: "2026-07-24"
+  source_type: article
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: licensed
+  license_name: "Journal access terms"
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: debated
+  notes: "Used for the unresolved contrast between Helen's self-portrait and Menelaus' counter-story; interpretation is not presented as poem-world fact."
+- id: louden_2011_odyssey_4_near_east
+  author: "Bruce Louden"
+  title: "Odyssey 4"
+  editor_or_translator: ""
+  institution_or_publisher: "Homer's Odyssey and the Near East; Cambridge University Press"
+  year: "2011"
+  edition: "Book chapter"
+  pages_or_lines: "Odyssey 4.242-258 and 4.351-586"
+  url: "https://www.cambridge.org/core/books/abs/homers-odyssey-and-the-near-east/odyssey-4/2D0D9D40A4CC0CD8B421EFDE64D54A99"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: debated
+  notes: "Comparative interpretation of the disguised-spy and Proteus stories as local structural reflections; used with attribution and without reproducing the chapter."
+- id: nagy_2016_helen_counter_ambush
+  author: "Gregory Nagy"
+  title: "Helen, Counter-Ambush Expert"
+  editor_or_translator: ""
+  institution_or_publisher: "Classical Inquiries; Center for Hellenic Studies"
+  year: "2016"
+  edition: "Online article"
+  pages_or_lines: "Odyssey 4.277-279"
+  url: "https://classical-inquiries.chs.harvard.edu/helen-counter-ambush-expert/"
+  accessed_at: "2026-07-24"
+  source_type: article
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: debated
+  notes: "Focused discussion of Helen's vocal imitation around the wooden horse; used as a named interpretation, not consensus."
+- id: homer_odyssey_perseus_grc5
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Harvard University Press; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 5, lines 1-493"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:5.1-5.493/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; project uses line citations and link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 5; no Greek corpus is published locally."
+- id: de_jong_2001_book_5
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Five"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 123-148; Odyssey 5"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for the divine council, Calypso scene, raft construction, storm, similes, and landing."
+- id: doherty_2025_odyssey_book_5
+  author: "Lillian E. Doherty"
+  title: "Book 5"
+  editor_or_translator: "Joel P. Christensen"
+  institution_or_publisher: "The Oxford Critical Guide to Homer's Odyssey; Oxford University Press"
+  year: "2025"
+  edition: "Book chapter"
+  pages_or_lines: "pp. 76-85; Odyssey 5"
+  url: "https://doi.org/10.1093/9780191926846.003.0006"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Recent book-specific synthesis on mētis, endurance, mortality, gendered divine-mortal relations, focalization, and reverse similes."
+- id: pontani_2013_calypso_scholia
+  author: "Filippomaria Pontani"
+  title: "Speaking and concealing — Calypso in the eyes of some (ancient) interpreters"
+  editor_or_translator: ""
+  institution_or_publisher: "Symbolae Osloenses 87.1"
+  year: "2013"
+  edition: "Research article"
+  pages_or_lines: "pp. 30-60; first half of Odyssey 5"
+  url: "https://doi.org/10.1080/00397679.2013.822722"
+  accessed_at: "2026-07-24"
+  source_type: article
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: debated
+  notes: "Used for attributed discussion of rhetorical strategies and ancient interpretations of Calypso; no article text is reproduced."
+- id: dickinson_odyssey_book_5_essays
+  author: "William Turpin; Dickinson College Commentaries contributors"
+  title: "Book 5 Essays"
+  editor_or_translator: ""
+  institution_or_publisher: "Dickinson College Commentaries"
+  year: ""
+  edition: "Open educational commentary"
+  pages_or_lines: "Odyssey 5, thematic and line-linked essays"
+  url: "https://dcc.dickinson.edu/homer-odyssey/intro/essays-book-5"
+  accessed_at: "2026-07-24"
+  source_type: critical_edition
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: licensed
+  license_name: "Dickinson College Commentaries site terms"
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: probable
+  notes: "Open pedagogical essays used for cross-checking Hermes' journey, Calypso's rhetoric, narrative placement, and recurring motifs."
+- id: homer_odyssey_perseus_grc6
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Harvard University Press; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 6, lines 1-331"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:6.1-6.331/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; project uses line citations and link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 6; no Greek corpus is published locally."
+- id: de_jong_2001_book_6
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Six"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 149-169; Odyssey 6"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for Athena's intervention, the laundry expedition, supplication, delayed recognition, hospitality, and reputation."
+- id: homer_odyssey_perseus_grc7
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Harvard University Press; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 7, lines 1-347"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:7.1-7.347/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; project uses line citations and link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 7; no Greek corpus is published locally."
+- id: de_jong_2001_book_7
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Seven"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 170-191; Odyssey 7"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for hidden entry, palace description, supplication, delayed identity, retrospective, and hospitality."
+- id: homer_odyssey_perseus_grc8
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 8, lines 1-586"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:8.1-8.586/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 8; no Greek corpus is published locally."
+- id: de_jong_2001_book_8
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Eight"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 192-220; Odyssey 8"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for assembly, contests, Demodocus' songs, tears, gifts, and delayed identity."
+- id: homer_odyssey_perseus_grc9
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 9, lines 1-566"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:9.1-9.566/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 9; no Greek corpus is published locally."
+- id: de_jong_2001_book_9
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Nine"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 221-246; Odyssey 9"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for first-person framing, Cicones, Lotus-Eaters, Cyclopes, Nobody, escape, curse, and retrospective self-critique."
+- id: homer_odyssey_perseus_grc10
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 10, lines 1-574"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:10.1-10.574/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 10; no Greek corpus is published locally."
+- id: de_jong_2001_book_10
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Ten"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 247-275; Odyssey 10"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for Aeolus, Laestrygonians, Circe, Hermes, crew dissent, ritual instruction, and Elpenor."
+- id: homer_odyssey_perseus_grc11
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 11, lines 1-640"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:11.1-11.640/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 11; no Greek corpus is published locally."
+- id: de_jong_2001_book_11
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Eleven"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 276-298; Odyssey 11"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for ritual, prophecy, catalogues, interruption, heroic encounters, punishments, and departure."
+- id: homer_odyssey_perseus_grc12
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 12, lines 1-453"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:12.1-12.453/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 12; no Greek corpus is published locally."
+- id: de_jong_2001_book_12
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Twelve"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 299-318; Odyssey 12"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for Circe's instructions, Sirens, Scylla and Charybdis, Thrinacia, divine source-chain, and closure."
+- id: homer_odyssey_perseus_grc13
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 13, lines 1-440"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:13.1-13.440/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 13; no Greek corpus is published locally."
+- id: de_jong_2001_book_13
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Thirteen"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 319-337; Odyssey 13"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for departure, sleep, landing, Phaeacian punishment, mist, recognition, Cretan tale, planning, and disguise."
+- id: homer_odyssey_perseus_grc14
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 14, lines 1-533"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:14.1-14.533/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 14; no Greek corpus is published locally."
+- id: de_jong_2001_book_14
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Fourteen"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 338-361; Odyssey 14"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for Eumaeus, embedded Cretan tale, hospitality, disbelief, supper, cloak-test, labour, and recognition delay."
+- id: homer_odyssey_perseus_grc15
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 15, lines 1-557"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:15.1-15.557/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 15; no Greek corpus is published locally."
+- id: de_jong_2001_book_15
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Fifteen"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 362-383; Odyssey 15"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for departure, gifts, omens, Theoclymenus, parallel plotting, Eumaeus' origins, slavery, and landing."
+- id: homer_odyssey_perseus_grc16
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 16, lines 1-481"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:16.1-16.481/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 16; no Greek corpus is published locally."
+- id: de_jong_2001_book_16
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Sixteen"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "pp. 384-402; Odyssey 16"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for reunion, recognition, transformation, numerical assessment, arms plan, suitor response, Penelope, and secrecy."
+- id: homer_odyssey_perseus_grc17
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 17, lines 1-606"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:17.1-17.606/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 17; no Greek corpus is published locally."
+- id: de_jong_2001_book_17
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Seventeen"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "Odyssey 17"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for Telemachus' return, Theoclymenus, the city route, Argos, supplication, Antinous' assault, Penelope, and delayed meeting."
+- id: homer_odyssey_perseus_grc18
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 18, lines 1-428"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:18.1-18.428/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 18; no Greek corpus is published locally."
+- id: de_jong_2001_book_18
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Eighteen"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "Odyssey 18"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for Irus, Amphinomus, Penelope's appearance and gifts, Melantho, Eurymachus, violence, and Telemachus' authority."
+- id: homer_odyssey_perseus_grc19
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 19, lines 1-604"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:19.1-19.604/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 19; no Greek corpus is published locally."
+- id: de_jong_2001_book_19
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Nineteen"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "Odyssey 19"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for arms removal, Penelope's interview, the Cretan tale, verification, Eurycleia, the scar, dreams, and the bow test."
+- id: homer_odyssey_perseus_grc20
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 20, lines 1-394"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:20.1-20.394/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 20; no Greek corpus is published locally."
+- id: de_jong_2001_book_20
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Twenty"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "Odyssey 20"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for the sleepless night, Penelope, omens, servants, Ctesippus, Telemachus, Theoclymenus, and the final feast."
+- id: homer_odyssey_perseus_grc21
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 21, lines 1-434"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:21.1-21.434/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 21; no Greek corpus is published locally."
+- id: de_jong_2001_book_21
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Twenty-One"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "Odyssey 21"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for the bow's history, Penelope's contest, Telemachus, the suitors' attempts, servant recognition, spatial planning, and the shot."
+- id: homer_odyssey_perseus_grc22
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 22, lines 1-501"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:22.1-22.501/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 22; no Greek corpus is published locally."
+- id: de_jong_2001_book_22
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Twenty-Two"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "Odyssey 22"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for the enclosed battle, Eurymachus' offer, Melanthius, Athena, pleas, differentiated pardons, the women, punishment, and purification."
+- id: homer_odyssey_perseus_grc23
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 23, lines 1-372"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:23.1-23.372/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 23; no Greek corpus is published locally."
+- id: de_jong_2001_book_23
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Twenty-Three"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "Odyssey 23"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for Penelope's doubt, staged wedding noise, transformation, the bed test, reunion, delayed dawn, prophecy, reciprocal narratives, and departure."
+- id: homer_odyssey_perseus_grc24
+  author: Homer
+  title: Odyssey
+  editor_or_translator: "A. T. Murray"
+  institution_or_publisher: "Perseus Digital Library; Scaife Viewer"
+  year: "1919"
+  edition: "CTS/EpiDoc edition perseus-grc2"
+  pages_or_lines: "Book 24, lines 1-548"
+  url: "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0012.tlg002.perseus-grc2:24.1-24.548/"
+  accessed_at: "2026-07-24"
+  source_type: primary
+  language: grc
+  work_rights_status: public_domain
+  digital_object_rights_status: licensed
+  license_name: "Perseus object terms; link-only mode"
+  license_url: "https://www.perseus.tufts.edu/hopper/help/copyright.jsp"
+  allowed_use: link_only
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Primary collation point for Book 24; no Greek corpus is published locally."
+- id: de_jong_2001_book_24
+  author: "Irene J. F. de Jong"
+  title: "A Narratological Commentary on the Odyssey: Book Twenty-Four"
+  editor_or_translator: ""
+  institution_or_publisher: "Cambridge University Press"
+  year: "2001"
+  edition: "First edition; Cambridge Core digital edition 2010"
+  pages_or_lines: "Odyssey 24"
+  url: "https://www.cambridge.org/core/books/a-narratological-commentary-on-the-odyssey/45A0163A65938D6E05FF315C2B631E53"
+  accessed_at: "2026-07-24"
+  source_type: monograph
+  language: en
+  work_rights_status: copyrighted
+  digital_object_rights_status: copyrighted
+  license_name: ""
+  license_url: ""
+  allowed_use: paraphrase
+  jurisdictions_checked: [EU, NL, US]
+  confidence: established
+  notes: "Narratological control for the second Underworld scene, Amphimedon and Agamemnon, Laertes' test, orchard recognition, Dolius, assembly, divine settlement, final battle, and peace."

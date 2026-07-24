@@ -1,7 +1,7 @@
-- note_id: note-book-22
+- note_id: book-22-space
   book: 22
   line_start: 1
-  line_end: 67
+  line_end: 33
   reveal_at_book: 22
   reveal_at_line: 1
   requires_progress_book: 22
@@ -9,4 +9,69 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc22
+    - de_jong_2001_book_22
+- note_id: book-22-melanthius
+  book: 22
+  line_start: 116
+  line_end: 139
+  reveal_at_book: 22
+  reveal_at_line: 116
+  requires_progress_book: 22
+  requires_progress_line: 116
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc22
+    - de_jong_2001_book_22
+- note_id: book-22-athena
+  book: 22
+  line_start: 200
+  line_end: 220
+  reveal_at_book: 22
+  reveal_at_line: 200
+  requires_progress_book: 22
+  requires_progress_line: 200
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc22
+    - de_jong_2001_book_22
+- note_id: book-22-pardon
+  book: 22
+  line_start: 310
+  line_end: 343
+  reveal_at_book: 22
+  reveal_at_line: 310
+  requires_progress_book: 22
+  requires_progress_line: 310
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc22
+    - de_jong_2001_book_22
+- note_id: book-22-women
+  book: 22
+  line_start: 433
+  line_end: 461
+  reveal_at_book: 22
+  reveal_at_line: 433
+  requires_progress_book: 22
+  requires_progress_line: 433
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc22
+    - de_jong_2001_book_22
+- note_id: book-22-melanthius-punishment
+  book: 22
+  line_start: 462
+  line_end: 480
+  reveal_at_book: 22
+  reveal_at_line: 462
+  requires_progress_book: 22
+  requires_progress_line: 462
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc22

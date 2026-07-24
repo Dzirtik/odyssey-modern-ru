@@ -1,12 +1,64 @@
-- note_id: note-book-19
+- note_id: book-19-weapons
   book: 19
-  line_start: 249
-  line_end: 360
+  line_start: 1
+  line_end: 26
   reveal_at_book: 19
-  reveal_at_line: 249
+  reveal_at_line: 1
   requires_progress_book: 19
-  requires_progress_line: 249
+  requires_progress_line: 1
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc19
+    - de_jong_2001_book_19
+- note_id: book-19-penelope-test
+  book: 19
+  line_start: 191
+  line_end: 219
+  reveal_at_book: 19
+  reveal_at_line: 191
+  requires_progress_book: 19
+  requires_progress_line: 191
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc19
+    - de_jong_2001_book_19
+- note_id: book-19-scar
+  book: 19
+  line_start: 335
+  line_end: 360
+  reveal_at_book: 19
+  reveal_at_line: 335
+  requires_progress_book: 19
+  requires_progress_line: 335
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc19
+    - de_jong_2001_book_19
+- note_id: book-19-autolycus
+  book: 19
+  line_start: 361
+  line_end: 400
+  reveal_at_book: 19
+  reveal_at_line: 361
+  requires_progress_book: 19
+  requires_progress_line: 361
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc19
+- note_id: book-19-dream-gates
+  book: 19
+  line_start: 508
+  line_end: 530
+  reveal_at_book: 19
+  reveal_at_line: 508
+  requires_progress_book: 19
+  requires_progress_line: 508
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc19
+    - de_jong_2001_book_19

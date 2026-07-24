@@ -1,7 +1,7 @@
-- note_id: note-book-05
+- note_id: book-05-odysseus-captive
   book: 5
   line_start: 148
-  line_end: 227
+  line_end: 170
   reveal_at_book: 5
   reveal_at_line: 148
   requires_progress_book: 5
@@ -9,4 +9,70 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc5
+    - de_jong_2001_book_5
+- note_id: book-05-styx-oath
+  book: 5
+  line_start: 171
+  line_end: 191
+  reveal_at_book: 5
+  reveal_at_line: 171
+  requires_progress_book: 5
+  requires_progress_line: 171
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc5
+    - cambridge_guide_homeric_religion_2020
+- note_id: book-05-raft
+  book: 5
+  line_start: 227
+  line_end: 261
+  reveal_at_book: 5
+  reveal_at_line: 227
+  requires_progress_book: 5
+  requires_progress_line: 227
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc5
+    - merry_riddell_monro_1886
+- note_id: book-05-navigation
+  book: 5
+  line_start: 262
+  line_end: 286
+  reveal_at_book: 5
+  reveal_at_line: 262
+  requires_progress_book: 5
+  requires_progress_line: 262
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc5
+    - de_jong_2001_book_5
+- note_id: book-05-leucothea
+  book: 5
+  line_start: 338
+  line_end: 365
+  reveal_at_book: 5
+  reveal_at_line: 338
+  requires_progress_book: 5
+  requires_progress_line: 338
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc5
+    - merry_riddell_monro_1886
+- note_id: book-05-river-suppliant
+  book: 5
+  line_start: 415
+  line_end: 450
+  reveal_at_book: 5
+  reveal_at_line: 415
+  requires_progress_book: 5
+  requires_progress_line: 415
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc5
+    - cambridge_guide_homeric_religion_2020

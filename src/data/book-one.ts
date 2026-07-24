@@ -9,20 +9,17 @@ export type Passage = {
 export type Note = {
   id: string;
   anchor: string;
-  kind:
-    | "Кто это?"
-    | "Что здесь происходит?"
-    | "Почему человек той эпохи поступает так?"
-    | "Обычай и повседневность"
-    | "Религия и ритуал"
-    | "Слово и перевод"
-    | "Миф и история"
-    | "Что остаётся спорным?";
+  kind: string;
   title: string;
   summary: string;
   details: string;
-  layer: "POEM_WORLD" | "ARCHAIC_CONTEXT" | "MODERN_HYPOTHESIS";
-  confidence: "established" | "probable" | "debated";
+  layer:
+    | "POEM_WORLD"
+    | "ARCHAIC_CONTEXT"
+    | "MYCENAEAN_CONTEXT"
+    | "MODERN_HYPOTHESIS"
+    | "MODERN_INTERPRETATION";
+  confidence: "established" | "probable" | "debated" | "contested";
   sourceIds: string[];
 };
 

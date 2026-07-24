@@ -1,12 +1,64 @@
-- note_id: note-book-10
+- note_id: book-10-aeolus
   book: 10
-  line_start: 198
-  line_end: 301
+  line_start: 1
+  line_end: 28
   reveal_at_book: 10
-  reveal_at_line: 198
+  reveal_at_line: 1
   requires_progress_book: 10
-  requires_progress_line: 198
+  requires_progress_line: 1
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc10
+    - de_jong_2001_book_10
+- note_id: book-10-harbour
+  book: 10
+  line_start: 79
+  line_end: 102
+  reveal_at_book: 10
+  reveal_at_line: 79
+  requires_progress_book: 10
+  requires_progress_line: 79
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc10
+- note_id: book-10-moly
+  book: 10
+  line_start: 224
+  line_end: 250
+  reveal_at_book: 10
+  reveal_at_line: 224
+  requires_progress_book: 10
+  requires_progress_line: 224
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc10
+    - merry_riddell_monro_1886
+- note_id: book-10-eurylochus
+  book: 10
+  line_start: 330
+  line_end: 360
+  reveal_at_book: 10
+  reveal_at_line: 330
+  requires_progress_book: 10
+  requires_progress_line: 330
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc10
+    - de_jong_2001_book_10
+- note_id: book-10-underworld
+  book: 10
+  line_start: 429
+  line_end: 465
+  reveal_at_book: 10
+  reveal_at_line: 429
+  requires_progress_book: 10
+  requires_progress_line: 429
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc10
+    - de_jong_2001_book_10

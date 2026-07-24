@@ -1,12 +1,65 @@
-- note_id: note-book-23
+- note_id: book-23-doubt
   book: 23
-  line_start: 69
-  line_end: 151
+  line_start: 57
+  line_end: 84
   reveal_at_book: 23
-  reveal_at_line: 69
+  reveal_at_line: 57
   requires_progress_book: 23
-  requires_progress_line: 69
+  requires_progress_line: 57
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc1
+    - homer_odyssey_perseus_grc23
+    - de_jong_2001_book_23
+- note_id: book-23-music
+  book: 23
+  line_start: 113
+  line_end: 140
+  reveal_at_book: 23
+  reveal_at_line: 113
+  requires_progress_book: 23
+  requires_progress_line: 113
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc23
+    - de_jong_2001_book_23
+- note_id: book-23-bed
+  book: 23
+  line_start: 170
+  line_end: 204
+  reveal_at_book: 23
+  reveal_at_line: 170
+  requires_progress_book: 23
+  requires_progress_line: 170
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc23
+    - de_jong_2001_book_23
+- note_id: book-23-death
+  book: 23
+  line_start: 274
+  line_end: 299
+  reveal_at_book: 23
+  reveal_at_line: 274
+  requires_progress_book: 23
+  requires_progress_line: 274
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc23
+    - de_jong_2001_book_23
+- note_id: book-23-retelling
+  book: 23
+  line_start: 300
+  line_end: 335
+  reveal_at_book: 23
+  reveal_at_line: 300
+  requires_progress_book: 23
+  requires_progress_line: 300
+  spoiler_level: safe
+  fact_ids: []
+  source_ids:
+    - homer_odyssey_perseus_grc23
+    - de_jong_2001_book_23
