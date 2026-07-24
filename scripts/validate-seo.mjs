@@ -37,7 +37,9 @@ const matchOne = (html, pattern, label, file) => {
 for (const file of htmlFiles) {
   const html = await fs.readFile(file, "utf8");
   const isLongFormBook = /dist\/book\/\d{2}\/index\.html$/.test(file);
-  const htmlBudget = isLongFormBook ? 200_000 : 100_000;
+  // GitHub Pages prefixes internal URLs with the repository name, adding a few
+  // kilobytes to the longest annotated books compared with a root-local build.
+  const htmlBudget = isLongFormBook ? 210_000 : 100_000;
   assert(
     Buffer.byteLength(html) < htmlBudget,
     `${file}: HTML exceeds the ${htmlBudget / 1_000} KB SEO budget`,
