@@ -1,7 +1,12 @@
 import { assert, readYaml, success } from "./lib.mjs";
+import { bookTwo } from "../src/data/book-two.ts";
 import { previewBooks } from "../src/data/books-preview.mjs";
 
-const books = [{ book: 1, lineCount: 444 }, ...previewBooks];
+const books = [
+  { book: 1, lineCount: 444 },
+  { book: 2, lineCount: bookTwo.lineCount },
+  ...previewBooks,
+];
 let total = 0;
 
 for (const book of books) {

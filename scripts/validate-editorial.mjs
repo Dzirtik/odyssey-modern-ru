@@ -1,6 +1,7 @@
 import YAML from "yaml";
 import { assert, readText, readYaml, success } from "./lib.mjs";
 import { bookOne } from "../src/data/book-one.ts";
+import { bookTwo } from "../src/data/book-two.ts";
 import { previewBooks } from "../src/data/books-preview.mjs";
 
 const roles = [
@@ -16,7 +17,7 @@ const roles = [
 ];
 const sources = await readYaml("src/data/sources.yml");
 const sourceIds = new Set(sources.map((source) => source.id));
-const books = [bookOne, ...previewBooks];
+const books = [bookOne, bookTwo, ...previewBooks];
 
 for (const book of books) {
   const number = String(book.book).padStart(2, "0");
@@ -70,8 +71,12 @@ for (const book of books) {
         !report.includes("Роль ещё не выполнена"),
         `Book ${book.book}: preview ${role} report is still a placeholder`,
       );
+      const lineReference = new RegExp(
+        `\\b${book.book}[.\\-–:]\\d+(?:[\\-–]\\d+)?`,
+        "u",
+      );
       assert(
-        /\b1[.:\-–]\d+|\b1\.\d+–\d+/u.test(report),
+        lineReference.test(report),
         `Book ${book.book}: ${role} report lacks a line-specific reference`,
       );
       assert(
