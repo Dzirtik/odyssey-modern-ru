@@ -4,7 +4,7 @@ export const bookThirteen = {
   book: 13,
   title: "Песнь XIII",
   sourceRange: "Hom. Od. 13.1–440",
-  baseSourceId: "homer_odyssey_perseus_grc13",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -186,7 +186,7 @@ export const bookThirteen = {
         "Сон, подобный смерти, отделяет рассказ о прошлом от тайного возвращения и делает героя зависимым от гостеприимства.",
       layer: "MODERN_INTERPRETATION",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc13", "de_jong_2001_book_13"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-13-ship",
@@ -199,7 +199,7 @@ export const bookThirteen = {
         "Пересказ не добавляет последствий, которых текст явно не показывает, и сохраняет реакцию Алкиноя как попытку предотвратить худшее.",
       layer: "POEM_WORLD",
       confidence: "debated",
-      sourceIds: ["homer_odyssey_perseus_grc13", "de_jong_2001_book_13"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-13-mist",
@@ -211,7 +211,7 @@ export const bookThirteen = {
         "Это не потеря памяти и не доказательство иной географии; слушатель уже получил точное описание гавани.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc13"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-13-cretan",
@@ -223,7 +223,7 @@ export const bookThirteen = {
         "Она смешивает правдоподобные социальные детали с вымышленной личностью. Позднейшие версии героя также нужно читать как речи для конкретного слушателя.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc13", "de_jong_2001_book_13"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-13-disguise",
@@ -235,7 +235,7 @@ export const bookThirteen = {
         "Это больше костюма: кожа, волосы и глаза преображены. Но разум, сила и личность сохраняются и позднее могут быть возвращены.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc13"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
   ] satisfies Note[],
 };

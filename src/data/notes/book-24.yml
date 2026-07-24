@@ -9,8 +9,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc24
-    - de_jong_2001_book_24
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-24-agamemnon
   book: 24
   line_start: 165
@@ -22,8 +22,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc24
-    - de_jong_2001_book_24
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-24-trees
   book: 24
   line_start: 302
@@ -35,8 +35,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc24
-    - de_jong_2001_book_24
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-24-assembly
   book: 24
   line_start: 438
@@ -48,8 +48,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc24
-    - de_jong_2001_book_24
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-24-forgetting
   book: 24
   line_start: 463
@@ -61,8 +61,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc24
-    - de_jong_2001_book_24
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-24-peace
   book: 24
   line_start: 524
@@ -74,5 +74,5 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc24
-    - de_jong_2001_book_24
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001

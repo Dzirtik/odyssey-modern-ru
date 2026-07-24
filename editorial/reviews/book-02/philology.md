@@ -8,7 +8,7 @@
 - греческий текст: `homer_odyssey_perseus_grc2`, `Hom. Od. 2.1–434`;
 - строковый контроль: `merry_riddell_monro_1886`;
 - лексика: `lsj_perseus`, `cunliffe_1924`, `logeion_portal`;
-- нарратология: `de_jong_2001_book_2`;
+- нарратология: `de_jong_2001`;
 - современное чтение песни: `barker_2025_odyssey_book_2`.
 
 ## Проверенные места

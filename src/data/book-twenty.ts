@@ -4,7 +4,7 @@ export const bookTwenty = {
   book: 20,
   title: "Песнь XX",
   sourceRange: "Hom. Od. 20.1–394",
-  baseSourceId: "homer_odyssey_perseus_grc20",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -169,7 +169,7 @@ export const bookTwenty = {
         "Сравнение с собакой и память о Киклопе сохраняют телесную ярость, не превращая выдержку в бесчувствие.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc20", "de_jong_2001_book_20"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-20-omens",
@@ -181,7 +181,7 @@ export const bookTwenty = {
         "Слова работницы у жерновов связывают небесный знак с локальным опытом изнурительного труда для пиров.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc20", "de_jong_2001_book_20"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-20-philoetius",
@@ -194,7 +194,7 @@ export const bookTwenty = {
         "До узнавания его характеризуют рукопожатие, сострадание отсутствующему хозяину и отказ покинуть хозяйство.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc20", "de_jong_2001_book_20"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-20-ctesippus",
@@ -207,7 +207,7 @@ export const bookTwenty = {
         "Предмет взят из хозяйства Одиссея: насилие совершается и чужой пищей, и внутри чужого дома.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc20"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-20-vision",
@@ -220,7 +220,7 @@ export const bookTwenty = {
         "Видение реально в повествовательном мире, но доступно не всем; смех женихов показывает разрыв восприятия.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc20", "de_jong_2001_book_20"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

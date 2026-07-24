@@ -9,8 +9,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc16
-    - de_jong_2001_book_16
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-16-recognition
   book: 16
   line_start: 154
@@ -22,7 +22,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc16
+    - homer_odyssey_perseus_grc2
 - note_id: book-16-weapons
   book: 16
   line_start: 271
@@ -34,8 +34,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc16
-    - de_jong_2001_book_16
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-16-penelope
   book: 16
   line_start: 372
@@ -47,8 +47,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc16
-    - de_jong_2001_book_16
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-16-secret
   book: 16
   line_start: 452
@@ -60,4 +60,4 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc16
+    - homer_odyssey_perseus_grc2

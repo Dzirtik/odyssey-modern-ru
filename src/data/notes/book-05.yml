@@ -9,8 +9,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc5
-    - de_jong_2001_book_5
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-05-styx-oath
   book: 5
   line_start: 171
@@ -22,7 +22,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc5
+    - homer_odyssey_perseus_grc2
     - cambridge_guide_homeric_religion_2020
 - note_id: book-05-raft
   book: 5
@@ -35,7 +35,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc5
+    - homer_odyssey_perseus_grc2
     - merry_riddell_monro_1886
 - note_id: book-05-navigation
   book: 5
@@ -48,8 +48,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc5
-    - de_jong_2001_book_5
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-05-leucothea
   book: 5
   line_start: 338
@@ -61,7 +61,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc5
+    - homer_odyssey_perseus_grc2
     - merry_riddell_monro_1886
 - note_id: book-05-river-suppliant
   book: 5
@@ -74,5 +74,5 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc5
+    - homer_odyssey_perseus_grc2
     - cambridge_guide_homeric_religion_2020

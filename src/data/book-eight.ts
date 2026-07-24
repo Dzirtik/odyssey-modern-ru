@@ -4,7 +4,7 @@ export const bookEight = {
   book: 8,
   title: "Песнь VIII",
   sourceRange: "Hom. Od. 8.1–586",
-  baseSourceId: "homer_odyssey_perseus_grc8",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -231,7 +231,7 @@ export const bookEight = {
         "Его нельзя автоматически считать портретом исторического Гомера. В поэме он показывает, как песня хранит славу, причиняет боль участнику событий и зависит от исполнения перед публикой.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc8", "de_jong_2001_book_8"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-08-games",
@@ -244,7 +244,7 @@ export const bookEight = {
         "Евриал ошибочно превращает истощение гостя в признак низкого общественного типа. Ответ Одиссея восстанавливает достоинство, но также показывает опасность героической чувствительности к чести.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc8", "de_jong_2001_book_8"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-08-ares",
@@ -257,7 +257,7 @@ export const bookEight = {
         "Её связи с главным сюжетом интерпретируются по-разному. Безопаснее сначала читать её как самостоятельное публичное исполнение, а тематические параллели отмечать как гипотезы.",
       layer: "MODERN_INTERPRETATION",
       confidence: "debated",
-      sourceIds: ["homer_odyssey_perseus_grc8", "de_jong_2001_book_8"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-08-simile",
@@ -269,7 +269,7 @@ export const bookEight = {
         "Так сравнение усложняет простое прославление взятия Трои: слушатель одновременно видит боль победителя и насилие, причинённое побеждённым.",
       layer: "MODERN_INTERPRETATION",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc8", "de_jong_2001_book_8"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-08-ships",
@@ -282,7 +282,7 @@ export const bookEight = {
         "Это чудесное свойство, связанное с близостью феаков к Посейдону. Оно не является описанием реальной автономной навигационной системы.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc8"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
   ] satisfies Note[],
 };

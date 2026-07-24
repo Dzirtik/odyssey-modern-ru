@@ -4,7 +4,7 @@ export const bookTwentyOne = {
   book: 21,
   title: "Песнь XXI",
   sourceRange: "Hom. Od. 21.1–434",
-  baseSourceId: "homer_odyssey_perseus_grc21",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -178,7 +178,7 @@ export const bookTwentyOne = {
         "Позднее Ифита убил Геракл, нарушив гостевую защиту; Одиссей хранил оружие дома и не брал под Трою.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc21", "de_jong_2001_book_21"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-21-axes",
@@ -190,7 +190,7 @@ export const bookTwentyOne = {
         "Точная археологическая реконструкция формы топоров спорна; для сюжета существенно выравнивание отверстий и необычайная точность выстрела.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "contested",
-      sourceIds: ["homer_odyssey_perseus_grc21", "de_jong_2001_book_21"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-21-servants",
@@ -203,7 +203,7 @@ export const bookTwentyOne = {
         "Одиссей уже проверил их словами о возможном возвращении; знак завершает, а не начинает проверку верности.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc21", "de_jong_2001_book_21"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-21-penelope",
@@ -216,7 +216,7 @@ export const bookTwentyOne = {
         "Это самостоятельное разграничение условий: успешная попытка принесёт гостю дары и дорогу, но не брак.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc21"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-21-lyre",
@@ -229,7 +229,7 @@ export const bookTwentyOne = {
         "Сравнение соединяет разные виды мастерства; оно не означает, что оружие буквально превращается в музыкальный инструмент.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc21", "de_jong_2001_book_21"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

@@ -9,8 +9,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc7
-    - de_jong_2001_book_7
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-07-palace
   book: 7
   line_start: 78
@@ -22,8 +22,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc7
-    - de_jong_2001_book_7
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-07-labour
   book: 7
   line_start: 103
@@ -35,7 +35,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc7
+    - homer_odyssey_perseus_grc2
 - note_id: book-07-ashes
   book: 7
   line_start: 133
@@ -47,7 +47,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc7
+    - homer_odyssey_perseus_grc2
     - merry_riddell_monro_1886
 - note_id: book-07-identity
   book: 7
@@ -60,8 +60,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc7
-    - de_jong_2001_book_7
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-07-choice
   book: 7
   line_start: 298
@@ -73,5 +73,5 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc7
-    - de_jong_2001_book_7
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001

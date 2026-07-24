@@ -9,8 +9,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc13
-    - de_jong_2001_book_13
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-13-ship
   book: 13
   line_start: 126
@@ -22,8 +22,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc13
-    - de_jong_2001_book_13
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-13-mist
   book: 13
   line_start: 159
@@ -35,7 +35,7 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc13
+    - homer_odyssey_perseus_grc2
 - note_id: book-13-cretan
   book: 13
   line_start: 216
@@ -47,8 +47,8 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc13
-    - de_jong_2001_book_13
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
 - note_id: book-13-disguise
   book: 13
   line_start: 416
@@ -60,4 +60,4 @@
   spoiler_level: safe
   fact_ids: []
   source_ids:
-    - homer_odyssey_perseus_grc13
+    - homer_odyssey_perseus_grc2

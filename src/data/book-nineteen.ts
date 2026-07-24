@@ -4,7 +4,7 @@ export const bookNineteen = {
   book: 19,
   title: "Песнь XIX",
   sourceRange: "Hom. Od. 19.1–604",
-  baseSourceId: "homer_odyssey_perseus_grc19",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -238,7 +238,7 @@ export const bookNineteen = {
         "План зависит от изменения пространства зала, а не только от силы Одиссея; две названные причины должны выдержать расспросы.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc19", "de_jong_2001_book_19"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-19-penelope-test",
@@ -251,7 +251,7 @@ export const bookNineteen = {
         "Верное описание подтверждает встречу рассказчика с Одиссеем, но ещё не доказывает, что перед ней сам муж.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc19", "de_jong_2001_book_19"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-19-scar",
@@ -263,7 +263,7 @@ export const bookNineteen = {
         "Выдуманную биографию можно произнести, но историю охоты Евриклея знала независимо от нынешнего гостя.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc19", "de_jong_2001_book_19"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-19-autolycus",
@@ -276,7 +276,7 @@ export const bookNineteen = {
         "Этимология имени внутри поэмы многозначна; русский пересказ не сводит её к одному бесспорному словарному эквиваленту.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "contested",
-      sourceIds: ["homer_odyssey_perseus_grc19"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-19-dream-gates",
@@ -288,7 +288,7 @@ export const bookNineteen = {
         "Образ объясняет её осторожность: даже сон с собственным толкованием не отменяет необходимости испытать действительность.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc19", "de_jong_2001_book_19"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

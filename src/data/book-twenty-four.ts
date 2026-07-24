@@ -4,7 +4,7 @@ export const bookTwentyFour = {
   book: 24,
   title: "Песнь XXIV",
   sourceRange: "Hom. Od. 24.1–548",
-  baseSourceId: "homer_odyssey_perseus_grc24",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -230,7 +230,7 @@ export const bookTwentyFour = {
         "Повтор даёт ограниченную перспективу проигравшего и связывает возвращение Одиссея с историями смерти героев Трои.",
       layer: "MODERN_INTERPRETATION",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc24", "de_jong_2001_book_24"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-24-agamemnon",
@@ -242,7 +242,7 @@ export const bookTwentyFour = {
         "Повествование сообщает похвалу Пенелопе, но женоненавистническое обобщение нельзя автоматически выдавать за голос автора или исторический факт.",
       layer: "MODERN_INTERPRETATION",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc24", "de_jong_2001_book_24"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-24-trees",
@@ -254,7 +254,7 @@ export const bookTwentyFour = {
         "Шрам подтверждает тело, а точный список сада — семейное знание и длительную материальную связь поколений.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc24", "de_jong_2001_book_24"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-24-assembly",
@@ -267,7 +267,7 @@ export const bookTwentyFour = {
         "Большинство следует за Евпейтом; поэма показывает разногласие общины и переход родовой мести в вооружённый конфликт.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc24", "de_jong_2001_book_24"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-24-forgetting",
@@ -280,7 +280,7 @@ export const bookTwentyFour = {
         "Это действие богов внутри поэмы, не описание психологической амнезии и не современная модель переходного правосудия.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc24", "de_jong_2001_book_24"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-24-peace",
@@ -293,7 +293,7 @@ export const bookTwentyFour = {
         "Возвращение царя завершается ограничением победителя и клятвой сторон, а не полным уничтожением противников.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc24", "de_jong_2001_book_24"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

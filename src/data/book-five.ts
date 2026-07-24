@@ -4,7 +4,7 @@ export const bookFive = {
   book: 5,
   title: "Песнь V",
   sourceRange: "Hom. Od. 5.1–493",
-  baseSourceId: "homer_odyssey_perseus_grc5",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -229,7 +229,7 @@ export const bookFive = {
         "Ночью герой находится с нимфой, потому что она этого хочет, тогда как он не хочет; днём плачет о доме. Предложение бессмертия не устраняет неравенство власти между богиней и удерживаемым смертным.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc5", "de_jong_2001_book_5"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-05-styx-oath",
@@ -243,7 +243,7 @@ export const bookFive = {
       layer: "POEM_WORLD",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc5",
+        "homer_odyssey_perseus_grc2",
         "cambridge_guide_homeric_religion_2020",
       ],
     },
@@ -258,7 +258,7 @@ export const bookFive = {
         "Греческий термин обычно передают как «плот», но подробности подчёркивают корабельное мастерство Одиссея. Сравнение с работой судостроителя задаёт ширину, а двадцать обтёсанных стволов образуют основу.",
       layer: "POEM_WORLD",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc5", "merry_riddell_monro_1886"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "merry_riddell_monro_1886"],
     },
     {
       id: "book-05-navigation",
@@ -271,7 +271,7 @@ export const bookFive = {
         "Эта инструкция задаёт направление внутри поэмы, но без надёжной локализации Огигии не превращается в точную современную трассу. Названия Плеяд, Волопаса, Ориона и Медведицы относятся к наблюдаемому звёздному небу.",
       layer: "ARCHAIC_CONTEXT",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc5", "de_jong_2001_book_5"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-05-leucothea",
@@ -283,7 +283,7 @@ export const bookFive = {
         "Песня даёт только необходимую местную биографию: прежнее смертное имя и нынешнюю честь среди богов. Позднейшие подробности мифа об Ино не нужны для понимания спасительного покрывала и здесь не раскрываются.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc5", "merry_riddell_monro_1886"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "merry_riddell_monro_1886"],
     },
     {
       id: "book-05-river-suppliant",
@@ -297,7 +297,7 @@ export const bookFive = {
       layer: "POEM_WORLD",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc5",
+        "homer_odyssey_perseus_grc2",
         "cambridge_guide_homeric_religion_2020",
       ],
     },

@@ -4,7 +4,7 @@ export const bookEleven = {
   book: 11,
   title: "Песнь XI",
   sourceRange: "Hom. Od. 11.1–640",
-  baseSourceId: "homer_odyssey_perseus_grc11",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -236,7 +236,7 @@ export const bookEleven = {
         "Название «спуск в Аид» удобно, но может скрыть то, что поэма оставляет живого героя у пограничного места.",
       layer: "POEM_WORLD",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc11", "de_jong_2001_book_11"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-11-blood",
@@ -248,7 +248,7 @@ export const bookEleven = {
         "Тиресий выделен: Персефона сохранила ему разум. Обряд — факт мира рассказа, не современная религиозная инструкция.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc11"],
+      sourceIds: ["homer_odyssey_perseus_grc2"],
     },
     {
       id: "book-11-oar",
@@ -260,7 +260,7 @@ export const bookEleven = {
         "Будущее примирение с Посейдоном связывается с переносом морского орудия за пределы морской культуры.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc11", "de_jong_2001_book_11"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-11-catalogue",
@@ -273,7 +273,7 @@ export const bookEleven = {
         "Не следует автоматически подставлять версии трагедий и поздних справочников: поэма сообщает собственный, иногда иной набор деталей.",
       layer: "MODERN_INTERPRETATION",
       confidence: "probable",
-      sourceIds: ["homer_odyssey_perseus_grc11", "de_jong_2001_book_11"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-11-achilles",
@@ -285,7 +285,7 @@ export const bookEleven = {
         "Он предпочёл бы самое низкое положение среди живых власти над тенями. Реплика резко ограничивает ценность посмертной славы.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc11", "de_jong_2001_book_11"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };

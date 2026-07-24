@@ -4,7 +4,7 @@ export const bookThree = {
   book: 3,
   title: "Песнь III",
   sourceRange: "Hom. Od. 3.1–497",
-  baseSourceId: "homer_odyssey_perseus_grc3",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -208,7 +208,7 @@ export const bookThree = {
       layer: "MYCENAEAN_CONTEXT",
       confidence: "probable",
       sourceIds: [
-        "homer_odyssey_perseus_grc3",
+        "homer_odyssey_perseus_grc2",
         "rives_2024_nestor_sacrifices",
         "isaakidou_halstead_2002_pylos",
       ],
@@ -225,9 +225,9 @@ export const bookThree = {
       layer: "POEM_WORLD",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc3",
+        "homer_odyssey_perseus_grc2",
         "merry_riddell_monro_1886",
-        "de_jong_2001_book_3",
+        "de_jong_2001",
       ],
     },
     {
@@ -242,8 +242,8 @@ export const bookThree = {
       layer: "POEM_WORLD",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc3",
-        "de_jong_2001_book_3",
+        "homer_odyssey_perseus_grc2",
+        "de_jong_2001",
         "cambridge_guide_odyssey_overview_2020",
       ],
     },
@@ -259,7 +259,7 @@ export const bookThree = {
       layer: "POEM_WORLD",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc3",
+        "homer_odyssey_perseus_grc2",
         "petropoulos_2011_telemachus",
         "valle_salazar_2023_telemachus",
       ],
@@ -275,7 +275,7 @@ export const bookThree = {
         "До этого собеседники обращались с Афиной как с Ментором. Нестор узнаёт не морского орла как самостоятельное знамение, а богиню, принявшую птичий облик, и немедленно отвечает обещанием жертвы.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc3", "de_jong_2001_book_3"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-03-sacrifice",
@@ -289,7 +289,7 @@ export const bookThree = {
       layer: "ARCHAIC_CONTEXT",
       confidence: "probable",
       sourceIds: [
-        "homer_odyssey_perseus_grc3",
+        "homer_odyssey_perseus_grc2",
         "rives_2024_nestor_sacrifices",
         "isaakidou_halstead_2002_pylos",
         "cambridge_guide_homeric_religion_2020",
@@ -306,7 +306,7 @@ export const bookThree = {
         "Греческое asaminthos обозначает ванну или купальный сосуд. Археологи действительно нашли терракотовую ванну в позднебронзовом дворце в Пилосе, однако совпадение предмета с эпической сценой не превращает дворец автоматически в дом исторического Нестора.",
       layer: "MYCENAEAN_CONTEXT",
       confidence: "debated",
-      sourceIds: ["homer_odyssey_perseus_grc3", "nagy_2017_bathtub_pylos"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "nagy_2017_bathtub_pylos"],
     },
   ] satisfies Note[],
 };

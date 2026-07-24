@@ -4,7 +4,7 @@ export const bookFour = {
   book: 4,
   title: "Песнь IV",
   sourceRange: "Hom. Od. 4.1–847",
-  baseSourceId: "homer_odyssey_perseus_grc4",
+  baseSourceId: "homer_odyssey_perseus_grc2",
   status: "editorial_preview",
   humanReviewed: false,
   reviewedAt: "",
@@ -355,7 +355,7 @@ export const bookFour = {
         "Гермиону отправляют к Неоптолему по обещанию, данному под Троей. Мегапенф назван любимым, но его мать обозначена словом, указывающим на несвободное положение. Песня не превращает двойное празднование в равенство материнских статусов.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc4", "de_jong_2001_book_4"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-04-electrum",
@@ -369,7 +369,7 @@ export const bookFour = {
       layer: "ARCHAIC_CONTEXT",
       confidence: "debated",
       sourceIds: [
-        "homer_odyssey_perseus_grc4",
+        "homer_odyssey_perseus_grc2",
         "merry_riddell_monro_1886",
         "cunliffe_1924",
       ],
@@ -386,8 +386,8 @@ export const bookFour = {
       layer: "POEM_WORLD",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc4",
-        "de_jong_2001_book_4",
+        "homer_odyssey_perseus_grc2",
+        "de_jong_2001",
         "merry_riddell_monro_1886",
       ],
     },
@@ -402,7 +402,7 @@ export const bookFour = {
         "Песня не предлагает простого решения, какая версия полностью определяет Елену. Соседство рассказов сохраняет напряжение между раскаянием, самооправданием, памятью мужа и действием Афины. Комментарий не дополняет его позднейшими оценками Елены.",
       layer: "POEM_WORLD",
       confidence: "debated",
-      sourceIds: ["homer_odyssey_perseus_grc4", "de_jong_2001_book_4"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-04-proteus",
@@ -416,8 +416,8 @@ export const bookFour = {
       layer: "POEM_WORLD",
       confidence: "established",
       sourceIds: [
-        "homer_odyssey_perseus_grc4",
-        "de_jong_2001_book_4",
+        "homer_odyssey_perseus_grc2",
+        "de_jong_2001",
         "cambridge_guide_homeric_religion_2020",
       ],
     },
@@ -432,7 +432,7 @@ export const bookFour = {
         "Сцена различает опасность и сказанное после неё слово. Гибель не сводится к общему правилу «гордость всегда наказывается»: Протей называет конкретное высказывание Аякса и конкретное действие Посейдона.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc4", "merry_riddell_monro_1886"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "merry_riddell_monro_1886"],
     },
     {
       id: "book-04-elysium",
@@ -445,7 +445,7 @@ export const bookFour = {
         "Здесь Елисей не представлен общей наградой всем добродетельным умершим. Участь Менелая особая и династическая. Более поздние представления об Элизиуме не добавляются к локальному описанию Песни IV.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc4", "de_jong_2001_book_4"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-04-ithacan-horses",
@@ -458,7 +458,7 @@ export const bookFour = {
         "Отказ не оскорбляет хозяина: Телемах подробно хвалит подарок и объясняет условия острова. Менелай признаёт разумность ответа и подбирает переносимый сосуд, который можно хранить в доме и использовать для смешивания вина.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc4", "de_jong_2001_book_4"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
     {
       id: "book-04-dream",
@@ -471,7 +471,7 @@ export const bookFour = {
         "Поэма сообщает происхождение сна читателю, но Пенелопа внутри сна задаёт образу вопросы как сестре. Посланница обещает безопасность Телемаха, однако отказывается раскрыть участь Одиссея — граница знания соблюдается даже в божественном утешении.",
       layer: "POEM_WORLD",
       confidence: "established",
-      sourceIds: ["homer_odyssey_perseus_grc4", "de_jong_2001_book_4"],
+      sourceIds: ["homer_odyssey_perseus_grc2", "de_jong_2001"],
     },
   ] satisfies Note[],
 };
