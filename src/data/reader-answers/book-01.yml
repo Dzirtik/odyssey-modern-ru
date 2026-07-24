@@ -1,0 +1,1557 @@
+- answer_id: reader-01-lines-1-10-q1
+  book: 1
+  anchor: lines-1-10
+  lines: 1.1–10
+  line_start: 1
+  line_end: 10
+  question: Кто такая Муза?
+  summary: Муза — Божественный источник знания певца, к которому повествователь
+    обращает начальную просьбу рассказать о герое.
+  details:
+    "Он увидел города многих людей и понял, как они живут; много страданий
+    вынес в сердце на море, стараясь сохранить собственную жизнь и вернуть
+    товарищей домой. Безрассудство спутников связывается с утратой возвращения;
+    точка начала рассказа доверена богине. Важно сохранить оговорку этого места:
+    polytropos допускает акцент на многосторонности, находчивости, поворотах
+    судьбы и странствиях. Ответ ограничен сведениями, открытыми в строках
+    1.1–10; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 10
+  requires_progress_book: 1
+  requires_progress_line: 10
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-1-10-q2
+  book: 1
+  anchor: lines-1-10
+  lines: 1.1–10
+  line_start: 1
+  line_end: 10
+  question: Что произошло в Трое?
+  summary: До начала «Одиссеи» ахейцы после десятилетней войны взяли и разрушили
+    Трою; поэма считает этот общий фон известным и начинает рассказ уже с
+    возвращения победителей.
+  details:
+    "Он увидел города многих людей и понял, как они живут; много страданий
+    вынес в сердце на море, стараясь сохранить собственную жизнь и вернуть
+    товарищей домой. Безрассудство спутников связывается с утратой возвращения;
+    точка начала рассказа доверена богине. Важно сохранить оговорку этого места:
+    polytropos допускает акцент на многосторонности, находчивости, поворотах
+    судьбы и странствиях. Ответ ограничен сведениями, открытыми в строках
+    1.1–10; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 10
+  requires_progress_book: 1
+  requires_progress_line: 10
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-1-10-q4
+  book: 1
+  anchor: lines-1-10
+  lines: 1.1–10
+  line_start: 1
+  line_end: 10
+  question: Почему вступление заранее сообщает гибель спутников?
+  summary:
+    Безрассудство спутников связывается с утратой возвращения; точка начала
+    рассказа доверена богине.
+  details: "Они погибли по собственной безрассудности: глупцы, они посягнули на
+    скот Гелиоса, бога Солнца, и тот лишил их дня возвращения. Ответ ограничен
+    сведениями, открытыми в строках 1.1–10; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD + MODERN_HYPOTHESIS
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 10
+  requires_progress_book: 1
+  requires_progress_line: 10
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-11-21-q1
+  book: 1
+  anchor: lines-11-21
+  lines: 1.11–21
+  line_start: 11
+  line_end: 21
+  question: Кто такая Калипсо?
+  summary:
+    Калипсо — Бессмертная хозяйка Огигии, удерживающая Одиссея на острове и
+    предлагающая ему жизнь вне человеческого дома.
+  details: "Шли годы. Назначенный богами срок возвращения наступил, но Посейдон
+    продолжает препятствовать герою. Важно сохранить оговорку этого места:
+    Причина гнева Посейдона пока не названа полностью. Ответ ограничен
+    сведениями, открытыми в строках 1.11–21; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 21
+  requires_progress_book: 1
+  requires_progress_line: 21
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-11-21-q2
+  book: 1
+  anchor: lines-11-21
+  lines: 1.11–21
+  line_start: 11
+  line_end: 21
+  question: Почему Одиссей не может уйти?
+  summary: Калипсо удерживает Одиссея на удалённом острове, а у него нет ни
+    корабля, ни команды; уйти он сможет лишь после решения богов и появления
+    средств для плавания.
+  details: Только Одиссей оставался вдали от родины и жены. Назначенный богами
+    срок возвращения наступил, но Посейдон продолжает препятствовать герою.
+    Ответ ограничен сведениями, открытыми в строках 1.11–21; дальнейшие эпизоды
+    здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 21
+  requires_progress_book: 1
+  requires_progress_line: 21
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-11-21-q3
+  book: 1
+  anchor: lines-11-21
+  lines: 1.11–21
+  line_start: 11
+  line_end: 21
+  question: За что гневается Посейдон?
+  summary:
+    Все боги жалели Одиссея — все, кроме Посейдона. Назначенный богами срок
+    возвращения наступил, но Посейдон продолжает препятствовать герою.
+  details: "Владыка моря не оставлял гнева на героя до самого его прибытия в
+    родную землю. Важно сохранить оговорку этого места: Причина гнева Посейдона
+    пока не названа полностью. Ответ ограничен сведениями, открытыми в строках
+    1.11–21; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 21
+  requires_progress_book: 1
+  requires_progress_line: 21
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-22-43-q1
+  book: 1
+  anchor: lines-22-43
+  lines: 1.22–43
+  line_start: 22
+  line_end: 43
+  question: Кто такие Эгисф, Агамемнон и Орест?
+  summary: Эгисф — Захватил жену Агамемнона и убил вернувшегося царя вопреки
+    предупреждению Гермеса; затем погиб от Ореста. Агамемнон — Предводитель
+    ахейцев под Троей и брат Менелая; его возвращение становится тревожной
+    параллелью истории Одиссея. Орест — Сын Агамемнона, отомстивший Эгисфу; для
+    Телемаха он служит примером действия сына в отсутствие отца.
+  details: "Так поступил Эгисф: он взял законную жену Агамемнона и убил царя,
+    когда тот вернулся с войны. Зевс связывает гибель Эгисфа с его собственным
+    поступком вопреки предупреждению Гермеса. Важно сохранить оговорку этого
+    места: География эфиопов является частью мира поэмы и не получает уверенной
+    современной локализации. Соотношение божественной доли и человеческой
+    ответственности остаётся сложным. Ответ ограничен сведениями, открытыми в
+    строках 1.22–43; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 43
+  requires_progress_book: 1
+  requires_progress_line: 43
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-22-43-q2
+  book: 1
+  anchor: lines-22-43
+  lines: 1.22–43
+  line_start: 22
+  line_end: 43
+  question: Почему боги обсуждают другой дом?
+  summary: "История дома Агамемнона служит Зевсу примером человеческой
+    ответственности: Эгисф действовал вопреки предупреждению, поэтому нельзя
+    всякую беду приписывать только богам."
+  details: Бог принимал у них жертву из быков и баранов и сидел на пиру. Зевс
+    связывает гибель Эгисфа с его собственным поступком вопреки предупреждению
+    Гермеса. Ответ ограничен сведениями, открытыми в строках 1.22–43; дальнейшие
+    эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 43
+  requires_progress_book: 1
+  requires_progress_line: 43
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-22-43-q3
+  book: 1
+  anchor: lines-22-43
+  lines: 1.22–43
+  line_start: 22
+  line_end: 43
+  question: Где находятся эфиопы?
+  summary: "В тот день Посейдон ушёл к далёким эфиопам, живущим, как говорили, у
+    двух краёв света: одни — там, где Гиперион восходит, другие — там, где он
+    заходит."
+  details: "Бог принимал у них жертву из быков и баранов и сидел на пиру. Зевс
+    связывает гибель Эгисфа с его собственным поступком вопреки предупреждению
+    Гермеса. Важно сохранить оговорку этого места: География эфиопов является
+    частью мира поэмы и не получает уверенной современной локализации.
+    Соотношение божественной доли и человеческой ответственности остаётся
+    сложным. Ответ ограничен сведениями, открытыми в строках 1.22–43; дальнейшие
+    эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 43
+  requires_progress_book: 1
+  requires_progress_line: 43
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-44-62-q1
+  book: 1
+  anchor: lines-44-62
+  lines: 1.44–62
+  line_start: 44
+  line_end: 62
+  question: Почему жертвы создают ожидание взаимности?
+  summary:
+    Афина напоминает о жертвах Одиссея как о прежних знаках почтения богам
+    и основании просить ответной благосклонности.
+  details: В гомеровской религиозной логике жертва поддерживает отношения
+    взаимности между смертным и божеством, но не связывает бога договором и не
+    гарантирует награду. Поэтому аргумент Афины усиливает просьбу к Зевсу, не
+    превращая возвращение Одиссея в обязательную плату.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 62
+  requires_progress_book: 1
+  requires_progress_line: 62
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+    - cambridge_guide_homeric_religion_2020
+- answer_id: reader-01-lines-44-62-q2
+  book: 1
+  anchor: lines-44-62
+  lines: 1.44–62
+  line_start: 44
+  line_end: 62
+  question: Кто такой Атлант?
+  summary:
+    Атлант — Древний бог, знающий морские глубины и поддерживающий столпы,
+    разделяющие небо и землю.
+  details:
+    "Он знает глубины моря и один держит огромные столпы, разделяющие землю
+    и небо. Верность Одиссея дому и прежние жертвы становятся аргументами в
+    пользу помощи. Важно сохранить оговорку этого места: Атлант и его столпы
+    описываются как поэтическая космология, а не научная модель. Ответ ограничен
+    сведениями, открытыми в строках 1.44–62; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 62
+  requires_progress_book: 1
+  requires_progress_line: 62
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-44-62-q3
+  book: 1
+  anchor: lines-44-62
+  lines: 1.44–62
+  line_start: 44
+  line_end: 62
+  question: Почему дым родной земли так важен?
+  summary: "Дым обозначает не достопримечательность, а сам видимый дом и
+    человеческую принадлежность: Одиссей предпочитает смертную Итаку бессмертной
+    жизни вдали от своих."
+  details: Разве твоё сердце, Олимпиец, совсем к нему не склоняется? Верность
+    Одиссея дому и прежние жертвы становятся аргументами в пользу помощи. Ответ
+    ограничен сведениями, открытыми в строках 1.44–62; дальнейшие эпизоды здесь
+    не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 62
+  requires_progress_book: 1
+  requires_progress_line: 62
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-63-79-q1
+  book: 1
+  anchor: lines-63-79
+  lines: 1.63–79
+  line_start: 63
+  line_end: 79
+  question: Кто такой циклоп?
+  summary: Полифем — Циклоп, ослепление которого стало причиной гнева Посейдона
+    против Одиссея. Циклопы — В «Одиссее» — отдельный народ могучих одноглазых
+    пастухов без общих собраний; нормативный вариант «киклопы» ближе к
+    греческому произношению.
+  details: "Полифем сильнее всех циклопов; его мать — морская нимфа Фооса, дочь
+    Форкиса, властителя бесплодного моря. Ослепление Полифема вызывает
+    продолжающийся гнев его отца Посейдона; согласие остальных богов
+    ограничивает этот гнев. Важно сохранить оговорку этого места: Полный рассказ
+    о Полифеме ещё не дан; пояснение не должно его раскрывать. Ответ ограничен
+    сведениями, открытыми в строках 1.63–79; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 79
+  requires_progress_book: 1
+  requires_progress_line: 79
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-63-79-q2
+  book: 1
+  anchor: lines-63-79
+  lines: 1.63–79
+  line_start: 63
+  line_end: 79
+  question: Когда и почему Одиссей ослепил Полифема?
+  summary: К этому месту известно только, что Одиссей ослепил циклопа Полифема и
+    тем вызвал гнев его отца Посейдона; обстоятельства поэма пока намеренно не
+    рассказывает.
+  details: "Полифем сильнее всех циклопов; его мать — морская нимфа Фооса, дочь
+    Форкиса, властителя бесплодного моря. Важно сохранить оговорку этого места:
+    Полный рассказ о Полифеме ещё не дан; пояснение не должно его раскрывать.
+    Ответ ограничен сведениями, открытыми в строках 1.63–79; дальнейшие эпизоды
+    здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 79
+  requires_progress_book: 1
+  requires_progress_line: 79
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-63-79-q3
+  book: 1
+  anchor: lines-63-79
+  lines: 1.63–79
+  line_start: 63
+  line_end: 79
+  question: Может ли один бог противостоять всем остальным?
+  summary: "По сведениям, доступным в этой точке рассказа: Посейдону придётся
+    отказаться от гнева: один, наперекор всем бессмертным богам, он не сможет
+    удержать Одиссея»."
+  details: Она сошлась с Посейдоном в полых пещерах, и с тех пор бог не убивает
+    Одиссея, но заставляет его блуждать вдали от родины». Ослепление Полифема
+    вызывает продолжающийся гнев его отца Посейдона; согласие остальных богов
+    ограничивает этот гнев. Ответ ограничен сведениями, открытыми в строках
+    1.63–79; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 79
+  requires_progress_book: 1
+  requires_progress_line: 79
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-80-95-q1
+  book: 1
+  anchor: lines-80-95
+  lines: 1.80–95
+  line_start: 80
+  line_end: 95
+  question: Кто такие женихи?
+  summary:
+    Женихи — знатные мужчины Итаки и соседних островов, добивающиеся брака
+    с Пенелопой, пока судьба Одиссея неизвестна.
+  details:
+    Они постоянно собираются в доме отсутствующего хозяина и потребляют его
+    скот, вино и хлеб. Поэтому их присутствие является не только брачным
+    соперничеством, но и длительным присвоением ресурсов ойкоса, наследником
+    которого остаётся Телемах.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 95
+  requires_progress_book: 1
+  requires_progress_line: 95
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-80-95-q2
+  book: 1
+  anchor: lines-80-95
+  lines: 1.80–95
+  line_start: 80
+  line_end: 95
+  question: Почему Телемах до сих пор не действовал?
+  summary:
+    Гермес должен передать решение Калипсо; Афина должна побудить Телемаха
+    к собранию и путешествию за сведениями.
+  details:
+    "Пусть без промедления объявит прекрасноволосой нимфе наше непреложное
+    решение: стойкий Одиссей должен отправиться в путь». Важно сохранить
+    оговорку этого места: Kleos Телемаха включает общественное признание, но не
+    сводится к современной известности. Ответ ограничен сведениями, открытыми в
+    строках 1.80–95; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 95
+  requires_progress_book: 1
+  requires_progress_line: 95
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-80-95-q3
+  book: 1
+  anchor: lines-80-95
+  lines: 1.80–95
+  line_start: 80
+  line_end: 95
+  question: Что даст путешествие, если отец далеко?
+  summary:
+    Плавание должно дать Телемаху проверяемые сведения об Одиссее и вывести
+    его из пассивного положения внутри захваченного женихами дома.
+  details: Афина направляет его к Нестору и Менелаю — участникам войны и
+    возвращений. Даже если отец не найден, публичное выступление, путь и встречи
+    создают Телемаху собственное доброе имя и опыт действия; это самостоятельный
+    результат поездки.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 95
+  requires_progress_book: 1
+  requires_progress_line: 95
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+    - petropoulos_2011_telemachus
+- answer_id: reader-01-lines-96-112-q1
+  book: 1
+  anchor: lines-96-112
+  lines: 1.96–112
+  line_start: 96
+  line_end: 112
+  question: Почему богиня скрывает себя?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Сказав это, богиня привязала к ногам прекрасные
+    золотые сандалии.
+  details: Они несли её над водой и бескрайней землёй быстро, как ветер.
+    Божественная помощь входит в дом в форме гостя; сцена сразу сопоставляет
+    вооружённую Афину и пирующих женихов. Ответ ограничен сведениями, открытыми
+    в строках 1.96–112; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 112
+  requires_progress_book: 1
+  requires_progress_line: 112
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-96-112-q2
+  book: 1
+  anchor: lines-96-112
+  lines: 1.96–112
+  line_start: 96
+  line_end: 112
+  question: Кто такие тафийцы?
+  summary:
+    Она приняла вид чужеземца — Мента, вождя тафийцев. Божественная помощь
+    входит в дом в форме гостя; сцена сразу сопоставляет вооружённую Афину и
+    пирующих женихов.
+  details:
+    "Внутри она застала надменных женихов. Божественная помощь входит в дом
+    в форме гостя; сцена сразу сопоставляет вооружённую Афину и пирующих
+    женихов. Важно сохранить оговорку этого места: Мент — не абстрактная маска,
+    а человек, чьё имя и гостевая связь правдоподобны для Телемаха. Ответ
+    ограничен сведениями, открытыми в строках 1.96–112; дальнейшие эпизоды здесь
+    не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 112
+  requires_progress_book: 1
+  requires_progress_line: 112
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-96-112-q3
+  book: 1
+  anchor: lines-96-112
+  lines: 1.96–112
+  line_start: 96
+  line_end: 112
+  question: Почему вино смешивают с водой?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Глашатаи и проворные слуги смешивали в чашах
+    вино с водой, вытирали губками столы и раскладывали мясо без счёта.
+  details: Они несли её над водой и бескрайней землёй быстро, как ветер.
+    Божественная помощь входит в дом в форме гостя; сцена сразу сопоставляет
+    вооружённую Афину и пирующих женихов. Ответ ограничен сведениями, открытыми
+    в строках 1.96–112; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 112
+  requires_progress_book: 1
+  requires_progress_line: 112
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-113-143-q1
+  book: 1
+  anchor: lines-113-143
+  lines: 1.113–143
+  line_start: 113
+  line_end: 143
+  question: Почему имя гостя спрашивают после еды?
+  summary: Стыд за оставленного у двери гостя побуждает Телемаха действовать по
+    правилам гостеприимства до расспросов.
+  details: Затем усадил гостя в резное кресло, накрыл его тканью и подставил
+    скамейку для ног. Ответ ограничен сведениями, открытыми в строках 1.113–143;
+    дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 143
+  requires_progress_book: 1
+  requires_progress_line: 143
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-113-143-q2
+  book: 1
+  anchor: lines-113-143
+  lines: 1.113–143
+  line_start: 113
+  line_end: 143
+  question: Кто принимает копьё?
+  summary:
+    "Он подошёл, взял правой рукой за правую руку незнакомца, другой рукой
+    принял бронзовое копьё и сказал: «Радуйся, чужеземец."
+  details: "В высоком зале Телемах поставил копьё у колонны, в хорошо отделанной
+    стойке, где хранилось много копий стойкого Одиссея. Стыд за оставленного у
+    двери гостя побуждает Телемаха действовать по правилам гостеприимства до
+    расспросов. Важно сохранить оговорку этого места: Тёплый приём не устраняет
+    социальную иерархию обслуживающего дом труда. Ответ ограничен сведениями,
+    открытыми в строках 1.113–143; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 143
+  requires_progress_book: 1
+  requires_progress_line: 143
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-113-143-q3
+  book: 1
+  anchor: lines-113-143
+  lines: 1.113–143
+  line_start: 113
+  line_end: 143
+  question: Что показывает расположение кресел?
+  summary: "Телемах усаживает гостя отдельно от женихов и рядом с собой:
+    расположение защищает частный разговор и подчёркивает, что гость не
+    принадлежит к разоряющей дом компании."
+  details:
+    "Он сидел среди женихов, печальный, и представлял, как благородный отец
+    вдруг вернётся, разгонит незваных гостей по дому, вновь станет хозяином и
+    будет править своим достоянием. Стыд за оставленного у двери гостя побуждает
+    Телемаха действовать по правилам гостеприимства до расспросов. Важно
+    сохранить оговорку этого места: Тёплый приём не устраняет социальную
+    иерархию обслуживающего дом труда. Ответ ограничен сведениями, открытыми в
+    строках 1.113–143; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 143
+  requires_progress_book: 1
+  requires_progress_line: 143
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-144-177-q1
+  book: 1
+  anchor: lines-144-177
+  lines: 1.144–177
+  line_start: 144
+  line_end: 177
+  question: Кто организует пир?
+  summary:
+    "Пир поддерживает весь домашний персонал: глашатаи, служанка, ключница,
+    резчик мяса и виночерпий выполняют разные работы, хотя ресурсы принадлежат
+    ойкосу Одиссея."
+  details: "Почтенная ключница поставила хлеб и множество готовых блюд, щедро
+    делясь тем, что было в доме. После насыщения пир переходит к музыке; Телемах
+    отделяет гостя от шума и начинает говорить об отсутствующем отце. Важно
+    сохранить оговорку этого места: Фемий поёт по принуждению; его участие
+    нельзя считать простым одобрением женихов. Классический симпосий не должен
+    полностью подменять гомеровскую сцену. Ответ ограничен сведениями, открытыми
+    в строках 1.144–177; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 177
+  requires_progress_book: 1
+  requires_progress_line: 177
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-144-177-q2
+  book: 1
+  anchor: lines-144-177
+  lines: 1.144–177
+  line_start: 144
+  line_end: 177
+  question: Что такое форминга?
+  summary: Форминга — Струнный инструмент, которым певец сопровождает эпическое
+    исполнение; точная конструкция могла различаться.
+  details: "Тот пел для женихов по принуждению. После насыщения пир переходит к
+    музыке; Телемах отделяет гостя от шума и начинает говорить об отсутствующем
+    отце. Важно сохранить оговорку этого места: Фемий поёт по принуждению; его
+    участие нельзя считать простым одобрением женихов. Классический симпосий не
+    должен полностью подменять гомеровскую сцену. Ответ ограничен сведениями,
+    открытыми в строках 1.144–177; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 177
+  requires_progress_book: 1
+  requires_progress_line: 177
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-144-177-q3
+  book: 1
+  anchor: lines-144-177
+  lines: 1.144–177
+  line_start: 144
+  line_end: 177
+  question: Почему певец не может отказаться?
+  summary:
+    "Повествователь уже называет пение Фемия вынужденным: певец зависит от
+    женихов, которые заняли зал и распоряжаются пиром, поэтому его выступление
+    не равно свободному согласию."
+  details: Почтенная ключница поставила хлеб и множество готовых блюд, щедро
+    делясь тем, что было в доме. После насыщения пир переходит к музыке; Телемах
+    отделяет гостя от шума и начинает говорить об отсутствующем отце. Ответ
+    ограничен сведениями, открытыми в строках 1.144–177; дальнейшие эпизоды
+    здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 177
+  requires_progress_book: 1
+  requires_progress_line: 177
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-178-212-q1
+  book: 1
+  anchor: lines-178-212
+  lines: 1.178–212
+  line_start: 178
+  line_end: 212
+  question: Что такое наследственное гостеприимство?
+  summary: "Ксения связывает не только двух бывших гостей, но и их дома: потомки
+    могут признавать и продолжать отношения, установленные отцами."
+  details: Телемах спрашивает, принимал ли Одиссей этого человека прежде, потому
+    что прежний обмен приёмом и дарами создаёт долговременную связь между
+    семьями. Это не безличная гостиничная услуга, а взаимное обязательство
+    защиты, памяти и будущего приёма.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 212
+  requires_progress_book: 1
+  requires_progress_line: 212
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+    - britannica_xenia
+- answer_id: reader-01-lines-178-212-q2
+  book: 1
+  anchor: lines-178-212
+  lines: 1.178–212
+  line_start: 178
+  line_end: 212
+  question: Почему Лаэрт не управляет домом?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Спроси старого героя Лаэрта, если пойдёшь к
+    нему.
+  details: "Говорят, он уже не бывает в городе: живёт в стороне, в поле, терпит
+    горе, и при нём только старая служанка. Прежняя гостевая связь семей делает
+    Мента подходящим источником сведений и совета. Ответ ограничен сведениями,
+    открытыми в строках 1.178–212; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 212
+  requires_progress_book: 1
+  requires_progress_line: 212
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-178-212-q3
+  book: 1
+  anchor: lines-178-212
+  lines: 1.178–212
+  line_start: 178
+  line_end: 212
+  question: Как торговали железом и медью?
+  summary:
+    Поэма не сводит это место к одной бесспорной причине. Торговая история
+    Мента — часть принятого Афиной облика, а не независимый документ о реальном
+    рейсе.
+  details: "Мой корабль стоит далеко от города, в гавани Рейтр, у подножия
+    лесистого Нейона». Прежняя гостевая связь семей делает Мента подходящим
+    источником сведений и совета. Важно сохранить оговорку этого места: Торговая
+    история Мента — часть принятого Афиной облика, а не независимый документ о
+    реальном рейсе. Ответ ограничен сведениями, открытыми в строках 1.178–212;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 212
+  requires_progress_book: 1
+  requires_progress_line: 212
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-213-229-q1
+  book: 1
+  anchor: lines-213-229
+  lines: 1.213–229
+  line_start: 213
+  line_end: 229
+  question: Почему Телемах сомневается?
+  summary: Поэма не сводит это место к одной бесспорной причине. Высказывание
+    Телемаха о невозможности знать отца отражает социальную ситуацию персонажа,
+    не биологическую теорию поэмы.
+  details:
+    "Мать утверждает, что я его сын; сам я этого знать не могу. Уверение в
+    находчивости отца сталкивается с личной неуверенностью сына и отсутствием
+    признанного наследственного положения. Важно сохранить оговорку этого места:
+    Высказывание Телемаха о невозможности знать отца отражает социальную
+    ситуацию персонажа, не биологическую теорию поэмы. Ответ ограничен
+    сведениями, открытыми в строках 1.213–229; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 229
+  requires_progress_book: 1
+  requires_progress_line: 229
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-213-229-q2
+  book: 1
+  anchor: lines-213-229
+  lines: 1.213–229
+  line_start: 213
+  line_end: 229
+  question: Что значит внешнее сходство?
+  summary: Сходство с отцом позволяет окружающим предположить родство, но не
+    служит доказательством само по себе; Телемах потому и отделяет чужое
+    наблюдение от собственного знания.
+  details: "Он найдёт способ вернуться: он умеет находить выход. Уверение в
+    находчивости отца сталкивается с личной неуверенностью сына и отсутствием
+    признанного наследственного положения. Важно сохранить оговорку этого места:
+    Высказывание Телемаха о невозможности знать отца отражает социальную
+    ситуацию персонажа, не биологическую теорию поэмы. Ответ ограничен
+    сведениями, открытыми в строках 1.213–229; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD + MODERN_HYPOTHESIS
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 229
+  requires_progress_book: 1
+  requires_progress_line: 229
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-213-229-q3
+  book: 1
+  anchor: lines-213-229
+  lines: 1.213–229
+  line_start: 213
+  line_end: 229
+  question: Насколько словам Мента можно верить?
+  summary: "Читатель знает, что под именем Мента говорит Афина: часть
+    биографических деталей создаёт правдоподобную маску, а обещание возвращения
+    выражает божественное знание, недоступное Телемаху."
+  details: "Он найдёт способ вернуться: он умеет находить выход. Уверение в
+    находчивости отца сталкивается с личной неуверенностью сына и отсутствием
+    признанного наследственного положения. Важно сохранить оговорку этого места:
+    Высказывание Телемаха о невозможности знать отца отражает социальную
+    ситуацию персонажа, не биологическую теорию поэмы. Ответ ограничен
+    сведениями, открытыми в строках 1.213–229; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 229
+  requires_progress_book: 1
+  requires_progress_line: 229
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-230-251-q1
+  book: 1
+  anchor: lines-230-251
+  lines: 1.230–251
+  line_start: 230
+  line_end: 251
+  question: Почему отсутствие могилы усиливает беду?
+  summary:
+    Отсутствие тела и погребения лишает Телемаха и общественного завершения
+    горя, и унаследованной славы.
+  details: Но теперь его безвестно унесли бури. Ответ ограничен сведениями,
+    открытыми в строках 1.230–251; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 251
+  requires_progress_book: 1
+  requires_progress_line: 251
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-230-251-q2
+  book: 1
+  anchor: lines-230-251
+  lines: 1.230–251
+  line_start: 230
+  line_end: 251
+  question: Что наследует сын кроме имущества?
+  summary: Сын наследует имя дома, общественные ожидания, обязанность защищать
+    близких и память об отце; поэтому kleos и способность действовать здесь не
+    менее важны, чем вещи.
+  details: "Но объясни: что здесь за пир и что за собрание? Отсутствие тела и
+    погребения лишает Телемаха и общественного завершения горя, и унаследованной
+    славы. Важно сохранить оговорку этого места: Современное понятие «пропавший
+    без вести» помогает читателю эмоционально, но не должно заменять эпические
+    категории погребения и kleos. Ответ ограничен сведениями, открытыми в
+    строках 1.230–251; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 251
+  requires_progress_book: 1
+  requires_progress_line: 251
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-252-273-q1
+  book: 1
+  anchor: lines-252-273
+  lines: 1.252–273
+  line_start: 252
+  line_end: 273
+  question: Почему Пенелопа не может просто отказать?
+  summary:
+    Нерешённый брак Пенелопы позволяет женихам продолжать разорение; память
+    о вооружённом Одиссее даёт контраст нынешнему бессилию.
+  details: Яд дал ему мой отец, потому что крепко любил его. Ответ ограничен
+    сведениями, открытыми в строках 1.252–273; дальнейшие эпизоды здесь не
+    привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 273
+  requires_progress_book: 1
+  requires_progress_line: 273
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-252-273-q2
+  book: 1
+  anchor: lines-252-273
+  lines: 1.252–273
+  line_start: 252
+  line_end: 273
+  question: Кому принадлежит имущество?
+  summary: Это имущество ойкоса Одиссея, наследником которого остаётся Телемах;
+    женихи пользуются запасами без согласия хозяина и потому изображены не
+    законными совладельцами, а разорителями.
+  details: "Боги послали новые беды. Нерешённый брак Пенелопы позволяет женихам
+    продолжать разорение; память о вооружённом Одиссее даёт контраст нынешнему
+    бессилию. Важно сохранить оговорку этого места: Связь брака, имущества и
+    царской власти спорна. Ответ ограничен сведениями, открытыми в строках
+    1.252–273; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 273
+  requires_progress_book: 1
+  requires_progress_line: 273
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-252-273-q3
+  book: 1
+  anchor: lines-252-273
+  lines: 1.252–273
+  line_start: 252
+  line_end: 273
+  question: Что значит «лежит на коленях богов»?
+  summary: Но вернётся он и накажет их или нет — это лежит на коленях богов».
+  details:
+    "Он искал смертоносный яд, чтобы смазывать медные наконечники стрел, но
+    Ил отказал: он чтил вечных богов. Нерешённый брак Пенелопы позволяет женихам
+    продолжать разорение; память о вооружённом Одиссее даёт контраст нынешнему
+    бессилию. Важно сохранить оговорку этого места: Связь брака, имущества и
+    царской власти спорна. Рассказ о яде характеризует прежнего Одиссея и
+    гостевые связи, но не является инструкцией к будущему. Ответ ограничен
+    сведениями, открытыми в строках 1.252–273; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD + MODERN_HYPOTHESIS
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 273
+  requires_progress_book: 1
+  requires_progress_line: 273
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-274-305-q1
+  book: 1
+  anchor: lines-274-305
+  lines: 1.274–305
+  line_start: 274
+  line_end: 305
+  question: Кто такие Нестор и Менелай?
+  summary: "«Сначала поезжай в Пилос и расспроси Нестора, потом — в Спарту к
+    светловолосому Менелаю: из меднодоспешных ахейцев он вернулся последним."
+  details: "Если услышишь, что отец жив и идёт домой, потерпи разорение ещё год.
+    Собрание должно сделать конфликт публичным; путешествие должно дать
+    достоверную весть; дальнейшие действия зависят от того, жив отец или умер.
+    Важно сохранить оговорку этого места: Совет об убийстве женихов выражает
+    нормы и конфликт мира поэмы, а не современную правовую рекомендацию. Ответ
+    ограничен сведениями, открытыми в строках 1.274–305; дальнейшие эпизоды
+    здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 305
+  requires_progress_book: 1
+  requires_progress_line: 305
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-274-305-q2
+  book: 1
+  anchor: lines-274-305
+  lines: 1.274–305
+  line_start: 274
+  line_end: 305
+  question: Почему собрание важно?
+  summary: Собрание должно сделать конфликт публичным; путешествие должно дать
+    достоверную весть; дальнейшие действия зависят от того, жив отец или умер.
+  details: Потребуй, чтобы женихи разошлись по своим домам. Ответ ограничен
+    сведениями, открытыми в строках 1.274–305; дальнейшие эпизоды здесь не
+    привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 305
+  requires_progress_book: 1
+  requires_progress_line: 305
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-274-305-q3
+  book: 1
+  anchor: lines-274-305
+  lines: 1.274–305
+  line_start: 274
+  line_end: 305
+  question: Что такое kleos?
+  summary:
+    Клеос — Сохраняемая обществом слава и память о поступках, особенно та,
+    которую передаёт песня.
+  details: "Завтра созови на собрание ахейских мужей и скажи при всех то, что
+    должен сказать; пусть боги будут свидетелями. Собрание должно сделать
+    конфликт публичным; путешествие должно дать достоверную весть; дальнейшие
+    действия зависят от того, жив отец или умер. Важно сохранить оговорку этого
+    места: Совет об убийстве женихов выражает нормы и конфликт мира поэмы, а не
+    современную правовую рекомендацию. Ответ ограничен сведениями, открытыми в
+    строках 1.274–305; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 305
+  requires_progress_book: 1
+  requires_progress_line: 305
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-274-305-q4
+  book: 1
+  anchor: lines-274-305
+  lines: 1.274–305
+  line_start: 274
+  line_end: 305
+  question: Какие обряды должен совершить сын?
+  summary:
+    Если узнаешь, что он умер, возвращайся в милую отеческую землю, насыпь
+    ему могильный холм, соверши все подобающие погребальные обряды и выдай мать
+    замуж».
+  details: Завтра созови на собрание ахейских мужей и скажи при всех то, что
+    должен сказать; пусть боги будут свидетелями. Собрание должно сделать
+    конфликт публичным; путешествие должно дать достоверную весть; дальнейшие
+    действия зависят от того, жив отец или умер. Ответ ограничен сведениями,
+    открытыми в строках 1.274–305; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 305
+  requires_progress_book: 1
+  requires_progress_line: 305
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-306-324-q1
+  book: 1
+  anchor: lines-306-324
+  lines: 1.306–324
+  line_start: 306
+  line_end: 324
+  question: Почему подарки должны быть равноценными?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. «А мне пора возвращаться на быстрый корабль:
+    товарищи, должно быть, сердятся от ожидания."
+  details: Вымойся, отдохни душой, а потом возьми дорогой подарок на память обо
+    мне — такой, каким обмениваются близкие по гостеприимству люди». Отсроченный
+    ответный дар подтверждает гостевую связь; чудесный уход превращает совет
+    гостя в божественное поручение. Ответ ограничен сведениями, открытыми в
+    строках 1.306–324; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 324
+  requires_progress_book: 1
+  requires_progress_line: 324
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-306-324-q2
+  book: 1
+  anchor: lines-306-324
+  lines: 1.306–324
+  line_start: 306
+  line_end: 324
+  question: Как Телемах понял, что видел бога?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Телемах ответил: «Гость, ты говоришь с
+    искренней добротой, словно отец с сыном."
+  details: В сердце Телемаха она оставила силу и смелость, а память об отце
+    сделала ещё живее. Отсроченный ответный дар подтверждает гостевую связь;
+    чудесный уход превращает совет гостя в божественное поручение. Ответ
+    ограничен сведениями, открытыми в строках 1.306–324; дальнейшие эпизоды
+    здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 324
+  requires_progress_book: 1
+  requires_progress_line: 324
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-325-344-q1
+  book: 1
+  anchor: lines-325-344
+  lines: 1.325–344
+  line_start: 325
+  line_end: 344
+  question: Кто такой Фемий?
+  summary:
+    Фемий — Профессиональный певец, вынужденный исполнять для женихов песни
+    о возвращении ахейцев.
+  details: "Спой им одну из них, а они пусть молча пьют вино. Публичная песня
+    превращается для Пенелопы в личное повторение утраты, поэтому она просит
+    выбрать другую тему. Важно сохранить оговорку этого места: «Эллада» и
+    «Аргос» в эпической географии не всегда совпадают с позднейшими строгими
+    политическими значениями. Ответ ограничен сведениями, открытыми в строках
+    1.325–344; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 344
+  requires_progress_book: 1
+  requires_progress_line: 344
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-325-344-q2
+  book: 1
+  anchor: lines-325-344
+  lines: 1.325–344
+  line_start: 325
+  line_end: 344
+  question: Почему песня о недавних событиях уже стала эпосом?
+  summary: Публичная песня превращается для Пенелопы в личное повторение утраты,
+    поэтому она просит выбрать другую тему.
+  details: Я тоскую по тому человеку, чья слава широка и в Элладе, и в самом
+    центре Аргоса». Ответ ограничен сведениями, открытыми в строках 1.325–344;
+    дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD + MODERN_HYPOTHESIS
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 344
+  requires_progress_book: 1
+  requires_progress_line: 344
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-325-344-q3
+  book: 1
+  anchor: lines-325-344
+  lines: 1.325–344
+  line_start: 325
+  line_end: 344
+  question: Почему Пенелопа закрывает лицо?
+  summary: Публичная песня превращается для Пенелопы в личное повторение утраты,
+    поэтому она просит выбрать другую тему.
+  details: Дойдя до женихов, Пенелопа остановилась у столба, поддерживавшего
+    крепкую крышу. Ответ ограничен сведениями, открытыми в строках 1.325–344;
+    дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 344
+  requires_progress_book: 1
+  requires_progress_line: 344
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-345-364-q1
+  book: 1
+  anchor: lines-345-364
+  lines: 1.345–364
+  line_start: 345
+  line_end: 364
+  question: Почему Пенелопа подчиняется?
+  summary: Пенелопа уходит не потому, что признала доводы женихов, а потому, что
+    Телемах впервые публично заявляет власть взрослого мужчины в доме.
+  details: Повествование подчёркивает её удивление словам сына. Сцена показывает
+    изменение положения Телемаха внутри гендерно и иерархически устроенного
+    ойкоса; она не доказывает, что Пенелопа лишена собственной стратегии или
+    внутренне согласна со всем сказанным.
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 364
+  requires_progress_book: 1
+  requires_progress_line: 364
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+    - petropoulos_2011_telemachus
+- answer_id: reader-01-lines-345-364-q2
+  book: 1
+  anchor: lines-345-364
+  lines: 1.345–364
+  line_start: 345
+  line_end: 364
+  question: Одобряет ли повествователь приказ?
+  summary: "По сведениям, доступным в этой точке рассказа: Прикажи служанкам
+    делать свою работу."
+  details:
+    "Речь же будет заботой всех мужчин в доме, и прежде всего моей: власть
+    в этом доме принадлежит мне». После встречи с Афиной Телемах впервые
+    заявляет публичную власть над речью и домом. Важно сохранить оговорку этого
+    места: Сцена показывает гендерную и властную норму персонажа, но не требует
+    современного одобрения. Ответ ограничен сведениями, открытыми в строках
+    1.345–364; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + MODERN_HYPOTHESIS
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 364
+  requires_progress_book: 1
+  requires_progress_line: 364
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-345-364-q3
+  book: 1
+  anchor: lines-345-364
+  lines: 1.345–364
+  line_start: 345
+  line_end: 364
+  question: Что значит «самая новая песня»?
+  summary:
+    Телемах говорит о песне, предмет которой воспринимается слушателями как
+    самый свежий и близкий к их настоящему опыт.
+  details: Фемий поёт о недавних возвращениях ахейцев из Трои, поэтому рассказ
+    особенно болезнен Пенелопе и особенно привлекателен публике. Формула не
+    позволяет датировать исполнение или утверждать, что певец только что сочинил
+    произведение целиком.
+  layer: POEM_WORLD + MODERN_HYPOTHESIS
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 364
+  requires_progress_book: 1
+  requires_progress_line: 364
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+    - nagy_odyssey_rhapsody_1
+- answer_id: reader-01-lines-365-385-q1
+  book: 1
+  anchor: lines-365-385
+  lines: 1.365–385
+  line_start: 365
+  line_end: 385
+  question: Почему Телемах разрешает пиру продолжиться сегодня?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Тогда рассудительный Телемах громко обратился к
+    ним: «Женихи моей матери, люди наглые и своевольные!"
+  details: "Сейчас будем пировать и не станем кричать: приятно слушать такого
+    певца, голосом похожего на бога». Личный план становится открытым
+    политическим требованием: прекратить разорение или ждать божественного
+    возмездия. Ответ ограничен сведениями, открытыми в строках 1.365–385;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 385
+  requires_progress_book: 1
+  requires_progress_line: 385
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-365-385-q2
+  book: 1
+  anchor: lines-365-385
+  lines: 1.365–385
+  line_start: 365
+  line_end: 385
+  question: Как частная жалоба станет общественным делом?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Сейчас будем пировать и не станем кричать:
+    приятно слушать такого певца, голосом похожего на бога»."
+  details: "«Но утром все пойдём на собрание. Личный план становится открытым
+    политическим требованием: прекратить разорение или ждать божественного
+    возмездия. Ответ ограничен сведениями, открытыми в строках 1.365–385;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 385
+  requires_progress_book: 1
+  requires_progress_line: 385
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-386-420-q2
+  book: 1
+  anchor: lines-386-420
+  lines: 1.386–420
+  line_start: 386
+  line_end: 420
+  question: Почему имущество и власть обсуждаются отдельно?
+  summary: Новая смелость Телемаха заставляет женихов говорить о возможном
+    наследовании власти и признавать его право на имущество дома.
+  details:
+    "Если Зевс даст мне власть, я приму её. Важно сохранить оговорку этого
+    места: Basileus может обозначать нескольких статусных правителей; характер
+    единовластия Одиссея и наследования спорен. Ответ ограничен сведениями,
+    открытыми в строках 1.386–420; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 420
+  requires_progress_book: 1
+  requires_progress_line: 420
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-386-420-q3
+  book: 1
+  anchor: lines-386-420
+  lines: 1.386–420
+  line_start: 386
+  line_end: 420
+  question: Зачем Телемах скрывает узнавание богини?
+  summary: Новая смелость Телемаха заставляет женихов говорить о возможном
+    наследовании власти и признавать его право на имущество дома.
+  details: "Антиной, сын Евпейта, ответил: «Телемах, видно, сами боги учат тебя
+    говорить на собраниях так высокомерно и дерзко. Важно сохранить оговорку
+    этого места: Телемах сознательно сохраняет человеческую версию личности
+    гостя. Ответ ограничен сведениями, открытыми в строках 1.386–420; дальнейшие
+    эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 420
+  requires_progress_book: 1
+  requires_progress_line: 420
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-421-444-q1
+  book: 1
+  anchor: lines-421-444
+  lines: 1.421–444
+  line_start: 421
+  line_end: 444
+  question: Как рабыня могла иметь высокий авторитет в доме?
+  summary:
+    Поэма не сводит это место к одной бесспорной причине. Близость Евриклеи
+    к семье сосуществует с её статусом купленной рабыни; одно не отменяет
+    другое.
+  details: "Когда-то Лаэрт купил её ещё молодой за двадцать быков и чтил в доме
+    наравне с законной женой, но никогда не делил с ней постель: он боялся гнева
+    супруги. После божественного толчка и первой публичной речи Телемах остаётся
+    один с планом будущего путешествия. Важно сохранить оговорку этого места:
+    Близость Евриклеи к семье сосуществует с её статусом купленной рабыни; одно
+    не отменяет другое. Ответ ограничен сведениями, открытыми в строках
+    1.421–444; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 444
+  requires_progress_book: 1
+  requires_progress_line: 444
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-421-444-q2
+  book: 1
+  anchor: lines-421-444
+  lines: 1.421–444
+  line_start: 421
+  line_end: 444
+  question: Что показывает описание спальни и запора?
+  summary: Он открыл дверь крепко построенной спальни, сел на кровать и снял
+    мягкую рубаху.
+  details: "Старуха сложила её и повесила на деревянный крюк у точёного ложа,
+    затем вышла, потянула дверь за серебряную ручку и ремнём придвинула засов.
+    После божественного толчка и первой публичной речи Телемах остаётся один с
+    планом будущего путешествия. Важно сохранить оговорку этого места: Близость
+    Евриклеи к семье сосуществует с её статусом купленной рабыни; одно не
+    отменяет другое. Ответ ограничен сведениями, открытыми в строках 1.421–444;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 1
+  reveal_at_line: 444
+  requires_progress_book: 1
+  requires_progress_line: 444
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-01-lines-421-444-q3
+  book: 1
+  anchor: lines-421-444
+  lines: 1.421–444
+  line_start: 421
+  line_end: 444
+  question: О чём Телемах думает перед сном?
+  summary:
+    Телемах поднялся в свою высокую комнату, построенную во дворе на хорошо
+    защищённом месте. После божественного толчка и первой публичной речи Телемах
+    остаётся один с планом будущего путешествия.
+  details: Теперь Евриклея освещала путь Телемаху. Ответ ограничен сведениями,
+    открытыми в строках 1.421–444; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 1
+  reveal_at_line: 444
+  requires_progress_book: 1
+  requires_progress_line: 444
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001

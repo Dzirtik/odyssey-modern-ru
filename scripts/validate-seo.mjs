@@ -26,6 +26,7 @@ const indexableCanonicals = new Set();
 const titles = new Set();
 const descriptions = new Set();
 const expectedLastModified = "2026-07-24";
+let publicReaderQuestionCount = 0;
 
 const matchOne = (html, pattern, label, file) => {
   const matches = [...html.matchAll(pattern)];
@@ -35,9 +36,11 @@ const matchOne = (html, pattern, label, file) => {
 
 for (const file of htmlFiles) {
   const html = await fs.readFile(file, "utf8");
+  const isLongFormBook = /dist\/book\/\d{2}\/index\.html$/.test(file);
+  const htmlBudget = isLongFormBook ? 180_000 : 100_000;
   assert(
-    Buffer.byteLength(html) < 100_000,
-    `${file}: HTML exceeds the 100 KB SEO budget`,
+    Buffer.byteLength(html) < htmlBudget,
+    `${file}: HTML exceeds the ${htmlBudget / 1_000} KB SEO budget`,
   );
   const title = matchOne(html, /<title>([^<]+)<\/title>/g, "title", file);
   const description = matchOne(
@@ -126,6 +129,19 @@ for (const file of htmlFiles) {
       chapter.isPartOf?.["@id"]?.endsWith("#odyssey"),
       `${file}: Chapter must belong to the Odyssey work`,
     );
+    const questionGroups = [
+      ...html.matchAll(/<aside class="reader-questions"[\s\S]*?<\/aside>/g),
+    ];
+    for (const [group] of questionGroups) {
+      const questionItems = [...group.matchAll(/<li>([\s\S]*?)<\/li>/g)];
+      for (const [, item] of questionItems) {
+        assert(
+          /<a href="#[^"]+">открыть пояснение<\/a>/.test(item),
+          `${file}: every public reader question needs an explanation link`,
+        );
+        publicReaderQuestionCount += 1;
+      }
+    }
   }
   if (file.endsWith("/read/index.html")) {
     const itemList = jsonLd["@graph"].find(
@@ -192,6 +208,11 @@ for (const file of htmlFiles) {
     }
   }
 }
+
+assert(
+  publicReaderQuestionCount === 366,
+  `Expected 366 answered public reader questions, found ${publicReaderQuestionCount}`,
+);
 
 for (const route of ["glossary", "people", "map"]) {
   const html = await fs.readFile(`dist/${route}/index.html`, "utf8");

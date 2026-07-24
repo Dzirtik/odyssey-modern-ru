@@ -38,7 +38,8 @@ const normalize = (value) =>
 
 const errors = [];
 let questionCount = 0;
-let answeredCount = 0;
+let existingAnswerCount = 0;
+let generatedAnswerCount = 0;
 
 for (let index = 0; index < numberWords.length; index += 1) {
   const bookNumber = index + 1;
@@ -57,6 +58,13 @@ for (let index = 0; index < numberWords.length; index += 1) {
   );
   const semanticMap = YAML.parse(rawMap);
   const segments = semanticMap.segments ?? [];
+  const generatedAnswers = YAML.parse(
+    await fs.readFile(
+      new URL(`../src/data/reader-answers/book-${padded}.yml`, import.meta.url),
+      "utf8",
+    ),
+  );
+  const usedAnswerIds = new Set();
 
   if (segments.length !== book.passages.length) {
     errors.push(
@@ -91,13 +99,74 @@ for (let index = 0; index < numberWords.length; index += 1) {
           `Book ${padded}, ${range}: reader question must be non-empty and end with "?".`,
         );
       }
-      const hasAnswer = (book.notes ?? []).some(
+      const hasExistingAnswer = (book.notes ?? []).some(
         (note) =>
           note.anchor === passage.id &&
           normalize(note.title) === normalize(text),
       );
-      if (hasAnswer) answeredCount += 1;
+      const matchingGenerated = generatedAnswers.filter(
+        (answer) =>
+          answer.anchor === passage.id &&
+          normalize(answer.question) === normalize(text),
+      );
+      if (Number(hasExistingAnswer) + matchingGenerated.length !== 1) {
+        errors.push(
+          `Book ${padded}, ${range}: question "${text}" needs exactly one public answer.`,
+        );
+      }
+      if (hasExistingAnswer) existingAnswerCount += 1;
+      if (matchingGenerated.length === 1) {
+        const answer = matchingGenerated[0];
+        generatedAnswerCount += 1;
+        usedAnswerIds.add(answer.answer_id);
+        if (
+          !answer.answer_id ||
+          answer.book !== bookNumber ||
+          answer.line_start !== passage.lineStart ||
+          answer.line_end !== passage.lineEnd ||
+          answer.reveal_at_book !== bookNumber ||
+          answer.reveal_at_line !== passage.lineEnd ||
+          answer.requires_progress_book !== bookNumber ||
+          answer.requires_progress_line !== passage.lineEnd ||
+          answer.spoiler_level !== "safe"
+        ) {
+          errors.push(
+            `Book ${padded}, ${range}: malformed generated answer for "${text}".`,
+          );
+        }
+        if (
+          String(answer.summary ?? "").trim().length < 60 ||
+          String(answer.details ?? "").trim().length < 120
+        ) {
+          errors.push(
+            `Book ${padded}, ${range}: generated answer for "${text}" is too shallow.`,
+          );
+        }
+        if (
+          answer.provenance !== "automated_passage_bound_editorial_synthesis" ||
+          answer.human_reviewed !== false
+        ) {
+          errors.push(
+            `Book ${padded}, ${range}: generated answer for "${text}" has misleading provenance.`,
+          );
+        }
+        if (
+          !Array.isArray(answer.source_ids) ||
+          !answer.source_ids.includes("homer_odyssey_perseus_grc2") ||
+          !answer.source_ids.includes("de_jong_2001")
+        ) {
+          errors.push(
+            `Book ${padded}, ${range}: generated answer for "${text}" lacks core sources.`,
+          );
+        }
+      }
     }
+  }
+
+  if (usedAnswerIds.size !== generatedAnswers.length) {
+    errors.push(
+      `Book ${padded}: ${generatedAnswers.length - usedAnswerIds.size} generated answers are orphaned.`,
+    );
   }
 }
 
@@ -107,5 +176,5 @@ if (errors.length > 0) {
 }
 
 console.log(
-  `${questionCount} reader questions validated across 24 books; ${answeredCount} link directly to sourced explanations.`,
+  `${questionCount} reader questions have public answers: ${existingAnswerCount} extended notes and ${generatedAnswerCount} passage-bound explanations.`,
 );

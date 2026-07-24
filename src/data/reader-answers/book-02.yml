@@ -1,0 +1,1479 @@
+- answer_id: reader-02-lines-1-14-q1
+  book: 2
+  anchor: lines-1-14
+  lines: 2.1–14
+  line_start: 1
+  line_end: 14
+  question: Кого созывают глашатаи?
+  summary: Телемах сразу приказал звонкоголосым глашатаям созвать длинноволосых
+    ахейцев на собрание.
+  details: Те огласили призыв, и люди быстро сошлись. Совет Афины из Песни I
+    превращается в публичное действие; божественная charis делает взросление
+    Телемаха видимым общине. Ответ ограничен сведениями, открытыми в строках
+    2.1–14; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 14
+  requires_progress_book: 2
+  requires_progress_line: 14
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-1-14-q2
+  book: 2
+  anchor: lines-1-14
+  lines: 2.1–14
+  line_start: 1
+  line_end: 14
+  question: Кто имеет право говорить?
+  summary: Перед собранием говорит тот, кому глашатай передал скипетр и кого
+    община признала выступающим; скипетр обозначает временное право на публичную
+    речь, а не единоличную власть.
+  details: "Он надел одежду, повесил на плечо острый меч, подвязал к ногам
+    красивые сандалии и вышел из спальни — видом подобный богу. Совет Афины из
+    Песни I превращается в публичное действие; божественная charis делает
+    взросление Телемаха видимым общине. Важно сохранить оговорку этого места:
+    Сходство с богом и дар Афины обозначают впечатление и божественную
+    поддержку, а не превращение Телемаха в божество. Ответ ограничен сведениями,
+    открытыми в строках 2.1–14; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 14
+  requires_progress_book: 2
+  requires_progress_line: 14
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-1-14-q3
+  book: 2
+  anchor: lines-1-14
+  lines: 2.1–14
+  line_start: 1
+  line_end: 14
+  question: Почему старейшины уступают место?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Телемах сел на место отца, а старейшины
+    расступились перед ним.
+  details:
+    Совет Афины из Песни I превращается в публичное действие; божественная
+    charis делает взросление Телемаха видимым общине. Ответ ограничен
+    сведениями, открытыми в строках 2.1–14; дальнейшие эпизоды здесь не
+    привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 14
+  requires_progress_book: 2
+  requires_progress_line: 14
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-15-38-q1
+  book: 2
+  anchor: lines-15-38
+  lines: 2.15–38
+  line_start: 15
+  line_end: 38
+  question: Почему здесь вспоминают циклопа?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Старик не знал того, что уже знает слушатель
+    поэмы: свирепый циклоп убил Антифа в пещере и съел последним из товарищей."
+  details: Но Египтий всё равно постоянно вспоминал пропавшего сына. Отсутствие
+    сына делает общий кризис личным для Египтия; его благопожелание Телемах
+    принимает как добрый знак. Ответ ограничен сведениями, открытыми в строках
+    2.15–38; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 38
+  requires_progress_book: 2
+  requires_progress_line: 38
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-15-38-q2
+  book: 2
+  anchor: lines-15-38
+  lines: 2.15–38
+  line_start: 15
+  line_end: 38
+  question: Что означает скипетр?
+  summary: Скипетр — Жезл власти и знак права говорить перед собранием,
+    передаваемый между выступающими.
+  details: "Отсутствие сына делает общий кризис личным для Египтия; его
+    благопожелание Телемах принимает как добрый знак. Важно сохранить оговорку
+    этого места: Египтий не знает судьбы Антифа, известной повествователю и
+    слушателю. Ответ ограничен сведениями, открытыми в строках 2.15–38;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 38
+  requires_progress_book: 2
+  requires_progress_line: 38
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-15-38-q3
+  book: 2
+  anchor: lines-15-38
+  lines: 2.15–38
+  line_start: 15
+  line_end: 38
+  question: Знает ли отец, что сын погиб?
+  summary: "По сведениям, доступным в этой точке рассказа: Старик не знал того,
+    что уже знает слушатель поэмы: свирепый циклоп убил Антифа в пещере и съел
+    последним из товарищей."
+  details:
+    "Из трёх остальных сыновей Евримах находился среди женихов, а двое вели
+    отцовское хозяйство. Отсутствие сына делает общий кризис личным для Египтия;
+    его благопожелание Телемах принимает как добрый знак. Важно сохранить
+    оговорку этого места: Египтий не знает судьбы Антифа, известной
+    повествователю и слушателю. Ответ ограничен сведениями, открытыми в строках
+    2.15–38; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 38
+  requires_progress_book: 2
+  requires_progress_line: 38
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-39-59-q1
+  book: 2
+  anchor: lines-39-59
+  lines: 2.39–59
+  line_start: 39
+  line_end: 59
+  question: Почему женихи не сватаются у Икария?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. К моей матери против её воли пристали женихи —
+    любимые сыновья лучших людей, сидящих здесь.
+  details:
+    Они боятся пойти к её отцу Икарию, чтобы тот сам назначил брачные дары
+    и отдал дочь человеку, которого выберет и сочтёт достойным. Отсутствие
+    Одиссея лишает дом защитника; ежедневные пиры превращают сватовство в
+    уничтожение oikos. Ответ ограничен сведениями, открытыми в строках 2.39–59;
+    дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 59
+  requires_progress_book: 2
+  requires_progress_line: 59
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-39-59-q2
+  book: 2
+  anchor: lines-39-59
+  lines: 2.39–59
+  line_start: 39
+  line_end: 59
+  question: Что включает имущество дома?
+  summary: Богатство гибнет, потому что рядом нет такого мужчины, каким был
+    Одиссей, чтобы отвести от дома беду».
+  details: "Отсутствие Одиссея лишает дом защитника; ежедневные пиры превращают
+    сватовство в уничтожение oikos. Важно сохранить оговорку этого места:
+    Частное разорение представлено как публичный вопрос, но полномочия собрания
+    не определены как современная юрисдикция. Ответ ограничен сведениями,
+    открытыми в строках 2.39–59; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 59
+  requires_progress_book: 2
+  requires_progress_line: 59
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-39-59-q3
+  book: 2
+  anchor: lines-39-59
+  lines: 2.39–59
+  line_start: 39
+  line_end: 59
+  question: Почему отсутствие Одиссея меняет положение?
+  summary: Отсутствие Одиссея лишает дом защитника; ежедневные пиры превращают
+    сватовство в уничтожение oikos.
+  details: Богатство гибнет, потому что рядом нет такого мужчины, каким был
+    Одиссей, чтобы отвести от дома беду». Ответ ограничен сведениями, открытыми
+    в строках 2.39–59; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 59
+  requires_progress_book: 2
+  requires_progress_line: 59
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-60-79-q1
+  book: 2
+  anchor: lines-60-79
+  lines: 2.60–79
+  line_start: 60
+  line_end: 79
+  question: Кто такая Фемида?
+  summary: Фемида — Установленный богами и обычаем должный порядок; слово нельзя
+    полностью свести к писаному закону.
+  details: "«Разве мой отец причинил ахейцам зло и теперь вы мстите мне,
+    подстрекая этих людей? Неспособность защититься силой заставляет Телемаха
+    обращаться к общественному стыду, Зевсу и Фемиде. Важно сохранить оговорку
+    этого места: Стыд людей, гнев богов и материальное возмещение являются
+    разными аргументами, а не единым правовым иском. Ответ ограничен сведениями,
+    открытыми в строках 2.60–79; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 79
+  requires_progress_book: 2
+  requires_progress_line: 79
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-60-79-q2
+  book: 2
+  anchor: lines-60-79
+  lines: 2.60–79
+  line_start: 60
+  line_end: 79
+  question: Почему Телемах предпочёл бы разорение всем городом?
+  summary: Неспособность защититься силой заставляет Телемаха обращаться к
+    общественному стыду, Зевсу и Фемиде.
+  details: "Было бы лучше, если бы моё имущество съели вы сами: тогда я ходил бы
+    по городу и требовал возмещения, пока всё не вернули. Ответ ограничен
+    сведениями, открытыми в строках 2.60–79; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 79
+  requires_progress_book: 2
+  requires_progress_line: 79
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-60-79-q3
+  book: 2
+  anchor: lines-60-79
+  lines: 2.60–79
+  line_start: 60
+  line_end: 79
+  question: Почему он плачет публично?
+  summary:
+    "Телемах превращает личное горе в довод перед общиной: слёзы показывают
+    реальность ущерба и одновременно отмечают первый публичный выход сына
+    Одиссея."
+  details: Но происходящее уже невыносимо и постыдно. Неспособность защититься
+    силой заставляет Телемаха обращаться к общественному стыду, Зевсу и Фемиде.
+    Ответ ограничен сведениями, открытыми в строках 2.60–79; дальнейшие эпизоды
+    здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 79
+  requires_progress_book: 2
+  requires_progress_line: 79
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-80-109-q1
+  book: 2
+  anchor: lines-80-109
+  lines: 2.80–109
+  line_start: 80
+  line_end: 109
+  question: Почему саван нужен при жизни Лаэрта?
+  summary: Пенелопа использует погребальный долг перед Лаэртом, чтобы отложить
+    брак; раскрытие служанкой прекращает отсрочку.
+  details: Пусть нити не пропадут зря. Ответ ограничен сведениями, открытыми в
+    строках 2.80–109; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 109
+  requires_progress_book: 2
+  requires_progress_line: 109
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-80-109-q2
+  book: 2
+  anchor: lines-80-109
+  lines: 2.80–109
+  line_start: 80
+  line_end: 109
+  question: Кто выдал Пенелопу?
+  summary:
+    Антиной рассказал о замысле Пенелопы. Пенелопа использует погребальный
+    долг перед Лаэртом, чтобы отложить брак; раскрытие служанкой прекращает
+    отсрочку.
+  details: "Днём Пенелопа ткала большое полотно, а ночью при свете факелов
+    распускала сделанное. Пенелопа использует погребальный долг перед Лаэртом,
+    чтобы отложить брак; раскрытие служанкой прекращает отсрочку. Важно
+    сохранить оговорку этого места: История Пенелопы дана через враждебного
+    фокализатора; признание её ума соседствует с попыткой переложить
+    ответственность. Ответ ограничен сведениями, открытыми в строках 2.80–109;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 109
+  requires_progress_book: 2
+  requires_progress_line: 109
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-80-109-q3
+  book: 2
+  anchor: lines-80-109
+  lines: 2.80–109
+  line_start: 80
+  line_end: 109
+  question: Почему женихи терпели три года?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Виноваты не ахейские женихи, а твоя мать: она
+    знает хитрости лучше всех женщин."
+  details:
+    "Женихам она сказала: «Юноши, раз Одиссей погиб, подождите со свадьбой,
+    пока я не закончу саван для героя Лаэрта. Пенелопа использует погребальный
+    долг перед Лаэртом, чтобы отложить брак; раскрытие служанкой прекращает
+    отсрочку. Ответ ограничен сведениями, открытыми в строках 2.80–109;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 109
+  requires_progress_book: 2
+  requires_progress_line: 109
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-110-128-q1
+  book: 2
+  anchor: lines-110-128
+  lines: 2.110–128
+  line_start: 110
+  line_end: 128
+  question: Почему отец взрослой женщины участвует в браке?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Отошли мать и прикажи ей выйти за того, кого
+    выберет её отец и кто понравится ей самой.
+  details: Если она и дальше будет испытывать сыновей ахейцев, полагаясь на дары
+    Афины — искусство рук, рассудительность и хитрости, каких не знали даже
+    знаменитые женщины древности Тиро, Алкмена и прекрасновенчанная Микена, —
+    это не принесёт тебе пользы». Отказ Пенелопы выбирать мужа становится для
+    женихов оправданием оставаться в доме. Ответ ограничен сведениями, открытыми
+    в строках 2.110–128; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 128
+  requires_progress_book: 2
+  requires_progress_line: 128
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-110-128-q2
+  book: 2
+  anchor: lines-110-128
+  lines: 2.110–128
+  line_start: 110
+  line_end: 128
+  question: Что такое брачные дары?
+  summary: Если она и дальше будет испытывать сыновей ахейцев, полагаясь на дары
+    Афины — искусство рук, рассудительность и хитрости, каких не знали даже
+    знаменитые женщины древности Тиро, Алкмена и прекрасновенчанная Микена, —
+    это не принесёт тебе пользы».
+  details: "Даже обвиняя Пенелопу, Антиной признавал её превосходство. Отказ
+    Пенелопы выбирать мужа становится для женихов оправданием оставаться в доме.
+    Важно сохранить оговорку этого места: Соотношение выбора Пенелопы, воли
+    Икария и власти Телемаха является предметом спора персонажей и
+    исследователей. Ответ ограничен сведениями, открытыми в строках 2.110–128;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 128
+  requires_progress_book: 2
+  requires_progress_line: 128
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-110-128-q3
+  book: 2
+  anchor: lines-110-128
+  lines: 2.110–128
+  line_start: 110
+  line_end: 128
+  question: Почему Антиной хвалит ум Пенелопы?
+  summary: Отказ Пенелопы выбирать мужа становится для женихов оправданием
+    оставаться в доме.
+  details:
+    "Антиной завершил обвинение: «Вот наш ответ тебе и всем ахейцам. Важно
+    сохранить оговорку этого места: Соотношение выбора Пенелопы, воли Икария и
+    власти Телемаха является предметом спора персонажей и исследователей. Ответ
+    ограничен сведениями, открытыми в строках 2.110–128; дальнейшие эпизоды
+    здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 128
+  requires_progress_book: 2
+  requires_progress_line: 128
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-129-145-q1
+  book: 2
+  anchor: lines-129-145
+  lines: 2.129–145
+  line_start: 129
+  line_end: 145
+  question: Кто такие Эринии?
+  summary: Эринии — Силы, карающие тяжёлые нарушения родственных, клятвенных и
+    общественных обязательств.
+  details: "И люди осудят меня. Изгнание Пенелопы повлекло бы имущественные,
+    религиозные и общественные последствия; Телемах перекладывает окончательный
+    суд на богов. Важно сохранить оговорку этого места: Точный правовой механизм
+    возврата даров не реконструируется из одной речи. Ответ ограничен
+    сведениями, открытыми в строках 2.129–145; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 145
+  requires_progress_book: 2
+  requires_progress_line: 145
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-129-145-q2
+  book: 2
+  anchor: lines-129-145
+  lines: 2.129–145
+  line_start: 129
+  line_end: 145
+  question: Почему Икарий может требовать возмещение?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Если я сам отошлю мать, мне придётся вернуть
+    Икарию многое из полученного при браке.
+  details: Если же вам кажется выгоднее без возмещения разорять имущество одного
+    человека — продолжайте. Изгнание Пенелопы повлекло бы имущественные,
+    религиозные и общественные последствия; Телемах перекладывает окончательный
+    суд на богов. Ответ ограничен сведениями, открытыми в строках 2.129–145;
+    дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 145
+  requires_progress_book: 2
+  requires_progress_line: 145
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-129-145-q3
+  book: 2
+  anchor: lines-129-145
+  lines: 2.129–145
+  line_start: 129
+  line_end: 145
+  question: Это угроза или молитва?
+  summary:
+    "Это проклятие в форме религиозного обращения: Телемах призывает Эриний
+    наказать его, если он несправедливо изгонит мать, и тем превращает возможный
+    поступок в опасное нарушение."
+  details:
+    Мой отец где-то далеко — живой или мёртвый. Изгнание Пенелопы повлекло
+    бы имущественные, религиозные и общественные последствия; Телемах
+    перекладывает окончательный суд на богов. Ответ ограничен сведениями,
+    открытыми в строках 2.129–145; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 145
+  requires_progress_book: 2
+  requires_progress_line: 145
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-146-176-q1
+  book: 2
+  anchor: lines-146-176
+  lines: 2.146–176
+  line_start: 146
+  line_end: 176
+  question: Почему полёт вправо важен?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Они расцарапали когтями щёки и шеи — то ли друг
+    другу, то ли в образе, намеренно оставленном не вполне ясным, — а затем
+    умчались вправо над домами и городом.
+  details: Среди ровесников он лучше всех распознавал полёт птиц и объяснял
+    знамения. Призыв Телемаха к Зевсу получает немедленный знак; прорицатель
+    связывает его с давним предсказанием. Ответ ограничен сведениями, открытыми
+    в строках 2.146–176; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 176
+  requires_progress_book: 2
+  requires_progress_line: 176
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-146-176-q2
+  book: 2
+  anchor: lines-146-176
+  lines: 2.146–176
+  line_start: 146
+  line_end: 176
+  question: Что именно делают орлы?
+  summary:
+    Два орла летят рядом справа, кружат над собранием, рвут друг другу щёки
+    и шеи когтями, а затем уходят вправо над городом; именно эта
+    последовательность требует толкования.
+  details: "Сначала они летели рядом, широко раскинув крылья и скользя по ветру.
+    Призыв Телемаха к Зевсу получает немедленный знак; прорицатель связывает его
+    с давним предсказанием. Важно сохранить оговорку этого места: Движение
+    когтей и анатомические слова допускают более одной зрительной интерпретации;
+    божественное происхождение не устраняет человеческого спора о смысле. Ответ
+    ограничен сведениями, открытыми в строках 2.146–176; дальнейшие эпизоды
+    здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 176
+  requires_progress_book: 2
+  requires_progress_line: 176
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-146-176-q3
+  book: 2
+  anchor: lines-146-176
+  lines: 2.146–176
+  line_start: 146
+  line_end: 176
+  question: Почему Галиферс уверен?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Тогда заговорил старый герой Галиферс, сын
+    Мастора.
+  details:
+    "Галиферс напомнил своё давнее предсказание: когда аргивяне отплывали к
+    Трое, он сказал Одиссею, что тот претерпит много бед, потеряет товарищей и
+    на двадцатом году вернётся никем не узнанным. Призыв Телемаха к Зевсу
+    получает немедленный знак; прорицатель связывает его с давним предсказанием.
+    Ответ ограничен сведениями, открытыми в строках 2.146–176; дальнейшие
+    эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 176
+  requires_progress_book: 2
+  requires_progress_line: 176
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-177-207-q1
+  book: 2
+  anchor: lines-177-207
+  lines: 2.177–207
+  line_start: 177
+  line_end: 207
+  question: Можно ли спорить с прорицателем?
+  summary: "По сведениям, доступным в этой точке рассказа: Мы никого не боимся —
+    ни многословного Телемаха, ни твоего прорицания, старик."
+  details: Оно не исполнится и сделает тебя только ненавистнее. Отказ признать
+    знак позволяет женихам продолжить прежнее поведение; угроза штрафа пытается
+    подавить несогласный голос. Ответ ограничен сведениями, открытыми в строках
+    2.177–207; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 207
+  requires_progress_book: 2
+  requires_progress_line: 207
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-177-207-q2
+  book: 2
+  anchor: lines-177-207
+  lines: 2.177–207
+  line_start: 177
+  line_end: 207
+  question: Кто назначает штраф?
+  summary:
+    Евримах пригрозил Галиферсу тяжёлым штрафом, если тот будет возбуждать
+    гнев молодого человека.
+  details: "Телемаху он повторил требование: отправить мать к Икарию, чтобы её
+    родные устроили свадьбу и дали дары, подобающие любимой дочери. Отказ
+    признать знак позволяет женихам продолжить прежнее поведение; угроза штрафа
+    пытается подавить несогласный голос. Важно сохранить оговорку этого места:
+    Евримах рассуждает о множестве незначащих птиц правдоподобно, хотя
+    повествователь уже назвал Зевса отправителем этих орлов. Ответ ограничен
+    сведениями, открытыми в строках 2.177–207; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 207
+  requires_progress_book: 2
+  requires_progress_line: 207
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-177-207-q3
+  book: 2
+  anchor: lines-177-207
+  lines: 2.177–207
+  line_start: 177
+  line_end: 207
+  question: Верит ли Евримах в знамения вообще?
+  summary: "По сведениям, доступным в этой точке рассказа: Евримах, сын Полиба,
+    ответил насмешкой и угрозой: «Старик, иди домой и предсказывай собственным
+    детям, чтобы с ними не случилось беды."
+  details:
+    "Евримах пригрозил Галиферсу тяжёлым штрафом, если тот будет возбуждать
+    гнев молодого человека. Отказ признать знак позволяет женихам продолжить
+    прежнее поведение; угроза штрафа пытается подавить несогласный голос. Важно
+    сохранить оговорку этого места: Евримах рассуждает о множестве незначащих
+    птиц правдоподобно, хотя повествователь уже назвал Зевса отправителем этих
+    орлов. Ответ ограничен сведениями, открытыми в строках 2.177–207; дальнейшие
+    эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 207
+  requires_progress_book: 2
+  requires_progress_line: 207
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-208-223-q1
+  book: 2
+  anchor: lines-208-223
+  lines: 2.208–223
+  line_start: 208
+  line_end: 223
+  question: Почему именно Пилос и Спарта?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Он выдвинул конкретное требование: дать ему
+    быстрый корабль и двадцать спутников для пути в Пилос и Спарту."
+  details: Телемах хотел узнать о возвращении давно отсутствующего отца — от
+    смертного очевидца или из молвы, которую посылает Зевс и которая разносит
+    вести между людьми. Неудача публичной просьбы о защите ведёт к
+    самостоятельному поиску знания; результат определит судьбу дома и брак
+    матери. Ответ ограничен сведениями, открытыми в строках 2.208–223;
+    дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 223
+  requires_progress_book: 2
+  requires_progress_line: 223
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-208-223-q2
+  book: 2
+  anchor: lines-208-223
+  lines: 2.208–223
+  line_start: 208
+  line_end: 223
+  question: Можно ли хоронить человека без тела?
+  summary: "Да: можно совершить поминальные обряды и насыпать пустой
+    курган-кенотаф, если тело недоступно; такой памятник даёт умершему
+    общественную честь и сохраняет имя."
+  details: "Боги и все ахейцы уже знают, что происходит». Неудача публичной
+    просьбы о защите ведёт к самостоятельному поиску знания; результат определит
+    судьбу дома и брак матери. Важно сохранить оговорку этого места: Молва может
+    быть человеческой вестью, получающей божественный авторитет, а не отдельным
+    оракулом. Ответ ограничен сведениями, открытыми в строках 2.208–223;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 223
+  requires_progress_book: 2
+  requires_progress_line: 223
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-208-223-q3
+  book: 2
+  anchor: lines-208-223
+  lines: 2.208–223
+  line_start: 208
+  line_end: 223
+  question: Почему он готов ждать ещё год?
+  summary: Если свидетели сообщат, что Одиссей жив, Телемах готов терпеть ещё
+    двенадцать месяцев; если подтвердится смерть, он совершит погребальные
+    обряды и позволит матери вступить в новый брак.
+  details:
+    Боги и все ахейцы уже знают, что происходит». Неудача публичной просьбы
+    о защите ведёт к самостоятельному поиску знания; результат определит судьбу
+    дома и брак матери. Ответ ограничен сведениями, открытыми в строках
+    2.208–223; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 223
+  requires_progress_book: 2
+  requires_progress_line: 223
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-224-259-q1
+  book: 2
+  anchor: lines-224-259
+  lines: 2.224–259
+  line_start: 224
+  line_end: 259
+  question: Это настоящий Ментор или Афина?
+  summary: "По сведениям, доступным в этой точке рассказа: Поднялся Ментор,
+    товарищ Одиссея."
+  details: "Ментор упрекнул не только женихов, но весь народ: «Пусть отныне ни
+    один скипетроносный царь не будет мягким, добрым и справедливым. Большинство
+    не выступает против меньшинства; собрание заканчивается без решения, и
+    женихи возвращаются к пиру. Важно сохранить оговорку этого места: Ментор
+    отделяет виновность женихов от соучастия молчащего народа; поэма не даёт
+    институционального механизма принуждения. Ответ ограничен сведениями,
+    открытыми в строках 2.224–259; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 259
+  requires_progress_book: 2
+  requires_progress_line: 259
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-224-259-q2
+  book: 2
+  anchor: lines-224-259
+  lines: 2.224–259
+  line_start: 224
+  line_end: 259
+  question: Почему большинство бездействует?
+  summary:
+    Большинство не выступает против меньшинства; собрание заканчивается без
+    решения, и женихи возвращаются к пиру.
+  details:
+    Уходя к Трое, Одиссей доверил ему весь дом, велел домочадцам слушаться
+    старшего друга и поручил хранить имущество. Ответ ограничен сведениями,
+    открытыми в строках 2.224–259; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 259
+  requires_progress_book: 2
+  requires_progress_line: 259
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-224-259-q3
+  book: 2
+  anchor: lines-224-259
+  lines: 2.224–259
+  line_start: 224
+  line_end: 259
+  question: Кто вправе распустить собрание?
+  summary: "Леокрит, сын Эвенора, ответил, что собрать людей против женихов
+    невозможно: «Даже если бы сам Одиссей вернулся и захотел выгнать нас с пира,
+    Пенелопа не обрадовалась бы его приходу."
+  details: "Собрание поспешно распалось: люди ушли по домам, а женихи снова
+    направились в дом Одиссея. Большинство не выступает против меньшинства;
+    собрание заканчивается без решения, и женихи возвращаются к пиру. Важно
+    сохранить оговорку этого места: Ментор отделяет виновность женихов от
+    соучастия молчащего народа; поэма не даёт институционального механизма
+    принуждения. Ответ ограничен сведениями, открытыми в строках 2.224–259;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 259
+  requires_progress_book: 2
+  requires_progress_line: 259
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-260-297-q1
+  book: 2
+  anchor: lines-260-297
+  lines: 2.260–297
+  line_start: 260
+  line_end: 297
+  question: Почему нужно омыть руки?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Он омыл руки в серой воде и помолился Афине:
+    «Услышь меня, божество, которое вчера пришло в наш дом и велело плыть по
+    туманному морю за вестью об отце."
+  details: Ахейцы препятствуют этому, а больше всех — жестокие и надменные
+    женихи». После политического тупика молитва получает практический ответ;
+    божественный план требует человеческой подготовки. Ответ ограничен
+    сведениями, открытыми в строках 2.260–297; дальнейшие эпизоды здесь не
+    привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 297
+  requires_progress_book: 2
+  requires_progress_line: 297
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-260-297-q2
+  book: 2
+  anchor: lines-260-297
+  lines: 2.260–297
+  line_start: 260
+  line_end: 297
+  question: Как Афина найдёт добровольцев?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Афина тем временем соберёт добровольцев,
+    выберет лучший из новых и старых кораблей Итаки, оснастит его и спустит на
+    широкое море.
+  details: "Афина приблизилась в облике Ментора, повторив и его внешность, и
+    голос: «Телемах, ты не будешь ни трусливым, ни неразумным, если в тебе есть
+    хоть часть доблестного духа отца. После политического тупика молитва
+    получает практический ответ; божественный план требует человеческой
+    подготовки. Ответ ограничен сведениями, открытыми в строках 2.260–297;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 297
+  requires_progress_book: 2
+  requires_progress_line: 297
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-260-297-q3
+  book: 2
+  anchor: lines-260-297
+  lines: 2.260–297
+  line_start: 260
+  line_end: 297
+  question: Почему сыновья редко равны отцам?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Если же ты не сын Одиссея и Пенелопы, я не
+    надеюсь, что желание исполнится: сыновья редко равны отцам, чаще хуже и лишь
+    немногие лучше."
+  details: Но мудрость Одиссея не покинула тебя полностью — значит, есть надежда
+    завершить дело». После политического тупика молитва получает практический
+    ответ; божественный план требует человеческой подготовки. Ответ ограничен
+    сведениями, открытыми в строках 2.260–297; дальнейшие эпизоды здесь не
+    привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 297
+  requires_progress_book: 2
+  requires_progress_line: 297
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-298-336-q1
+  book: 2
+  anchor: lines-298-336
+  lines: 2.298–336
+  line_start: 298
+  line_end: 336
+  question: Почему Антиной берёт его за руку?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Антиной со смехом подошёл к юноше, взял его за
+    руку и заговорил так, будто публичной ссоры не было.
+  details: "Телемах выдернул руку: «Антиной, я не могу спокойно пировать среди
+    вашей наглости. Публичное взросление Телемаха меняет его ответ; насмешки
+    женихов переходят от недоверия к разделу имущества после возможной гибели.
+    Ответ ограничен сведениями, открытыми в строках 2.298–336; дальнейшие
+    эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 336
+  requires_progress_book: 2
+  requires_progress_line: 336
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-298-336-q2
+  book: 2
+  anchor: lines-298-336
+  lines: 2.298–336
+  line_start: 298
+  line_end: 336
+  question: Откуда взялся мотив яда?
+  summary: "Мотив входит в вымышленную биографию Мента: под этим предлогом Афина
+    объясняет морское путешествие к Эфире и одновременно делает маску торговца
+    правдоподобной."
+  details: Во дворе надменные женихи свежевали коз и опаливали свиные туши.
+    Публичное взросление Телемаха меняет его ответ; насмешки женихов переходят
+    от недоверия к разделу имущества после возможной гибели. Ответ ограничен
+    сведениями, открытыми в строках 2.298–336; дальнейшие эпизоды здесь не
+    привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 336
+  requires_progress_book: 2
+  requires_progress_line: 336
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-298-336-q3
+  book: 2
+  anchor: lines-298-336
+  lines: 2.298–336
+  line_start: 298
+  line_end: 336
+  question: Кому достанется дом?
+  summary: Женихи предполагают, что после гибели Телемаха разделят его движимое
+    имущество и оставят дом тому, кто женится на Пенелопе; это их план, а не
+    признанное законное решение.
+  details: Во дворе надменные женихи свежевали коз и опаливали свиные туши.
+    Публичное взросление Телемаха меняет его ответ; насмешки женихов переходят
+    от недоверия к разделу имущества после возможной гибели. Ответ ограничен
+    сведениями, открытыми в строках 2.298–336; дальнейшие эпизоды здесь не
+    привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 336
+  requires_progress_book: 2
+  requires_progress_line: 336
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-337-360-q1
+  book: 2
+  anchor: lines-337-360
+  lines: 2.337–360
+  line_start: 337
+  line_end: 360
+  question: Почему вино хранят неразбавленным?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Вдоль стены тянулся ряд больших сосудов со
+    старым сладким неразбавленным вином.
+  details: Днём и ночью кладовую охраняла разумная ключница Евриклея, дочь Опа,
+    сына Писенора. Сохранённые ресурсы дома делают путь возможным; тайна
+    защищает план от женихов и от немедленного вмешательства Пенелопы. Ответ
+    ограничен сведениями, открытыми в строках 2.337–360; дальнейшие эпизоды
+    здесь не привлекаются.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 360
+  requires_progress_book: 2
+  requires_progress_line: 360
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-337-360-q2
+  book: 2
+  anchor: lines-337-360
+  lines: 2.337–360
+  line_start: 337
+  line_end: 360
+  question: Сколько людей кормят эти запасы?
+  summary: Там лежали груды золота и бронзы, в сундуках хранилась одежда, стояли
+    запасы душистого масла.
+  details:
+    Вечером, когда мать поднимется в верхнюю комнату и станет готовиться ко
+    сну, запасы перенесут на корабль. Сохранённые ресурсы дома делают путь
+    возможным; тайна защищает план от женихов и от немедленного вмешательства
+    Пенелопы. Ответ ограничен сведениями, открытыми в строках 2.337–360;
+    дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 360
+  requires_progress_book: 2
+  requires_progress_line: 360
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-337-360-q3
+  book: 2
+  anchor: lines-337-360
+  lines: 2.337–360
+  line_start: 337
+  line_end: 360
+  question: Почему Евриклея управляет кладовой?
+  summary:
+    Поэма не сводит это место к одной бесспорной причине. Доверенная власть
+    Евриклеи над кладовой существует внутри системы рабовладения.
+  details: "Телемах спустился в высокую кладовую отца. Сохранённые ресурсы дома
+    делают путь возможным; тайна защищает план от женихов и от немедленного
+    вмешательства Пенелопы. Важно сохранить оговорку этого места: Доверенная
+    власть Евриклеи над кладовой существует внутри системы рабовладения. Ответ
+    ограничен сведениями, открытыми в строках 2.337–360; дальнейшие эпизоды
+    здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 360
+  requires_progress_book: 2
+  requires_progress_line: 360
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-361-381-q1
+  book: 2
+  anchor: lines-361-381
+  lines: 2.361–381
+  line_start: 361
+  line_end: 381
+  question: Почему ждать одиннадцать или двенадцать дней?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Но поклянись ничего не говорить матери, пока не
+    пройдёт одиннадцать или двенадцать дней — если только она сама не заметит
+    моего отсутствия или не услышит об отъезде.
+  details:
+    Я не хочу, чтобы она плакала и портила слезами прекрасное лицо». Страх
+    за единственного сына сталкивается с религиозно закреплённой тайной; припасы
+    готовятся после клятвы. Ответ ограничен сведениями, открытыми в строках
+    2.361–381; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 381
+  requires_progress_book: 2
+  requires_progress_line: 381
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-361-381-q2
+  book: 2
+  anchor: lines-361-381
+  lines: 2.361–381
+  line_start: 361
+  line_end: 381
+  question: Можно ли нарушить такую клятву?
+  summary: "По сведениям, доступным в этой точке рассказа: Евриклея принесла
+    великую клятву богами."
+  details: Исполнив обряд клятвы, она налила вино в сосуды и насыпала муку в
+    сшитые мешки. Страх за единственного сына сталкивается с религиозно
+    закреплённой тайной; припасы готовятся после клятвы. Ответ ограничен
+    сведениями, открытыми в строках 2.361–381; дальнейшие эпизоды здесь не
+    привлекаются.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 381
+  requires_progress_book: 2
+  requires_progress_line: 381
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-361-381-q3
+  book: 2
+  anchor: lines-361-381
+  lines: 2.361–381
+  line_start: 361
+  line_end: 381
+  question: Зачем скрывать путь от Пенелопы?
+  summary:
+    Телемах стремится избежать немедленного запрета и заранее оградить мать
+    от тревоги, пока исход плавания неизвестен.
+  details: "Тайна одновременно показывает его новую самостоятельность и
+    ограниченность этой самостоятельности: для пути ему всё ещё нужны помощь
+    Афины, корабль, команда, припасы Евриклеи и её клятва молчать. Мотив не
+    означает разрыва с матерью."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 381
+  requires_progress_book: 2
+  requires_progress_line: 381
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-382-387-q1
+  book: 2
+  anchor: lines-382-387
+  lines: 2.382–387
+  line_start: 382
+  line_end: 387
+  question: Знают ли добровольцы, кто их позвал?
+  summary: "По сведениям, доступным в этой точке рассказа: В пределах мира поэмы
+    помощь Афины не отменяет человеческих решений: люди добровольно собираются,
+    а владелец добровольно даёт судно."
+  details:
+    "Божественная мимикрия обеспечивает доверие и быстро превращает план в
+    материальную готовность. Важно сохранить оговорку этого места: Люди
+    действуют добровольно, хотя обращается к ним богиня в чужом облике. Ответ
+    ограничен сведениями, открытыми в строках 2.382–387; дальнейшие эпизоды
+    здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 387
+  requires_progress_book: 2
+  requires_progress_line: 387
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-382-387-q2
+  book: 2
+  anchor: lines-382-387
+  lines: 2.382–387
+  line_start: 382
+  line_end: 387
+  question: Почему Ноэмон отдаёт корабль?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Затем богиня попросила быстроходный корабль у
+    Ноэмона, достойного сына Фрония.
+  details:
+    Приняв облик Телемаха, она обошла город, подходила к выбранным людям и
+    велела вечером собраться у быстрого корабля. Божественная мимикрия
+    обеспечивает доверие и быстро превращает план в материальную готовность.
+    Ответ ограничен сведениями, открытыми в строках 2.382–387; дальнейшие
+    эпизоды здесь не привлекаются.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 387
+  requires_progress_book: 2
+  requires_progress_line: 387
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-382-387-q3
+  book: 2
+  anchor: lines-382-387
+  lines: 2.382–387
+  line_start: 382
+  line_end: 387
+  question: Где настоящий Телемах?
+  summary:
+    Приняв облик Телемаха, она обошла город, подходила к выбранным людям и
+    велела вечером собраться у быстрого корабля.
+  details: "Так команда получила приглашение от лица, которому доверяла.
+    Божественная мимикрия обеспечивает доверие и быстро превращает план в
+    материальную готовность. Важно сохранить оговорку этого места: Люди
+    действуют добровольно, хотя обращается к ним богиня в чужом облике. Ответ
+    ограничен сведениями, открытыми в строках 2.382–387; дальнейшие эпизоды
+    здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 387
+  requires_progress_book: 2
+  requires_progress_line: 387
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-388-404-q1
+  book: 2
+  anchor: lines-388-404
+  lines: 2.388–404
+  line_start: 388
+  line_end: 404
+  question: Почему чаши падают из рук?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Она пролила на женихов сладкий сон, затуманила
+    их хмель и выбила чаши из рук.
+  details:
+    "Они разошлись по городу спать: тяжесть быстро опускалась на веки. Сон
+    женихов открывает безопасное окно для тайного выхода; команда уже ждёт
+    приказа. Ответ ограничен сведениями, открытыми в строках 2.388–404;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 404
+  requires_progress_book: 2
+  requires_progress_line: 404
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-388-404-q2
+  book: 2
+  anchor: lines-388-404
+  lines: 2.388–404
+  line_start: 388
+  line_end: 404
+  question: Кто оснастил корабль?
+  summary: Афина спустила быстрый корабль на море, уложила на нём все снасти,
+    какие полагаются хорошо оснащённому судну, и поставила его у края гавани.
+  details:
+    "Там собрались участники пути, и богиня придала каждому решимости. Сон
+    женихов открывает безопасное окно для тайного выхода; команда уже ждёт
+    приказа. Важно сохранить оговорку этого места: Опьянение и божественный сон
+    действуют совместно; повествователь прямо приписывает решающее вмешательство
+    Афине. Ответ ограничен сведениями, открытыми в строках 2.388–404; дальнейшие
+    эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 404
+  requires_progress_book: 2
+  requires_progress_line: 404
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-388-404-q3
+  book: 2
+  anchor: lines-388-404
+  lines: 2.388–404
+  line_start: 388
+  line_end: 404
+  question: Видит ли Телемах богиню?
+  summary:
+    "По сведениям, доступным в этой точке рассказа: В облике Ментора богиня
+    позвала Телемаха из хорошо устроенного дома: «Твои товарищи уже сидят у
+    вёсел и ждут твоего приказа."
+  details: Там собрались участники пути, и богиня придала каждому решимости. Сон
+    женихов открывает безопасное окно для тайного выхода; команда уже ждёт
+    приказа. Ответ ограничен сведениями, открытыми в строках 2.388–404;
+    дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 404
+  requires_progress_book: 2
+  requires_progress_line: 404
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-405-434-q1
+  book: 2
+  anchor: lines-405-434
+  lines: 2.405–434
+  line_start: 405
+  line_end: 434
+  question: Как ставят мачту и парус?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Они подняли еловую мачту, поставили её в
+    гнездо, закрепили передними канатами и вытянули белый парус ремнями из
+    крученой бычьей кожи.
+  details: Ветер наполнил середину паруса. Тайная подготовка завершается
+    отплытием; попутный ветер Афины соединяет божественную помощь с работой
+    мореходов. Ответ ограничен сведениями, открытыми в строках 2.405–434;
+    дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 434
+  requires_progress_book: 2
+  requires_progress_line: 434
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-405-434-q2
+  book: 2
+  anchor: lines-405-434
+  lines: 2.405–434
+  line_start: 405
+  line_end: 434
+  question: Почему путь начинается с возлияния?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Тёмная волна громко пела у форштевня, пока
+    корабль бежал по воде и совершал путь.
+  details:
+    Когда снасти были закреплены, путники наполнили чаши вином и совершили
+    возлияние вечным бессмертным богам — прежде всего сероглазой дочери Зевса.
+    Тайная подготовка завершается отплытием; попутный ветер Афины соединяет
+    божественную помощь с работой мореходов. Ответ ограничен сведениями,
+    открытыми в строках 2.405–434; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 2
+  reveal_at_line: 434
+  requires_progress_book: 2
+  requires_progress_line: 434
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-02-lines-405-434-q3
+  book: 2
+  anchor: lines-405-434
+  lines: 2.405–434
+  line_start: 405
+  line_end: 434
+  question: Кто остаётся в доме в неведении?
+  summary: "Телемах сказал: «Друзья, принесём запасы: всё собрано в доме."
+  details: "Мать ничего не знает, остальные зависимые женщины тоже; только одна
+    услышала мой замысел». Тайная подготовка завершается отплытием; попутный
+    ветер Афины соединяет божественную помощь с работой мореходов. Важно
+    сохранить оговорку этого места: Порядок действий судна описывает мир поэмы;
+    точную реконструкцию корабля нельзя выводить только из этой сцены. Ответ
+    ограничен сведениями, открытыми в строках 2.405–434; дальнейшие эпизоды
+    здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 2
+  reveal_at_line: 434
+  requires_progress_book: 2
+  requires_progress_line: 434
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001

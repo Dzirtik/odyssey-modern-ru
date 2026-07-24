@@ -1,0 +1,1011 @@
+- answer_id: reader-05-lines-1-21-q1
+  book: 5
+  anchor: lines-1-21
+  lines: 5.1–21
+  line_start: 1
+  line_end: 21
+  question: Почему совет повторяется?
+  summary: "Второй совет возвращает повествование от Телемаха к Одиссею и
+    переводит решение первой песни в действие: теперь Гермес должен передать
+    Калипсо приказ отпустить героя."
+  details: "Афина напомнила о страданиях Одиссея: пусть впредь ни один
+    скипетроносный царь не будет мягким и справедливым, если народ так быстро
+    забывает правителя, который относился к нему как отец. Параллель отца и сына
+    возвращает действие от Телемахии к главному герою. Ответ ограничен
+    сведениями, открытыми в строках 5.1–21; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD + MODERN_HYPOTHESIS
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 21
+  requires_progress_book: 5
+  requires_progress_line: 21
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-1-21-q2
+  book: 5
+  anchor: lines-1-21
+  lines: 5.1–21
+  line_start: 1
+  line_end: 21
+  question: Знают ли боги о засаде?
+  summary: Да. Афина прямо напоминает Зевсу, что женихи вышли в море и устроили
+    засаду Телемаху на пути домой.
+  details: "Афина напомнила о страданиях Одиссея: пусть впредь ни один
+    скипетроносный царь не будет мягким и справедливым, если народ так быстро
+    забывает правителя, который относился к нему как отец. Параллель отца и сына
+    возвращает действие от Телемахии к главному герою. Ответ ограничен
+    сведениями, открытыми в строках 5.1–21; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 21
+  requires_progress_book: 5
+  requires_progress_line: 21
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-22-42-q1
+  book: 5
+  anchor: lines-22-42
+  lines: 5.22–42
+  line_start: 22
+  line_end: 42
+  question: Кто такие феаки?
+  summary: Феаки — Близкий богам народ искусных мореходов, живущий на Схерии и
+    обеспечивающий безопасное возвращение гостя.
+  details: "Так ему назначено увидеть близких, высокий дом и родную землю.
+    Божественное решение определяет пределы пути, но оставляет Одиссею
+    самостоятельное страдание и действие. Важно сохранить оговорку этого места:
+    Слушатель знает план подробнее героя; это не основание переносить знание в
+    его мысли. Ответ ограничен сведениями, открытыми в строках 5.22–42;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 5
+  reveal_at_line: 42
+  requires_progress_book: 5
+  requires_progress_line: 42
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-22-42-q2
+  book: 5
+  anchor: lines-22-42
+  lines: 5.22–42
+  line_start: 22
+  line_end: 42
+  question: Почему боги не перевозят его сами?
+  summary: "Таков объявленный Зевсом порядок возвращения: Одиссей сам строит
+    средство плавания и достигает феаков, а они доставляют гостя домой;
+    отдельной причины такого ограничения поэма не даёт."
+  details: Она достаточно сильна и разумна, чтобы благополучно привести Телемаха
+    домой, а корабль преследователей вернуть ни с чем. Божественное решение
+    определяет пределы пути, но оставляет Одиссею самостоятельное страдание и
+    действие. Ответ ограничен сведениями, открытыми в строках 5.22–42;
+    дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 42
+  requires_progress_book: 5
+  requires_progress_line: 42
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-43-68-q1
+  book: 5
+  anchor: lines-43-68
+  lines: 5.43–68
+  line_start: 43
+  line_end: 68
+  question: Где Огигия?
+  summary: Огигия — удалённый мифический остров Калипсо; поэма подчёркивает его
+    изоляцию, но не даёт координат, позволяющих уверенно поместить его на
+    современную карту.
+  details: "Он привязал к ногам бессмертные золотые сандалии, которые несут его
+    над морем и землёй быстро, как ветер, и взял жезл: им он смыкает людям глаза
+    либо пробуждает спящих. Космическая скорость вестника подчёркивает
+    удалённость острова от человеческих городов. Важно сохранить оговорку этого
+    места: Сравнение с птицей описывает движение бога, не его превращение. Ответ
+    ограничен сведениями, открытыми в строках 5.43–68; дальнейшие эпизоды здесь
+    не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 5
+  reveal_at_line: 68
+  requires_progress_book: 5
+  requires_progress_line: 68
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-43-68-q2
+  book: 5
+  anchor: lines-43-68
+  lines: 5.43–68
+  line_start: 43
+  line_end: 68
+  question: Почему Калипсо ткёт?
+  summary:
+    Ткачество показывает обычную деятельность хозяйки божественного дома и
+    делает пещеру обжитым пространством; отдельного сюжетного мотива для работы
+    поэма не сообщает.
+  details: На очаге горел большой огонь; запах кедра и можжевельника
+    распространялся вокруг. Космическая скорость вестника подчёркивает
+    удалённость острова от человеческих городов. Ответ ограничен сведениями,
+    открытыми в строках 5.43–68; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 68
+  requires_progress_book: 5
+  requires_progress_line: 68
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-69-91-q1
+  book: 5
+  anchor: lines-69-91
+  lines: 5.69–91
+  line_start: 69
+  line_end: 91
+  question: Почему Одиссей не в пещере?
+  summary: "Он сидит на берегу, плачет и смотрит в сторону моря: близость к дому
+    Калипсо не означает согласия остаться, а берег выражает его постоянное
+    стремление уйти."
+  details: Пещеру окружала роща ольхи, тополя и пахучего кипариса. Красота,
+    способная восхитить бога, не делает плен желанным для смертного. Ответ
+    ограничен сведениями, открытыми в строках 5.69–91; дальнейшие эпизоды здесь
+    не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 91
+  requires_progress_book: 5
+  requires_progress_line: 91
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-69-91-q2
+  book: 5
+  anchor: lines-69-91
+  lines: 5.69–91
+  line_start: 69
+  line_end: 91
+  question: Может ли он уйти?
+  summary: "Пока нет: у Одиссея нет корабля и команды, а Калипсо удерживает его;
+    после приказа Зевса она должна дать материалы и припасы, но строить и плыть
+    он будет сам."
+  details: В ветвях гнездились совы, соколы и морские птицы; у входа тянулась
+    виноградная лоза с тяжёлыми гроздьями. Красота, способная восхитить бога, не
+    делает плен желанным для смертного. Ответ ограничен сведениями, открытыми в
+    строках 5.69–91; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 91
+  requires_progress_book: 5
+  requires_progress_line: 91
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-92-119-q1
+  book: 5
+  anchor: lines-92-119
+  lines: 5.92–119
+  line_start: 92
+  line_end: 119
+  question: Почему Гермес летит неохотно?
+  summary:
+    Поэма не сводит это место к одной бесспорной причине. Версия Гермеса о
+    прежней буре формулируется кратко и не заменяет более поздний рассказ героя.
+  details: "Она обещала исполнить его просьбу, если это в её силах, а прежде
+    поставила перед ним амброзию и смешала красный нектар. Гостевой приём бога
+    предшествует сообщению, которое ограничивает власть хозяйки. Важно сохранить
+    оговорку этого места: Версия Гермеса о прежней буре формулируется кратко и
+    не заменяет более поздний рассказ героя. Ответ ограничен сведениями,
+    открытыми в строках 5.92–119; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 5
+  reveal_at_line: 119
+  requires_progress_book: 5
+  requires_progress_line: 119
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-92-119-q2
+  book: 5
+  anchor: lines-92-119
+  lines: 5.92–119
+  line_start: 92
+  line_end: 119
+  question: Может ли Калипсо отказаться?
+  summary:
+    "По сведениям, доступным в этой точке рассказа: Калипсо усадила Гермеса
+    на сияющее кресло и спросила, зачем он пришёл: гость почётен и дорог, но
+    появляется редко."
+  details: Во время возвращения его товарищи погибли, а ветер и волны принесли
+    самого Одиссея к Калипсо. Гостевой приём бога предшествует сообщению,
+    которое ограничивает власть хозяйки. Ответ ограничен сведениями, открытыми в
+    строках 5.92–119; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 119
+  requires_progress_book: 5
+  requires_progress_line: 119
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-120-147-q1
+  book: 5
+  anchor: lines-120-147
+  lines: 5.120–147
+  line_start: 120
+  line_end: 147
+  question: Кто Орион и Иасион?
+  summary: Заря любила Ориона, но Артемида убила его на Ортигии. Примеры Зари и
+    Деметры обосновывают протест; угроза гнева Зевса завершает спор.
+  details: "Деметра соединилась с Иасионом на трижды вспаханном поле, но Зевс
+    поразил его молнией. Примеры Зари и Деметры обосновывают протест; угроза
+    гнева Зевса завершает спор. Важно сохранить оговорку этого места:
+    Справедливость жалобы Калипсо не отменяет отсутствия согласия удерживаемого
+    Одиссея. Ответ ограничен сведениями, открытыми в строках 5.120–147;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 5
+  reveal_at_line: 147
+  requires_progress_book: 5
+  requires_progress_line: 147
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-120-147-q2
+  book: 5
+  anchor: lines-120-147
+  lines: 5.120–147
+  line_start: 120
+  line_end: 147
+  question: Почему богини не свободны в выборе?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Калипсо вздрогнула и обвинила богов в
+    жестокости и зависти к богиням, открыто выбирающим смертных мужчин.
+  details: Заря любила Ориона, но Артемида убила его на Ортигии. Примеры Зари и
+    Деметры обосновывают протест; угроза гнева Зевса завершает спор. Ответ
+    ограничен сведениями, открытыми в строках 5.120–147; дальнейшие эпизоды
+    здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 147
+  requires_progress_book: 5
+  requires_progress_line: 147
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-148-170-q1
+  book: 5
+  anchor: lines-148-170
+  lines: 5.148–170
+  line_start: 148
+  line_end: 170
+  question: Почему Одиссей не верит?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Калипсо нашла Одиссея у моря.
+  details: Его глаза не высыхали; сладость жизни уходила в тоске по возвращению.
+    Приказ богов становится практической задачей; отсутствие судна требует
+    ремесленной работы героя. Ответ ограничен сведениями, открытыми в строках
+    5.148–170; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 170
+  requires_progress_book: 5
+  requires_progress_line: 170
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-148-170-q2
+  book: 5
+  anchor: lines-148-170
+  lines: 5.148–170
+  line_start: 148
+  line_end: 170
+  question: Что именно он должен построить?
+  summary: Он строит не полноценный военный корабль, а большой связанный плот с
+    настилом, бортами, мачтой, парусом и рулевым веслом, рассчитанный на одного
+    морехода и припасы.
+  details:
+    "Его глаза не высыхали; сладость жизни уходила в тоске по возвращению.
+    Приказ богов становится практической задачей; отсутствие судна требует
+    ремесленной работы героя. Важно сохранить оговорку этого места: Ночное
+    принуждение названо прямо; красота острова не означает добровольного союза.
+    Ответ ограничен сведениями, открытыми в строках 5.148–170; дальнейшие
+    эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 5
+  reveal_at_line: 170
+  requires_progress_book: 5
+  requires_progress_line: 170
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-171-191-q1
+  book: 5
+  anchor: lines-171-191
+  lines: 5.171–191
+  line_start: 171
+  line_end: 191
+  question: Почему Стикс страшен богам?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Она призвала в свидетели Землю, широкое Небо и
+    подземные воды Стикса — самую страшную для богов клятву.
+  details:
+    Калипсо не замышляет беды и советует так, как советовала бы самой себе
+    в нужде. Опыт угроз превращает подозрение в условие согласия; божественная
+    клятва создаёт доверие. Ответ ограничен сведениями, открытыми в строках
+    5.171–191; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 191
+  requires_progress_book: 5
+  requires_progress_line: 191
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-171-191-q2
+  book: 5
+  anchor: lines-171-191
+  lines: 5.171–191
+  line_start: 171
+  line_end: 191
+  question: Может ли бог нарушить клятву?
+  summary:
+    "По сведениям, доступным в этой точке рассказа: Герой отказался ступать
+    на него без великой клятвы, что Калипсо не готовит нового вреда."
+  details:
+    Она призвала в свидетели Землю, широкое Небо и подземные воды Стикса —
+    самую страшную для богов клятву. Опыт угроз превращает подозрение в условие
+    согласия; божественная клятва создаёт доверие. Ответ ограничен сведениями,
+    открытыми в строках 5.171–191; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 191
+  requires_progress_book: 5
+  requires_progress_line: 191
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-192-226-q1
+  book: 5
+  anchor: lines-192-226
+  lines: 5.192–226
+  line_start: 192
+  line_end: 226
+  question: Почему он предпочитает смертность?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Перед смертным поставили обычную пищу и питьё,
+    перед богиней — амброзию и нектар.
+  details: Если бы герой знал все предстоящие бедствия, сказала она, он остался
+    бы, стал бессмертным и жил с нею. Спор отделяет красоту и вечную жизнь от
+    принадлежности к собственному человеческому миру. Ответ ограничен
+    сведениями, открытыми в строках 5.192–226; дальнейшие эпизоды здесь не
+    привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 226
+  requires_progress_book: 5
+  requires_progress_line: 226
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-192-226-q2
+  book: 5
+  anchor: lines-192-226
+  lines: 5.192–226
+  line_start: 192
+  line_end: 226
+  question: Как он отвечает без оскорбления?
+  summary: Одиссей признаёт бессмертие и красоту Калипсо, не сравнивая их с
+    Пенелопой на равных, но ясно говорит, что всё равно выбирает возвращение к
+    смертной жене и дому.
+  details:
+    Перед смертным поставили обычную пищу и питьё, перед богиней — амброзию
+    и нектар. Спор отделяет красоту и вечную жизнь от принадлежности к
+    собственному человеческому миру. Ответ ограничен сведениями, открытыми в
+    строках 5.192–226; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 226
+  requires_progress_book: 5
+  requires_progress_line: 226
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-227-261-q1
+  book: 5
+  anchor: lines-227-261
+  lines: 5.227–261
+  line_start: 227
+  line_end: 261
+  question: Откуда Одиссей умеет строить?
+  summary: На заре Одиссей надел плащ и хитон, а Калипсо — длинную белую одежду,
+    золотой пояс и покрывало.
+  details:
+    Одиссей срубил двадцать деревьев, обтесал, выровнял и пригнал их друг к
+    другу. Инструменты Калипсо и мастерство героя превращают решение совета в
+    материальный путь. Ответ ограничен сведениями, открытыми в строках
+    5.227–261; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 261
+  requires_progress_book: 5
+  requires_progress_line: 261
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-227-261-q2
+  book: 5
+  anchor: lines-227-261
+  lines: 5.227–261
+  line_start: 227
+  line_end: 261
+  question: Почему двадцать деревьев?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Одиссей срубил двадцать деревьев, обтесал,
+    выровнял и пригнал их друг к другу.
+  details: Калипсо принесла сверло. Инструменты Калипсо и мастерство героя
+    превращают решение совета в материальный путь. Ответ ограничен сведениями,
+    открытыми в строках 5.227–261; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 261
+  requires_progress_book: 5
+  requires_progress_line: 261
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-262-286-q1
+  book: 5
+  anchor: lines-262-286
+  lines: 5.262–286
+  line_start: 262
+  line_end: 286
+  question: Почему Медведица слева?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Калипсо велела держать Медведицу слева.
+  details: Путь определял по Плеядам, поздно заходящему Волопасу и Медведице,
+    которую называют также Колесницей. Совет Калипсо и непрерывное бодрствование
+    приводят к видимости земли феаков. Ответ ограничен сведениями, открытыми в
+    строках 5.262–286; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 286
+  requires_progress_book: 5
+  requires_progress_line: 286
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-262-286-q2
+  book: 5
+  anchor: lines-262-286
+  lines: 5.262–286
+  line_start: 262
+  line_end: 286
+  question: Как он не спит?
+  summary: Поэма приписывает Одиссею семнадцать суток непрерывного управления
+    плотом по звёздам; реалистического режима сна она не описывает, поэтому это
+    следует читать как меру эпической выносливости.
+  details: Она послала тёплый попутный ветер. Совет Калипсо и непрерывное
+    бодрствование приводят к видимости земли феаков. Ответ ограничен сведениями,
+    открытыми в строках 5.262–286; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 286
+  requires_progress_book: 5
+  requires_progress_line: 286
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-287-312-q1
+  book: 5
+  anchor: lines-287-312
+  lines: 5.287–312
+  line_start: 287
+  line_end: 312
+  question: Почему Посейдон не был на совете?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Посейдон возвращался от эфиопов и с горы
+    солимов увидел Одиссея.
+  details: Посейдон решил всё же дать ему ещё достаточно страдания. Божественный
+    план возвращения не лишает враждебного бога возможности причинить последнее
+    страдание. Ответ ограничен сведениями, открытыми в строках 5.287–312;
+    дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 312
+  requires_progress_book: 5
+  requires_progress_line: 312
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-287-312-q2
+  book: 5
+  anchor: lines-287-312
+  lines: 5.287–312
+  line_start: 287
+  line_end: 312
+  question: Может ли он отменить судьбу?
+  summary:
+    "По сведениям, доступным в этой точке рассказа: Он не отменяет решения
+    Зевса о конечном возвращении и не утверждает, что убьёт Одиссея."
+  details: "Его власть проявляется в промежутке между назначенным исходом и
+    фактическим берегом: герой должен выжить внутри одновременно действующих
+    божественных воль. Божественный план возвращения не лишает враждебного бога
+    возможности причинить последнее страдание. Ответ ограничен сведениями,
+    открытыми в строках 5.287–312; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 312
+  requires_progress_book: 5
+  requires_progress_line: 312
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-313-337-q1
+  book: 5
+  anchor: lines-313-337
+  lines: 5.313–337
+  line_start: 313
+  line_end: 337
+  question: Почему он возвращается на плот?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Огромная волна ударила сверху, закрутила плот и
+    выбросила Одиссея.
+  details: Даже обессилев, Одиссей вспомнил о плоте, поплыл за ним, забрался в
+    середину и сел. Тяжёлая одежда и разрушение снастей превращают управляемое
+    плавание в пассивный дрейф. Ответ ограничен сведениями, открытыми в строках
+    5.313–337; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 337
+  requires_progress_book: 5
+  requires_progress_line: 337
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-313-337-q2
+  book: 5
+  anchor: lines-313-337
+  lines: 5.313–337
+  line_start: 313
+  line_end: 337
+  question: Что случилось с парусом?
+  summary: Рулевое весло вырвалось, порыв сломал мачту посередине, парус и рею унесло.
+  details:
+    "Тяжёлая одежда Калипсо не давала всплыть, и герой долго оставался под
+    водой. Тяжёлая одежда и разрушение снастей превращают управляемое плавание в
+    пассивный дрейф. Важно сохранить оговорку этого места: Сравнение с растением
+    показывает сцепленность и беспомощность, не географическое время года. Ответ
+    ограничен сведениями, открытыми в строках 5.313–337; дальнейшие эпизоды
+    здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 5
+  reveal_at_line: 337
+  requires_progress_book: 5
+  requires_progress_line: 337
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-338-365-q1
+  book: 5
+  anchor: lines-338-365
+  lines: 5.338–365
+  line_start: 338
+  line_end: 365
+  question: Кто Ино?
+  summary: Ино, теперь называемая Левкотеей, — бывшая смертная и морская богиня;
+    она жалеет Одиссея и даёт покрывало, которое должно удержать его на воде.
+  details: "Когда-то она была смертной Ино, дочерью Кадма, а теперь получила
+    божественную честь в морской глубине. Новая помощь сталкивается с
+    оправданным недоверием; герой сохраняет обе возможности до разрушения плота.
+    Важно сохранить оговорку этого места: Локальная биография Ино не расширяется
+    позднейшими мифами. Ответ ограничен сведениями, открытыми в строках
+    5.338–365; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 5
+  reveal_at_line: 365
+  requires_progress_book: 5
+  requires_progress_line: 365
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-338-365-q2
+  book: 5
+  anchor: lines-338-365
+  lines: 5.338–365
+  line_start: 338
+  line_end: 365
+  question: Почему Одиссей не слушается сразу?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Одиссея заметила Левкотея.
+  details:
+    "Она дала покрывало с божественной силой: обвязав им грудь, Одиссей не
+    должен бояться смерти. Новая помощь сталкивается с оправданным недоверием;
+    герой сохраняет обе возможности до разрушения плота. Ответ ограничен
+    сведениями, открытыми в строках 5.338–365; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 365
+  requires_progress_book: 5
+  requires_progress_line: 365
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-366-387-q1
+  book: 5
+  anchor: lines-366-387
+  lines: 5.366–387
+  line_start: 366
+  line_end: 387
+  question: Почему остаётся северный ветер?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Афина тем временем остановила остальные ветры и
+    оставила северный: он должен был сгладить воду и помочь Одиссею избежать
+    смерти."
+  details: Исчезновение материальной опоры делает совет Левкотеи единственным;
+    вмешательство Афины открывает путь вплавь. Ответ ограничен сведениями,
+    открытыми в строках 5.366–387; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 387
+  requires_progress_book: 5
+  requires_progress_line: 387
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-366-387-q2
+  book: 5
+  anchor: lines-366-387
+  lines: 5.366–387
+  line_start: 366
+  line_end: 387
+  question: Куда уезжает Посейдон?
+  summary:
+    Посейдон поднял новую сводчатую волну и разбросал брёвна, словно сухую
+    солому.
+  details:
+    "Посейдон признал, что теперь жертва доберётся до любимых Зевсом людей,
+    но лёгким путь не станет. Исчезновение материальной опоры делает совет
+    Левкотеи единственным; вмешательство Афины открывает путь вплавь. Важно
+    сохранить оговорку этого места: Действия Посейдона и Афины сосуществуют без
+    прямого боя богов. Ответ ограничен сведениями, открытыми в строках
+    5.366–387; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 5
+  reveal_at_line: 387
+  requires_progress_book: 5
+  requires_progress_line: 387
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-388-414-q1
+  book: 5
+  anchor: lines-388-414
+  lines: 5.388–414
+  line_start: 388
+  line_end: 414
+  question: Почему берег опаснее моря?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Берег обрадовал его, как детей радует
+    выздоровление отца, долго истощённого тяжёлой болезнью.
+  details: Одиссей поплыл быстрее. Надежда на землю сменяется новой задачей —
+    найти физически доступный выход. Ответ ограничен сведениями, открытыми в
+    строках 5.388–414; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 414
+  requires_progress_book: 5
+  requires_progress_line: 414
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-388-414-q2
+  book: 5
+  anchor: lines-388-414
+  lines: 5.388–414
+  line_start: 388
+  line_end: 414
+  question: Где гавань?
+  summary:
+    "Но на расстоянии человеческого крика услышал грохот прибоя: волны били
+    прямо в скалы, вокруг стояла пена, а гавани, ровного пляжа и укрытия для
+    корабля не было."
+  details: "Надежда на землю сменяется новой задачей — найти физически доступный
+    выход. Важно сохранить оговорку этого места: Обратное сравнение переносит
+    радость детей на радость героя и не сообщает новую биографию. Ответ
+    ограничен сведениями, открытыми в строках 5.388–414; дальнейшие эпизоды
+    здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 5
+  reveal_at_line: 414
+  requires_progress_book: 5
+  requires_progress_line: 414
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-415-450-q1
+  book: 5
+  anchor: lines-415-450
+  lines: 5.415–450
+  line_start: 415
+  line_end: 450
+  question: Почему проситель священен?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Почувствовав течение, он помолился неизвестному
+    речному богу как проситель и странник, священный даже для бессмертных.
+  details: "Вместо ещё одной попытки победить прибой силой он меняет задачу: не
+    выйти на ближайший участок, а найти место, способное принять тело без удара
+    о камень. Неудача прямого выхода ведёт к поиску пологого устья; молитва
+    меняет течение. Ответ ограничен сведениями, открытыми в строках 5.415–450;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 450
+  requires_progress_book: 5
+  requires_progress_line: 450
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-415-450-q2
+  book: 5
+  anchor: lines-415-450
+  lines: 5.415–450
+  line_start: 415
+  line_end: 450
+  question: Как река отвечает?
+  summary: "Река отвечает действием, а не речью: после молитвы Одиссея божество
+    останавливает течение и волну, создавая спокойный выход на берег."
+  details:
+    Если идти прямо, волна разобьёт о камни. Неудача прямого выхода ведёт к
+    поиску пологого устья; молитва меняет течение. Ответ ограничен сведениями,
+    открытыми в строках 5.415–450; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 450
+  requires_progress_book: 5
+  requires_progress_line: 450
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-451-472-q1
+  book: 5
+  anchor: lines-451-472
+  lines: 5.451–472
+  line_start: 451
+  line_end: 472
+  question: Почему нужно отвернуться?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Герой отвернулся, лёг среди тростника и
+    поцеловал землю, дающую хлеб.
+  details: Исполненная молитва завершает морскую угрозу, но оставляет героя
+    истощённым и без укрытия. Ответ ограничен сведениями, открытыми в строках
+    5.451–472; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 472
+  requires_progress_book: 5
+  requires_progress_line: 472
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-451-472-q2
+  book: 5
+  anchor: lines-451-472
+  lines: 5.451–472
+  line_start: 451
+  line_end: 472
+  question: Может ли он идти?
+  summary: "Почти нет: Одиссей выбирается из воды, возвращает покрывало Ино и
+    падает без сил; дальше он движется медленно, пытаясь найти укрытие."
+  details:
+    Одиссей достиг устья. Исполненная молитва завершает морскую угрозу, но
+    оставляет героя истощённым и без укрытия. Ответ ограничен сведениями,
+    открытыми в строках 5.451–472; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 472
+  requires_progress_book: 5
+  requires_progress_line: 472
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-473-493-q1
+  book: 5
+  anchor: lines-473-493
+  lines: 5.473–493
+  line_start: 473
+  line_end: 493
+  question: Почему он не остаётся у реки?
+  summary:
+    На открытом берегу ему угрожают ночной холод, сырость и возможный новый
+    подъём воды, поэтому он ищет защищённое место под кустами в ближайшем лесу.
+  details: В русле ночью его могли убить холод, роса и утренний ветер; в лесу —
+    дикие звери. Последнее рассуждение о рисках приводит к укрытию, где
+    сохранённая жизнь уподоблена тлеющей головне. Ответ ограничен сведениями,
+    открытыми в строках 5.473–493; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 5
+  reveal_at_line: 493
+  requires_progress_book: 5
+  requires_progress_line: 493
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-05-lines-473-493-q2
+  book: 5
+  anchor: lines-473-493
+  lines: 5.473–493
+  line_start: 473
+  line_end: 493
+  question: Что означает сравнение с головнёй?
+  summary: Так земледелец на отдалённом поле прячет головню под золой, сохраняя
+    огонь, который негде взять заново.
+  details: "Афина пролила сон ему на глаза, закрыла веки и освободила от
+    изнурения. Последнее рассуждение о рисках приводит к укрытию, где
+    сохранённая жизнь уподоблена тлеющей головне. Важно сохранить оговорку этого
+    места: Огненное сравнение означает сохранение жизни, не реальный огонь в
+    листьях. Ответ ограничен сведениями, открытыми в строках 5.473–493;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + MODERN_HYPOTHESIS
+  confidence: probable
+  reveal_at_book: 5
+  reveal_at_line: 493
+  requires_progress_book: 5
+  requires_progress_line: 493
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001

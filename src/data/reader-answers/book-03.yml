@@ -1,0 +1,1397 @@
+- answer_id: reader-03-lines-1-24-q1
+  book: 3
+  anchor: lines-1-24
+  lines: 3.1–24
+  line_start: 1
+  line_end: 24
+  question: Где находится Пилос?
+  summary: Корабль достиг Пилоса, крепкого города Нелея. Ночной путь из Итаки
+    приводит юношу прямо к публичному ритуалу, который определяет порядок
+    встречи.
+  details: "На морском берегу жители совершали жертвоприношение темноволосому
+    Посейдону, сотрясающему землю. Ночной путь из Итаки приводит юношу прямо к
+    публичному ритуалу, который определяет порядок встречи. Важно сохранить
+    оговорку этого места: Точный счёт участников создаёт эпический масштаб; его
+    нельзя автоматически принимать как демографический документ. Ответ ограничен
+    сведениями, открытыми в строках 3.1–24; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 24
+  requires_progress_book: 3
+  requires_progress_line: 24
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-1-24-q2
+  book: 3
+  anchor: lines-1-24
+  lines: 3.1–24
+  line_start: 1
+  line_end: 24
+  question: Почему быки чёрные?
+  summary: Поэма отмечает чёрную масть жертвенных быков, но не объясняет выбор
+    цвета; связывать его с Посейдоном или «подземным» культом как с твёрдым
+    правилом было бы сильнее свидетельства.
+  details:
+    Когда участники уже попробовали внутренности жертв и начали сжигать для
+    бога куски с бёдер, итакийцы подвели корабль к берегу, убрали парус,
+    причалили и сошли на землю. Ночной путь из Итаки приводит юношу прямо к
+    публичному ритуалу, который определяет порядок встречи. Ответ ограничен
+    сведениями, открытыми в строках 3.1–24; дальнейшие эпизоды здесь не
+    привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 24
+  requires_progress_book: 3
+  requires_progress_line: 24
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-1-24-q3
+  book: 3
+  anchor: lines-1-24
+  lines: 3.1–24
+  line_start: 1
+  line_end: 24
+  question: Что означает гекатомба?
+  summary: Гекатомба — Крупное общественное жертвоприношение; эпическое
+    употребление не всегда означает буквально сто животных.
+  details: "Корабль достиг Пилоса, крепкого города Нелея. Ночной путь из Итаки
+    приводит юношу прямо к публичному ритуалу, который определяет порядок
+    встречи. Важно сохранить оговорку этого места: Точный счёт участников
+    создаёт эпический масштаб; его нельзя автоматически принимать как
+    демографический документ. Ответ ограничен сведениями, открытыми в строках
+    3.1–24; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 24
+  requires_progress_book: 3
+  requires_progress_line: 24
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-25-62-q1
+  book: 3
+  anchor: lines-25-62
+  lines: 3.25–62
+  line_start: 25
+  line_end: 62
+  question: Почему сначала молятся?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Писистрат попросил гостя сначала помолиться
+    Посейдону: пир совершается в честь этого бога, а после возлияния чашу можно
+    передать спутнику."
+  details: Афина обрадовалась тому, что юноша первым обратился к ней. Стеснение
+    Телемаха преодолевается советом богини, а участие в возлиянии вводит
+    чужеземцев в общину пирующих. Ответ ограничен сведениями, открытыми в
+    строках 3.25–62; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 62
+  requires_progress_book: 3
+  requires_progress_line: 62
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-25-62-q2
+  book: 3
+  anchor: lines-25-62
+  lines: 3.25–62
+  line_start: 25
+  line_end: 62
+  question: Кто такой Писистрат?
+  summary: Писистрат — Младший сын Нестора, сопровождающий Телемаха из Пилоса в Спарту.
+  details:
+    "Писистрат попросил гостя сначала помолиться Посейдону: пир совершается
+    в честь этого бога, а после возлияния чашу можно передать спутнику.
+    Стеснение Телемаха преодолевается советом богини, а участие в возлиянии
+    вводит чужеземцев в общину пирующих. Важно сохранить оговорку этого места:
+    Писистрат не знает, что первым передаёт чашу самой богине. Ответ ограничен
+    сведениями, открытыми в строках 3.25–62; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 62
+  requires_progress_book: 3
+  requires_progress_line: 62
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-25-62-q3
+  book: 3
+  anchor: lines-25-62
+  lines: 3.25–62
+  line_start: 25
+  line_end: 62
+  question: Почему Телемах стесняется?
+  summary:
+    Стеснение Телемаха преодолевается советом богини, а участие в возлиянии
+    вводит чужеземцев в общину пирующих.
+  details: "Телемах признался, что не знает, как начать разговор с человеком
+    старше себя: молодому трудно уверенно расспрашивать старца. Ответ ограничен
+    сведениями, открытыми в строках 3.25–62; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 62
+  requires_progress_book: 3
+  requires_progress_line: 62
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-63-85-q1
+  book: 3
+  anchor: lines-63-85
+  lines: 3.63–85
+  line_start: 63
+  line_end: 85
+  question: Почему имя спрашивают после еды?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Только после еды конник Нестор стал
+    расспрашивать гостей: «Теперь прилично узнать, кто вы, когда вы уже приняли
+    пищу."
+  details: «Нестор, сын Нелея, великая слава ахейцев, ты спрашиваешь, откуда мы.
+    После обеспечения безопасности хозяин вправе выяснить происхождение гостя;
+    Афина даёт Телемаху смелость назвать себя. Ответ ограничен сведениями,
+    открытыми в строках 3.63–85; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 85
+  requires_progress_book: 3
+  requires_progress_line: 85
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-63-85-q2
+  book: 3
+  anchor: lines-63-85
+  lines: 3.63–85
+  line_start: 63
+  line_end: 85
+  question: Разбой считался обычным?
+  summary: Морской набег был узнаваемой возможностью, поэтому Нестор может прямо
+    спросить гостей, не пираты ли они; это не делает насилие нравственно
+    нейтральным.
+  details: В эпическом мире торговля, путешествие и вооружённый набег могут
+    совершаться одними и теми же группами. Вопрос выясняет статус и намерения
+    прибывших до установления доверия, а не выражает современную юридическую
+    квалификацию пиратства.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 85
+  requires_progress_book: 3
+  requires_progress_line: 85
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+    - cambridge_guide_odyssey_overview_2020
+- answer_id: reader-03-lines-63-85-q3
+  book: 3
+  anchor: lines-63-85
+  lines: 3.63–85
+  line_start: 63
+  line_end: 85
+  question: Что Нестор знает об Одиссее?
+  summary: "Только после еды конник Нестор стал расспрашивать гостей: «Теперь
+    прилично узнать, кто вы, когда вы уже приняли пищу."
+  details:
+    "«Нестор, сын Нелея, великая слава ахейцев, ты спрашиваешь, откуда мы.
+    После обеспечения безопасности хозяин вправе выяснить происхождение гостя;
+    Афина даёт Телемаху смелость назвать себя. Важно сохранить оговорку этого
+    места: Вопрос о разбойниках не является прямым обвинением: это формульный
+    перечень возможных целей мореплавателей. Ответ ограничен сведениями,
+    открытыми в строках 3.63–85; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 85
+  requires_progress_book: 3
+  requires_progress_line: 85
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-86-119-q1
+  book: 3
+  anchor: lines-86-119
+  lines: 3.86–119
+  line_start: 86
+  line_end: 119
+  question: Кто такая Амфитрита?
+  summary: Никто не может сказать, умер ли он на суше от руки врагов или в море
+    среди волн Амфитриты.
+  details: "«Поэтому я пришёл к твоим коленям. Неопределённость тяжелее дурной
+    вести; просьба юноши вызывает не короткий ответ, а рассказ свидетеля о целом
+    поколении. Важно сохранить оговорку этого места: Телемах предполагает
+    гибель, но не знает её; комментарий не должен исправлять его из будущего.
+    Ответ ограничен сведениями, открытыми в строках 3.86–119; дальнейшие эпизоды
+    здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 119
+  requires_progress_book: 3
+  requires_progress_line: 119
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-86-119-q2
+  book: 3
+  anchor: lines-86-119
+  lines: 3.86–119
+  line_start: 86
+  line_end: 119
+  question: Почему Телемах просит не жалеть его?
+  summary: Поэма не сводит это место к одной бесспорной причине. Телемах
+    предполагает гибель, но не знает её; комментарий не должен исправлять его из
+    будущего.
+  details: "Он попросил вспомнить, не обещал ли Одиссей Нестору что-либо и
+    исполнил ли обещание во время войны под Троей. Неопределённость тяжелее
+    дурной вести; просьба юноши вызывает не короткий ответ, а рассказ свидетеля
+    о целом поколении. Важно сохранить оговорку этого места: Телемах
+    предполагает гибель, но не знает её; комментарий не должен исправлять его из
+    будущего. Ответ ограничен сведениями, открытыми в строках 3.86–119;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 119
+  requires_progress_book: 3
+  requires_progress_line: 119
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-86-119-q3
+  book: 3
+  anchor: lines-86-119
+  lines: 3.86–119
+  line_start: 86
+  line_end: 119
+  question: Кто погиб под Троей?
+  summary: "Телемах перечислил, что об участи других предводителей слухи всё же
+    дошли: известно, где погиб один и где встретил смерть другой."
+  details: "Он попросил вспомнить, не обещал ли Одиссей Нестору что-либо и
+    исполнил ли обещание во время войны под Троей. Неопределённость тяжелее
+    дурной вести; просьба юноши вызывает не короткий ответ, а рассказ свидетеля
+    о целом поколении. Важно сохранить оговорку этого места: Телемах
+    предполагает гибель, но не знает её; комментарий не должен исправлять его из
+    будущего. Ответ ограничен сведениями, открытыми в строках 3.86–119;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 119
+  requires_progress_book: 3
+  requires_progress_line: 119
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-120-158-q1
+  book: 3
+  anchor: lines-120-158
+  lines: 3.120–158
+  line_start: 120
+  line_end: 158
+  question: Кто такие Атриды?
+  summary: Агамемнон — Предводитель ахейцев под Троей и брат Менелая; его
+    возвращение становится тревожной параллелью истории Одиссея.
+  details: "В совете, продолжал Нестор, никто не хотел равняться с Одиссеем: тот
+    превосходил остальных изобретательностью. Падение Трои не завершает
+    бедствий: нарушение порядка и гнев Афины раскалывают войско перед
+    возвращением. Важно сохранить оговорку этого места: Причина гнева Афины
+    здесь названа общо; более подробное объяснение из других традиций не
+    добавляется. Ответ ограничен сведениями, открытыми в строках 3.120–158;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 158
+  requires_progress_book: 3
+  requires_progress_line: 158
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-120-158-q2
+  book: 3
+  anchor: lines-120-158
+  lines: 3.120–158
+  line_start: 120
+  line_end: 158
+  question: Почему собрание вечером неправильно?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Они созвали ахейцев на собрание вечером, не
+    соблюдая обычного порядка, и воины пришли опьянёнными вином.
+  details: "Сам Нестор и Одиссей редко расходились во мнениях; на собраниях и
+    советах они вместе искали решение, которое принесло бы ахейцам пользу.
+    Падение Трои не завершает бедствий: нарушение порядка и гнев Афины
+    раскалывают войско перед возвращением. Ответ ограничен сведениями, открытыми
+    в строках 3.120–158; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 158
+  requires_progress_book: 3
+  requires_progress_line: 158
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-120-158-q3
+  book: 3
+  anchor: lines-120-158
+  lines: 3.120–158
+  line_start: 120
+  line_end: 158
+  question: За что гневается Афина?
+  summary: Однако после падения Трои Афина замыслила тяжёлое возвращение для
+    ахейцев, потому что не все в войске были рассудительны и справедливы.
+  details: "Афина посеяла ссору между двумя сыновьями Атрея. Падение Трои не
+    завершает бедствий: нарушение порядка и гнев Афины раскалывают войско перед
+    возвращением. Важно сохранить оговорку этого места: Причина гнева Афины
+    здесь названа общо; более подробное объяснение из других традиций не
+    добавляется. Ответ ограничен сведениями, открытыми в строках 3.120–158;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 158
+  requires_progress_book: 3
+  requires_progress_line: 158
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-159-187-q1
+  book: 3
+  anchor: lines-159-187
+  lines: 3.159–187
+  line_start: 159
+  line_end: 187
+  question: Где Тенедос и Лесбос?
+  summary:
+    У Тенедоса они принесли жертвы, желая благополучно вернуться домой, но
+    Зевс ещё не собирался прекращать бедствия.
+  details: "У Лесбоса они гадали, какой дорогой идти: севернее Хиоса, к острову
+    Псирия, или южнее, мимо Миманта. Повторный раскол у Тенедоса отделяет путь
+    Одиссея от пути Нестора, поэтому старец больше не может быть очевидцем его
+    судьбы. Важно сохранить оговорку этого места: Гадание у Лесбоса сообщает
+    решение маршрута, но текст не описывает техническую процедуру знака. Ответ
+    ограничен сведениями, открытыми в строках 3.159–187; дальнейшие эпизоды
+    здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 187
+  requires_progress_book: 3
+  requires_progress_line: 187
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-159-187-q2
+  book: 3
+  anchor: lines-159-187
+  lines: 3.159–187
+  line_start: 159
+  line_end: 187
+  question: Почему Одиссей повернул назад?
+  summary: Повторный раскол у Тенедоса отделяет путь Одиссея от пути Нестора,
+    поэтому старец больше не может быть очевидцем его судьбы.
+  details: Нестор, Диомед и Менелай продолжили путь. Ответ ограничен сведениями,
+    открытыми в строках 3.159–187; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 187
+  requires_progress_book: 3
+  requires_progress_line: 187
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-159-187-q3
+  book: 3
+  anchor: lines-159-187
+  lines: 3.159–187
+  line_start: 159
+  line_end: 187
+  question: Как выбирали морской путь?
+  summary: Повторный раскол у Тенедоса отделяет путь Одиссея от пути Нестора,
+    поэтому старец больше не может быть очевидцем его судьбы.
+  details: "У Лесбоса они гадали, какой дорогой идти: севернее Хиоса, к острову
+    Псирия, или южнее, мимо Миманта. Ответ ограничен сведениями, открытыми в
+    строках 3.159–187; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 187
+  requires_progress_book: 3
+  requires_progress_line: 187
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-188-222-q1
+  book: 3
+  anchor: lines-188-222
+  lines: 3.188–222
+  line_start: 188
+  line_end: 222
+  question: Кто такой Орест?
+  summary: Орест — Сын Агамемнона, отомстивший Эгисфу; для Телемаха он служит
+    примером действия сына в отсутствие отца.
+  details:
+    "Телемах ответил, что Орест приобрёл великую славу среди ахейцев и его
+    имя сохранится в песнях. Неполная хроника возвращений превращается в совет:
+    судьба дома зависит и от действия оставшегося сына. Важно сохранить оговорку
+    этого места: Пример Ореста — риторическое побуждение, а не заранее
+    установленный сценарий Телемаха. Ответ ограничен сведениями, открытыми в
+    строках 3.188–222; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 222
+  requires_progress_book: 3
+  requires_progress_line: 222
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-188-222-q2
+  book: 3
+  anchor: lines-188-222
+  lines: 3.188–222
+  line_start: 188
+  line_end: 222
+  question: Почему слава переживает человека?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Идоменей привёл на Крит всех, кто пережил
+    войну: море не отняло у него ни одного спутника."
+  details: "Как хорошо, сказал он, когда после погибшего человека остаётся сын:
+    Орест убил коварного Эгисфа, который погубил его отца. Неполная хроника
+    возвращений превращается в совет: судьба дома зависит и от действия
+    оставшегося сына. Ответ ограничен сведениями, открытыми в строках 3.188–222;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 222
+  requires_progress_book: 3
+  requires_progress_line: 222
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-188-222-q3
+  book: 3
+  anchor: lines-188-222
+  lines: 3.188–222
+  line_start: 188
+  line_end: 222
+  question: Все ли вернулись одновременно?
+  summary: "По сведениям, доступным в этой точке рассказа: Поэтому Нестор
+    вернулся, ничего не узнав о тех, кто плыл иной дорогой: кто спасся, а кто
+    погиб."
+  details: "Старик спросил, покоряется ли Телемах добровольно и не отвернулся ли
+    от него народ по воле бога. Неполная хроника возвращений превращается в
+    совет: судьба дома зависит и от действия оставшегося сына. Ответ ограничен
+    сведениями, открытыми в строках 3.188–222; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 222
+  requires_progress_book: 3
+  requires_progress_line: 222
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-223-260-q1
+  book: 3
+  anchor: lines-223-260
+  lines: 3.223–260
+  line_start: 223
+  line_end: 260
+  question: Могут ли боги отменить смерть?
+  summary: "По сведениям, доступным в этой точке рассказа: Но даже боги не могут
+    отвести общую для людей смерть, когда назначенная доля настигнет любимого
+    ими человека»."
+  details:
+    Никому из богов, вспоминал он, богиня не помогала так открыто, как отцу
+    Телемаха. Память о защите Одиссея предлагает сыну основание для надежды, а
+    история Агамемнона становится предупреждением о возвращении домой. Ответ
+    ограничен сведениями, открытыми в строках 3.223–260; дальнейшие эпизоды
+    здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 260
+  requires_progress_book: 3
+  requires_progress_line: 260
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-223-260-q2
+  book: 3
+  anchor: lines-223-260
+  lines: 3.223–260
+  line_start: 223
+  line_end: 260
+  question: Почему Агамемнон погиб дома?
+  summary: Память о защите Одиссея предлагает сыну основание для надежды, а
+    история Агамемнона становится предупреждением о возвращении домой.
+  details:
+    "Он снова обратился к Нестору: «Расскажи об Агамемноне. Ответ ограничен
+    сведениями, открытыми в строках 3.223–260; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 260
+  requires_progress_book: 3
+  requires_progress_line: 260
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-223-260-q3
+  book: 3
+  anchor: lines-223-260
+  lines: 3.223–260
+  line_start: 223
+  line_end: 260
+  question: Где был Менелай?
+  summary: "В этих строках Телемах только ставит вопрос: известно лишь, что
+    Менелая не было рядом с Агамемноном; причину отсутствия Нестор ещё не
+    сообщил."
+  details: Телемах предполагает, что присутствие Менелая могло бы изменить
+    соотношение сил, и просит объяснить его отсутствие. Подробный ответ должен
+    появиться только вместе со следующими строками рассказа Нестора.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 260
+  requires_progress_book: 3
+  requires_progress_line: 260
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-261-296-q1
+  book: 3
+  anchor: lines-261-296
+  lines: 3.261–296
+  line_start: 261
+  line_end: 296
+  question: Почему певец охраняет царицу?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Рядом находился певец, которому Агамемнон,
+    уходя к Трое, велел стеречь жену.
+  details: Но когда воля богов повела царицу к гибели, Эгисф увёз певца на
+    пустынный остров и оставил там добычей хищным птицам. Отсутствие Менелая
+    оставляет убийцу без противника; устранение порученного певца снимает
+    последнее препятствие в доме. Ответ ограничен сведениями, открытыми в
+    строках 3.261–296; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 296
+  requires_progress_book: 3
+  requires_progress_line: 296
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-261-296-q2
+  book: 3
+  anchor: lines-261-296
+  lines: 3.261–296
+  line_start: 261
+  line_end: 296
+  question: Что значат стрелы Аполлона?
+  summary:
+    "У священного Суния Аполлон поразил своими кроткими стрелами Фронтиса,
+    кормчего Менелая: тот лучше всех умел удерживать корабль в бурном море."
+  details: "Отсутствие Менелая оставляет убийцу без противника; устранение
+    порученного певца снимает последнее препятствие в доме. Важно сохранить
+    оговорку этого места: Формула о божественной воле не снимает ответственности
+    Эгисфа и Клитемнестры внутри рассказа. Ответ ограничен сведениями, открытыми
+    в строках 3.261–296; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 296
+  requires_progress_book: 3
+  requires_progress_line: 296
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-261-296-q3
+  book: 3
+  anchor: lines-261-296
+  lines: 3.261–296
+  line_start: 261
+  line_end: 296
+  question: Зачем Менелай задержался?
+  summary: Отсутствие Менелая оставляет убийцу без противника; устранение
+    порученного певца снимает последнее препятствие в доме.
+  details: Тем временем Нестор и Менелай вместе плыли из Трои. Ответ ограничен
+    сведениями, открытыми в строках 3.261–296; дальнейшие эпизоды здесь не
+    привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 296
+  requires_progress_book: 3
+  requires_progress_line: 296
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-297-328-q1
+  book: 3
+  anchor: lines-297-328
+  lines: 3.297–328
+  line_start: 297
+  line_end: 328
+  question: Почему корабли разделились?
+  summary: Поэма не сводит это место к одной бесспорной причине. География
+    кораблекрушения сложна и не должна представляться как бесспорно
+    восстанавливаемый маршрут.
+  details:
+    "Когда его корабли достигли Малеи, громогласный Зевс приготовил тяжёлое
+    продолжение пути: послал свистящий ветер и огромные волны, подобные горам.
+    Погребальная задержка и буря надолго удаляют возможного защитника;
+    семилетняя власть Эгисфа заканчивается местью сына. Важно сохранить оговорку
+    этого места: География кораблекрушения сложна и не должна представляться как
+    бесспорно восстанавливаемый маршрут. Ответ ограничен сведениями, открытыми в
+    строках 3.297–328; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 328
+  requires_progress_book: 3
+  requires_progress_line: 328
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-297-328-q2
+  book: 3
+  anchor: lines-297-328
+  lines: 3.297–328
+  line_start: 297
+  line_end: 328
+  question: Что произошло у Гортины?
+  summary: У Гортины южный ветер швырял волну на гладкую скалу, где не было ни
+    укрытия, ни спасения.
+  details: "Люди избежали смерти, но корабли разбились о камни. Погребальная
+    задержка и буря надолго удаляют возможного защитника; семилетняя власть
+    Эгисфа заканчивается местью сына. Важно сохранить оговорку этого места:
+    География кораблекрушения сложна и не должна представляться как бесспорно
+    восстанавливаемый маршрут. Ответ ограничен сведениями, открытыми в строках
+    3.297–328; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 328
+  requires_progress_book: 3
+  requires_progress_line: 328
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-297-328-q3
+  book: 3
+  anchor: lines-297-328
+  lines: 3.297–328
+  line_start: 297
+  line_end: 328
+  question: Где рос Орест?
+  summary: На восьмой год из Афин вернулся Орест и убил виновника смерти своего отца.
+  details: "Погребальная задержка и буря надолго удаляют возможного защитника;
+    семилетняя власть Эгисфа заканчивается местью сына. Важно сохранить оговорку
+    этого места: География кораблекрушения сложна и не должна представляться как
+    бесспорно восстанавливаемый маршрут. Ответ ограничен сведениями, открытыми в
+    строках 3.297–328; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 328
+  requires_progress_book: 3
+  requires_progress_line: 328
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-329-355-q1
+  book: 3
+  anchor: lines-329-355
+  lines: 3.329–355
+  line_start: 329
+  line_end: 355
+  question: Почему Нестор не советует сразу домой?
+  summary: Менелай обладает более поздними и дальними сведениями; следующая
+    остановка поисков логически вытекает из границ знания Нестора.
+  details: Но старец всё же советовал посетить Менелая. Ответ ограничен
+    сведениями, открытыми в строках 3.329–355; дальнейшие эпизоды здесь не
+    привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 355
+  requires_progress_book: 3
+  requires_progress_line: 355
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-329-355-q2
+  book: 3
+  anchor: lines-329-355
+  lines: 3.329–355
+  line_start: 329
+  line_end: 355
+  question: Насколько далеко странствовал Менелай?
+  summary: "По сведениям, доступным в этой точке рассказа: В тот же день прибыл
+    Менелай, громкий в бою, и привёз столько добра, сколько могли вынести его
+    корабли."
+  details: Но старец всё же советовал посетить Менелая. Менелай обладает более
+    поздними и дальними сведениями; следующая остановка поисков логически
+    вытекает из границ знания Нестора. Ответ ограничен сведениями, открытыми в
+    строках 3.329–355; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 355
+  requires_progress_book: 3
+  requires_progress_line: 355
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-329-355-q3
+  book: 3
+  anchor: lines-329-355
+  lines: 3.329–355
+  line_start: 329
+  line_end: 355
+  question: Кто будет сопровождать Телемаха?
+  summary:
+    Телемах — Сын Одиссея и Пенелопы, вынужденный взрослеть в доме, который
+    разоряют женихи.
+  details: "Сыновья Нестора проводят Телемаха в Лакедемон, к светловолосому
+    Менелаю. Менелай обладает более поздними и дальними сведениями; следующая
+    остановка поисков логически вытекает из границ знания Нестора. Важно
+    сохранить оговорку этого места: Погребальный пир по убийцам фиксирует
+    завершение обряда, не моральное одобрение покойных. Ответ ограничен
+    сведениями, открытыми в строках 3.329–355; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 355
+  requires_progress_book: 3
+  requires_progress_line: 355
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-356-384-q1
+  book: 3
+  anchor: lines-356-384
+  lines: 3.356–384
+  line_start: 356
+  line_end: 384
+  question: Зачем сжигают языки?
+  summary: Поэма не сводит это место к одной бесспорной причине. Сжигание языков
+    засвидетельствовано текстом, но его точное значение остаётся спорным.
+  details: "Языки бросили в огонь, участники встали и совершили возлияние.
+    Наступление ночи требует завершить священную трапезу, а обязанность хозяина
+    превращает ночлег во вторую ступень приёма. Важно сохранить оговорку этого
+    места: Сжигание языков засвидетельствовано текстом, но его точное значение
+    остаётся спорным. Ответ ограничен сведениями, открытыми в строках 3.356–384;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 384
+  requires_progress_book: 3
+  requires_progress_line: 384
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-356-384-q2
+  book: 3
+  anchor: lines-356-384
+  lines: 3.356–384
+  line_start: 356
+  line_end: 384
+  question: Почему вино смешивают?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Афина-Ментор напомнила, что разговор был добрым
+    и уместным, но пора завершить жертву: языки животных следует отделить для
+    богов, вино смешать с водой и совершить возлияние Посейдону и другим
+    бессмертным."
+  details:
+    Глашатаи полили им на руки воду, юноши наполнили кратеры вином и водой
+    и разнесли чаши, начиная с ритуального подношения. Наступление ночи требует
+    завершить священную трапезу, а обязанность хозяина превращает ночлег во
+    вторую ступень приёма. Ответ ограничен сведениями, открытыми в строках
+    3.356–384; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 384
+  requires_progress_book: 3
+  requires_progress_line: 384
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-356-384-q3
+  book: 3
+  anchor: lines-356-384
+  lines: 3.356–384
+  line_start: 356
+  line_end: 384
+  question: Разве спать на корабле оскорбительно?
+  summary: "По сведениям, доступным в этой точке рассказа: После этого Афина и
+    Телемах хотели вернуться ночевать на корабль."
+  details:
+    Он призвал Зевса и других богов в свидетели, что не отпустит гостей из
+    своего богатого дома спать на палубе, словно у него нет плащей и одеял или
+    достойного места для спутников. Наступление ночи требует завершить священную
+    трапезу, а обязанность хозяина превращает ночлег во вторую ступень приёма.
+    Ответ ограничен сведениями, открытыми в строках 3.356–384; дальнейшие
+    эпизоды здесь не привлекаются.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 384
+  requires_progress_book: 3
+  requires_progress_line: 384
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-385-403-q1
+  book: 3
+  anchor: lines-385-403
+  lines: 3.385–403
+  line_start: 385
+  line_end: 403
+  question: Кто такие кавконы?
+  summary: "На ночь Афина собиралась остаться у корабля, а утром отправиться к
+    великодушным кавконам: там ей будто бы должны были вернуть давний и немалый
+    долг."
+  details:
+    "Она попросила Нестора дать Телемаху колесницу, отправить с ним сына и
+    предоставить самых сильных и быстрых коней. Богиня разделяет
+    путешественников: команда остаётся под присмотром, а Телемах получает опыт
+    дворцового гостя. Важно сохранить оговорку этого места: Долг кавконов
+    принадлежит прикрытию Афины; его не следует включать в реальную биографию
+    Ментора. Ответ ограничен сведениями, открытыми в строках 3.385–403;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 403
+  requires_progress_book: 3
+  requires_progress_line: 403
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-385-403-q2
+  book: 3
+  anchor: lines-385-403
+  lines: 3.385–403
+  line_start: 385
+  line_end: 403
+  question: Почему Афина не идёт во дворец?
+  summary: "Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Сероглазая Афина согласилась: Телемаху следует
+    пойти за Нестором, потому что старец говорит как добрый хозяин."
+  details: "На ночь Афина собиралась остаться у корабля, а утром отправиться к
+    великодушным кавконам: там ей будто бы должны были вернуть давний и немалый
+    долг. Богиня разделяет путешественников: команда остаётся под присмотром, а
+    Телемах получает опыт дворцового гостя. Ответ ограничен сведениями,
+    открытыми в строках 3.385–403; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 403
+  requires_progress_book: 3
+  requires_progress_line: 403
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-385-403-q3
+  book: 3
+  anchor: lines-385-403
+  lines: 3.385–403
+  line_start: 385
+  line_end: 403
+  question: Что будет с командой?
+  summary:
+    Среди всей команды, сказала богиня, она единственная старше; остальные
+    — молодые ровесники Телемаха, последовавшие за ним по дружбе.
+  details: "На ночь Афина собиралась остаться у корабля, а утром отправиться к
+    великодушным кавконам: там ей будто бы должны были вернуть давний и немалый
+    долг. Богиня разделяет путешественников: команда остаётся под присмотром, а
+    Телемах получает опыт дворцового гостя. Важно сохранить оговорку этого
+    места: Долг кавконов принадлежит прикрытию Афины; его не следует включать в
+    реальную биографию Ментора. Ответ ограничен сведениями, открытыми в строках
+    3.385–403; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 403
+  requires_progress_book: 3
+  requires_progress_line: 403
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-404-417-q1
+  book: 3
+  anchor: lines-404-417
+  lines: 3.404–417
+  line_start: 404
+  line_end: 417
+  question: Что значит Тритогенея?
+  summary: "Старец узнал дочь Зевса, славную Тритогенею: она отличала Одиссея
+    особой честью среди аргивян."
+  details: "Нестор попросил богиню быть благосклонной к нему, его сыновьям и
+    почтенной супруге. Божественное раскрытие подтверждает покровительство
+    Телемаху и вызывает немедленное ритуальное обязательство хозяина. Важно
+    сохранить оговорку этого места: Птичий облик — эпифания богини, а не только
+    знак, требующий гадателя. Ответ ограничен сведениями, открытыми в строках
+    3.404–417; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD + MODERN_HYPOTHESIS
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 417
+  requires_progress_book: 3
+  requires_progress_line: 417
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-404-417-q2
+  book: 3
+  anchor: lines-404-417
+  lines: 3.404–417
+  line_start: 404
+  line_end: 417
+  question: Почему жертва должна быть неопытной в ярме?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Он взял Телемаха за руку и сказал, что юноше не
+    придётся быть ни слабым, ни трусливым, если уже в молодости его сопровождают
+    боги.
+  details: Нестор попросил богиню быть благосклонной к нему, его сыновьям и
+    почтенной супруге. Божественное раскрытие подтверждает покровительство
+    Телемаху и вызывает немедленное ритуальное обязательство хозяина. Ответ
+    ограничен сведениями, открытыми в строках 3.404–417; дальнейшие эпизоды
+    здесь не привлекаются.
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 417
+  requires_progress_book: 3
+  requires_progress_line: 417
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-404-417-q3
+  book: 3
+  anchor: lines-404-417
+  lines: 3.404–417
+  line_start: 404
+  line_end: 417
+  question: Как Нестор узнаёт богиню?
+  summary: Поэма не сводит это место к одной бесспорной причине. Птичий облик —
+    эпифания богини, а не только знак, требующий гадателя.
+  details: "Нестор понял, кто сидел рядом с ним. Божественное раскрытие
+    подтверждает покровительство Телемаху и вызывает немедленное ритуальное
+    обязательство хозяина. Важно сохранить оговорку этого места: Птичий облик —
+    эпифания богини, а не только знак, требующий гадателя. Ответ ограничен
+    сведениями, открытыми в строках 3.404–417; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 417
+  requires_progress_book: 3
+  requires_progress_line: 417
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-418-445-q1
+  book: 3
+  anchor: lines-418-445
+  lines: 3.418–445
+  line_start: 418
+  line_end: 445
+  question: Кто входит в дом Нестора?
+  summary: Нестор — Старый участник Троянской войны, принимающий Телемаха и
+    рассказывающий о возвращениях ахейцев.
+  details: "Нестор совершил возлияние и снова горячо молился богине, которая
+    только что явила себя. Обещание, данное вечером, определяет порядок утра;
+    дом Нестора действует как согласованная хозяйственная и ритуальная группа.
+    Важно сохранить оговорку этого места: Одиннадцатилетнее вино отмечает
+    ценность и длительность хранения, но не позволяет реконструировать обычный
+    срок выдержки. Ответ ограничен сведениями, открытыми в строках 3.418–445;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 445
+  requires_progress_book: 3
+  requires_progress_line: 445
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-418-445-q2
+  book: 3
+  anchor: lines-418-445
+  lines: 3.418–445
+  line_start: 418
+  line_end: 445
+  question: Почему Телемах спит рядом с Писистратом?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Телемаху приготовили резное ложе под портиком,
+    а рядом лёг копейщик Писистрат — единственный неженатый сын, остававшийся в
+    доме.
+  details: Сам Нестор удалился во внутреннюю спальню, где жена приготовила ему
+    постель. Обещание, данное вечером, определяет порядок утра; дом Нестора
+    действует как согласованная хозяйственная и ритуальная группа. Ответ
+    ограничен сведениями, открытыми в строках 3.418–445; дальнейшие эпизоды
+    здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 445
+  requires_progress_book: 3
+  requires_progress_line: 445
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-418-445-q3
+  book: 3
+  anchor: lines-418-445
+  lines: 3.418–445
+  line_start: 418
+  line_end: 445
+  question: Что означает каменное сиденье?
+  summary:
+    "Это почётное место Нелея, основателя династии: посадив туда Телемаха,
+    Нестор включает гостя в пространство семейной памяти и подчёркивает высокий
+    статус приёма."
+  details: "Старец повёл сыновей, зятьёв и гостей в прекрасный дом. Обещание,
+    данное вечером, определяет порядок утра; дом Нестора действует как
+    согласованная хозяйственная и ритуальная группа. Важно сохранить оговорку
+    этого места: Одиннадцатилетнее вино отмечает ценность и длительность
+    хранения, но не позволяет реконструировать обычный срок выдержки. Ответ
+    ограничен сведениями, открытыми в строках 3.418–445; дальнейшие эпизоды
+    здесь не привлекаются."
+  layer: POEM_WORLD + MODERN_HYPOTHESIS
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 445
+  requires_progress_book: 3
+  requires_progress_line: 445
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-446-472-q1
+  book: 3
+  anchor: lines-446-472
+  lines: 3.446–472
+  line_start: 446
+  line_end: 472
+  question: Зачем покрывать рога золотом?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Старик приказал принести золото.
+  details:
+    Лаэрк искусно расплющил его и обложил рога жертвенного животного, чтобы
+    богиню порадовал вид дара. Каждый член дома получает функцию; обещанный дар
+    превращается в совместное действие, завершающееся пиром. Ответ ограничен
+    сведениями, открытыми в строках 3.446–472; дальнейшие эпизоды здесь не
+    привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 472
+  requires_progress_book: 3
+  requires_progress_line: 472
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-446-472-q2
+  book: 3
+  anchor: lines-446-472
+  lines: 3.446–472
+  line_start: 446
+  line_end: 472
+  question: Кто убивает животное?
+  summary:
+    Лаэрк искусно расплющил его и обложил рога жертвенного животного, чтобы
+    богиню порадовал вид дара.
+  details:
+    "Нестор начал обряд: омыл руки, рассыпал ячменные зёрна и отрезал прядь
+    с головы животного, бросив её в огонь как первый дар Афине. Каждый член дома
+    получает функцию; обещанный дар превращается в совместное действие,
+    завершающееся пиром. Важно сохранить оговорку этого места: Археологические
+    параллели подтверждают практики, но сцена соединяет разные временные слои
+    эпического мира. Ответ ограничен сведениями, открытыми в строках 3.446–472;
+    дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 472
+  requires_progress_book: 3
+  requires_progress_line: 472
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-446-472-q3
+  book: 3
+  anchor: lines-446-472
+  lines: 3.446–472
+  line_start: 446
+  line_end: 472
+  question: Что сжигают для богини?
+  summary:
+    Лаэрк искусно расплющил его и обложил рога жертвенного животного, чтобы
+    богиню порадовал вид дара.
+  details: "Поликаста и другие женщины принесли воду, ячмень в корзинах и чистые
+    сосуды. Каждый член дома получает функцию; обещанный дар превращается в
+    совместное действие, завершающееся пиром. Важно сохранить оговорку этого
+    места: Археологические параллели подтверждают практики, но сцена соединяет
+    разные временные слои эпического мира. Ответ ограничен сведениями, открытыми
+    в строках 3.446–472; дальнейшие эпизоды здесь не привлекаются."
+  layer: POEM_WORLD
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 472
+  requires_progress_book: 3
+  requires_progress_line: 472
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-473-497-q1
+  book: 3
+  anchor: lines-473-497
+  lines: 3.473–497
+  line_start: 473
+  line_end: 497
+  question: Что такое asaminthos?
+  summary:
+    Асаминт — Ванна или купальный сосуд; археологические параллели помогают
+    представить предмет, но не доказывают историчность сцены.
+  details:
+    "Нестор сжигал их на поленьях и окроплял сверкающим вином; юноши стояли
+    рядом с пятизубыми вилками. Омовение и пир завершают гостевой приём;
+    колесница Нестора и сопровождение сына переводят поиски к следующему
+    свидетелю. Важно сохранить оговорку этого места: Сходство Телемаха с богом
+    описывает преображённый вид, а не изменение природы. Ответ ограничен
+    сведениями, открытыми в строках 3.473–497; дальнейшие эпизоды здесь не
+    привлекаются."
+  layer: POEM_WORLD + ARCHAIC_CONTEXT
+  confidence: probable
+  reveal_at_book: 3
+  reveal_at_line: 497
+  requires_progress_book: 3
+  requires_progress_line: 497
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-473-497-q2
+  book: 3
+  anchor: lines-473-497
+  lines: 3.473–497
+  line_start: 473
+  line_end: 497
+  question: Почему Поликаста купает гостя?
+  summary: Поэма не формулирует отдельной причины; доступное в этом месте
+    основание дано самой сценой. Тем временем прекрасная Поликаста, младшая дочь
+    Нестора, омыла Телемаха.
+  details:
+    Она натёрла его оливковым маслом, дала хитон и красивый плащ. Омовение
+    и пир завершают гостевой приём; колесница Нестора и сопровождение сына
+    переводят поиски к следующему свидетелю. Ответ ограничен сведениями,
+    открытыми в строках 3.473–497; дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 497
+  requires_progress_book: 3
+  requires_progress_line: 497
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
+- answer_id: reader-03-lines-473-497-q3
+  book: 3
+  anchor: lines-473-497
+  lines: 3.473–497
+  line_start: 473
+  line_end: 497
+  question: Сколько занимает дорога до Спарты?
+  summary: "Путь на колеснице занимает два дня: первую ночь путники проводят у
+    Диокла в Ферах, а на следующий день достигают Лакедемона и дома Менелая."
+  details:
+    Нестор сжигал их на поленьях и окроплял сверкающим вином; юноши стояли
+    рядом с пятизубыми вилками. Омовение и пир завершают гостевой приём;
+    колесница Нестора и сопровождение сына переводят поиски к следующему
+    свидетелю. Ответ ограничен сведениями, открытыми в строках 3.473–497;
+    дальнейшие эпизоды здесь не привлекаются.
+  layer: POEM_WORLD
+  confidence: established
+  reveal_at_book: 3
+  reveal_at_line: 497
+  requires_progress_book: 3
+  requires_progress_line: 497
+  spoiler_level: safe
+  provenance: automated_passage_bound_editorial_synthesis
+  human_reviewed: false
+  source_ids:
+    - homer_odyssey_perseus_grc2
+    - de_jong_2001
