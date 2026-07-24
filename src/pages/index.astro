@@ -12,21 +12,54 @@ import { project, withBase } from "../data/project";
       <p class="eyebrow">Независимый редакционный проект</p>
       <h1>«Одиссея» Гомера.<br /><em>Текст — заново.</em></h1>
       <p class="lead">
-        Современное русское прозаическое переложение «Одиссеи» с построчной
-        сверкой и историко-культурными комментариями.
+        Полное по охвату строк, сжатое современное прозаическое переложение
+        «Одиссеи» с пояснениями и проверяемыми источниками.
       </p>
       <div class="hero-actions">
-        <a class="button primary" href={withBase("/book/01/")}>Начать Песнь I</a
+        <a
+          class="button primary"
+          href={withBase("/book/01/")}
+          data-resume-link
+          data-book-base={withBase("/book/")}
+          >Начать Песнь I</a
         >
-        <a class="button secondary" href={withBase("/methodology/")}
-          >Как устроена работа</a
-        >
+        <a class="button secondary" href="#before-reading">Что важно знать</a>
       </div>
     </div>
     <div class="hero-mark" aria-hidden="true">
       <span>α</span><span>ω</span>
       <p>24 песни<br />12 110 строк</p>
     </div>
+  </section>
+
+  <section
+    id="before-reading"
+    class="reader-onboarding"
+    aria-labelledby="before-reading-title"
+  >
+    <div>
+      <p class="eyebrow">Перед чтением</p>
+      <h2 id="before-reading-title">Можно начинать без подготовки</h2>
+      <p class="onboarding-lead">
+        Поэма начинается после Троянской войны, но заранее изучать мифы не
+        нужно: имена, обычаи и неочевидные связи объясняются там, где впервые
+        становятся важны.
+      </p>
+    </div>
+    <ul>
+      <li>
+        <strong>Основной текст идёт первым.</strong>
+        Пояснения необязательны и раскрываются только по вашему выбору.
+      </li>
+      <li>
+        <strong>Без спойлеров вперёд.</strong>
+        Комментарий использует лишь сведения, доступные к текущим строкам.
+      </li>
+      <li>
+        <strong>Место чтения запоминается на этом устройстве.</strong>
+        Сайт предложит продолжить, но никогда не перенесёт вас молча.
+      </li>
+    </ul>
   </section>
 
   <section class="principles" aria-labelledby="principles-title">
@@ -95,3 +128,47 @@ import { project, withBase } from "../data/project";
     <a href={withBase("/rights/")}>Подробнее о происхождении и правах →</a>
   </section>
 </BaseLayout>
+
+<script>
+  const resumeLink =
+    document.querySelector<HTMLAnchorElement>("[data-resume-link]");
+  const lastBook = Number(
+    localStorage.getItem("odyssey-last-book") ??
+      localStorage.getItem("odyssey-max-book"),
+  );
+  if (resumeLink && lastBook >= 1 && lastBook <= 24) {
+    const number = String(lastBook).padStart(2, "0");
+    const passage = localStorage.getItem(`odyssey-progress-book-${number}`);
+    const range = passage?.match(/^lines-(\d+)-(\d+)$/);
+    const roman = [
+      "I",
+      "II",
+      "III",
+      "IV",
+      "V",
+      "VI",
+      "VII",
+      "VIII",
+      "IX",
+      "X",
+      "XI",
+      "XII",
+      "XIII",
+      "XIV",
+      "XV",
+      "XVI",
+      "XVII",
+      "XVIII",
+      "XIX",
+      "XX",
+      "XXI",
+      "XXII",
+      "XXIII",
+      "XXIV",
+    ][lastBook - 1];
+    resumeLink.href = `${resumeLink.dataset.bookBase}${number}/${passage ? `#${passage}` : ""}`;
+    resumeLink.textContent = range
+      ? `Продолжить: Песнь ${roman}, строки ${range[1]}–${range[2]}`
+      : `Продолжить: Песнь ${roman}`;
+  }
+</script>

@@ -213,6 +213,7 @@ const serializedJsonLd = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
         class="theme-toggle"
         type="button"
         aria-label="Переключить цветовую тему"
+        aria-pressed="false"
       >
         <span aria-hidden="true">◐</span>
       </button>
@@ -258,13 +259,6 @@ const serializedJsonLd = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
       </p>
     </footer>
     <script>
-      const bookPage = document.querySelector<HTMLElement>(".book-page");
-      if (bookPage?.dataset.book) {
-        const current = Number(bookPage.dataset.book);
-        const saved = Number(localStorage.getItem("odyssey-max-book") ?? 1);
-        if (current > saved)
-          localStorage.setItem("odyssey-max-book", String(current));
-      }
       const maxBook = Number(localStorage.getItem("odyssey-max-book") ?? 1);
       document
         .querySelectorAll<HTMLElement>("[data-reveal-book]")
@@ -278,11 +272,22 @@ const serializedJsonLd = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
         });
 
       const toggle = document.querySelector<HTMLButtonElement>(".theme-toggle");
+      const updateThemeState = () => {
+        if (!toggle) return;
+        const isDark = document.documentElement.dataset.theme === "dark";
+        toggle.setAttribute("aria-pressed", String(isDark));
+        toggle.setAttribute(
+          "aria-label",
+          isDark ? "Включить светлую тему" : "Включить тёмную тему",
+        );
+      };
+      updateThemeState();
       toggle?.addEventListener("click", () => {
         const next =
           document.documentElement.dataset.theme === "dark" ? "light" : "dark";
         document.documentElement.dataset.theme = next;
         localStorage.setItem("odyssey-theme", next);
+        updateThemeState();
       });
     </script>
   </body>
